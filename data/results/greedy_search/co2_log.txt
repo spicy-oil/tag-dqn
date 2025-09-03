@@ -1,0 +1,635 @@
+----
+Warning - known line from 48.3884400 to 31.1994120 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 92.0449090 to 72.5351080 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 91.4084900 to 71.8464380 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 92.4059940 to 69.0599260 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 92.3173650 to 66.0176440 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 91.4247670 to 65.0285090 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 91.9289850 to 65.4083620 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 48.1509390 to 18.0314270 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 94.7436910 to 63.6651880 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 47.8487800 to 13.5932880 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 63.5101760 to 27.4843730 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 84.5868620 to 48.5560500 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 63.8651660 to 25.8613210 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 65.0169120 to 25.3175160 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 65.6572470 to 24.8863990 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 65.0169120 to 24.0744190 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 71.8464380 to 27.5851370 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 93.6784180 to 48.3884400 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+Any initial graph (wn_obs - wn_ritz) > 1.2 * wn_unc?  False
+Graph data shapes: Data(x=[871, 6], edge_index=[2, 3954], edge_attr=[3954, 11])
+Line list shape: torch.Size([3536, 4])
+Running greedy term analysis...
+Step 1/128
+|A1| = 144
+Reward: 0.3856
+Step 2/128
+|A2| = 5
+Reward: -0.0000
+Step 3/128
+|A1| = 144
+Reward: 0.3586
+Step 4/128
+|A2| = 3
+Reward: -0.0243
+Step 5/128
+|A1| = 143
+Reward: 0.3501
+Step 6/128
+|A2| = 1
+Reward: -0.3501
+Step 7/128
+|A1| = 142
+Reward: 0.3362
+Step 8/128
+|A2| = 4
+Reward: -0.0001
+Step 9/128
+|A1| = 141
+Reward: 0.3338
+Step 10/128
+|A2| = 3
+Reward: -0.0065
+Step 11/128
+|A1| = 140
+Reward: 0.3549
+Step 12/128
+|A2| = 1
+Reward: -0.3549
+Step 13/128
+|A1| = 139
+Reward: 0.3399
+Step 14/128
+|A2| = 1
+Reward: -0.3399
+Step 15/128
+|A1| = 138
+Reward: 0.3113
+Step 16/128
+|A2| = 1
+Reward: -0.3113
+Step 17/128
+|A1| = 137
+Reward: 0.3113
+Step 18/128
+|A2| = 1
+Reward: -0.3113
+Step 19/128
+|A1| = 136
+Reward: 0.3000
+Step 20/128
+|A2| = 2
+Reward: -0.0046
+Step 21/128
+|A1| = 135
+Reward: 0.2841
+Step 22/128
+|A2| = 2
+Reward: -0.1768
+Step 23/128
+|A1| = 134
+Reward: 0.2642
+Step 24/128
+|A2| = 5
+Reward: -0.1352
+Step 25/128
+|A1| = 133
+Reward: 0.3574
+Step 26/128
+|A2| = 7
+Reward: -0.1471
+Step 27/128
+|A1| = 135
+Reward: 0.3884
+Step 28/128
+|A2| = 2
+Reward: -0.2133
+Step 29/128
+|A1| = 136
+Reward: 0.3568
+Step 30/128
+|A2| = 1
+Reward: -0.3568
+Step 31/128
+|A1| = 135
+Reward: 0.2620
+Step 32/128
+|A2| = 1
+Reward: -0.2620
+Step 33/128
+|A1| = 134
+Reward: 0.2598
+Step 34/128
+|A2| = 3
+Reward: -0.0172
+Step 35/128
+|A1| = 133
+Reward: 0.2567
+Step 36/128
+|A2| = 4
+Reward: -0.1207
+Step 37/128
+|A1| = 132
+Reward: 0.2526
+Step 38/128
+|A2| = 13
+Reward: -0.0263
+Step 39/128
+|A1| = 131
+Reward: 0.2522
+Step 40/128
+|A2| = 2
+Reward: -0.0289
+Step 41/128
+|A1| = 130
+Reward: 0.2510
+Step 42/128
+|A2| = 3
+Reward: -0.0352
+Step 43/128
+|A1| = 129
+Reward: 0.2488
+Step 44/128
+|A2| = 1
+Reward: -0.2488
+Step 45/128
+|A1| = 128
+Reward: 0.2463
+Step 46/128
+|A2| = 3
+Reward: -0.0004
+Step 47/128
+|A1| = 127
+Reward: 0.2450
+Step 48/128
+|A2| = 13
+Reward: -0.0734
+Step 49/128
+|A1| = 126
+Reward: 0.2441
+Step 50/128
+|A2| = 5
+Reward: -0.0032
+Step 51/128
+|A1| = 125
+Reward: 0.2428
+Step 52/128
+|A2| = 1
+Reward: -0.2428
+Step 53/128
+|A1| = 124
+Reward: 0.2406
+Step 54/128
+|A2| = 8
+Reward: -0.0520
+Step 55/128
+|A1| = 123
+Reward: 0.2395
+Step 56/128
+|A2| = 1
+Reward: -0.2395
+Step 57/128
+|A1| = 122
+Reward: 0.2386
+Step 58/128
+|A2| = 2
+Reward: -0.0541
+Step 59/128
+|A1| = 121
+Reward: 0.2379
+Step 60/128
+|A2| = 12
+Reward: -0.0766
+Step 61/128
+|A1| = 120
+Reward: 0.2367
+Step 62/128
+|A2| = 1
+Reward: -0.2367
+Step 63/128
+|A1| = 119
+Reward: 0.2356
+Step 64/128
+|A2| = 8
+Reward: -0.0108
+Step 65/128
+|A1| = 118
+Reward: 0.2346
+Step 66/128
+|A2| = 10
+Reward: -0.0565
+Step 67/128
+|A1| = 117
+Reward: 0.2336
+Step 68/128
+|A2| = 3
+Reward: -0.0136
+Step 69/128
+|A1| = 116
+Reward: 0.2334
+Step 70/128
+|A2| = 1
+Reward: -0.2334
+Step 71/128
+|A1| = 115
+Reward: 0.2327
+Step 72/128
+|A2| = 5
+Reward: -0.0346
+Step 73/128
+|A1| = 114
+Reward: 0.2318
+Step 74/128
+|A2| = 2
+Reward: -0.0275
+Step 75/128
+|A1| = 113
+Reward: 0.2308
+Step 76/128
+|A2| = 5
+Reward: -0.0283
+Step 77/128
+|A1| = 112
+Reward: 0.2298
+Step 78/128
+|A2| = 6
+Reward: -0.0068
+Step 79/128
+|A1| = 111
+Reward: 0.2293
+Step 80/128
+|A2| = 3
+Reward: -0.0002
+Step 81/128
+|A1| = 110
+Reward: 0.2273
+Step 82/128
+|A2| = 4
+Reward: -0.0065
+Step 83/128
+|A1| = 109
+Reward: 0.2269
+Step 84/128
+|A2| = 28
+Reward: -0.1029
+Step 85/128
+|A1| = 108
+Reward: 0.2267
+Step 86/128
+|A2| = 2
+Reward: -0.1245
+Step 87/128
+|A1| = 107
+Reward: 0.2264
+Step 88/128
+|A2| = 4
+Reward: -0.0008
+Step 89/128
+|A1| = 106
+Reward: 0.2249
+Step 90/128
+|A2| = 4
+Reward: -0.0012
+Step 91/128
+|A1| = 105
+Reward: 0.2249
+Step 92/128
+|A2| = 6
+Reward: -0.0002
+Step 93/128
+|A1| = 104
+Reward: 0.2235
+Step 94/128
+|A2| = 4
+Reward: -0.0037
+Step 95/128
+|A1| = 103
+Reward: 0.2183
+Step 96/128
+|A2| = 3
+Reward: -0.0677
+Step 97/128
+|A1| = 102
+Reward: 0.2180
+Step 98/128
+|A2| = 2
+Reward: -0.1492
+Step 99/128
+|A1| = 101
+Reward: 0.2180
+Step 100/128
+|A2| = 2
+Reward: -0.0013
+Step 101/128
+|A1| = 100
+Reward: 0.2173
+Step 102/128
+|A2| = 2
+Reward: -0.0017
+Step 103/128
+|A1| = 99
+Reward: 0.2165
+Step 104/128
+|A2| = 19
+Reward: -0.0003
+Step 105/128
+|A1| = 98
+Reward: 0.2150
+Step 106/128
+|A2| = 9
+Reward: -0.0437
+Step 107/128
+|A1| = 97
+Reward: 0.2136
+Step 108/128
+|A2| = 1
+Reward: -0.2136
+Step 109/128
+|A1| = 96
+Reward: 0.2128
+Step 110/128
+|A2| = 13
+Reward: -0.0740
+Step 111/128
+|A1| = 95
+Reward: 0.2118
+Step 112/128
+|A2| = 2
+Reward: -0.0415
+Step 113/128
+|A1| = 94
+Reward: 0.2118
+Step 114/128
+|A2| = 1
+Reward: -0.2118
+Step 115/128
+|A1| = 93
+Reward: 0.2106
+Step 116/128
+|A2| = 3
+Reward: -0.0005
+Step 117/128
+|A1| = 92
+Reward: 0.2101
+Step 118/128
+|A2| = 11
+Reward: -0.0001
+Step 119/128
+|A1| = 91
+Reward: 0.2101
+Step 120/128
+|A2| = 18
+Reward: -0.0226
+Step 121/128
+|A1| = 90
+Reward: 0.2098
+Step 122/128
+|A2| = 7
+Reward: -0.0223
+Step 123/128
+|A1| = 89
+Reward: 0.2068
+Step 124/128
+|A2| = 2
+Reward: -0.1240
+Step 125/128
+|A1| = 88
+Reward: 0.2040
+Step 126/128
+|A2| = 5
+Reward: -0.0422
+Step 127/128
+|A1| = 87
+Reward: 0.2033
+Step 128/128
+|A2| = 4
+Reward: -0.0409
+Total reward: 10.1080
+0.0000 cm-1 from initial state at 0.0000 cm-1 (98 3d8 3F  4.0)
+950.3250 cm-1 from initial state at 950.3250 cm-1 (98 3d8 3F  3.0)
+1597.1960 cm-1 from initial state at 1597.1960 cm-1 (98 3d8 3F  2.0)
+3350.4920 cm-1 from initial state at 3350.4920 cm-1 (100 3d7.(4F).4s 5F  5.0)
+4028.9870 cm-1 from initial state at 4028.9870 cm-1 (100 3d7.(4F).4s 5F  4.0)
+4560.7900 cm-1 from initial state at 4560.7900 cm-1 (100 3d7.(4F).4s 5F  3.0)
+4950.0630 cm-1 from initial state at 4950.0630 cm-1 (100 3d7.(4F).4s 5F  2.0)
+5204.6980 cm-1 from initial state at 5204.6980 cm-1 (100 3d7.(4F).4s 5F  1.0)
+9812.8590 cm-1 from initial state at 9812.8590 cm-1 (99 3d7.(4F).4s 3F  4.0)
+10708.3310 cm-1 from initial state at 10708.3310 cm-1 (100 3d7.(4F).4s 3F  3.0)
+11321.8560 cm-1 from initial state at 11321.8560 cm-1 (98 3d7.(4F).4s 3F  2.0)
+11651.2770 cm-1 from initial state at 11651.2770 cm-1 (75 3d8 1D  2.0)
+13260.6870 cm-1 from initial state at 13260.6870 cm-1 (75 3d8 3P  2.0)
+13404.3210 cm-1 from initial state at 13404.3210 cm-1 (96 3d8 3P  1.0)
+13593.2880 cm-1 from initial state at 13593.2880 cm-1 (96 3d8 3P  0.0)
+17771.5050 cm-1 from initial state at 17771.5050 cm-1 (100 3d7.(4P).4s 5P  3.0)
+18031.4270 cm-1 from initial state at 18031.4270 cm-1 (98 3d7.(4P).4s 5P  2.0)
+18338.6400 cm-1 from initial state at 18338.6400 cm-1 (99 3d7.(4P).4s 5P  1.0)
+18973.7280 cm-1 from initial state at 18973.7280 cm-1 (96 3d8 1G  4.0)
+21624.5260 cm-1 from initial state at 21624.5260 cm-1 (99 3d7.(2G).4s 3G  5.0)
+22009.3430 cm-1 from initial state at 22009.3430 cm-1 (97 3d7.(2G).4s 3G  4.0)
+22414.4290 cm-1 from initial state at 22414.4290 cm-1 (100 3d7.(2G).4s 3G  3.0)
+24074.4190 cm-1 from initial state at 24074.4190 cm-1 (92 3d7.(4P).4s 3P  2.0)
+24267.3800 cm-1 from initial state at 24267.3800 cm-1 (88 3d7.(4P).4s 3P  1.0)
+24411.4780 cm-1 from initial state at 24411.4780 cm-1 (82 3d7.(4P).4s 3P  0.0)
+25147.2310 cm-1 from initial state at 25147.2310 cm-1 (93 3d7.(2G).4s 1G  4.0)
+24886.3990 cm-1 from initial state at 24886.3990 cm-1 (82 3d7.(2P).4s 3P  2.0)
+25317.5160 cm-1 from initial state at 25317.5160 cm-1 (83 3d7.(2P).4s 3P  1.0)
+25861.3210 cm-1 from initial state at 25861.3210 cm-1 (81 3d7.(2P).4s 3P  0.0)
+27468.9999 cm-1 agree with human 27468.9860 cm-1 !!! (100 3d7.(2H).4s 3H  6.0)
+27484.3730 cm-1 from initial state at 27484.3730 cm-1 (78 3d7.(2D2).4s 3D  3.0)
+27585.1370 cm-1 from initial state at 27585.1370 cm-1 (47 3d7.(2D2).4s 3D  1.0)
+28111.8720 cm-1 from initial state at 28111.8720 cm-1 (72 3d7.(2D2).4s 3D  2.0)
+27902.1279 cm-1 agree with human 27902.1590 cm-1 !!! (95 3d7.(2H).4s 3H  4.0)
+29268.7771 cm-1 agree with human 29268.7750 cm-1 !!! (63 3d7.(2P).4s 1P  1.0)
+31199.4120 cm-1 from initial state at 31199.4120 cm-1 (76 3d7.(2D2).4s 1D  2.0)
+84014.1720 cm-1 from initial state at 84014.1720 cm-1 (100 3d7.(4F).5s 5F  5.0)
+84586.8620 cm-1 from initial state at 84586.8620 cm-1 (87 3d7.(4F).5s 5F  4.0)
+85167.6400 cm-1 from initial state at 85167.6400 cm-1 (94 3d7.(4F).5s 5F  3.0)
+85481.6830 cm-1 from initial state at 85481.6830 cm-1 (87 3d7.(4F).5s 3F  4.0)
+85596.1650 cm-1 from initial state at 85596.1650 cm-1 (98 3d7.(4F).5s 5F  2.0)
+85876.2640 cm-1 from initial state at 85876.2640 cm-1 (100 3d7.(4F).5s 5F  1.0)
+86346.7000 cm-1 from initial state at 86346.7000 cm-1 (94 3d7.(4F).5s 3F  3.0)
+86940.1450 cm-1 from initial state at 86940.1450 cm-1 (97 3d7.(4F).5s 3F  2.0)
+90302.7730 cm-1 from initial state at 90302.7730 cm-1 (92 3d7.(4F).4d 5G  6.0)
+90199.1504 cm-1 agree with human 90199.1570 cm-1 !!! (70 3d7.(4F).4d 5F  4.0)
+90464.5840 cm-1 from initial state at 90464.5840 cm-1 (35 3d7.(4F).4d 5P  3.0)
+90697.4590 cm-1 from initial state at 90697.4590 cm-1 (46 3d7.(4F).4d 5G  5.0)
+90753.2610 cm-1 from initial state at 90753.2610 cm-1 (50 3d7.(4F).4d 5P  3.0)
+90975.5340 cm-1 from initial state at 90975.5340 cm-1 (54 3d7.(4F).4d 5H  6.0)
+90967.5790 cm-1 from initial state at 90967.5790 cm-1 (66 3d7.(4F).4d 5F  2.0)
+91049.4210 cm-1 from initial state at 91049.4210 cm-1 (49 3d7.(4F).4d 5G  4.0)
+91326.9260 cm-1 from initial state at 91326.9260 cm-1 (56 3d7.(4F).4d 3G  5.0)
+91408.4900 cm-1 from initial state at 91408.4900 cm-1 (66 3d7.(4F).4d 3D  3.0)
+91352.8750 cm-1 from initial state at 91352.8750 cm-1 (46 3d7.(4F).4d 5D  4.0)
+91358.9870 cm-1 from initial state at 91358.9870 cm-1 (88 3d7.(4F).4d 5F  1.0)
+91424.7670 cm-1 from initial state at 91424.7670 cm-1 (66 3d7.(4F).4d 5P  2.0)
+91646.4390 cm-1 from initial state at 91646.4390 cm-1 (74 3d7.(4F).4d 5H  5.0)
+91623.4490 cm-1 from initial state at 91623.4490 cm-1 (58 3d7.(4F).4d 3H  6.0)
+91667.3340 cm-1 from initial state at 91667.3340 cm-1 (56 3d7.(4F).4d 5G  3.0)
+91928.9850 cm-1 from initial state at 91928.9850 cm-1 (73 3d7.(4F).4d 5G  2.0)
+91918.1950 cm-1 from initial state at 91918.1950 cm-1 (62 3d7.(4F).4d 3G  4.0)
+91932.0830 cm-1 from initial state at 91932.0830 cm-1 (58 3d7.(4F).4d 5P  1.0)
+92120.6390 cm-1 from initial state at 92120.6390 cm-1 (81 3d7.(4F).4d 5H  4.0)
+92044.9090 cm-1 from initial state at 92044.9090 cm-1 (63 3d7.(4F).4d 3D  2.0)
+91958.3620 cm-1 from initial state at 91958.3620 cm-1 (65 3d7.(4F).4d 5D  3.0)
+92405.9940 cm-1 from initial state at 92405.9940 cm-1 (78 3d7.(4F).4d 5H  3.0)
+92359.1770 cm-1 from initial state at 92359.1770 cm-1 (78 3d7.(4F).4d 3H  5.0)
+92317.3650 cm-1 from initial state at 92317.3650 cm-1 (64 3d7.(4F).4d 5D  2.0)
+92403.1940 cm-1 from initial state at 92403.1940 cm-1 (39 3d7.(4F).4d 3D  1.0)
+92519.9740 cm-1 from initial state at 92519.9740 cm-1 (83 3d7.(4F).4d 3G  3.0)
+92639.8390 cm-1 from initial state at 92639.8390 cm-1 (56 3d7.(4F).4d 3D  1.0)
+92889.4100 cm-1 from initial state at 92889.4100 cm-1 (89 3d7.(4F).4d 3H  4.0)
+93678.4180 cm-1 from initial state at 93678.4180 cm-1 (89 3d7.(4F).4d 3P  2.0)
+93738.7840 cm-1 from initial state at 93738.7840 cm-1 (89 3d7.(4F).4d 3F  4.0)
+94405.5286 cm-1 agree with human 94405.5270 cm-1 !!! (90 3d7.(4F).4d 3P  1.0)
+94368.5800 cm-1 from initial state at 94368.5800 cm-1 (88 3d7.(4F).4d 3F  3.0)
+94743.6910 cm-1 from initial state at 94743.6910 cm-1 (89 3d7.(4F).4d 3F  2.0)
+99022.5205 cm-1 agree with human 99022.5210 cm-1 !!! (100 3d7.(4P).5s 5P  3.0)
+99235.1555 cm-1 agree with human 99235.1540 cm-1 !!! (97 3d7.(4P).5s 5P  2.0)
+101233.5964 cm-1 agree with human 101233.5980 cm-1 !!! (98 3d7.(2G).5s 3G  5.0)
+101451.0732 cm-1 agree with human 101451.0670 cm-1 !!! (76 3d7.(2G).5s 3G  4.0)
+102020.3563 cm-1 agree with human 102020.3570 cm-1 !!! (100 3d7.(2G).5s 3G  3.0)
+102371.6038 cm-1 agree with human 102371.6030 cm-1 !!! (77 3d7.(2G).5s 1G  4.0)
+104399.2067 cm-1 not found by humans... (98 3d7.(4P).4d 5P  2.0)
+105395.1115 cm-1 agree with human 105395.1110 cm-1 !!! (95 3d7.(4P).4d 5F  4.0)
+105504.3743 cm-1 agree with human 105504.3730 cm-1 !!! (93 3d7.(4P).4d 5F  3.0)
+105625.1594 cm-1 agree with human 105625.1460 cm-1 !!! (92 3d7.(4P).4d 5F  2.0)
+106221.8716 cm-1 agree with human 106221.8710 cm-1 !!! (78 3d7.(4P).4d 3F  4.0)
+106316.3366 cm-1 agree with human 106316.3370 cm-1 !!! (72 3d7.(4P).4d 3F  3.0)
+106647.1835 cm-1 agree with human 106647.1790 cm-1 !!! (49 3d7.(4P).4d 3F  2.0)
+106586.2374 cm-1 agree with human 106586.2260 cm-1 !!! (68 3d7.(4P).4d 5D  3.0)
+107224.6299 cm-1 agree with human 107224.6290 cm-1 !!! (61 3d7.(4P).4d 5D  2.0)
+106918.2202 cm-1 agree with human 106918.2170 cm-1 !!! (66 3d7.(2G).4d 3D  3.0)
+107473.3350 cm-1 agree with human 107473.3340 cm-1 !!! (68 3d7.(2G).4d 3I  6.0)
+107451.1807 cm-1 agree with human 107451.1800 cm-1 !!! (50 3d7.(4P).4d 3D  3.0)
+107543.5555 cm-1 agree with human 107543.5570 cm-1 !!! (78 3d7.(2G).4d 3G  5.0)
+107646.4401 cm-1 agree with human 107646.4430 cm-1 !!! (35 3d7.(2G).4d 1H  5.0)
+107589.2804 cm-1 not found by humans... (84 3d7.(2G).4d 3H  6.0)
+107713.7253 cm-1 agree with human 107713.7310 cm-1 !!! (62 3d7.(2G).4d 3D  2.0)
+107671.8503 cm-1 agree with human 107671.8490 cm-1 !!! (85 3d7.(2G).4d 1F  3.0)
+108830.0557 cm-1 agree with human 108830.0590 cm-1 !!! (75 3d7.(2G).4d 3G  4.0)
+108021.1926 cm-1 agree with human 108021.1930 cm-1 !!! (66 3d7.(2G).4d 3I  5.0)
+108268.1069 cm-1 agree with human 108268.0790 cm-1 !!! (93 3d7.(2G).4d 3G  3.0)
+108600.1672 cm-1 agree with human 108600.1660 cm-1 !!! (60 3d7.(2G).4d 1I  6.0)
+108475.1126 cm-1 agree with human 108475.1130 cm-1 !!! (91 3d7.(2G).4d 3H  4.0)
+108600.1613 cm-1 agree with human 108600.1660 cm-1 !!! (54 3d7.(2G).4d 1H  5.0)
+109442.0494 cm-1 agree with human 109442.0650 cm-1 !!! (40 3d7.(2G).4d 1G  4.0)
+109312.0772 cm-1 agree with human 109312.0760 cm-1 !!! (39 3d7.(2G).4d 1G  4.0)
+108830.0604 cm-1 agree with human 108830.0590 cm-1 !!! (56 3d7.(2G).4d 3F  3.0)
+110523.3703 cm-1 agree with human 110523.3680 cm-1 !!! (81 3d7.(2P).4d 3D  3.0)
+110758.7921 cm-1 not found by humans... (68 3d7.(2P).4d 3F  4.0)
+110884.4968 cm-1 agree with human 110884.4910 cm-1 !!! (48 3d7.(2P).4d 1F  3.0)
+111541.3591 cm-1 agree with human 111541.3570 cm-1 !!! (50 3d7.(2P).4d 3F  3.0)
+115205.8753 cm-1 not found by humans... (34 3d7.(2D2).4d 3G  4.0)
+114926.9834 cm-1 agree with human 114926.9710 cm-1 !!! (59 3d7.(2D2).4d 3G  3.0)
+114974.2919 cm-1 agree with human 114974.3120 cm-1 !!! (35 3d7.(2D2).4d 1G  4.0)
+45197.7080 cm-1 from initial state at 45197.7080 cm-1 (96 3d7.(4F).4p 5F*  5.0)
+45378.7500 cm-1 from initial state at 45378.7500 cm-1 (58 3d7.(4F).4p 5F*  4.0)
+45972.0340 cm-1 from initial state at 45972.0340 cm-1 (74 3d7.(4F).4p 5F*  3.0)
+46320.8290 cm-1 from initial state at 46320.8290 cm-1 (57 3d7.(4F).4p 5D*  4.0)
+46452.6970 cm-1 from initial state at 46452.6970 cm-1 (86 3d7.(4F).4p 5F*  2.0)
+46786.4021 cm-1 agree with human 46786.4060 cm-1 !!! (95 3d7.(4F).4p 5F*  1.0)
+47078.4890 cm-1 from initial state at 47078.4890 cm-1 (100 3d7.(4F).4p 5G*  6.0)
+47039.1030 cm-1 from initial state at 47039.1030 cm-1 (72 3d7.(4F).4p 5D*  3.0)
+47345.8420 cm-1 from initial state at 47345.8420 cm-1 (83 3d7.(4F).4p 5G*  5.0)
+47537.3620 cm-1 from initial state at 47537.3620 cm-1 (83 3d7.(4F).4p 5D*  2.0)
+47807.4920 cm-1 from initial state at 47807.4920 cm-1 (88 3d7.(4F).4p 5G*  4.0)
+47848.7800 cm-1 from initial state at 47848.7800 cm-1 (90 3d7.(4F).4p 5D*  1.0)
+47995.5910 cm-1 from initial state at 47995.5910 cm-1 (94 3d7.(4F).4p 5D*  0.0)
+48150.9390 cm-1 from initial state at 48150.9390 cm-1 (93 3d7.(4F).4p 5G*  3.0)
+48388.4400 cm-1 from initial state at 48388.4400 cm-1 (97 3d7.(4F).4p 5G*  2.0)
+48556.0500 cm-1 from initial state at 48556.0500 cm-1 (85 3d7.(4F).4p 3G*  5.0)
+49348.3010 cm-1 from initial state at 49348.3010 cm-1 (63 3d7.(4F).4p 3F*  4.0)
+49697.6800 cm-1 from initial state at 49697.6800 cm-1 (60 3d7.(4F).4p 3G*  4.0)
+50036.3460 cm-1 from initial state at 50036.3460 cm-1 (53 3d7.(4F).4p 3F*  3.0)
+50381.7210 cm-1 from initial state at 50381.7210 cm-1 (56 3d7.(4F).4p 3G*  3.0)
+50914.3210 cm-1 from initial state at 50914.3210 cm-1 (92 3d7.(4F).4p 3F*  2.0)
+51512.2650 cm-1 from initial state at 51512.2650 cm-1 (89 3d7.(4F).4p 3D*  3.0)
+52229.7240 cm-1 from initial state at 52229.7240 cm-1 (93 3d7.(4F).4p 3D*  2.0)
+52684.6290 cm-1 from initial state at 52684.6290 cm-1 (95 3d7.(4F).4p 3D*  1.0)
+56010.4713 cm-1 agree with human 56010.4710 cm-1 !!! (99 3d7.(4P).4p 5S*  2.0)
+61240.7420 cm-1 from initial state at 61240.7420 cm-1 (89 3d7.(4P).4p 5D*  3.0)
+61260.3170 cm-1 from initial state at 61260.3170 cm-1 (88 3d7.(4P).4p 5D*  2.0)
+61388.2460 cm-1 from initial state at 61388.2460 cm-1 (95 3d7.(4P).4p 5D*  4.0)
+61350.2660 cm-1 from initial state at 61350.2660 cm-1 (87 3d7.(4P).4p 5D*  1.0)
+60072.6784 cm-1 not found by humans... (92 3d7.(4P).4p 5D*  0.0)
+62440.0740 cm-1 from initial state at 62440.0740 cm-1 (52 3d7.(4P).4p 3S*  1.0)
+63344.3290 cm-1 from initial state at 63344.3290 cm-1 (94 3d7.(4P).4p 5P*  3.0)
+63306.6830 cm-1 from initial state at 63306.6830 cm-1 (74 3d7.(2G).4p 3H*  5.0)
+63367.3300 cm-1 from initial state at 63367.3300 cm-1 (90 3d7.(4P).4p 5P*  2.0)
+63510.1760 cm-1 from initial state at 63510.1760 cm-1 (74 3d7.(2G).4p 3F*  4.0)
+64601.5897 cm-1 not found by humans... (97 3d7.(2G).4p 3H*  6.0)
+63665.1880 cm-1 from initial state at 63665.1880 cm-1 (68 3d7.(4P).4p 5P*  1.0)
+63792.7130 cm-1 from initial state at 63792.7130 cm-1 (87 3d7.(2G).4p 3H*  4.0)
+63586.9840 cm-1 from initial state at 63586.9840 cm-1 (89 3d7.(4P).4p 3D*  3.0)
+63615.9860 cm-1 from initial state at 63615.9860 cm-1 (76 3d7.(4P).4p 3D*  2.0)
+64360.0550 cm-1 from initial state at 64360.0550 cm-1 (86 3d7.(2G).4p 3F*  3.0)
+63865.1660 cm-1 from initial state at 63865.1660 cm-1 (82 3d7.(4P).4p 3D*  1.0)
+64401.3550 cm-1 from initial state at 64401.3550 cm-1 (47 3d7.(2G).4p 1G*  4.0)
+64601.7760 cm-1 from initial state at 64601.7760 cm-1 (83 3d7.(2G).4p 3G*  5.0)
+65016.9120 cm-1 from initial state at 65016.9120 cm-1 (95 3d7.(2G).4p 3F*  2.0)
+64957.4790 cm-1 from initial state at 64957.4790 cm-1 (70 3d7.(2G).4p 1H*  5.0)
+64605.5230 cm-1 from initial state at 64605.5230 cm-1 (56 3d7.(2P).4p 3P*  0.0)
+65174.6560 cm-1 from initial state at 65174.6560 cm-1 (90 3d7.(2G).4p 3G*  3.0)
+65154.0360 cm-1 from initial state at 65154.0360 cm-1 (61 3d7.(2G).4p 3G*  4.0)
+64914.6270 cm-1 from initial state at 64914.6270 cm-1 (54 3d7.(4P).4p 3P*  2.0)
+65028.5090 cm-1 from initial state at 65028.5090 cm-1 (65 3d7.(2P).4p 3P*  1.0)
+65408.3620 cm-1 from initial state at 65408.3620 cm-1 (38 3d7.(2P).4p 3P*  2.0)
+66017.6440 cm-1 from initial state at 66017.6440 cm-1 (76 3d7.(2G).4p 1F*  3.0)
+65511.9860 cm-1 from initial state at 65511.9860 cm-1 (67 3d7.(4P).4p 3P*  0.0)
+65657.2470 cm-1 from initial state at 65657.2470 cm-1 (89 3d7.(4P).4p 3P*  1.0)
+67209.2560 cm-1 from initial state at 67209.2560 cm-1 (39 3d7.(2P).4p 1D*  2.0)
+67524.0120 cm-1 from initial state at 67524.0120 cm-1 (82 3d7.(2P).4p 3D*  3.0)
+67824.3840 cm-1 from initial state at 67824.3840 cm-1 (61 3d7.(2P).4p 3D*  1.0)
+67939.3660 cm-1 from initial state at 67939.3660 cm-1 (53 3d7.(2P).4p 3D*  2.0)
+67665.1432 cm-1 not found by humans... (95 3d7.(2H).4p 3G*  5.0)
+69059.9260 cm-1 from initial state at 69059.9260 cm-1 (68 3d7.(2D2).4p 3D*  3.0)
+67910.9307 cm-1 agree with human 67910.9280 cm-1 !!! (84 3d7.(2P).4p 1S*  0.0)
+69317.0670 cm-1 from initial state at 69317.0670 cm-1 (31 3d7.(2D2).4p 3D*  1.0)
+69356.2380 cm-1 from initial state at 69356.2380 cm-1 (88 3d7.(2H).4p 3G*  3.0)
+69637.0190 cm-1 from initial state at 69637.0190 cm-1 (52 3d7.(2D2).4p 3D*  2.0)
+70457.5330 cm-1 from initial state at 70457.5330 cm-1 (59 3d7.(2D2).4p 3F*  3.0)
+70265.9140 cm-1 from initial state at 70265.9140 cm-1 (71 3d7.(2P).4p 3S*  1.0)
+70774.8640 cm-1 from initial state at 70774.8640 cm-1 (62 3d7.(2D2).4p 3F*  2.0)
+70857.0510 cm-1 from initial state at 70857.0510 cm-1 (45 3d7.(2P).4p 1P*  1.0)
+71846.4380 cm-1 from initial state at 71846.4380 cm-1 (54 3d7.(2D2).4p 3P*  2.0)
+72535.1080 cm-1 from initial state at 72535.1080 cm-1 (57 3d7.(2D2).4p 1F*  3.0)
+72654.1720 cm-1 not found by humans... (45 3d7.(2D2).4p 1D*  2.0)
+73144.3320 cm-1 from initial state at 73144.3320 cm-1 (53 3d7.(2D2).4p 3P*  1.0)
+74522.9130 cm-1 from initial state at 74522.9130 cm-1 (71 3d7.(2D2).4p 1P*  1.0)
+42 out of 50 new known levels agree in terms of E

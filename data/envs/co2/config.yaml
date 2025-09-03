@@ -1,0 +1,56 @@
+# Directories relative to running directory
+
+# Required files
+line_list: ./data/envs/co2/line_list.csv
+theo_levels: ./data/envs/co2/theo_levels.csv
+theo_lines: ./data/envs/co2/theo_lines.csv
+known_levels: ./data/envs/co2/known_levels.csv
+known_lines: ./data/envs/co2/known_lines.csv
+
+# Optinal files
+all_known_levels: ./data/envs/co2/all_known_levels.csv  # null if finding unknown levels
+all_known_levels_and_labels: null  # e.g. ./data/envs/nd2_k/all_known_levels_and_labels.csv, null if finding unknown levels
+
+params:
+  
+  # Env parameters
+  min_snr: 2              # Minimum expected SNR below which graph edges are removed
+  spec_range: [34, 83]    # Region of interest (1000 cm-1)
+  wn_range: 1.5           # Delta_E, theoretical wn unc. (1000 cm-1)
+  tol: 0.00005            # delta_E, for repeating E_obs (1000 cm-1)
+  int_tol: 1.2            # Delta_I, Intensity unc. (order of magnitude)
+  A2_max: 256             # Max size of A2 space
+  float_levs: False       # Whether initial state known levels are floating in LOPT 
+  ep_length: 128          # Number of steps in an episode H
+  gamma: 0.99             # Discount factor
+  
+  # NN parameters
+  gat_n_layers: 2         # Number of GAT layers
+  gat_hidden_size: 32     # GAT hidden layer size
+  gat_heads: 4            # Number of attention heads
+  mlp_hidden_size: 32     # MLP hidden layer size
+  
+  # DQN learning parameters
+  episodes: 512           # Number of training episodes
+  buffer_capacity: 10000  # Replay buffer size
+  tr_start_ep: 8          # Episode to start training
+  batch_size: 16          # Replay batch sample size
+  adam_lr: 0.001          # Adam learning rate
+  min_epsilon: 0.1        # Final epsilon for epsilon-greedy
+  tau: 0.001              # Soft update parameter
+  steps_per_train: 4      # Train every n steps
+  patience: 1000000       # Number of episodes with no improvement in max Reward to stop training
+
+  # DQN extensions parameters
+  duel: True              # Use dueling DQN
+  double: True            # Use double DQN
+  noisy: True             # Use NoisyNet
+  sigma_0: 0.5            # Initial noise stddev for NoisyNet
+  per_alpha: 0.0          # Prioritised experience replay alpha (0.0 is uniform sampling)
+  per_beta: 0.5           # Prioritised experience replay initial beta (does nothing if alpha=0)
+  n_step: 2               # n-step TD updates
+
+  # MCTS parameters
+  C_p: 0.4                # UCT exploration constant
+  depth: 4                # MCTS depth
+  N_sim: 512              # Number of MCTS simulations per step in env

@@ -1,0 +1,1800 @@
+Any initial graph (wn_obs - wn_ritz) > 1.2 * wn_unc?  False
+Graph data shapes: Data(x=[492, 6], edge_index=[2, 2216], edge_attr=[2216, 11])
+Line list shape: torch.Size([21573, 4])
+Running greedy term analysis...
+Step 1/512
+|A1| = 133
+Reward: 0.3678
+Step 2/512
+|A2| = 3
+Reward: -0.0987
+Step 3/512
+|A1| = 134
+Reward: 0.3653
+Step 4/512
+|A2| = 4
+Reward: -0.0969
+Step 5/512
+|A1| = 135
+Reward: 0.3643
+Step 6/512
+|A2| = 3
+Reward: -0.0238
+Step 7/512
+|A1| = 134
+Reward: 0.3543
+Step 8/512
+|A2| = 2
+Reward: -0.0825
+Step 9/512
+|A1| = 136
+Reward: 0.3626
+Step 10/512
+|A2| = 2
+Reward: -0.0042
+Step 11/512
+|A1| = 136
+Reward: 0.3542
+Step 12/512
+|A2| = 4
+Reward: -0.0824
+Step 13/512
+|A1| = 136
+Reward: 0.3488
+Step 14/512
+|A2| = 4
+Reward: -0.0585
+Step 15/512
+|A1| = 135
+Reward: 0.3486
+Step 16/512
+|A2| = 4
+Reward: -0.0526
+Step 17/512
+|A1| = 134
+Reward: 0.3452
+Step 18/512
+|A2| = 3
+Reward: -0.0173
+Step 19/512
+|A1| = 136
+Reward: 0.3500
+Step 20/512
+|A2| = 3
+Reward: -0.0778
+Step 21/512
+|A1| = 151
+Reward: 0.3486
+Step 22/512
+|A2| = 3
+Reward: -0.0032
+Step 23/512
+|A1| = 152
+Reward: 0.3440
+Step 24/512
+|A2| = 4
+Reward: -0.0045
+Step 25/512
+|A1| = 151
+Reward: 0.3431
+Step 26/512
+|A2| = 2
+Reward: -0.0446
+Step 27/512
+|A1| = 152
+Reward: 0.3424
+Step 28/512
+|A2| = 4
+Reward: -0.0250
+Step 29/512
+|A1| = 151
+Reward: 0.3408
+Step 30/512
+|A2| = 2
+Reward: -0.0268
+Step 31/512
+|A1| = 151
+Reward: 0.3400
+Step 32/512
+|A2| = 3
+Reward: -0.0069
+Step 33/512
+|A1| = 151
+Reward: 0.3372
+Step 34/512
+|A2| = 2
+Reward: -0.0117
+Step 35/512
+|A1| = 151
+Reward: 0.3369
+Step 36/512
+|A2| = 5
+Reward: -0.0739
+Step 37/512
+|A1| = 151
+Reward: 0.3364
+Step 38/512
+|A2| = 2
+Reward: -0.0484
+Step 39/512
+|A1| = 151
+Reward: 0.3355
+Step 40/512
+|A2| = 3
+Reward: -0.0588
+Step 41/512
+|A1| = 150
+Reward: 0.3347
+Step 42/512
+|A2| = 2
+Reward: -0.0274
+Step 43/512
+|A1| = 149
+Reward: 0.3332
+Step 44/512
+|A2| = 3
+Reward: -0.0634
+Step 45/512
+|A1| = 149
+Reward: 0.3620
+Step 46/512
+|A2| = 2
+Reward: -0.1847
+Step 47/512
+|A1| = 148
+Reward: 0.3414
+Step 48/512
+|A2| = 2
+Reward: -0.0140
+Step 49/512
+|A1| = 147
+Reward: 0.3398
+Step 50/512
+|A2| = 1
+Reward: -0.3398
+Step 51/512
+|A1| = 146
+Reward: 0.3331
+Step 52/512
+|A2| = 2
+Reward: -0.0275
+Step 53/512
+|A1| = 145
+Reward: 0.3323
+Step 54/512
+|A2| = 5
+Reward: -0.0303
+Step 55/512
+|A1| = 146
+Reward: 0.3322
+Step 56/512
+|A2| = 4
+Reward: -0.0870
+Step 57/512
+|A1| = 145
+Reward: 0.3337
+Step 58/512
+|A2| = 2
+Reward: -0.0143
+Step 59/512
+|A1| = 172
+Reward: 0.3414
+Step 60/512
+|A2| = 2
+Reward: -0.2016
+Step 61/512
+|A1| = 171
+Reward: 0.3408
+Step 62/512
+|A2| = 3
+Reward: -0.0077
+Step 63/512
+|A1| = 172
+Reward: 0.3334
+Step 64/512
+|A2| = 4
+Reward: -0.0859
+Step 65/512
+|A1| = 172
+Reward: 0.3321
+Step 66/512
+|A2| = 2
+Reward: -0.0655
+Step 67/512
+|A1| = 174
+Reward: 0.3664
+Step 68/512
+|A2| = 2
+Reward: -0.0868
+Step 69/512
+|A1| = 176
+Reward: 0.3715
+Step 70/512
+|A2| = 4
+Reward: -0.1544
+Step 71/512
+|A1| = 176
+Reward: 0.3320
+Step 72/512
+|A2| = 2
+Reward: -0.0396
+Step 73/512
+|A1| = 176
+Reward: 0.3311
+Step 74/512
+|A2| = 2
+Reward: -0.0033
+Step 75/512
+|A1| = 176
+Reward: 0.3437
+Step 76/512
+|A2| = 7
+Reward: -0.0895
+Step 77/512
+|A1| = 176
+Reward: 0.3345
+Step 78/512
+|A2| = 2
+Reward: -0.0087
+Step 79/512
+|A1| = 176
+Reward: 0.3301
+Step 80/512
+|A2| = 4
+Reward: -0.0190
+Step 81/512
+|A1| = 175
+Reward: 0.3300
+Step 82/512
+|A2| = 3
+Reward: -0.0063
+Step 83/512
+|A1| = 175
+Reward: 0.3292
+Step 84/512
+|A2| = 2
+Reward: -0.1279
+Step 85/512
+|A1| = 175
+Reward: 0.3301
+Step 86/512
+|A2| = 2
+Reward: -0.0006
+Step 87/512
+|A1| = 196
+Reward: 0.3492
+Step 88/512
+|A2| = 2
+Reward: -0.1206
+Step 89/512
+|A1| = 197
+Reward: 0.3427
+Step 90/512
+|A2| = 6
+Reward: -0.0418
+Step 91/512
+|A1| = 198
+Reward: 0.3328
+Step 92/512
+|A2| = 4
+Reward: -0.0291
+Step 93/512
+|A1| = 197
+Reward: 0.3334
+Step 94/512
+|A2| = 2
+Reward: -0.0051
+Step 95/512
+|A1| = 197
+Reward: 0.3290
+Step 96/512
+|A2| = 2
+Reward: -0.0013
+Step 97/512
+|A1| = 196
+Reward: 0.3284
+Step 98/512
+|A2| = 4
+Reward: -0.0718
+Step 99/512
+|A1| = 196
+Reward: 0.3275
+Step 100/512
+|A2| = 4
+Reward: -0.0045
+Step 101/512
+|A1| = 195
+Reward: 0.3299
+Step 102/512
+|A2| = 3
+Reward: -0.0003
+Step 103/512
+|A1| = 194
+Reward: 0.3265
+Step 104/512
+|A2| = 4
+Reward: -0.0010
+Step 105/512
+|A1| = 193
+Reward: 0.3244
+Step 106/512
+|A2| = 2
+Reward: -0.0211
+Step 107/512
+|A1| = 192
+Reward: 0.3243
+Step 108/512
+|A2| = 4
+Reward: -0.0038
+Step 109/512
+|A1| = 191
+Reward: 0.3229
+Step 110/512
+|A2| = 2
+Reward: -0.0810
+Step 111/512
+|A1| = 190
+Reward: 0.3215
+Step 112/512
+|A2| = 1
+Reward: -0.3215
+Step 113/512
+|A1| = 189
+Reward: 0.3205
+Step 114/512
+|A2| = 3
+Reward: -0.0127
+Step 115/512
+|A1| = 188
+Reward: 0.3188
+Step 116/512
+|A2| = 5
+Reward: -0.0258
+Step 117/512
+|A1| = 187
+Reward: 0.3201
+Step 118/512
+|A2| = 2
+Reward: -0.0092
+Step 119/512
+|A1| = 186
+Reward: 0.3269
+Step 120/512
+|A2| = 2
+Reward: -0.0610
+Step 121/512
+|A1| = 185
+Reward: 0.3177
+Step 122/512
+|A2| = 2
+Reward: -0.0311
+Step 123/512
+|A1| = 184
+Reward: 0.3160
+Step 124/512
+|A2| = 2
+Reward: -0.0186
+Step 125/512
+|A1| = 183
+Reward: 0.3153
+Step 126/512
+|A2| = 4
+Reward: -0.1216
+Step 127/512
+|A1| = 182
+Reward: 0.3131
+Step 128/512
+|A2| = 2
+Reward: -0.0264
+Step 129/512
+|A1| = 182
+Reward: 0.3124
+Step 130/512
+|A2| = 2
+Reward: -0.0495
+Step 131/512
+|A1| = 181
+Reward: 0.3121
+Step 132/512
+|A2| = 2
+Reward: -0.0101
+Step 133/512
+|A1| = 180
+Reward: 0.3120
+Step 134/512
+|A2| = 1
+Reward: -0.3120
+Step 135/512
+|A1| = 179
+Reward: 0.3113
+Step 136/512
+|A2| = 2
+Reward: -0.0186
+Step 137/512
+|A1| = 178
+Reward: 0.3106
+Step 138/512
+|A2| = 2
+Reward: -0.0093
+Step 139/512
+|A1| = 177
+Reward: 0.3095
+Step 140/512
+|A2| = 5
+Reward: -0.0874
+Step 141/512
+|A1| = 176
+Reward: 0.3093
+Step 142/512
+|A2| = 2
+Reward: -0.0019
+Step 143/512
+|A1| = 175
+Reward: 0.3093
+Step 144/512
+|A2| = 3
+Reward: -0.0122
+Step 145/512
+|A1| = 174
+Reward: 0.3091
+Step 146/512
+|A2| = 14
+Reward: -0.0745
+Step 147/512
+|A1| = 173
+Reward: 0.3080
+Step 148/512
+|A2| = 3
+Reward: -0.0185
+Step 149/512
+|A1| = 172
+Reward: 0.3070
+Step 150/512
+|A2| = 2
+Reward: -0.0394
+Step 151/512
+|A1| = 171
+Reward: 0.3068
+Step 152/512
+|A2| = 2
+Reward: -0.0316
+Step 153/512
+|A1| = 170
+Reward: 0.3056
+Step 154/512
+|A2| = 2
+Reward: -0.0069
+Step 155/512
+|A1| = 169
+Reward: 0.3053
+Step 156/512
+|A2| = 2
+Reward: -0.0414
+Step 157/512
+|A1| = 168
+Reward: 0.3049
+Step 158/512
+|A2| = 4
+Reward: -0.0091
+Step 159/512
+|A1| = 167
+Reward: 0.3045
+Step 160/512
+|A2| = 2
+Reward: -0.0108
+Step 161/512
+|A1| = 166
+Reward: 0.3039
+Step 162/512
+|A2| = 2
+Reward: -0.0331
+Step 163/512
+|A1| = 165
+Reward: 0.3031
+Step 164/512
+|A2| = 5
+Reward: -0.0014
+Step 165/512
+|A1| = 164
+Reward: 0.3025
+Step 166/512
+|A2| = 9
+Reward: -0.0007
+Step 167/512
+|A1| = 163
+Reward: 0.3009
+Step 168/512
+|A2| = 3
+Reward: -0.1132
+Step 169/512
+|A1| = 162
+Reward: 0.2994
+Step 170/512
+|A2| = 7
+Reward: -0.1188
+Step 171/512
+|A1| = 161
+Reward: 0.2991
+Step 172/512
+|A2| = 3
+Reward: -0.0305
+Step 173/512
+|A1| = 161
+Reward: 0.2986
+Step 174/512
+|A2| = 2
+Reward: -0.0166
+Step 175/512
+|A1| = 160
+Reward: 0.2984
+Step 176/512
+|A2| = 2
+Reward: -0.0618
+Step 177/512
+|A1| = 160
+Reward: 0.2973
+Step 178/512
+|A2| = 4
+Reward: -0.0054
+Step 179/512
+|A1| = 159
+Reward: 0.2951
+Step 180/512
+|A2| = 3
+Reward: -0.0109
+Step 181/512
+|A1| = 158
+Reward: 0.2945
+Step 182/512
+|A2| = 2
+Reward: -0.0867
+Step 183/512
+|A1| = 157
+Reward: 0.2943
+Step 184/512
+|A2| = 9
+Reward: -0.1558
+Step 185/512
+|A1| = 156
+Reward: 0.2940
+Step 186/512
+|A2| = 2
+Reward: -0.0223
+Step 187/512
+|A1| = 155
+Reward: 0.2935
+Step 188/512
+|A2| = 1
+Reward: -0.2935
+Step 189/512
+|A1| = 154
+Reward: 0.2935
+Step 190/512
+|A2| = 2
+Reward: -0.0104
+Step 191/512
+|A1| = 153
+Reward: 0.2934
+Step 192/512
+|A2| = 4
+Reward: -0.0804
+Step 193/512
+|A1| = 152
+Reward: 0.2929
+Step 194/512
+|A2| = 5
+Reward: -0.0186
+Step 195/512
+|A1| = 152
+Reward: 0.2913
+Step 196/512
+|A2| = 2
+Reward: -0.2153
+Step 197/512
+|A1| = 151
+Reward: 0.2904
+Step 198/512
+|A2| = 2
+Reward: -0.0937
+Step 199/512
+|A1| = 150
+Reward: 0.2889
+Step 200/512
+|A2| = 4
+Reward: -0.0088
+Step 201/512
+|A1| = 149
+Reward: 0.2889
+Step 202/512
+|A2| = 3
+Reward: -0.0801
+Step 203/512
+|A1| = 148
+Reward: 0.2888
+Step 204/512
+|A2| = 5
+Reward: -0.0198
+Step 205/512
+|A1| = 147
+Reward: 0.2884
+Step 206/512
+|A2| = 5
+Reward: -0.0991
+Step 207/512
+|A1| = 146
+Reward: 0.2878
+Step 208/512
+|A2| = 5
+Reward: -0.0486
+Step 209/512
+|A1| = 145
+Reward: 0.2863
+Step 210/512
+|A2| = 15
+Reward: -0.0001
+Step 211/512
+|A1| = 144
+Reward: 0.2858
+Step 212/512
+|A2| = 6
+Reward: -0.0282
+Step 213/512
+|A1| = 143
+Reward: 0.2853
+Step 214/512
+|A2| = 5
+Reward: -0.0367
+Step 215/512
+|A1| = 142
+Reward: 0.2852
+Step 216/512
+|A2| = 1
+Reward: -0.2852
+Step 217/512
+|A1| = 141
+Reward: 0.2851
+Step 218/512
+|A2| = 2
+Reward: -0.0459
+Step 219/512
+|A1| = 140
+Reward: 0.2849
+Step 220/512
+|A2| = 14
+Reward: -0.1095
+Step 221/512
+|A1| = 139
+Reward: 0.2844
+Step 222/512
+|A2| = 4
+Reward: -0.0021
+Step 223/512
+|A1| = 138
+Reward: 0.2841
+Step 224/512
+|A2| = 1
+Reward: -0.2841
+Step 225/512
+|A1| = 137
+Reward: 0.2831
+Step 226/512
+|A2| = 8
+Reward: -0.0002
+Step 227/512
+|A1| = 136
+Reward: 0.2829
+Step 228/512
+|A2| = 2
+Reward: -0.0204
+Step 229/512
+|A1| = 135
+Reward: 0.2826
+Step 230/512
+|A2| = 2
+Reward: -0.0550
+Step 231/512
+|A1| = 134
+Reward: 0.2822
+Step 232/512
+|A2| = 3
+Reward: -0.0022
+Step 233/512
+|A1| = 134
+Reward: 0.2795
+Step 234/512
+|A2| = 9
+Reward: -0.0920
+Step 235/512
+|A1| = 133
+Reward: 0.2792
+Step 236/512
+|A2| = 6
+Reward: -0.0466
+Step 237/512
+|A1| = 132
+Reward: 0.2789
+Step 238/512
+|A2| = 4
+Reward: -0.1319
+Step 239/512
+|A1| = 131
+Reward: 0.2787
+Step 240/512
+|A2| = 3
+Reward: -0.0105
+Step 241/512
+|A1| = 131
+Reward: 0.2785
+Step 242/512
+|A2| = 2
+Reward: -0.0204
+Step 243/512
+|A1| = 130
+Reward: 0.2782
+Step 244/512
+|A2| = 4
+Reward: -0.1697
+Step 245/512
+|A1| = 129
+Reward: 0.2780
+Step 246/512
+|A2| = 3
+Reward: -0.0754
+Step 247/512
+|A1| = 128
+Reward: 0.2756
+Step 248/512
+|A2| = 5
+Reward: -0.0284
+Step 249/512
+|A1| = 127
+Reward: 0.2754
+Step 250/512
+|A2| = 2
+Reward: -0.1576
+Step 251/512
+|A1| = 126
+Reward: 0.2747
+Step 252/512
+|A2| = 4
+Reward: -0.0783
+Step 253/512
+|A1| = 125
+Reward: 0.2733
+Step 254/512
+|A2| = 5
+Reward: -0.1180
+Step 255/512
+|A1| = 124
+Reward: 0.2725
+Step 256/512
+|A2| = 4
+Reward: -0.0695
+Step 257/512
+|A1| = 123
+Reward: 0.2721
+Step 258/512
+|A2| = 5
+Reward: -0.0893
+Step 259/512
+|A1| = 122
+Reward: 0.2720
+Step 260/512
+|A2| = 3
+Reward: -0.2020
+Step 261/512
+|A1| = 121
+Reward: 0.2720
+Step 262/512
+|A2| = 3
+Reward: -0.0393
+Step 263/512
+|A1| = 120
+Reward: 0.2719
+Step 264/512
+|A2| = 3
+Reward: -0.0224
+Step 265/512
+|A1| = 119
+Reward: 0.2710
+Step 266/512
+|A2| = 12
+Reward: -0.0784
+Step 267/512
+|A1| = 118
+Reward: 0.2709
+Step 268/512
+|A2| = 2
+Reward: -0.2250
+Step 269/512
+|A1| = 117
+Reward: 0.2702
+Step 270/512
+|A2| = 4
+Reward: -0.1685
+Step 271/512
+|A1| = 116
+Reward: 0.2698
+Step 272/512
+|A2| = 2
+Reward: -0.0073
+Step 273/512
+|A1| = 117
+Reward: 0.2688
+Step 274/512
+|A2| = 12
+Reward: -0.0498
+Step 275/512
+|A1| = 116
+Reward: 0.2679
+Step 276/512
+|A2| = 10
+Reward: -0.0686
+Step 277/512
+|A1| = 115
+Reward: 0.2668
+Step 278/512
+|A2| = 7
+Reward: -0.0249
+Step 279/512
+|A1| = 114
+Reward: 0.2664
+Step 280/512
+|A2| = 2
+Reward: -0.0775
+Step 281/512
+|A1| = 113
+Reward: 0.2662
+Step 282/512
+|A2| = 6
+Reward: -0.0903
+Step 283/512
+|A1| = 112
+Reward: 0.2658
+Step 284/512
+|A2| = 12
+Reward: -0.0906
+Step 285/512
+|A1| = 111
+Reward: 0.2657
+Step 286/512
+|A2| = 3
+Reward: -0.0924
+Step 287/512
+|A1| = 110
+Reward: 0.2652
+Step 288/512
+|A2| = 7
+Reward: -0.1058
+Step 289/512
+|A1| = 109
+Reward: 0.2644
+Step 290/512
+|A2| = 10
+Reward: -0.0499
+Step 291/512
+|A1| = 108
+Reward: 0.2640
+Step 292/512
+|A2| = 2
+Reward: -0.0367
+Step 293/512
+|A1| = 107
+Reward: 0.2634
+Step 294/512
+|A2| = 10
+Reward: -0.1000
+Step 295/512
+|A1| = 106
+Reward: 0.2633
+Step 296/512
+|A2| = 3
+Reward: -0.0253
+Step 297/512
+|A1| = 105
+Reward: 0.2626
+Step 298/512
+|A2| = 6
+Reward: -0.0745
+Step 299/512
+|A1| = 104
+Reward: 0.2624
+Step 300/512
+|A2| = 3
+Reward: -0.0119
+Step 301/512
+|A1| = 103
+Reward: 0.2611
+Step 302/512
+|A2| = 1
+Reward: -0.2611
+Step 303/512
+|A1| = 102
+Reward: 0.2608
+Step 304/512
+|A2| = 3
+Reward: -0.0607
+Step 305/512
+|A1| = 101
+Reward: 0.2606
+Step 306/512
+|A2| = 3
+Reward: -0.0930
+Step 307/512
+|A1| = 100
+Reward: 0.2592
+Step 308/512
+|A2| = 2
+Reward: -0.0023
+Step 309/512
+|A1| = 100
+Reward: 0.2587
+Step 310/512
+|A2| = 27
+Reward: -0.0730
+Step 311/512
+|A1| = 99
+Reward: 0.2587
+Step 312/512
+|A2| = 18
+Reward: -0.0764
+Step 313/512
+|A1| = 98
+Reward: 0.2573
+Step 314/512
+|A2| = 2
+Reward: -0.0007
+Step 315/512
+|A1| = 99
+Reward: 0.2562
+Step 316/512
+|A2| = 3
+Reward: -0.0221
+Step 317/512
+|A1| = 98
+Reward: 0.2557
+Step 318/512
+|A2| = 13
+Reward: -0.0685
+Step 319/512
+|A1| = 97
+Reward: 0.2548
+Step 320/512
+|A2| = 18
+Reward: -0.1202
+Step 321/512
+|A1| = 96
+Reward: 0.2548
+Step 322/512
+|A2| = 5
+Reward: -0.0744
+Step 323/512
+|A1| = 95
+Reward: 0.2532
+Step 324/512
+|A2| = 3
+Reward: -0.0324
+Step 325/512
+|A1| = 94
+Reward: 0.2532
+Step 326/512
+|A2| = 3
+Reward: -0.0216
+Step 327/512
+|A1| = 94
+Reward: 0.2527
+Step 328/512
+|A2| = 33
+Reward: -0.0462
+Step 329/512
+|A1| = 93
+Reward: 0.2518
+Step 330/512
+|A2| = 4
+Reward: -0.0590
+Step 331/512
+|A1| = 92
+Reward: 0.2505
+Step 332/512
+|A2| = 2
+Reward: -0.0378
+Step 333/512
+|A1| = 91
+Reward: 0.2503
+Step 334/512
+|A2| = 5
+Reward: -0.0531
+Step 335/512
+|A1| = 90
+Reward: 0.2502
+Step 336/512
+|A2| = 7
+Reward: -0.0351
+Step 337/512
+|A1| = 89
+Reward: 0.2496
+Step 338/512
+|A2| = 20
+Reward: -0.0449
+Step 339/512
+|A1| = 88
+Reward: 0.2486
+Step 340/512
+|A2| = 2
+Reward: -0.0155
+Step 341/512
+|A1| = 87
+Reward: 0.2486
+Step 342/512
+|A2| = 2
+Reward: -0.0071
+Step 343/512
+|A1| = 86
+Reward: 0.2473
+Step 344/512
+|A2| = 18
+Reward: -0.0631
+Step 345/512
+|A1| = 85
+Reward: 0.2440
+Step 346/512
+|A2| = 4
+Reward: -0.0946
+Step 347/512
+|A1| = 84
+Reward: 0.2434
+Step 348/512
+|A2| = 2
+Reward: -0.1201
+Step 349/512
+|A1| = 83
+Reward: 0.2433
+Step 350/512
+|A2| = 5
+Reward: -0.0630
+Step 351/512
+|A1| = 82
+Reward: 0.2430
+Step 352/512
+|A2| = 28
+Reward: -0.1032
+Step 353/512
+|A1| = 81
+Reward: 0.2429
+Step 354/512
+|A2| = 4
+Reward: -0.1002
+Step 355/512
+|A1| = 82
+Reward: 0.3510
+Step 356/512
+|A2| = 2
+Reward: -0.2362
+Step 357/512
+|A1| = 81
+Reward: 0.2426
+Step 358/512
+|A2| = 2
+Reward: -0.0261
+Step 359/512
+|A1| = 80
+Reward: 0.2414
+Step 360/512
+|A2| = 5
+Reward: -0.0419
+Step 361/512
+|A1| = 79
+Reward: 0.2429
+Step 362/512
+|A2| = 2
+Reward: -0.0026
+Step 363/512
+|A1| = 78
+Reward: 0.2413
+Step 364/512
+|A2| = 10
+Reward: -0.0692
+Step 365/512
+|A1| = 77
+Reward: 0.2410
+Step 366/512
+|A2| = 2
+Reward: -0.0160
+Step 367/512
+|A1| = 78
+Reward: 0.2406
+Step 368/512
+|A2| = 6
+Reward: -0.0235
+Step 369/512
+|A1| = 77
+Reward: 0.2398
+Step 370/512
+|A2| = 7
+Reward: -0.0894
+Step 371/512
+|A1| = 76
+Reward: 0.2387
+Step 372/512
+|A2| = 9
+Reward: -0.1159
+Step 373/512
+|A1| = 75
+Reward: 0.2386
+Step 374/512
+|A2| = 26
+Reward: -0.1333
+Step 375/512
+|A1| = 74
+Reward: 0.2382
+Step 376/512
+|A2| = 3
+Reward: -0.1363
+Step 377/512
+|A1| = 73
+Reward: 0.2376
+Step 378/512
+|A2| = 29
+Reward: -0.1047
+Step 379/512
+|A1| = 72
+Reward: 0.2366
+Step 380/512
+|A2| = 5
+Reward: -0.0293
+Step 381/512
+|A1| = 71
+Reward: 0.2364
+Step 382/512
+|A2| = 29
+Reward: -0.0671
+Step 383/512
+|A1| = 70
+Reward: 0.2357
+Step 384/512
+|A2| = 4
+Reward: -0.0579
+Step 385/512
+|A1| = 69
+Reward: 0.2354
+Step 386/512
+|A2| = 15
+Reward: -0.0986
+Step 387/512
+|A1| = 68
+Reward: 0.2343
+Step 388/512
+|A2| = 4
+Reward: -0.0092
+Step 389/512
+|A1| = 67
+Reward: 0.2343
+Step 390/512
+|A2| = 8
+Reward: -0.0878
+Step 391/512
+|A1| = 66
+Reward: 0.2342
+Step 392/512
+|A2| = 3
+Reward: -0.0578
+Step 393/512
+|A1| = 65
+Reward: 0.2338
+Step 394/512
+|A2| = 7
+Reward: -0.1122
+Step 395/512
+|A1| = 64
+Reward: 0.2337
+Step 396/512
+|A2| = 3
+Reward: -0.0169
+Step 397/512
+|A1| = 63
+Reward: 0.2332
+Step 398/512
+|A2| = 3
+Reward: -0.0980
+Step 399/512
+|A1| = 62
+Reward: 0.2315
+Step 400/512
+|A2| = 8
+Reward: -0.0870
+Step 401/512
+|A1| = 61
+Reward: 0.2302
+Step 402/512
+|A2| = 6
+Reward: -0.0436
+Step 403/512
+|A1| = 60
+Reward: 0.2298
+Step 404/512
+|A2| = 1
+Reward: -0.2298
+Step 405/512
+|A1| = 59
+Reward: 0.2291
+Step 406/512
+|A2| = 1
+Reward: -0.2291
+Step 407/512
+|A1| = 58
+Reward: 0.2279
+Step 408/512
+|A2| = 12
+Reward: -0.1201
+Step 409/512
+|A1| = 57
+Reward: 0.2266
+Step 410/512
+|A2| = 2
+Reward: -0.0772
+Step 411/512
+|A1| = 56
+Reward: 0.2257
+Step 412/512
+|A2| = 1
+Reward: -0.2257
+Step 413/512
+|A1| = 55
+Reward: 0.2254
+Step 414/512
+|A2| = 7
+Reward: -0.0774
+Step 415/512
+|A1| = 54
+Reward: 0.2242
+Step 416/512
+|A2| = 4
+Reward: -0.0626
+Step 417/512
+|A1| = 53
+Reward: 0.2225
+Step 418/512
+|A2| = 1
+Reward: -0.2225
+Step 419/512
+|A1| = 52
+Reward: 0.2218
+Step 420/512
+|A2| = 1
+Reward: -0.2218
+Step 421/512
+|A1| = 51
+Reward: 0.2208
+Step 422/512
+|A2| = 3
+Reward: -0.0876
+Step 423/512
+|A1| = 50
+Reward: 0.2207
+Step 424/512
+|A2| = 1
+Reward: -0.2207
+Step 425/512
+|A1| = 49
+Reward: 0.2204
+Step 426/512
+|A2| = 11
+Reward: -0.0593
+Step 427/512
+|A1| = 48
+Reward: 0.2204
+Step 428/512
+|A2| = 1
+Reward: -0.2204
+Step 429/512
+|A1| = 47
+Reward: 0.2195
+Step 430/512
+|A2| = 1
+Reward: -0.2195
+Step 431/512
+|A1| = 46
+Reward: 0.2187
+Step 432/512
+|A2| = 6
+Reward: -0.0675
+Step 433/512
+|A1| = 45
+Reward: 0.2184
+Step 434/512
+|A2| = 7
+Reward: -0.0978
+Step 435/512
+|A1| = 44
+Reward: 0.2169
+Step 436/512
+|A2| = 1
+Reward: -0.2169
+Step 437/512
+|A1| = 43
+Reward: 0.2156
+Step 438/512
+|A2| = 2
+Reward: -0.0813
+Step 439/512
+|A1| = 42
+Reward: 0.2155
+Step 440/512
+|A2| = 14
+Reward: -0.1073
+Step 441/512
+|A1| = 41
+Reward: 0.2142
+Step 442/512
+|A2| = 6
+Reward: -0.1213
+Step 443/512
+|A1| = 40
+Reward: 0.2133
+Step 444/512
+|A2| = 10
+Reward: -0.0890
+Step 445/512
+|A1| = 39
+Reward: 0.2130
+Step 446/512
+|A2| = 2
+Reward: -0.0052
+Step 447/512
+|A1| = 38
+Reward: 0.2125
+Step 448/512
+|A2| = 6
+Reward: -0.1042
+Step 449/512
+|A1| = 37
+Reward: 0.2121
+Step 450/512
+|A2| = 30
+Reward: -0.0495
+Step 451/512
+|A1| = 36
+Reward: 0.2118
+Step 452/512
+|A2| = 5
+Reward: -0.1018
+Step 453/512
+|A1| = 35
+Reward: 0.2103
+Step 454/512
+|A2| = 27
+Reward: -0.0343
+Step 455/512
+|A1| = 34
+Reward: 0.2089
+Step 456/512
+|A2| = 2
+Reward: -0.0253
+Step 457/512
+|A1| = 33
+Reward: 0.2076
+Step 458/512
+|A2| = 4
+Reward: -0.0591
+Step 459/512
+|A1| = 32
+Reward: 0.2072
+Step 460/512
+|A2| = 20
+Reward: -0.0519
+Step 461/512
+|A1| = 31
+Reward: 0.2072
+Step 462/512
+|A2| = 3
+Reward: -0.0841
+Step 463/512
+|A1| = 30
+Reward: 0.2053
+Step 464/512
+|A2| = 9
+Reward: -0.0718
+Step 465/512
+|A1| = 29
+Reward: 0.2008
+Step 466/512
+|A2| = 2
+Reward: -0.0738
+Step 467/512
+|A1| = 28
+Reward: 0.2000
+Step 468/512
+|A2| = 28
+Reward: -0.0774
+Step 469/512
+|A1| = 27
+Reward: 0.1995
+Step 470/512
+|A2| = 1
+Reward: -0.1995
+Step 471/512
+|A1| = 26
+Reward: 0.1989
+Step 472/512
+|A2| = 9
+Reward: -0.0991
+Step 473/512
+|A1| = 25
+Reward: 0.1970
+Step 474/512
+|A2| = 5
+Reward: -0.0847
+Step 475/512
+|A1| = 24
+Reward: 0.1969
+Step 476/512
+|A2| = 11
+Reward: -0.0313
+Step 477/512
+|A1| = 23
+Reward: 0.1968
+Step 478/512
+|A2| = 1
+Reward: -0.1968
+Step 479/512
+|A1| = 22
+Reward: 0.1959
+Step 480/512
+|A2| = 28
+Reward: -0.0601
+Step 481/512
+|A1| = 21
+Reward: 0.1958
+Step 482/512
+|A2| = 8
+Reward: -0.0608
+Step 483/512
+|A1| = 20
+Reward: 0.1956
+Step 484/512
+|A2| = 30
+Reward: -0.0396
+Step 485/512
+|A1| = 19
+Reward: 0.1917
+Step 486/512
+|A2| = 2
+Reward: -0.0195
+Step 487/512
+|A1| = 19
+Reward: 0.3216
+Step 488/512
+|A2| = 6
+Reward: -0.0441
+Step 489/512
+|A1| = 18
+Reward: 0.2039
+Step 490/512
+|A2| = 3
+Reward: -0.0228
+Step 491/512
+|A1| = 17
+Reward: 0.1912
+Step 492/512
+|A2| = 22
+Reward: -0.0809
+Step 493/512
+|A1| = 16
+Reward: 0.1886
+Step 494/512
+|A2| = 10
+Reward: -0.0544
+Step 495/512
+|A1| = 15
+Reward: 0.1885
+Step 496/512
+|A2| = 11
+Reward: -0.1093
+Step 497/512
+|A1| = 14
+Reward: 0.1883
+Step 498/512
+|A2| = 1
+Reward: -0.1883
+Step 499/512
+|A1| = 13
+Reward: 0.1869
+Step 500/512
+|A2| = 1
+Reward: -0.1869
+Step 501/512
+|A1| = 12
+Reward: 0.1834
+Step 502/512
+|A2| = 1
+Reward: -0.1834
+Step 503/512
+|A1| = 11
+Reward: 0.1833
+Step 504/512
+|A2| = 27
+Reward: -0.0395
+Step 505/512
+|A1| = 10
+Reward: 0.1826
+Step 506/512
+|A2| = 1
+Reward: -0.1826
+Step 507/512
+|A1| = 9
+Reward: 0.1810
+Step 508/512
+|A2| = 15
+Reward: -0.0785
+Step 509/512
+|A1| = 8
+Reward: 0.1762
+Step 510/512
+|A2| = 20
+Reward: -0.0519
+Step 511/512
+|A1| = 7
+Reward: 0.1757
+Step 512/512
+|A2| = 1
+Reward: -0.1757
+Total reward: 51.2644
+0.0000 cm-1 agree with human 0.0000 cm-1 and human label !!! (id 0 0.0271 4f4.(5I).6s 6I 3.5)
+0.0000 cm-1 from initial state at 0.0000 cm-1 (id 0 0.0271 4f4.(5I).6s 6I 3.5)
+513.3315 cm-1 agree with human 513.3300 cm-1 and human label !!! (id 1 0.5251 4f4.(5I).6s 6I 4.5)
+513.3315 cm-1 from initial state at 513.3300 cm-1 (id 1 0.5251 4f4.(5I).6s 6I 4.5)
+1470.1065 cm-1 agree with human 1470.1050 cm-1 and human label !!! (id 2 1.4636 4f4.(5I).6s 6I 5.5)
+1470.1065 cm-1 from initial state at 1470.1050 cm-1 (id 2 1.4636 4f4.(5I).6s 6I 5.5)
+1650.2064 cm-1 agree with human 1650.2050 cm-1 and human label !!! (id 3 1.6564 4f4.(5I).6s 4I 4.5)
+1650.2064 cm-1 from initial state at 1650.2050 cm-1 (id 3 1.6564 4f4.(5I).6s 4I 4.5)
+2585.4607 cm-1 agree with human 2585.4600 cm-1 and human label !!! (id 4 2.5646 4f4.(5I).6s 6I 6.5)
+2585.4607 cm-1 from initial state at 2585.4600 cm-1 (id 4 2.5646 4f4.(5I).6s 6I 6.5)
+3066.7535 cm-1 agree with human 3066.7550 cm-1 and human label !!! (id 5 3.0593 4f4.(5I).6s 4I 5.5)
+3801.9287 cm-1 agree with human 3801.9250 cm-1 and human label !!! (id 6 3.7701 4f4.(5I).6s 6I 7.5)
+3801.9287 cm-1 from initial state at 3801.9250 cm-1 (id 6 3.7701 4f4.(5I).6s 6I 7.5)
+4437.5399 cm-1 agree with human 4437.5600 cm-1 and human label !!! (id 7 4.4939 4f4.(5I).5d 6L 5.5)
+4512.4907 cm-1 agree with human 4512.4950 cm-1 and human label !!! (id 8 4.4962 4f4.(5I).6s 4I 6.5)
+5085.6317 cm-1 agree with human 5085.6350 cm-1 and human label !!! (id 9 5.0444 4f4.(5I).6s 6I 8.5)
+5085.6317 cm-1 from initial state at 5085.6350 cm-1 (id 9 5.0444 4f4.(5I).6s 6I 8.5)
+5487.6368 cm-1 agree with human 5487.6550 cm-1 and human label !!! (id 10 5.5254 4f4.(5I).5d 6L 6.5)
+5985.5805 cm-1 agree with human 5985.5800 cm-1 and human label !!! (id 11 5.9622 4f4.(5I).6s 4I 7.5)
+6005.2566 cm-1 agree with human 6005.2700 cm-1 and human label !!! (id 12 5.9964 4f4.(5I).5d 6K 4.5)
+6637.4160 cm-1 agree with human 6637.4300 cm-1 and human label !!! (id 13 6.6567 4f4.(5I).5d 6L 7.5)
+6931.7885 cm-1 agree with human 6931.8000 cm-1 and human label !!! (id 14 6.9194 4f4.(5I).5d 6K 5.5)
+7631.2793 cm-1 not found by humans... (id 15 7.5487 4f4.(5I).5d 6I 3.5)
+7868.8993 cm-1 agree with human 7868.9100 cm-1 and human label !!! (id 16 7.8701 4f4.(5I).5d 6L 8.5)
+7950.0687 cm-1 agree with human 7950.0700 cm-1 and human label !!! (id 17 7.9331 4f4.(5I).5d 6K 6.5)
+8420.3070 cm-1 agree with human 8420.3200 cm-1 and human label !!! (id 18 8.4333 4f4.(5I).5d 6I 4.5)
+8573.9663 cm-1 not found by humans... (id 20 8.7855 4f4.(5I).5d 6G 2.5)
+9042.7430 cm-1 agree with human 9042.7550 cm-1 and human label !!! (id 21 9.0184 4f4.(5I).5d 6K 7.5)
+9166.1925 cm-1 agree with human 9166.2100 cm-1 and human label !!! (id 22 9.1498 4f4.(5I).5d 6L 9.5)
+9357.8981 cm-1 agree with human 9357.9100 cm-1 and human label !!! (id 24 9.3673 4f4.(5I).5d 6I 5.5)
+10194.7874 cm-1 agree with human 10194.8050 cm-1 and human label !!! (id 27 10.1590 4f4.(5I).5d 6K 8.5)
+10337.0835 cm-1 agree with human 10337.1000 cm-1 and human label !!! (id 29 10.3409 4f4.(5I).5d 6I 6.5)
+10580.8886 cm-1 not found by humans... (id 32 10.7005 4f4.(5I).5d 6H 3.5)
+10670.6680 cm-1 not found by humans... (id 34 10.8680 4f4.(5I).5d 6G 4.5)
+11095.3596 cm-1 not found by humans... (id 35 10.9111 4f4.(5I).5d 6G 5.5)
+11392.1628 cm-1 agree with human 11392.1900 cm-1 and human label !!! (id 36 11.3398 4f4.(5I).5d 6K 9.5)
+11373.4618 cm-1 agree with human 11373.4750 cm-1 and human label !!! (id 38 11.3684 4f4.(5I).5d 6I 7.5)
+11580.8423 cm-1 agree with human 11580.8550 cm-1 and human label !!! (id 40 11.6383 4f4.(5I).5d 4L 6.5)
+11709.6026 cm-1 agree with human 11709.6100 cm-1 and human label !!! (id 41 11.7486 4f4.(5I).5d 6H 4.5)
+12021.3367 cm-1 agree with human 12021.3400 cm-1 and human label !!! (id 42 11.9962 4f4.(5I).5d 6G 5.5)
+12334.2146 cm-1 agree with human 12334.2300 cm-1 and human label !!! (id 46 12.2593 4f4.(5I).5d 6G 6.5)
+12276.1947 cm-1 agree with human 12276.2150 cm-1 and human label !!! (id 47 12.3626 4f4.(5I).5d 4K 5.5)
+12459.9707 cm-1 agree with human 12459.9950 cm-1 and human label !!! (id 48 12.4437 4f4.(5I).5d 6I 8.5)
+12906.5531 cm-1 agree with human 12906.5650 cm-1 and human label !!! (id 51 12.9141 4f4.(5I).5d 4L 7.5)
+12887.0610 cm-1 agree with human 12887.0850 cm-1 and human label !!! (id 52 12.9278 4f4.(5I).5d 6H 5.5)
+13298.8616 cm-1 agree with human 13298.8800 cm-1 and human label !!! (id 53 13.2615 4f4.(5I).5d 6H 6.5)
+14301.7853 cm-1 agree with human 14301.8050 cm-1 and human label !!! (id 58 14.2631 4f4.(5I).5d 4L 8.5)
+14259.3602 cm-1 agree with human 14259.3800 cm-1 and human label !!! (id 59 14.2863 4f4.(5I).5d 4H 6.5)
+14481.9542 cm-1 agree with human 14481.9650 cm-1 and human label !!! (id 60 14.4826 4f4.(5I).5d 6H 7.5)
+14957.5993 cm-1 agree with human 14957.6150 cm-1 and human label !!! (id 62 15.0113 4f4.(5I).5d 4K 7.5)
+15749.1895 cm-1 agree with human 15749.2150 cm-1 and human label !!! (id 64 15.6635 4f4.(5I).5d 4L 9.5)
+15923.2468 cm-1 agree with human 15923.2600 cm-1 and human label !!! (id 66 15.9198 4f4.(5I).5d 4I 6.5)
+17001.5065 cm-1 agree with human 17001.5250 cm-1 and human label !!! (id 72 16.9793 4f4.(5I).5d 4I 7.5)
+20672.5572 cm-1 agree with human 20672.5750 cm-1 and human label !!! (id 102 20.6825 4f3.(4I*).5d2.(1G) 4I* 4.5)
+20907.3053 cm-1 agree with human 20907.3200 cm-1 and human label !!! (id 103 20.8693 4f3.(4I*).5d2.(1G) 4K* 5.5)
+20830.0144 cm-1 agree with human 20830.0300 cm-1 and human label !!! (id 104 20.9456 4f3.(4I*).5d2.(3P) 4H* 3.5)
+22187.6331 cm-1 agree with human 22187.6450 cm-1 !!! (id 110 21.9677 4f3.(4I*).5d2.(3P) 4H* 4.5)
+22358.0500 cm-1 agree with human 22358.0650 cm-1 !!! (id 112 22.4135 4f3.(4I*).5d2.(3F) 4F* 4.5)
+22389.8258 cm-1 agree with human 22389.8400 cm-1 and human label !!! (id 113 22.4321 4f3.(4I*).5d2.(1G) 4H* 3.5)
+22696.8557 cm-1 agree with human 22696.8700 cm-1 and human label !!! (id 115 22.6432 4f3.(4I*).5d2.(1G) 4I* 5.5)
+22663.6945 cm-1 agree with human 22663.7100 cm-1 and human label !!! (id 116 22.6990 4f3.(4F*).5d2.(3F) 6I* 4.5)
+22850.5316 cm-1 agree with human 22850.5450 cm-1 and human label !!! (id 117 22.8975 4f3.(4I*).5d2.(1G) 4H* 3.5)
+23229.9667 cm-1 agree with human 23229.9800 cm-1 and human label !!! (id 120 23.1930 4f4.(5I).6p 6K* 4.5)
+23229.9667 cm-1 from initial state at 23229.9800 cm-1 (id 120 23.1930 4f4.(5I).6p 6K* 4.5)
+23409.5048 cm-1 agree with human 23409.5200 cm-1 !!! (id 122 23.2177 4f3.(4I*).5d.(2D).(3G*).6s 2G* 4.5)
+23397.3518 cm-1 agree with human 23397.3650 cm-1 and human label !!! (id 123 23.3876 4f3.(4I*).5d2.(3P) 4H* 3.5)
+23537.3676 cm-1 agree with human 23537.3800 cm-1 !!! (id 124 23.4045 4f3.(4I*).5d2.(3F) 2G* 4.5)
+23534.0133 cm-1 not found by humans... (id 126 23.4568 4f3.(4F*).5d2.(3F) 6I* 5.5)
+23737.4564 cm-1 agree with human 23737.4650 cm-1 !!! (id 128 23.5145 4f3.(4I*).5d2.(1G) 4K* 7.5)
+23802.1786 cm-1 agree with human 23802.1950 cm-1 and human label !!! (id 130 23.8186 4f3.(4I*).5d2.(3F) 2I* 6.5)
+23857.2478 cm-1 agree with human 23857.2550 cm-1 and human label !!! (id 131 23.8482 4f3.(4I*).5d2.(3P) 4H* 5.5)
+23991.3901 cm-1 agree with human 23991.4050 cm-1 and human label !!! (id 132 23.9210 4f3.(4I*).5d2.(1G) 4I* 6.5)
+24053.3274 cm-1 agree with human 24053.3400 cm-1 and human label !!! (id 134 24.0787 4f3.(4I*).5d2.(3P) 4I* 4.5)
+24134.0646 cm-1 agree with human 24134.0800 cm-1 and human label !!! (id 135 24.1651 4f4.(5I).6p 6K* 5.5)
+24243.2064 cm-1 agree with human 24243.2200 cm-1 and human label !!! (id 136 24.2683 4f3.(4F*).5d.(2D).(5H*).6s 6H* 6.5)
+24321.2311 cm-1 agree with human 24321.2450 cm-1 and human label !!! (id 137 24.3206 4f3.(4I*).5d2.(3P) 4I* 4.5)
+24445.3713 cm-1 agree with human 24445.3850 cm-1 and human label !!! (id 138 24.3884 4f4.(5I).6p 6K* 5.5)
+24445.3713 cm-1 from initial state at 24445.3850 cm-1 (id 138 24.3884 4f4.(5I).6p 6K* 5.5)
+24418.6964 cm-1 agree with human 24418.7150 cm-1 and human label !!! (id 139 24.4425 4f3.(4F*).5d2.(3F) 6I* 6.5)
+24547.4482 cm-1 agree with human 24547.4600 cm-1 and human label !!! (id 140 24.5485 4f3.(4I*).5d2.(3F) 2K* 7.5)
+24467.9975 cm-1 agree with human 24468.0200 cm-1 and human label !!! (id 141 24.6183 4f3.(4I*).5d2.(1G) 4G* 3.5)
+24814.9743 cm-1 not found by humans... (id 142 24.6383 4f3.(4F*).5d2.(3F) 6H* 5.5)
+24721.0309 cm-1 agree with human 24721.0450 cm-1 and human label !!! (id 143 24.7416 4f3.(4F*).5d2.(3F) 6I* 6.5)
+24842.8533 cm-1 agree with human 24842.8650 cm-1 and human label !!! (id 145 24.8055 4f3.(4F*).5d.(2D).(5H*).6s 4H* 5.5)
+24642.2732 cm-1 not found by humans... (id 146 24.8074 4f3.(2H2*).5d.(2D).(3I*).6s 4I* 4.5)
+24901.4723 cm-1 not found by humans... (id 148 24.9760 4f3.(4F*).5d2.(3F) 6H* 5.5)
+25138.5256 cm-1 agree with human 25138.5400 cm-1 !!! (id 149 25.0259 4f4.(5I).6p 6I* 3.5)
+25014.8964 cm-1 agree with human 25014.9100 cm-1 !!! (id 150 25.0768 4f3.(4I*).5d2.(3P) 4I* 5.5)
+25044.6411 cm-1 agree with human 25044.6550 cm-1 !!! (id 151 25.0885 4f3.(4I*).5d2.(1D) 4G* 3.5)
+25200.8926 cm-1 agree with human 25200.9050 cm-1 and human label !!! (id 154 25.1987 4f3.(4F*).5d2.(3F) 6H* 5.5)
+25295.2605 cm-1 agree with human 25295.2700 cm-1 and human label !!! (id 157 25.3025 4f4.(5I).6p 6I* 3.5)
+25353.6138 cm-1 agree with human 25353.6300 cm-1 and human label !!! (id 159 25.3669 4f3.(4F*).5d2.(3F) 6I* 7.5)
+25389.1937 cm-1 agree with human 25389.2050 cm-1 and human label !!! (id 160 25.3764 4f3.(4F*).5d.(2D).(5G*).6s 6G* 4.5)
+25519.0530 cm-1 agree with human 25519.0700 cm-1 !!! (id 161 25.3800 4f3.(4S*).5d2.(3F) 6F* 5.5)
+25352.3550 cm-1 agree with human 25352.3650 cm-1 !!! (id 162 25.4528 4f3.(4I*).5d2.(1D) 4H* 5.5)
+25481.2539 cm-1 agree with human 25481.2650 cm-1 !!! (id 163 25.5080 4f3.(4S*).5d2.(3F) 6F* 5.5)
+25524.4642 cm-1 agree with human 25524.4800 cm-1 and human label !!! (id 164 25.5432 4f4.(5I).6p 6K* 6.5)
+25524.4642 cm-1 from initial state at 25524.4800 cm-1 (id 164 25.5432 4f4.(5I).6p 6K* 6.5)
+25771.4964 cm-1 agree with human 25771.5100 cm-1 !!! (id 167 25.7418 4f4.(5I).6p 6I* 4.5)
+25649.3225 cm-1 not found by humans... (id 168 25.7863 4f4.(5I).6p 6H* 2.5)
+25877.1452 cm-1 agree with human 25877.1600 cm-1 !!! (id 170 25.8820 4f3.(4F*).5d2.(3F) 6G* 4.5)
+26031.4612 cm-1 agree with human 26031.4750 cm-1 !!! (id 172 25.9749 4f3.(4I*).5d2.(1G) 4I* 7.5)
+26210.7280 cm-1 agree with human 26210.7400 cm-1 and human label !!! (id 175 26.1218 4f4.(5I).6p 6K* 6.5)
+26274.0723 cm-1 agree with human 26274.0850 cm-1 !!! (id 177 26.1758 4f4.(5I).6p 4K* 5.5)
+26108.3128 cm-1 agree with human 26108.3350 cm-1 and human label !!! (id 178 26.1798 4f4.(5I).6p 6I* 4.5)
+26206.7920 cm-1 agree with human 26206.8050 cm-1 and human label !!! (id 179 26.1962 4f4.(5I).6p 6H* 3.5)
+26227.0682 cm-1 agree with human 26227.0850 cm-1 !!! (id 181 26.2508 4f3.(4F*).5d.(2D).(5G*).6s 6G* 5.5)
+26455.1748 cm-1 agree with human 26455.1900 cm-1 !!! (id 183 26.3586 4f3.(4F*).5d.(2D).(5G*).6s 4G* 4.5)
+26327.9988 cm-1 agree with human 26328.0100 cm-1 and human label !!! (id 184 26.3715 4f3.(4F*).5d2.(3F) 6G* 6.5)
+26422.5284 cm-1 agree with human 26422.5300 cm-1 and human label !!! (id 185 26.4136 4f3.(4F*).5d2.(3F) 6F* 3.5)
+26369.0389 cm-1 agree with human 26369.0500 cm-1 !!! (id 186 26.4439 4f3.(4F*).5d.(2D).(5F*).6s 6F* 3.5)
+26634.8984 cm-1 not found by humans... (id 187 26.4806 4f3.(4F*).5d.(2D).(5G*).6s 6G* 5.5)
+26377.0528 cm-1 not found by humans... (id 189 26.5000 4f3.(4F*).5d.(2D).(5F*).6s 6F* 4.5)
+26489.1327 cm-1 agree with human 26489.1500 cm-1 and human label !!! (id 190 26.5109 4f3.(4F*).5d.(2D).(5H*).6s 4H* 6.5)
+26583.9481 cm-1 agree with human 26583.9750 cm-1 and human label !!! (id 191 26.5927 4f3.(4F*).5d2.(3F) 6I* 8.5)
+26640.0639 cm-1 agree with human 26640.0750 cm-1 and human label !!! (id 192 26.6607 4f4.(5I).6p 6H* 3.5)
+26772.0624 cm-1 agree with human 26772.0800 cm-1 and human label !!! (id 193 26.7139 4f4.(5I).6p 6I* 5.5)
+26761.0824 cm-1 agree with human 26761.1000 cm-1 and human label !!! (id 194 26.7295 4f4.(5I).6p 6I* 5.5)
+26880.6216 cm-1 not found by humans... (id 195 26.7393 4f3.(4F*).5d.(2D).(5G*).6s 4G* 4.5)
+26738.7756 cm-1 agree with human 26738.7900 cm-1 and human label !!! (id 196 26.7418 4f3.(4I*).5d2.(3P) 4I* 6.5)
+26879.8887 cm-1 not found by humans... (id 197 26.8439 4f3.(4I*).5d2.(1G) 4F* 3.5)
+26926.9713 cm-1 agree with human 26926.9800 cm-1 !!! (id 198 26.8449 4f3.(4I*).5d2.(1G) 4G* 4.5)
+26912.7498 cm-1 agree with human 26912.7650 cm-1 and human label !!! (id 199 26.9222 4f4.(5I).6p 6K* 7.5)
+26912.7498 cm-1 from initial state at 26912.7650 cm-1 (id 199 26.9222 4f4.(5I).6p 6K* 7.5)
+27069.9761 cm-1 agree with human 27069.9800 cm-1 !!! (id 201 26.9800 4f3.(4G*).5d2.(3F) 6K* 4.5)
+26991.8706 cm-1 agree with human 26991.8900 cm-1 and human label !!! (id 203 27.0468 4f3.(4F*).5d.(2D).(5F*).6s 6F* 5.5)
+27146.5411 cm-1 agree with human 27146.5550 cm-1 and human label !!! (id 206 27.1252 4f3.(4F*).5d2.(3F) 6G* 6.5)
+26994.3052 cm-1 not found by humans... (id 207 27.1259 4f3.(4F*).5d2.(3F) 6D* 4.5)
+27353.1346 cm-1 not found by humans... (id 208 27.1904 4f3.(4F*).5d.(2D).(5F*).6s 6F* 4.5)
+27245.4171 cm-1 agree with human 27245.4400 cm-1 and human label !!! (id 209 27.2157 4f3.(4G*).5d2.(3F) 6K* 5.5)
+27308.9231 cm-1 agree with human 27308.9350 cm-1 and human label !!! (id 210 27.2547 4f4.(5I).6p 4K* 6.5)
+27233.5100 cm-1 agree with human 27233.5250 cm-1 !!! (id 212 27.2881 4f4.(5I).6p 6H* 4.5)
+27439.5644 cm-1 not found by humans... (id 214 27.3956 4f3.(2H2*).5d.(2D).(3H*).6s 4H* 3.5)
+27352.2716 cm-1 agree with human 27352.2850 cm-1 and human label !!! (id 215 27.4100 4f3.(2H2*).5d2.(3F) 4I* 5.5)
+27445.8463 cm-1 agree with human 27445.8550 cm-1 and human label !!! (id 216 27.4560 4f3.(4I*).5d2.(3P) 2K* 7.5)
+27448.6942 cm-1 agree with human 27448.7050 cm-1 and human label !!! (id 217 27.4654 4f4.(5I).6p 6I* 6.5)
+27424.9848 cm-1 agree with human 27425.0050 cm-1 and human label !!! (id 218 27.4892 4f3.(4S*).5d.(2D).(5D*).6s 6D* 4.5)
+27518.3755 cm-1 agree with human 27518.3800 cm-1 and human label !!! (id 221 27.5962 4f3.(2H2*).5d2.(3F) 4K* 5.5)
+27611.7053 cm-1 agree with human 27611.7250 cm-1 and human label !!! (id 224 27.6527 4f4.(5I).6p 4K* 7.5)
+27805.3517 cm-1 agree with human 27805.3650 cm-1 !!! (id 225 27.6794 4f3.(4G*).5d.(2D).(5I*).6s 6I* 3.5)
+27769.4016 cm-1 agree with human 27769.4250 cm-1 and human label !!! (id 226 27.7258 4f3.(2H2*).5d.(2D).(1I*).6s 2I* 5.5)
+27721.4185 cm-1 agree with human 27721.4300 cm-1 and human label !!! (id 227 27.7258 4f3.(4F*).5d.(2D).(5G*).6s 6G* 6.5)
+27781.7404 cm-1 agree with human 27781.7600 cm-1 and human label !!! (id 228 27.7580 4f3.(4G*).5d2.(3F) 6K* 5.5)
+27744.1689 cm-1 agree with human 27744.1850 cm-1 and human label !!! (id 229 27.7688 4f4.(5I).6p 4K* 6.5)
+27816.7765 cm-1 agree with human 27816.7950 cm-1 and human label !!! (id 230 27.7900 4f3.(4I*).5d2.(1D) 4I* 7.5)
+27921.3666 cm-1 agree with human 27921.3850 cm-1 and human label !!! (id 232 27.9712 4f4.(5I).6p 4I* 4.5)
+28089.4526 cm-1 agree with human 28089.4700 cm-1 !!! (id 233 27.9758 4f3.(4G*).5d2.(3F) 6K* 5.5)
+27993.2203 cm-1 agree with human 27993.2350 cm-1 and human label !!! (id 235 28.0066 4f3.(2H2*).5d.(2D).(3K*).6s 4K* 8.5)
+27992.4055 cm-1 agree with human 27992.4250 cm-1 and human label !!! (id 236 28.0134 4f4.(5I).6p 6H* 5.5)
+27979.3846 cm-1 not found by humans... (id 237 28.0654 4f3.(2H2*).5d2.(1D) 2K* 6.5)
+27882.0573 cm-1 not found by humans... (id 238 28.0798 4f3.(4F*).5d.(2D).(5D*).6s 6D* 4.5)
+28170.4309 cm-1 agree with human 28170.4400 cm-1 and human label !!! (id 239 28.1385 4f3.(4F*).5d2.(3F) 6F* 4.5)
+28129.8250 cm-1 agree with human 28129.8400 cm-1 and human label !!! (id 241 28.1983 4f3.(4I*).5d2.(1G) 4G* 5.5)
+28213.8495 cm-1 agree with human 28213.8600 cm-1 and human label !!! (id 242 28.2506 4f3.(4G*).5d2.(3F) 6I* 3.5)
+28354.3890 cm-1 agree with human 28354.4050 cm-1 !!! (id 244 28.3172 4f3.(2H2*).5d.(2D).(3I*).6s 4I* 6.5)
+28196.1346 cm-1 agree with human 28196.1550 cm-1 !!! (id 245 28.3261 4f3.(2H2*).5d.(2D).(3K*).6s 2K* 6.5)
+28285.5942 cm-1 agree with human 28285.6100 cm-1 and human label !!! (id 246 28.3363 4f4.(5I).6p 6H* 5.5)
+28418.9494 cm-1 agree with human 28418.9750 cm-1 and human label !!! (id 248 28.4190 4f4.(5I).6p 6K* 8.5)
+28418.9494 cm-1 from initial state at 28418.9750 cm-1 (id 248 28.4190 4f4.(5I).6p 6K* 8.5)
+28540.9335 cm-1 agree with human 28540.9450 cm-1 and human label !!! (id 252 28.4822 4f3.(4I*).5d2.(3P) 4I* 7.5)
+28582.5872 cm-1 agree with human 28582.6000 cm-1 and human label !!! (id 254 28.5727 4f3.(4G*).5d2.(3F) 6K* 5.5)
+28563.4647 cm-1 agree with human 28563.4800 cm-1 and human label !!! (id 255 28.5901 4f3.(4G*).5d2.(3F) 6K* 6.5)
+28748.5032 cm-1 agree with human 28748.5150 cm-1 and human label !!! (id 257 28.6881 4f3.(2H2*).5d2.(3F) 4L* 8.5)
+28856.8785 cm-1 agree with human 28856.8850 cm-1 and human label !!! (id 261 28.8176 4f4.(5I).6p 6I* 7.5)
+28860.1299 cm-1 agree with human 28860.1600 cm-1 and human label !!! (id 263 28.8794 4f4.(5I).6p 4I* 5.5)
+28926.2211 cm-1 agree with human 28926.2350 cm-1 and human label !!! (id 264 28.9022 4f3.(4G*).5d2.(3F) 6I* 4.5)
+28899.0482 cm-1 agree with human 28899.0700 cm-1 and human label !!! (id 265 28.9026 4f3.(4G*).5d2.(3F) 6K* 6.5)
+29043.4336 cm-1 agree with human 29043.4500 cm-1 and human label !!! (id 267 29.0629 4f3.(4G*).5d2.(3F) 6I* 4.5)
+29079.8452 cm-1 agree with human 29079.8650 cm-1 !!! (id 269 29.0927 4f3.(2G1*).5d2.(3F) 4K* 5.5)
+29027.5216 cm-1 agree with human 29027.5300 cm-1 and human label !!! (id 270 29.1336 4f4.(5I).6p 4K* 8.5)
+29088.7063 cm-1 agree with human 29088.7200 cm-1 and human label !!! (id 271 29.1786 4f3.(2H2*).5d2.(3F) 4I* 6.5)
+29260.7291 cm-1 agree with human 29260.7400 cm-1 and human label !!! (id 275 29.2883 4f3.(2H2*).5d.(2D).(3I*).6s 4I* 7.5)
+29362.5148 cm-1 agree with human 29362.5150 cm-1 and human label !!! (id 276 29.3603 4f4.(5I).6p 6I* 7.5)
+29546.0420 cm-1 not found by humans... (id 277 29.3679 4f3.(2H2*).5d.(2D).(3F*).6s 4F* 4.5)
+29336.7154 cm-1 agree with human 29336.7200 cm-1 !!! (id 278 29.3693 4f3.(4G*).5d.(2D).(5I*).6s 6I* 5.5)
+29434.2378 cm-1 agree with human 29434.2450 cm-1 and human label !!! (id 280 29.4681 4f4.(5I).6p 6H* 6.5)
+29484.5855 cm-1 agree with human 29484.5950 cm-1 and human label !!! (id 281 29.4945 4f4.(5I).6p 4I* 5.5)
+29581.8668 cm-1 agree with human 29581.8700 cm-1 !!! (id 282 29.5359 4f3.(4G*).5d.(2D).(5I*).6s 4I* 4.5)
+29469.9089 cm-1 not found by humans... (id 283 29.5661 4f3.(2H2*).5d2.(3F) 2L* 7.5)
+29813.3982 cm-1 not found by humans... (id 284 29.5893 4f3.(4I*).5d2.(1G) 4G* 5.5)
+29701.4445 cm-1 agree with human 29701.4700 cm-1 and human label !!! (id 286 29.6686 4f3.(4F*).5d2.(3F) 4I* 6.5)
+30096.7081 cm-1 not found by humans... (id 292 29.8941 4f3.(2H2*).5d.(2D).(1K*).6s 2K* 7.5)
+30002.2868 cm-1 agree with human 30002.3100 cm-1 and human label !!! (id 294 29.9991 4f4.(5I).6p 6K* 9.5)
+29955.3926 cm-1 agree with human 29955.4100 cm-1 !!! (id 296 30.0604 4f3.(4G*).5d2.(3F) 6K* 7.5)
+30161.5758 cm-1 agree with human 30161.6150 cm-1 and human label !!! (id 298 30.1514 4f3.(4G*).5d2.(3F) 6I* 5.5)
+30246.7534 cm-1 agree with human 30246.7700 cm-1 and human label !!! (id 299 30.1907 4f4.(5I).6p 6I* 8.5)
+30348.3173 cm-1 agree with human 30348.3400 cm-1 !!! (id 302 30.2798 4f3.(4G*).5d.(2D).(5I*).6s 6I* 6.5)
+30531.6666 cm-1 not found by humans... (id 304 30.3097 4f3.(2H2*).5d.(2D).(3I*).6s 2I* 6.5)
+30141.0388 cm-1 not found by humans... (id 307 30.3480 4f3.(4G*).5d2.(3F) 6K* 7.5)
+30405.5632 cm-1 agree with human 30405.5800 cm-1 and human label !!! (id 308 30.4201 4f3.(2H2*).5d2.(3F) 4I* 7.5)
+30210.6932 cm-1 agree with human 30210.7050 cm-1 !!! (id 310 30.4384 4f3.(4G*).5d.(2D).(5I*).6s 6I* 6.5)
+30321.3968 cm-1 agree with human 30321.4250 cm-1 !!! (id 313 30.4709 4f3.(4G*).5d2.(3F) 6H* 3.5)
+30570.1869 cm-1 agree with human 30570.2100 cm-1 !!! (id 316 30.5313 4f3.(2G1*).5d2.(3F) 4K* 6.5)
+30796.7968 cm-1 not found by humans... (id 318 30.5735 4f4.(5I).6p 4H* 5.5)
+30453.3009 cm-1 agree with human 30453.3400 cm-1 !!! (id 320 30.6369 4f3.(4F*).5d2.(3F) 4F* 3.5)
+30700.7654 cm-1 agree with human 30700.7800 cm-1 and human label !!! (id 321 30.6827 4f3.(4G*).5d.(2D).(5I*).6s 6I* 6.5)
+30919.6052 cm-1 agree with human 30919.6300 cm-1 !!! (id 322 30.6912 4f3 4F* 3.5)
+30707.2641 cm-1 agree with human 30707.2800 cm-1 and human label !!! (id 323 30.7189 4f4.(5I).6p 6H* 7.5)
+30691.0721 cm-1 agree with human 30691.0650 cm-1 and human label !!! (id 324 30.7974 4f3.(4G*).5d.(2D).(5I*).6s 4I* 5.5)
+30681.2460 cm-1 agree with human 30681.2650 cm-1 !!! (id 325 30.8081 4f3 4F* 3.5)
+30813.0726 cm-1 agree with human 30813.1050 cm-1 !!! (id 327 30.8299 4f3.(4F*).5d2.(3F) 4H* 6.5)
+30781.4737 cm-1 agree with human 30781.4900 cm-1 and human label !!! (id 328 30.8470 4f4.(5I).6p 4K* 8.5)
+31136.9917 cm-1 not found by humans... (id 333 30.9756 4f3.(2H2*).5d.(2D).(3H*).6s 4H* 6.5)
+31076.3524 cm-1 not found by humans... (id 339 31.0927 4f3.(2H2*).5d2.(3F) 4H* 6.5)
+30893.8298 cm-1 not found by humans... (id 340 31.1003 4f3.(4G*).5d.(2D).(5H*).6s 6H* 3.5)
+31256.7640 cm-1 agree with human 31256.7700 cm-1 and human label !!! (id 341 31.2185 4f4.(5I).6p 4I* 6.5)
+31085.7706 cm-1 agree with human 31085.7700 cm-1 !!! (id 344 31.2650 4f3.(4G*).5d.(2D).(5H*).6s 6H* 4.5)
+31489.0839 cm-1 agree with human 31489.1050 cm-1 and human label !!! (id 349 31.4675 4f3.(4F*).5d2.(3F) 4I* 7.5)
+31451.2865 cm-1 agree with human 31451.2950 cm-1 and human label !!! (id 351 31.4998 4f3.(4G*).5d.(2D).(5H*).6s 6H* 4.5)
+31646.3867 cm-1 not found by humans... (id 357 31.7205 4f3.(4F*).5d2.(3P) 6G* 6.5)
+31618.1925 cm-1 agree with human 31618.2100 cm-1 !!! (id 358 31.7851 4f3.(4G*).5d.(2D).(5H*).6s 6H* 4.5)
+31675.2707 cm-1 agree with human 31675.2950 cm-1 !!! (id 361 31.8336 4f3.(4G*).5d2.(3F) 6K* 8.5)
+31878.1002 cm-1 agree with human 31878.1300 cm-1 and human label !!! (id 362 31.8579 4f3.(4G*).5d.(2D).(5I*).6s 6I* 7.5)
+31844.7794 cm-1 agree with human 31844.8100 cm-1 and human label !!! (id 363 31.8671 4f3.(4G*).5d2.(3P) 6H* 3.5)
+31944.6232 cm-1 agree with human 31944.6500 cm-1 and human label !!! (id 366 31.9147 4f3.(4I*).5d2.(1S) 4I* 4.5)
+31857.2701 cm-1 agree with human 31857.2950 cm-1 !!! (id 367 31.9442 4f3.(2K*).5d.(2D).(3L*).6s 4L* 6.5)
+32171.5560 cm-1 not found by humans... (id 368 31.9540 4f3.(4G*).5d.(2D).(5G*).6s 6G* 5.5)
+32033.9944 cm-1 not found by humans... (id 369 31.9761 4f3.(4I*).5d2.(1S) 4I* 4.5)
+31880.0255 cm-1 not found by humans... (id 370 32.0193 4f3.(4G*).5d2.(3P) 6H* 3.5)
+32093.6210 cm-1 agree with human 32093.6450 cm-1 and human label !!! (id 372 32.1004 4f3.(4F*).5d2.(1G) 4K* 7.5)
+32165.2409 cm-1 agree with human 32165.2600 cm-1 and human label !!! (id 375 32.1697 4f3.(2H2*).5d2.(3P) 4I* 4.5)
+32144.4270 cm-1 agree with human 32144.4450 cm-1 and human label !!! (id 376 32.1716 4f3.(4G*).5d.(2D).(5G*).6s 6G* 5.5)
+32192.0197 cm-1 agree with human 32192.0500 cm-1 and human label !!! (id 377 32.2331 4f3.(4G*).5d.(2D).(5H*).6s 6H* 4.5)
+32221.5446 cm-1 agree with human 32221.5700 cm-1 and human label !!! (id 378 32.2425 4f3.(4G*).5d2.(3F) 6I* 7.5)
+32482.7379 cm-1 agree with human 32482.7300 cm-1 !!! (id 380 32.3001 4f3.(4I*).5d2.(1S) 4I* 4.5)
+32367.9346 cm-1 not found by humans... (id 381 32.3130 4f3.(2K*).5d.(2D).(3L*).6s 4L* 6.5)
+32375.0321 cm-1 agree with human 32375.0500 cm-1 and human label !!! (id 382 32.3712 4f3.(4G*).5d2.(3F) 6H* 5.5)
+32275.8539 cm-1 not found by humans... (id 385 32.3926 4f3.(4F*).5d2.(1G) 4K* 5.5)
+32464.6201 cm-1 agree with human 32464.6350 cm-1 and human label !!! (id 388 32.4682 4f4.(5I).6p 4I* 7.5)
+32282.8440 cm-1 not found by humans... (id 389 32.4831 4f3.(4F*).5d2.(1G) 4I* 5.5)
+32444.0682 cm-1 agree with human 32444.0900 cm-1 !!! (id 390 32.4938 4f3.(4G*).5d.(2D).(5H*).6s 6H* 5.5)
+32531.1434 cm-1 not found by humans... (id 391 32.5268 4f3.(4F*).5d2.(3P) 4F* 4.5)
+32423.9167 cm-1 agree with human 32423.9400 cm-1 !!! (id 393 32.6257 4f4.(5I).6p 4H* 6.5)
+32506.2422 cm-1 not found by humans... (id 395 32.6574 4f3.(2H2*).5d2.(3P) 4I* 5.5)
+32759.5575 cm-1 agree with human 32759.5850 cm-1 and human label !!! (id 397 32.7702 4f3.(4F*).5d2.(3F) 2I* 5.5)
+32592.8031 cm-1 not found by humans... (id 399 32.8163 4f3.(4G*).5d2.(3F) 6G* 4.5)
+33120.1067 cm-1 agree with human 33120.0900 cm-1 !!! (id 401 32.9508 4f3.(4G*).5d.(2D).(5H*).6s 6H* 5.5)
+32864.8179 cm-1 agree with human 32864.8400 cm-1 !!! (id 403 33.0089 4f3.(2K*).5d.(2D).(3K*).6s 4K* 7.5)
+33070.2652 cm-1 not found by humans... (id 404 33.0420 4f3.(2K*).5d2.(3F) 4K* 5.5)
+33003.2320 cm-1 agree with human 33003.2200 cm-1 !!! (id 408 33.1430 4f3.(2K*).5d.(2D).(3I*).6s 4I* 5.5)
+33121.8559 cm-1 not found by humans... (id 412 33.2900 4f3.(4G*).5d2.(3F) 6H* 6.5)
+33593.7991 cm-1 not found by humans... (id 418 33.3905 4f3.(4G*).5d.(2D).(5G*).6s 6G* 6.5)
+33556.6671 cm-1 agree with human 33556.6950 cm-1 !!! (id 420 33.4164 4f3.(4G*).5d.(2D).(5I*).6s 4I* 6.5)
+33640.4523 cm-1 not found by humans... (id 424 33.4877 4f3.(2K*).5d.(2D).(3L*).6s 4L* 8.5)
+33526.5116 cm-1 agree with human 33526.5000 cm-1 !!! (id 427 33.5394 4f3.(2K*).5d.(2D).(3L*).6s 4L* 8.5)
+33700.6559 cm-1 not found by humans... (id 436 33.7426 4f3.(2H2*).5d2.(3P) 4I* 6.5)
+33912.8712 cm-1 agree with human 33912.8600 cm-1 !!! (id 437 33.7609 4f3.(4G*).5d.(2D).(5H*).6s 6H* 5.5)
+33809.2384 cm-1 not found by humans... (id 439 33.8472 4f3.(4G*).5d.(2D).(5H*).6s 6H* 6.5)
+34095.1678 cm-1 not found by humans... (id 444 33.9667 4f3.(2K*).5d.(2D).(3I*).6s 4I* 6.5)
+34001.4083 cm-1 agree with human 34001.4250 cm-1 !!! (id 449 34.0764 4f3.(4G*).5d.(2D).(5H*).6s 6H* 6.5)
+34131.9037 cm-1 not found by humans... (id 454 34.1498 4f3.(4G*).5d.(2D).(5I*).6s 6I* 8.5)
+34399.9133 cm-1 agree with human 34399.9300 cm-1 and human label !!! (id 462 34.3908 4f3.(4G*).5d.(2D).(5H*).6s 6H* 6.5)
+34459.1447 cm-1 not found by humans... (id 466 34.4405 4f3.(4G*).5d2.(3F) 6H* 7.5)
+34357.8239 cm-1 not found by humans... (id 468 34.4875 4f3.(4G*).5d2.(3F) 6H* 7.5)
+34689.4294 cm-1 agree with human 34689.4050 cm-1 and human label !!! (id 475 34.6443 4f3.(4F*).5d2.(3F) 2I* 6.5)
+34841.0567 cm-1 agree with human 34841.0700 cm-1 !!! (id 484 34.7848 4f3.(2K*).5d.(2D).(3I*).6s 4I* 7.5)
+34895.7907 cm-1 agree with human 34895.8200 cm-1 and human label !!! (id 489 34.9474 4f3.(4G*).5d.(2D).(5H*).6s 6H* 7.5)
+132 out of 233 new known levels agree in terms of E AND label
+184 out of 233 new known levels agree in terms of E

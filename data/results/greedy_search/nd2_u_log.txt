@@ -1,0 +1,231 @@
+Any initial graph (wn_obs - wn_ritz) > 1.2 * wn_unc?  False
+Graph data shapes: Data(x=[657, 6], edge_index=[2, 1840], edge_attr=[1840, 11])
+Line list shape: torch.Size([21573, 4])
+Running greedy term analysis...
+Step 1/64
+|A1| = 55
+Reward: 0.4384
+Step 2/64
+|A2| = 5
+Reward: -0.0153
+Step 3/64
+|A1| = 55
+Reward: 0.4359
+Step 4/64
+|A2| = 9
+Reward: -0.0453
+Step 5/64
+|A1| = 56
+Reward: 0.4273
+Step 6/64
+|A2| = 7
+Reward: -0.0299
+Step 7/64
+|A1| = 57
+Reward: 0.4197
+Step 8/64
+|A2| = 26
+Reward: -0.0720
+Step 9/64
+|A1| = 59
+Reward: 0.4193
+Step 10/64
+|A2| = 4
+Reward: -0.0163
+Step 11/64
+|A1| = 60
+Reward: 0.4141
+Step 12/64
+|A2| = 7
+Reward: -0.0430
+Step 13/64
+|A1| = 59
+Reward: 0.4124
+Step 14/64
+|A2| = 5
+Reward: -0.2099
+Step 15/64
+|A1| = 62
+Reward: 0.4171
+Step 16/64
+|A2| = 5
+Reward: -0.0711
+Step 17/64
+|A1| = 63
+Reward: 0.4119
+Step 18/64
+|A2| = 14
+Reward: -0.0730
+Step 19/64
+|A1| = 63
+Reward: 0.4050
+Step 20/64
+|A2| = 1
+Reward: -0.4050
+Step 21/64
+|A1| = 62
+Reward: 0.3865
+Step 22/64
+|A2| = 1
+Reward: -0.3865
+Step 23/64
+|A1| = 61
+Reward: 0.3859
+Step 24/64
+|A2| = 6
+Reward: -0.0269
+Step 25/64
+|A1| = 64
+Reward: 0.4170
+Step 26/64
+|A2| = 1
+Reward: -0.4170
+Step 27/64
+|A1| = 63
+Reward: 0.4114
+Step 28/64
+|A2| = 2
+Reward: -0.0364
+Step 29/64
+|A1| = 63
+Reward: 0.3716
+Step 30/64
+|A2| = 4
+Reward: -0.0179
+Step 31/64
+|A1| = 63
+Reward: 0.3654
+Step 32/64
+|A2| = 6
+Reward: -0.0328
+Step 33/64
+|A1| = 64
+Reward: 0.3708
+Step 34/64
+|A2| = 1
+Reward: -0.3708
+Step 35/64
+|A1| = 63
+Reward: 0.3627
+Step 36/64
+|A2| = 8
+Reward: -0.0399
+Step 37/64
+|A1| = 63
+Reward: 0.3191
+Step 38/64
+|A2| = 3
+Reward: -0.0558
+Step 39/64
+|A1| = 63
+Reward: 0.3182
+Step 40/64
+|A2| = 18
+Reward: -0.0431
+Step 41/64
+|A1| = 64
+Reward: 0.3170
+Step 42/64
+|A2| = 7
+Reward: -0.0965
+Step 43/64
+|A1| = 64
+Reward: 0.3123
+Step 44/64
+|A2| = 6
+Reward: -0.0506
+Step 45/64
+|A1| = 66
+Reward: 0.3121
+Step 46/64
+|A2| = 5
+Reward: -0.1848
+Step 47/64
+|A1| = 67
+Reward: 0.2881
+Step 48/64
+|A2| = 1
+Reward: -0.2881
+Step 49/64
+|A1| = 66
+Reward: 0.2875
+Step 50/64
+|A2| = 1
+Reward: -0.2875
+Step 51/64
+|A1| = 65
+Reward: 0.2858
+Step 52/64
+|A2| = 23
+Reward: -0.0705
+Step 53/64
+|A1| = 65
+Reward: 0.2844
+Step 54/64
+|A2| = 1
+Reward: -0.2844
+Step 55/64
+|A1| = 64
+Reward: 0.2725
+Step 56/64
+|A2| = 1
+Reward: -0.2725
+Step 57/64
+|A1| = 63
+Reward: 0.2710
+Step 58/64
+|A2| = 1
+Reward: -0.2710
+Step 59/64
+|A1| = 62
+Reward: 0.2696
+Step 60/64
+|A2| = 1
+Reward: -0.2696
+Step 61/64
+|A1| = 61
+Reward: 0.2640
+Step 62/64
+|A2| = 1
+Reward: -0.2640
+Step 63/64
+|A1| = 60
+Reward: 0.2620
+Step 64/64
+|A2| = 20
+Reward: -0.0271
+Total reward: 6.5618
+0.0000 cm-1 from initial state at 0.0000 cm-1 (id 0 E_c 0.0 4f(4)5I1.6s_6I 7/2)
+513.3319 cm-1 from initial state at 513.3300 cm-1 (id 1 E_c 547.86 4f(4)5I1.6s_6I 9/2)
+1470.1030 cm-1 from initial state at 1470.1050 cm-1 (id 2 E_c 1404.36 4f(4)5I1.6s_6I 11/2)
+1650.2056 cm-1 from initial state at 1650.2050 cm-1 (id 3 E_c 1789.52 4f(4)5I1.6s_4I 9/2)
+2585.4580 cm-1 from initial state at 2585.4600 cm-1 (id 4 E_c 2425.58 4f(4)5I1.6s_6I 13/2)
+3202.0424 cm-1 not found by humans... (id 5 E_c 3120.96 4f(4)5I1.6s_4I 11/2)
+3801.9299 cm-1 from initial state at 3801.9250 cm-1 (id 6 E_c 3564.21 4f(4)5I1.6s_6I 15/2)
+3711.6116 cm-1 not found by humans... (id 8 E_c 4506.07 4f(4)5I1.6s_4I 13/2)
+5085.6406 cm-1 from initial state at 5085.6350 cm-1 (id 9 E_c 4789.43 4f(4)5I1.6s_6I 17/2)
+6931.7840 cm-1 agree with human 6931.8000 cm-1 !!! (id 10 E_c 4941.03 4f(4)5I1.5d_6L 13/2)
+7950.0557 cm-1 agree with human 7950.0700 cm-1 !!! (id 13 E_c 5965.42 4f(4)5I1.5d_6L 15/2)
+5917.2901 cm-1 not found by humans... (id 14 E_c 6065.11 4f(4)5I1.5d_6K 9/2)
+6542.9468 cm-1 not found by humans... (id 16 E_c 6881.31 4f(4)5I1.5d_6K 11/2)
+7940.7427 cm-1 not found by humans... (id 17 E_c 7078.84 4f(4)5I1.5d_6L 17/2)
+7633.7979 cm-1 not found by humans... (id 18 E_c 7802.57 4f(4)5I1.5d_6K 13/2)
+8219.6469 cm-1 not found by humans... (id 22 E_c 8808.79 4f(4)5I1.5d_6K 15/2)
+9518.2244 cm-1 not found by humans... (id 28 E_c 9888.2 4f(4)5I1.5d_6K 17/2)
+21305.4526 cm-1 not found by humans... (id 148 E_c 18579.43 4f(3)4I1.5d_5I.6s_6I 15/2)
+23409.5044 cm-1 agree with human 23409.5200 cm-1 !!! (id 210 E_c 21452.71 4f(4)5I1.6p_4I 9/2)
+24134.0627 cm-1 agree with human 24134.0800 cm-1 !!! (id 222 E_c 22026.08 4f(4)5I1.6p_6I 11/2)
+20907.3051 cm-1 agree with human 20907.3200 cm-1 !!! (id 244 E_c 22842.04 4f(4)5I1.6p_4H 7/2)
+24721.0267 cm-1 agree with human 24721.0450 cm-1 !!! (id 247 E_c 22888.52 4f(4)5I1.6p_6I 13/2)
+23229.9663 cm-1 from initial state at 23229.9800 cm-1 (id 273 E_c 23695.16 4f(4)5I1.6p_6K 9/2)
+25589.1852 cm-1 not found by humans... (id 281 E_c 24150.78 4f(4)5I1.6p_4H 9/2)
+25353.6193 cm-1 agree with human 25353.6300 cm-1 !!! (id 282 E_c 24171.3 4f(4)5I1.6p_6I 15/2)
+24445.3703 cm-1 from initial state at 24445.3850 cm-1 (id 299 E_c 24812.56 4f(4)5I1.6p_6K 11/2)
+25120.3296 cm-1 agree with human 25120.3350 cm-1 !!! (id 301 E_c 24865.14 4f(4)5I1.6p_6H 15/2)
+27413.4974 cm-1 not found by humans... (id 317 E_c 25402.35 4f(4)5I1.6p_6I 17/2)
+25524.4659 cm-1 from initial state at 25524.4800 cm-1 (id 325 E_c 25636.71 4f(4)5I1.6p_6K 13/2)
+24214.0205 cm-1 not found by humans... (id 327 E_c 25644.96 4f(4)5I1.6p_4H 11/2)
+26912.7382 cm-1 from initial state at 26912.7650 cm-1 (id 364 E_c 26969.89 4f(4)5I1.6p_6K 15/2)
+27898.6325 cm-1 not found by humans... (id 385 E_c 27636.15 4f(3)4F1.5d_5H.6s_6H 7/2)
+28418.9490 cm-1 from initial state at 28418.9750 cm-1 (id 414 E_c 28465.64 4f(4)5I1.6p_6K 17/2)
+8 out of 21 new known levels agree in terms of E

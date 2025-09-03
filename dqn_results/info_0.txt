@@ -1,0 +1,47 @@
+Parameters:
+min_snr: 2
+spec_range: [10, 55]
+wn_range: 0.25
+tol: 5e-05
+int_tol: 1.0
+A2_max: 32
+float_levs: True
+ep_length: 32
+gamma: 0.99
+gat_n_layers: 3
+gat_hidden_size: 32
+gat_heads: 4
+mlp_hidden_size: 32
+episodes: 2
+buffer_capacity: 10000
+tr_start_ep: 1
+batch_size: 16
+adam_lr: 0.001
+min_epsilon: 0.1
+tau: 0.001
+steps_per_train: 16
+patience: 1000000
+duel: True
+double: True
+noisy: True
+sigma_0: 0.5
+per_alpha: 0.0
+per_beta: 0.5
+n_step: 1
+C_p: 0.4
+depth: 4
+N_sim: 512
+
+Results:
+Largest ep reward during training
+0.89
+Ep reward from deployment of the final agent
+2.18
+N lev match with human / N lev total
+4 / 14
+Ep reward from deployment of the agent that achieved largest ep reward during training
+2.18
+N lev match with human / N lev total
+4 / 14
+N lev match with human / N lev total for the final state with the largest ep reward during training
+3 / 9

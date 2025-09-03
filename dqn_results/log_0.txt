@@ -1,0 +1,545 @@
+Any initial graph (wn_obs - wn_ritz) > 1.2 * wn_unc?  False
+Graph data shapes: Data(x=[492, 6], edge_index=[2, 2216], edge_attr=[2216, 11])
+Line list shape: torch.Size([21573, 4])
+Total parameters of agent: 95240
+Total steps (gradient descents): 64 (4)
+Episodes (steps) capacity of the replay buffer: ~312 (10000)
+Episodes (steps) to reach 0.01 of the target network: ~2301 (73645)
+Ep 1 (1s), Ep Reward: 2.0164, N_lev: 15, Epsilon: 1.000, s/u: 0.000, AER: 0.000(0.000), Loss: 0.00e+00
+New largest reward: 0.8929
+Most recent largest reward N_c = 4
+Ep 2 (6s), Ep Reward: 0.8929, N_lev: 9, Epsilon: 0.000, s/u: 1.051, AER: 0.000(0.000), Loss: 4.77e-02
+------- Final agent term analysis results -------
+----------------------------------
+|A1| = 133,   |A2| =   4
+Action 1 - lev 21 id 21 9.0184 4f4.(5I).5d 6K 7.5
+Reward: 2.9902017675846917
+Action 2 - 4 candidates:
+Q: -0.05711725, Energy: 8803.7964, Reward: -1.7679
+Q: -0.05718657, Energy: 9042.7382, Reward: -0.6835
+Q: -0.05721326, Energy: 9135.4211, Reward: -2.1222
+Q: -0.05725596, Energy: no-op     , Reward: -2.9902
+Chose 8803.7964
+Reward: -1.7679
+----------------------------------
+----------------------------------
+|A1| = 133,   |A2| =   3
+Action 1 - lev 17 id 17 7.9331 4f4.(5I).5d 6K 6.5
+Reward: 2.9150652558404038
+Action 2 - 3 candidates:
+Q: -0.05658897, Energy: 7950.0566, Reward: -0.4968
+Q: -0.05662054, Energy: 8091.1365, Reward: -1.9737
+Q: -0.05664515, Energy: no-op     , Reward: -2.9151
+Chose 7950.0566
+Reward: -0.4968
+----------------------------------
+----------------------------------
+|A1| = 134,   |A2| =   3
+Action 1 - lev 16 id 16 7.8701 4f4.(5I).5d 6L 8.5
+Reward: 3.6780253946936248
+Action 2 - 3 candidates:
+Q: -0.05607731, Energy: 7868.8888, Reward: -0.9178
+Q: -0.05608981, Energy: 7955.0139, Reward: -2.7226
+Q: -0.05611579, Energy: no-op     , Reward: -3.6780
+Chose 7868.8888
+Reward: -0.9178
+----------------------------------
+----------------------------------
+|A1| = 135,   |A2| =   2
+Action 1 - lev 10 id 10 5.5254 4f4.(5I).5d 6L 6.5
+Reward: 3.5431017679454517
+Action 2 - 2 candidates:
+Q: -0.05550810, Energy: 5487.6373, Reward: -0.8223
+Q: -0.05558077, Energy: no-op     , Reward: -3.5431
+Chose 5487.6373
+Reward: -0.8223
+----------------------------------
+----------------------------------
+|A1| = 137,   |A2| =   3
+Action 1 - lev 13 id 13 6.6567 4f4.(5I).5d 6L 7.5
+Reward: 3.6533737301789873
+Action 2 - 3 candidates:
+Q: -0.05500072, Energy: 6553.6382, Reward: -1.4842
+Q: -0.05501160, Energy: 6637.4122, Reward: -0.9437
+Q: -0.05504821, Energy: no-op     , Reward: -3.6534
+Chose 6553.6382
+Reward: -1.4842
+----------------------------------
+----------------------------------
+|A1| = 136,   |A2| =   2
+Action 1 - lev 270 id 270 29.1336 4f4.(5I).6p 4K* 8.5
+Reward: 3.320985124354575
+Action 2 - 2 candidates:
+Q: -0.05446547, Energy: 29027.5167, Reward: -0.5707
+Q: -0.05452180, Energy: no-op     , Reward: -3.3210
+Chose 29027.5167
+Reward: -0.5707
+----------------------------------
+----------------------------------
+|A1| = 137,   |A2| =   3
+Action 1 - lev 11 id 11 5.9622 4f4.(5I).6s 4I 7.5
+Reward: 3.205920143861966
+Action 2 - 3 candidates:
+Q: -0.05327327, Energy: 5784.8974, Reward: -2.5177
+Q: -0.05358530, Energy: 5985.5749, Reward: -0.9597
+Q: -0.05398452, Energy: no-op     , Reward: -3.2059
+Chose 5784.8974
+Reward: -2.5177
+----------------------------------
+----------------------------------
+|A1| = 161,   |A2| =   3
+Action 1 - lev 22 id 22 9.1498 4f4.(5I).5d 6L 9.5
+Reward: 3.6637585440441716
+Action 2 - 3 candidates:
+Q: -0.05301092, Energy: 9107.2925, Reward: -1.4515
+Q: -0.05301882, Energy: 9166.1832, Reward: -1.7953
+Q: -0.05305424, Energy: no-op     , Reward: -3.6638
+Chose 9107.2925
+Reward: -1.4515
+----------------------------------
+----------------------------------
+|A1| = 161,   |A2| =   1
+Action 1 - lev 424 id 424 33.4877 4f3.(2K*).5d.(2D).(3L*).6s 4L* 8.5
+Reward: 2.090449878947783
+Action 2 - 1 candidates:
+Q: -0.05250432, Energy: no-op     , Reward: -2.0904
+Chose no-op
+Reward: -2.0904
+----------------------------------
+|A1| = 160,   |A2| =   7
+Action 1 - lev 388 id 388 32.4682 4f4.(5I).6p 4I* 7.5
+Reward: 3.426764254276802
+Action 2 - 7 candidates:
+Q: -0.05188221, Energy: 32263.9246, Reward: -2.1153
+Q: -0.05189140, Energy: 32331.2870, Reward: -1.9637
+Q: -0.05189597, Energy: 32361.9929, Reward: -2.3737
+Q: -0.05189803, Energy: 32374.5374, Reward: -2.1957
+Q: -0.05190240, Energy: 32404.2454, Reward: -0.8284
+Q: -0.05192216, Energy: 32535.4655, Reward: -2.4314
+Q: -0.05196954, Energy: no-op     , Reward: -3.4268
+Chose 32263.9246
+Reward: -2.1153
+----------------------------------
+----------------------------------
+|A1| = 161,   |A2| =   3
+Action 1 - lev 67 id 67 16.3117 4f4.(3K2).6s 4K 8.5
+Reward: 1.5071147839776269
+Action 2 - 3 candidates:
+Q: -0.05128134, Energy: 16129.4619, Reward: -1.0039
+Q: -0.05128946, Energy: 16238.8524, Reward: -1.3347
+Q: -0.05132652, Energy: no-op     , Reward: -1.5071
+Chose 16129.4619
+Reward: -1.0039
+----------------------------------
+----------------------------------
+|A1| = 160,   |A2| =   5
+Action 1 - lev 27 id 27 10.1590 4f4.(5I).5d 6K 8.5
+Reward: 2.998715702961845
+Action 2 - 5 candidates:
+Q: -0.05058060, Energy: 9926.7080, Reward: -2.7941
+Q: -0.05060251, Energy: 10012.9835, Reward: -2.0963
+Q: -0.05064504, Energy: 10171.6493, Reward: -2.0583
+Q: -0.05065146, Energy: 10194.7669, Reward: -2.1947
+Q: -0.05074754, Energy: no-op     , Reward: -2.9987
+Chose 9926.7080
+Reward: -2.7941
+----------------------------------
+----------------------------------
+|A1| = 160,   |A2| =   1
+Action 1 - lev 328 id 328 30.8470 4f4.(5I).6p 4K* 8.5
+Reward: 3.4943653230871328
+Action 2 - 1 candidates:
+Q: -0.04998732, Energy: no-op     , Reward: -3.4944
+Chose no-op
+Reward: -3.4944
+----------------------------------
+|A1| = 159,   |A2| =  12
+Action 1 - lev 403 id 403 33.0089 4f3.(2K*).5d.(2D).(3K*).6s 4K* 7.5
+Reward: 2.6879474819366824
+Action 2 - 12 candidates:
+Q: -0.04938354, Energy: 32822.4430, Reward: -1.1267
+Q: -0.04938759, Energy: 32866.4620, Reward: -1.1118
+Q: -0.04938815, Energy: 32871.7483, Reward: -2.2634
+Q: -0.04939026, Energy: 32897.1745, Reward: -1.2924
+Q: -0.04939223, Energy: 32920.8041, Reward: -1.9582
+Q: -0.04939609, Energy: 32964.4725, Reward: -0.7681
+Q: -0.04940025, Energy: 33014.3934, Reward: -1.9827
+Q: -0.04940148, Energy: 33029.1419, Reward: -2.2009
+Q: -0.04940247, Energy: 33040.6557, Reward: -2.5371
+Q: -0.04940470, Energy: 33066.4564, Reward: -1.9985
+Q: -0.04940476, Energy: 33067.3016, Reward: -2.1810
+Q: -0.04943218, Energy: no-op     , Reward: -2.6879
+Chose 32822.4430
+Reward: -1.1267
+----------------------------------
+----------------------------------
+|A1| = 160,   |A2| =  21
+Action 1 - lev 70 id 70 16.5083 4f4.(5I).5d 4K 8.5
+Reward: 1.6775885053771467
+Action 2 - 21 candidates:
+Q: -0.04874893, Energy: 16112.7087, Reward: -1.0600
+Q: -0.04875012, Energy: 16128.5275, Reward: -1.0578
+Q: -0.04875042, Energy: 16131.3983, Reward: -0.6309
+Q: -0.04875121, Energy: 16142.2999, Reward: -0.7131
+Q: -0.04875158, Energy: 16143.8798, Reward: -1.2489
+Q: -0.04875225, Energy: 16151.9272, Reward: -0.5875
+Q: -0.04875244, Energy: 16155.6042, Reward: -1.3696
+Q: -0.04875550, Energy: 16190.5821, Reward: -1.4800
+Q: -0.04875713, Energy: 16207.9824, Reward: -0.6776
+Q: -0.04875792, Energy: 16217.0496, Reward: -0.7052
+Q: -0.04875794, Energy: 16217.8379, Reward: -1.0270
+Q: -0.04876336, Energy: 16280.3382, Reward: -1.2311
+Q: -0.04877044, Energy: 16354.6994, Reward: -1.0275
+Q: -0.04877060, Energy: 16356.7127, Reward: -1.3041
+Q: -0.04877187, Energy: 16369.6879, Reward: -1.2083
+Q: -0.04877305, Energy: 16381.2470, Reward: -1.1622
+Q: -0.04877459, Energy: 16397.6680, Reward: -1.2918
+Q: -0.04877494, Energy: 16401.0341, Reward: -1.3783
+Q: -0.04877592, Energy: 16410.9103, Reward: -0.6572
+Q: -0.04877928, Energy: 16444.5642, Reward: -1.1725
+Q: -0.04882494, Energy: no-op     , Reward: -1.6776
+Chose 16112.7087
+Reward: -1.0600
+----------------------------------
+----------------------------------
+|A1| = 159,   |A2| =   7
+Action 1 - lev 72 id 72 16.9793 4f4.(5I).5d 4I 7.5
+Reward: 1.9501390679326283
+Action 2 - 7 candidates:
+Q: -0.04816547, Energy: 16606.6972, Reward: -1.3239
+Q: -0.04817013, Energy: 16649.9316, Reward: -0.3802
+Q: -0.04817313, Energy: 16678.2306, Reward: -1.3703
+Q: -0.04819718, Energy: 16881.7092, Reward: -1.7581
+Q: -0.04820110, Energy: 16913.2179, Reward: -1.2087
+Q: -0.04820841, Energy: 16971.4762, Reward: -1.8021
+Q: -0.04824780, Energy: no-op     , Reward: -1.9501
+Chose 16606.6972
+Reward: -1.3239
+----------------------------------
+Term analysis total reward: 2.18
+Term analysis cumulative discounted return: 1.98
+0.0000 cm-1 agree with human 0.0000 cm-1 and human label !!! (id 0 0.0271 4f4.(5I).6s 6I 3.5)
+0.0000 cm-1 from initial state at 0.0000 cm-1 (id 0 0.0271 4f4.(5I).6s 6I 3.5)
+513.3316 cm-1 agree with human 513.3300 cm-1 and human label !!! (id 1 0.5251 4f4.(5I).6s 6I 4.5)
+513.3316 cm-1 from initial state at 513.3300 cm-1 (id 1 0.5251 4f4.(5I).6s 6I 4.5)
+1470.1029 cm-1 agree with human 1470.1050 cm-1 and human label !!! (id 2 1.4636 4f4.(5I).6s 6I 5.5)
+1470.1029 cm-1 from initial state at 1470.1050 cm-1 (id 2 1.4636 4f4.(5I).6s 6I 5.5)
+1650.2048 cm-1 agree with human 1650.2050 cm-1 and human label !!! (id 3 1.6564 4f4.(5I).6s 4I 4.5)
+1650.2048 cm-1 from initial state at 1650.2050 cm-1 (id 3 1.6564 4f4.(5I).6s 4I 4.5)
+2585.4614 cm-1 agree with human 2585.4600 cm-1 and human label !!! (id 4 2.5646 4f4.(5I).6s 6I 6.5)
+2585.4614 cm-1 from initial state at 2585.4600 cm-1 (id 4 2.5646 4f4.(5I).6s 6I 6.5)
+3801.9204 cm-1 agree with human 3801.9250 cm-1 and human label !!! (id 6 3.7701 4f4.(5I).6s 6I 7.5)
+3801.9204 cm-1 from initial state at 3801.9250 cm-1 (id 6 3.7701 4f4.(5I).6s 6I 7.5)
+5085.6240 cm-1 agree with human 5085.6350 cm-1 and human label !!! (id 9 5.0444 4f4.(5I).6s 6I 8.5)
+5085.6240 cm-1 from initial state at 5085.6350 cm-1 (id 9 5.0444 4f4.(5I).6s 6I 8.5)
+5487.6373 cm-1 agree with human 5487.6550 cm-1 and human label !!! (id 10 5.5254 4f4.(5I).5d 6L 6.5)
+5784.8897 cm-1 not found by humans... (id 11 5.9622 4f4.(5I).6s 4I 7.5)
+6553.6382 cm-1 not found by humans... (id 13 6.6567 4f4.(5I).5d 6L 7.5)
+7868.8879 cm-1 agree with human 7868.9100 cm-1 and human label !!! (id 16 7.8701 4f4.(5I).5d 6L 8.5)
+7950.0547 cm-1 agree with human 7950.0700 cm-1 and human label !!! (id 17 7.9331 4f4.(5I).5d 6K 6.5)
+8803.7916 cm-1 not found by humans... (id 21 9.0184 4f4.(5I).5d 6K 7.5)
+9107.2925 cm-1 not found by humans... (id 22 9.1498 4f4.(5I).5d 6L 9.5)
+9926.7079 cm-1 not found by humans... (id 27 10.1590 4f4.(5I).5d 6K 8.5)
+16129.4543 cm-1 not found by humans... (id 67 16.3117 4f4.(3K2).6s 4K 8.5)
+16112.7104 cm-1 not found by humans... (id 70 16.5083 4f4.(5I).5d 4K 8.5)
+16606.6972 cm-1 not found by humans... (id 72 16.9793 4f4.(5I).5d 4I 7.5)
+23229.9661 cm-1 agree with human 23229.9800 cm-1 and human label !!! (id 120 23.1930 4f4.(5I).6p 6K* 4.5)
+23229.9661 cm-1 from initial state at 23229.9800 cm-1 (id 120 23.1930 4f4.(5I).6p 6K* 4.5)
+24445.3692 cm-1 agree with human 24445.3850 cm-1 and human label !!! (id 138 24.3884 4f4.(5I).6p 6K* 5.5)
+24445.3692 cm-1 from initial state at 24445.3850 cm-1 (id 138 24.3884 4f4.(5I).6p 6K* 5.5)
+25524.4599 cm-1 agree with human 25524.4800 cm-1 and human label !!! (id 164 25.5432 4f4.(5I).6p 6K* 6.5)
+25524.4599 cm-1 from initial state at 25524.4800 cm-1 (id 164 25.5432 4f4.(5I).6p 6K* 6.5)
+26912.7409 cm-1 agree with human 26912.7650 cm-1 and human label !!! (id 199 26.9222 4f4.(5I).6p 6K* 7.5)
+26912.7409 cm-1 from initial state at 26912.7650 cm-1 (id 199 26.9222 4f4.(5I).6p 6K* 7.5)
+28418.9419 cm-1 agree with human 28418.9750 cm-1 and human label !!! (id 248 28.4190 4f4.(5I).6p 6K* 8.5)
+28418.9419 cm-1 from initial state at 28418.9750 cm-1 (id 248 28.4190 4f4.(5I).6p 6K* 8.5)
+29027.5101 cm-1 agree with human 29027.5300 cm-1 and human label !!! (id 270 29.1336 4f4.(5I).6p 4K* 8.5)
+32263.9152 cm-1 not found by humans... (id 388 32.4682 4f4.(5I).6p 4I* 7.5)
+32822.4468 cm-1 not found by humans... (id 403 33.0089 4f3.(2K*).5d.(2D).(3K*).6s 4K* 7.5)
+4 out of 14 new known levels agree in terms of E AND label
+4 out of 14 new known levels agree in terms of E
+------- Largest reward agent term analysis results -------
+----------------------------------
+|A1| = 133,   |A2| =   4
+Action 1 - lev 21 id 21 9.0184 4f4.(5I).5d 6K 7.5
+Reward: 2.9902017675846917
+Action 2 - 4 candidates:
+Q: -0.05711725, Energy: 8803.7964, Reward: -1.7679
+Q: -0.05718657, Energy: 9042.7382, Reward: -0.6835
+Q: -0.05721326, Energy: 9135.4211, Reward: -2.1222
+Q: -0.05725596, Energy: no-op     , Reward: -2.9902
+Chose 8803.7964
+Reward: -1.7679
+----------------------------------
+----------------------------------
+|A1| = 133,   |A2| =   3
+Action 1 - lev 17 id 17 7.9331 4f4.(5I).5d 6K 6.5
+Reward: 2.9150652558404038
+Action 2 - 3 candidates:
+Q: -0.05658897, Energy: 7950.0566, Reward: -0.4968
+Q: -0.05662054, Energy: 8091.1365, Reward: -1.9737
+Q: -0.05664515, Energy: no-op     , Reward: -2.9151
+Chose 7950.0566
+Reward: -0.4968
+----------------------------------
+----------------------------------
+|A1| = 134,   |A2| =   3
+Action 1 - lev 16 id 16 7.8701 4f4.(5I).5d 6L 8.5
+Reward: 3.6780253946936248
+Action 2 - 3 candidates:
+Q: -0.05607731, Energy: 7868.8888, Reward: -0.9178
+Q: -0.05608981, Energy: 7955.0139, Reward: -2.7226
+Q: -0.05611579, Energy: no-op     , Reward: -3.6780
+Chose 7868.8888
+Reward: -0.9178
+----------------------------------
+----------------------------------
+|A1| = 135,   |A2| =   2
+Action 1 - lev 10 id 10 5.5254 4f4.(5I).5d 6L 6.5
+Reward: 3.5431017679454517
+Action 2 - 2 candidates:
+Q: -0.05550810, Energy: 5487.6373, Reward: -0.8223
+Q: -0.05558077, Energy: no-op     , Reward: -3.5431
+Chose 5487.6373
+Reward: -0.8223
+----------------------------------
+----------------------------------
+|A1| = 137,   |A2| =   3
+Action 1 - lev 13 id 13 6.6567 4f4.(5I).5d 6L 7.5
+Reward: 3.6533737301789873
+Action 2 - 3 candidates:
+Q: -0.05500072, Energy: 6553.6382, Reward: -1.4842
+Q: -0.05501160, Energy: 6637.4122, Reward: -0.9437
+Q: -0.05504821, Energy: no-op     , Reward: -3.6534
+Chose 6553.6382
+Reward: -1.4842
+----------------------------------
+----------------------------------
+|A1| = 136,   |A2| =   2
+Action 1 - lev 270 id 270 29.1336 4f4.(5I).6p 4K* 8.5
+Reward: 3.320985124354575
+Action 2 - 2 candidates:
+Q: -0.05446547, Energy: 29027.5167, Reward: -0.5707
+Q: -0.05452180, Energy: no-op     , Reward: -3.3210
+Chose 29027.5167
+Reward: -0.5707
+----------------------------------
+----------------------------------
+|A1| = 137,   |A2| =   3
+Action 1 - lev 11 id 11 5.9622 4f4.(5I).6s 4I 7.5
+Reward: 3.205920143861966
+Action 2 - 3 candidates:
+Q: -0.05327327, Energy: 5784.8974, Reward: -2.5177
+Q: -0.05358530, Energy: 5985.5749, Reward: -0.9597
+Q: -0.05398452, Energy: no-op     , Reward: -3.2059
+Chose 5784.8974
+Reward: -2.5177
+----------------------------------
+----------------------------------
+|A1| = 161,   |A2| =   3
+Action 1 - lev 22 id 22 9.1498 4f4.(5I).5d 6L 9.5
+Reward: 3.6637585440441716
+Action 2 - 3 candidates:
+Q: -0.05301092, Energy: 9107.2925, Reward: -1.4515
+Q: -0.05301882, Energy: 9166.1832, Reward: -1.7953
+Q: -0.05305424, Energy: no-op     , Reward: -3.6638
+Chose 9107.2925
+Reward: -1.4515
+----------------------------------
+----------------------------------
+|A1| = 161,   |A2| =   1
+Action 1 - lev 424 id 424 33.4877 4f3.(2K*).5d.(2D).(3L*).6s 4L* 8.5
+Reward: 2.090449878947783
+Action 2 - 1 candidates:
+Q: -0.05250432, Energy: no-op     , Reward: -2.0904
+Chose no-op
+Reward: -2.0904
+----------------------------------
+|A1| = 160,   |A2| =   7
+Action 1 - lev 388 id 388 32.4682 4f4.(5I).6p 4I* 7.5
+Reward: 3.426764254276802
+Action 2 - 7 candidates:
+Q: -0.05188221, Energy: 32263.9246, Reward: -2.1153
+Q: -0.05189140, Energy: 32331.2870, Reward: -1.9637
+Q: -0.05189597, Energy: 32361.9929, Reward: -2.3737
+Q: -0.05189803, Energy: 32374.5374, Reward: -2.1957
+Q: -0.05190240, Energy: 32404.2454, Reward: -0.8284
+Q: -0.05192216, Energy: 32535.4655, Reward: -2.4314
+Q: -0.05196954, Energy: no-op     , Reward: -3.4268
+Chose 32263.9246
+Reward: -2.1153
+----------------------------------
+----------------------------------
+|A1| = 161,   |A2| =   3
+Action 1 - lev 67 id 67 16.3117 4f4.(3K2).6s 4K 8.5
+Reward: 1.5071147839776269
+Action 2 - 3 candidates:
+Q: -0.05128134, Energy: 16129.4619, Reward: -1.0039
+Q: -0.05128946, Energy: 16238.8524, Reward: -1.3347
+Q: -0.05132652, Energy: no-op     , Reward: -1.5071
+Chose 16129.4619
+Reward: -1.0039
+----------------------------------
+----------------------------------
+|A1| = 160,   |A2| =   5
+Action 1 - lev 27 id 27 10.1590 4f4.(5I).5d 6K 8.5
+Reward: 2.998715702961845
+Action 2 - 5 candidates:
+Q: -0.05058060, Energy: 9926.7080, Reward: -2.7941
+Q: -0.05060251, Energy: 10012.9835, Reward: -2.0963
+Q: -0.05064504, Energy: 10171.6493, Reward: -2.0583
+Q: -0.05065146, Energy: 10194.7669, Reward: -2.1947
+Q: -0.05074754, Energy: no-op     , Reward: -2.9987
+Chose 9926.7080
+Reward: -2.7941
+----------------------------------
+----------------------------------
+|A1| = 160,   |A2| =   1
+Action 1 - lev 328 id 328 30.8470 4f4.(5I).6p 4K* 8.5
+Reward: 3.4943653230871328
+Action 2 - 1 candidates:
+Q: -0.04998732, Energy: no-op     , Reward: -3.4944
+Chose no-op
+Reward: -3.4944
+----------------------------------
+|A1| = 159,   |A2| =  12
+Action 1 - lev 403 id 403 33.0089 4f3.(2K*).5d.(2D).(3K*).6s 4K* 7.5
+Reward: 2.6879474819366824
+Action 2 - 12 candidates:
+Q: -0.04938354, Energy: 32822.4430, Reward: -1.1267
+Q: -0.04938759, Energy: 32866.4620, Reward: -1.1118
+Q: -0.04938815, Energy: 32871.7483, Reward: -2.2634
+Q: -0.04939026, Energy: 32897.1745, Reward: -1.2924
+Q: -0.04939223, Energy: 32920.8041, Reward: -1.9582
+Q: -0.04939609, Energy: 32964.4725, Reward: -0.7681
+Q: -0.04940025, Energy: 33014.3934, Reward: -1.9827
+Q: -0.04940148, Energy: 33029.1419, Reward: -2.2009
+Q: -0.04940247, Energy: 33040.6557, Reward: -2.5371
+Q: -0.04940470, Energy: 33066.4564, Reward: -1.9985
+Q: -0.04940476, Energy: 33067.3016, Reward: -2.1810
+Q: -0.04943218, Energy: no-op     , Reward: -2.6879
+Chose 32822.4430
+Reward: -1.1267
+----------------------------------
+----------------------------------
+|A1| = 160,   |A2| =  21
+Action 1 - lev 70 id 70 16.5083 4f4.(5I).5d 4K 8.5
+Reward: 1.6775885053771467
+Action 2 - 21 candidates:
+Q: -0.04874893, Energy: 16112.7087, Reward: -1.0600
+Q: -0.04875012, Energy: 16128.5275, Reward: -1.0578
+Q: -0.04875042, Energy: 16131.3983, Reward: -0.6309
+Q: -0.04875121, Energy: 16142.2999, Reward: -0.7131
+Q: -0.04875158, Energy: 16143.8798, Reward: -1.2489
+Q: -0.04875225, Energy: 16151.9272, Reward: -0.5875
+Q: -0.04875244, Energy: 16155.6042, Reward: -1.3696
+Q: -0.04875550, Energy: 16190.5821, Reward: -1.4800
+Q: -0.04875713, Energy: 16207.9824, Reward: -0.6776
+Q: -0.04875792, Energy: 16217.0496, Reward: -0.7052
+Q: -0.04875794, Energy: 16217.8379, Reward: -1.0270
+Q: -0.04876336, Energy: 16280.3382, Reward: -1.2311
+Q: -0.04877044, Energy: 16354.6994, Reward: -1.0275
+Q: -0.04877060, Energy: 16356.7127, Reward: -1.3041
+Q: -0.04877187, Energy: 16369.6879, Reward: -1.2083
+Q: -0.04877305, Energy: 16381.2470, Reward: -1.1622
+Q: -0.04877459, Energy: 16397.6680, Reward: -1.2918
+Q: -0.04877494, Energy: 16401.0341, Reward: -1.3783
+Q: -0.04877592, Energy: 16410.9103, Reward: -0.6572
+Q: -0.04877928, Energy: 16444.5642, Reward: -1.1725
+Q: -0.04882494, Energy: no-op     , Reward: -1.6776
+Chose 16112.7087
+Reward: -1.0600
+----------------------------------
+----------------------------------
+|A1| = 159,   |A2| =   7
+Action 1 - lev 72 id 72 16.9793 4f4.(5I).5d 4I 7.5
+Reward: 1.9501390679326283
+Action 2 - 7 candidates:
+Q: -0.04816547, Energy: 16606.6972, Reward: -1.3239
+Q: -0.04817013, Energy: 16649.9316, Reward: -0.3802
+Q: -0.04817313, Energy: 16678.2306, Reward: -1.3703
+Q: -0.04819718, Energy: 16881.7092, Reward: -1.7581
+Q: -0.04820110, Energy: 16913.2179, Reward: -1.2087
+Q: -0.04820841, Energy: 16971.4762, Reward: -1.8021
+Q: -0.04824780, Energy: no-op     , Reward: -1.9501
+Chose 16606.6972
+Reward: -1.3239
+----------------------------------
+Term analysis total reward: 2.18
+Term analysis cumulative discounted return: 1.98
+0.0000 cm-1 agree with human 0.0000 cm-1 and human label !!! (id 0 0.0271 4f4.(5I).6s 6I 3.5)
+0.0000 cm-1 from initial state at 0.0000 cm-1 (id 0 0.0271 4f4.(5I).6s 6I 3.5)
+513.3316 cm-1 agree with human 513.3300 cm-1 and human label !!! (id 1 0.5251 4f4.(5I).6s 6I 4.5)
+513.3316 cm-1 from initial state at 513.3300 cm-1 (id 1 0.5251 4f4.(5I).6s 6I 4.5)
+1470.1029 cm-1 agree with human 1470.1050 cm-1 and human label !!! (id 2 1.4636 4f4.(5I).6s 6I 5.5)
+1470.1029 cm-1 from initial state at 1470.1050 cm-1 (id 2 1.4636 4f4.(5I).6s 6I 5.5)
+1650.2048 cm-1 agree with human 1650.2050 cm-1 and human label !!! (id 3 1.6564 4f4.(5I).6s 4I 4.5)
+1650.2048 cm-1 from initial state at 1650.2050 cm-1 (id 3 1.6564 4f4.(5I).6s 4I 4.5)
+2585.4614 cm-1 agree with human 2585.4600 cm-1 and human label !!! (id 4 2.5646 4f4.(5I).6s 6I 6.5)
+2585.4614 cm-1 from initial state at 2585.4600 cm-1 (id 4 2.5646 4f4.(5I).6s 6I 6.5)
+3801.9204 cm-1 agree with human 3801.9250 cm-1 and human label !!! (id 6 3.7701 4f4.(5I).6s 6I 7.5)
+3801.9204 cm-1 from initial state at 3801.9250 cm-1 (id 6 3.7701 4f4.(5I).6s 6I 7.5)
+5085.6240 cm-1 agree with human 5085.6350 cm-1 and human label !!! (id 9 5.0444 4f4.(5I).6s 6I 8.5)
+5085.6240 cm-1 from initial state at 5085.6350 cm-1 (id 9 5.0444 4f4.(5I).6s 6I 8.5)
+5487.6373 cm-1 agree with human 5487.6550 cm-1 and human label !!! (id 10 5.5254 4f4.(5I).5d 6L 6.5)
+5784.8897 cm-1 not found by humans... (id 11 5.9622 4f4.(5I).6s 4I 7.5)
+6553.6382 cm-1 not found by humans... (id 13 6.6567 4f4.(5I).5d 6L 7.5)
+7868.8879 cm-1 agree with human 7868.9100 cm-1 and human label !!! (id 16 7.8701 4f4.(5I).5d 6L 8.5)
+7950.0547 cm-1 agree with human 7950.0700 cm-1 and human label !!! (id 17 7.9331 4f4.(5I).5d 6K 6.5)
+8803.7916 cm-1 not found by humans... (id 21 9.0184 4f4.(5I).5d 6K 7.5)
+9107.2925 cm-1 not found by humans... (id 22 9.1498 4f4.(5I).5d 6L 9.5)
+9926.7079 cm-1 not found by humans... (id 27 10.1590 4f4.(5I).5d 6K 8.5)
+16129.4543 cm-1 not found by humans... (id 67 16.3117 4f4.(3K2).6s 4K 8.5)
+16112.7104 cm-1 not found by humans... (id 70 16.5083 4f4.(5I).5d 4K 8.5)
+16606.6972 cm-1 not found by humans... (id 72 16.9793 4f4.(5I).5d 4I 7.5)
+23229.9661 cm-1 agree with human 23229.9800 cm-1 and human label !!! (id 120 23.1930 4f4.(5I).6p 6K* 4.5)
+23229.9661 cm-1 from initial state at 23229.9800 cm-1 (id 120 23.1930 4f4.(5I).6p 6K* 4.5)
+24445.3692 cm-1 agree with human 24445.3850 cm-1 and human label !!! (id 138 24.3884 4f4.(5I).6p 6K* 5.5)
+24445.3692 cm-1 from initial state at 24445.3850 cm-1 (id 138 24.3884 4f4.(5I).6p 6K* 5.5)
+25524.4599 cm-1 agree with human 25524.4800 cm-1 and human label !!! (id 164 25.5432 4f4.(5I).6p 6K* 6.5)
+25524.4599 cm-1 from initial state at 25524.4800 cm-1 (id 164 25.5432 4f4.(5I).6p 6K* 6.5)
+26912.7409 cm-1 agree with human 26912.7650 cm-1 and human label !!! (id 199 26.9222 4f4.(5I).6p 6K* 7.5)
+26912.7409 cm-1 from initial state at 26912.7650 cm-1 (id 199 26.9222 4f4.(5I).6p 6K* 7.5)
+28418.9419 cm-1 agree with human 28418.9750 cm-1 and human label !!! (id 248 28.4190 4f4.(5I).6p 6K* 8.5)
+28418.9419 cm-1 from initial state at 28418.9750 cm-1 (id 248 28.4190 4f4.(5I).6p 6K* 8.5)
+29027.5101 cm-1 agree with human 29027.5300 cm-1 and human label !!! (id 270 29.1336 4f4.(5I).6p 4K* 8.5)
+32263.9152 cm-1 not found by humans... (id 388 32.4682 4f4.(5I).6p 4I* 7.5)
+32822.4468 cm-1 not found by humans... (id 403 33.0089 4f3.(2K*).5d.(2D).(3K*).6s 4K* 7.5)
+4 out of 14 new known levels agree in terms of E AND label
+4 out of 14 new known levels agree in terms of E
+------- Largest reward final state results -------
+0.0000 cm-1 agree with human 0.0000 cm-1 and human label !!! (id 0 0.0271 4f4.(5I).6s 6I 3.5)
+0.0000 cm-1 from initial state at 0.0000 cm-1 (id 0 0.0271 4f4.(5I).6s 6I 3.5)
+513.3372 cm-1 agree with human 513.3300 cm-1 and human label !!! (id 1 0.5251 4f4.(5I).6s 6I 4.5)
+513.3372 cm-1 from initial state at 513.3300 cm-1 (id 1 0.5251 4f4.(5I).6s 6I 4.5)
+1470.1088 cm-1 agree with human 1470.1050 cm-1 and human label !!! (id 2 1.4636 4f4.(5I).6s 6I 5.5)
+1470.1088 cm-1 from initial state at 1470.1050 cm-1 (id 2 1.4636 4f4.(5I).6s 6I 5.5)
+1650.2103 cm-1 agree with human 1650.2050 cm-1 and human label !!! (id 3 1.6564 4f4.(5I).6s 4I 4.5)
+1650.2103 cm-1 from initial state at 1650.2050 cm-1 (id 3 1.6564 4f4.(5I).6s 4I 4.5)
+2585.4704 cm-1 agree with human 2585.4600 cm-1 and human label !!! (id 4 2.5646 4f4.(5I).6s 6I 6.5)
+2585.4704 cm-1 from initial state at 2585.4600 cm-1 (id 4 2.5646 4f4.(5I).6s 6I 6.5)
+3801.9375 cm-1 agree with human 3801.9250 cm-1 and human label !!! (id 6 3.7701 4f4.(5I).6s 6I 7.5)
+3801.9375 cm-1 from initial state at 3801.9250 cm-1 (id 6 3.7701 4f4.(5I).6s 6I 7.5)
+5085.6344 cm-1 agree with human 5085.6350 cm-1 and human label !!! (id 9 5.0444 4f4.(5I).6s 6I 8.5)
+5085.6344 cm-1 from initial state at 5085.6350 cm-1 (id 9 5.0444 4f4.(5I).6s 6I 8.5)
+22663.7025 cm-1 agree with human 22663.7100 cm-1 !!! (id 117 22.8975 4f3.(4I*).5d2.(1G) 4H* 3.5)
+23229.9676 cm-1 agree with human 23229.9800 cm-1 and human label !!! (id 120 23.1930 4f4.(5I).6p 6K* 4.5)
+23229.9676 cm-1 from initial state at 23229.9800 cm-1 (id 120 23.1930 4f4.(5I).6p 6K* 4.5)
+23197.7599 cm-1 agree with human 23197.7700 cm-1 !!! (id 123 23.3876 4f3.(4I*).5d2.(3P) 4H* 3.5)
+24445.3747 cm-1 agree with human 24445.3850 cm-1 and human label !!! (id 138 24.3884 4f4.(5I).6p 6K* 5.5)
+24445.3747 cm-1 from initial state at 24445.3850 cm-1 (id 138 24.3884 4f4.(5I).6p 6K* 5.5)
+24569.7601 cm-1 agree with human 24569.7750 cm-1 !!! (id 146 24.8074 4f3.(2H2*).5d.(2D).(3I*).6s 4I* 4.5)
+25524.4675 cm-1 agree with human 25524.4800 cm-1 and human label !!! (id 164 25.5432 4f4.(5I).6p 6K* 6.5)
+25524.4675 cm-1 from initial state at 25524.4800 cm-1 (id 164 25.5432 4f4.(5I).6p 6K* 6.5)
+26188.6387 cm-1 not found by humans... (id 185 26.4136 4f3.(4F*).5d2.(3F) 6F* 3.5)
+26656.1861 cm-1 not found by humans... (id 197 26.8439 4f3.(4I*).5d2.(1G) 4F* 3.5)
+26912.7513 cm-1 agree with human 26912.7650 cm-1 and human label !!! (id 199 26.9222 4f4.(5I).6p 6K* 7.5)
+26912.7513 cm-1 from initial state at 26912.7650 cm-1 (id 199 26.9222 4f4.(5I).6p 6K* 7.5)
+28418.9498 cm-1 agree with human 28418.9750 cm-1 and human label !!! (id 248 28.4190 4f4.(5I).6p 6K* 8.5)
+28418.9498 cm-1 from initial state at 28418.9750 cm-1 (id 248 28.4190 4f4.(5I).6p 6K* 8.5)
+29557.6440 cm-1 not found by humans... (id 275 29.2883 4f3.(2H2*).5d.(2D).(3I*).6s 4I* 7.5)
+30679.6814 cm-1 not found by humans... (id 308 30.4201 4f3.(2H2*).5d2.(3F) 4I* 7.5)
+30967.7942 cm-1 not found by humans... (id 323 30.7189 4f4.(5I).6p 6H* 7.5)
+30893.8354 cm-1 not found by humans... (id 340 31.1003 4f3.(4G*).5d.(2D).(5H*).6s 6H* 3.5)
+0 out of 9 new known levels agree in terms of E AND label
+3 out of 9 new known levels agree in terms of E
