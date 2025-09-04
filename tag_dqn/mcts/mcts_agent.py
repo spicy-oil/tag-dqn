@@ -1,4 +1,6 @@
 '''
+MCTS agent for the DQN environment
+
 Implementation re-purposed from 
 V.-A. Darvariu, S. Hailes, and M. Musolesi. Tree search in DAG space with model-based reinforcement
 learning for causal discovery. Proc. of the Royal Society A: Mathematical, Physical and Engineering Sci-

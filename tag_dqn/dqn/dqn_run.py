@@ -1,7 +1,9 @@
-#%%
+'''
+Run TAG-DQN training and evaluation
+'''
+
+
 import torch
-torch.set_printoptions(precision=9) # to see more d.p.
-#torch.set_default_dtype(torch.float64)
 import torch.optim as optim
 
 from . import dqn_agent

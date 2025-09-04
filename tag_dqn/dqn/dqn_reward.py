@@ -1,5 +1,7 @@
-#%%
-# Probably learn only for action 2
+'''
+Reward function and reward learning
+'''
+
 import torch
 import torch.nn as nn
 import torch.optim as optim

@@ -1,3 +1,7 @@
+'''
+Prioritised experience replay buffer with multi-step returns
+'''
+
 import numpy as np
 from collections import deque
 

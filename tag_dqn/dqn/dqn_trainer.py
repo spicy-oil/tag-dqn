@@ -1,3 +1,7 @@
+'''
+Handles the training of TAG-DQN
+'''
+
 import torch
 import numpy as np
 import time as time

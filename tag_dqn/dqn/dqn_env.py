@@ -1,5 +1,8 @@
+'''
+DQN environment, also used by MCTS and greedy search agents
+'''
+
 import torch
-import os
 import hashlib
 import numpy as np
 
@@ -7,7 +10,7 @@ from importlib import resources
 from torch_geometric.data import Data
 from cachetools import LRUCache
 from .dqn_data_proc import fit_pop
-from .dqn_reward import reward_classified_lines, NN_reward_input, NNReward
+from .dqn_reward import NN_reward_input, NNReward
 from . import levham
 #%%
 class Env():

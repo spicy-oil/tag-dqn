@@ -1,15 +1,11 @@
 #%%
+'''
+TAG-DQN agent
+'''
+
 import torch
-#torch.set_default_dtype(torch.float64)
 import torch.nn as nn
-import numpy as np
 from . import dqn_subnets
-import matplotlib.pyplot as plt
-#import matplotlib
-#matplotlib.use('TkAgg') # For interactive plotting
-
-from torch_geometric.data import Data
-
 
 class Agent(nn.Module):
     def __init__(self, hidden_size=32, heads=8, gat_n_layers=3, mlp_hidden_size=256,

@@ -1,5 +1,6 @@
 '''
-LOPT is part of state transitions for the environment
+Weighted least-squares optimisation of level energies using known line wavenumbers, part of state transitions for the environment
+Not as sophisticated as [A. Kramida. The program LOPT for least-squares optimization of energy levels. Computer Physics Communications, 182:419–434, 2011]
 '''
 #%%
 import torch

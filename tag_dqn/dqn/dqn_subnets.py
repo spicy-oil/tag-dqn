@@ -1,9 +1,11 @@
+'''
+TAG-DQN component networks: noisy nets, GAT, MLPs
+'''
 
 import torch
-#torch.set_default_dtype(torch.float64)
 import torch.nn as nn
 
-from torch_geometric.nn import GATConv, GATv2Conv, NNConv
+from torch_geometric.nn import GATv2Conv
 from torch_geometric.nn.aggr import AttentionalAggregation
 
 class GraphEmbedder(nn.Module):

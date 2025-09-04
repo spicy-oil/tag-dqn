@@ -7,8 +7,7 @@ import yaml
 
 from . import dqn_env
 from . import dqn_data_proc
-from .dqn_reward import mark_prob_known_lines, mark_ll_known_lines, collect_demos
-from .lopt import lopt_known_subgraph
+from .dqn_reward import mark_ll_known_lines, collect_demos
 # %% Data proc
 
 def get_demos(config_file):

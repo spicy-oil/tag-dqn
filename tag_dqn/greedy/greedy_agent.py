@@ -1,7 +1,9 @@
+'''
+Greedy search agent for the DQN environment
+'''
+
 import torch
-import torch.optim as optim
 import os
-import sys
 import yaml
 import numpy as np
 import pandas as pd

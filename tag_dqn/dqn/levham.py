@@ -1,3 +1,7 @@
+'''
+LEVHAM (originally Fortran programm from Lund Univ., there is no citation for this) implemented for A2
+'''
+
 import torch
 import torch.nn as nn
 from torch_geometric.utils import k_hop_subgraph
