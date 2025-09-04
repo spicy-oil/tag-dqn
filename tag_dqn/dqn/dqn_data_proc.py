@@ -533,7 +533,7 @@ def comp(final_known_lev_names, final_known_levs, init_known_levs, all_known_lev
     if all_known_levs_and_labels is not None:
         known_levs, known_lev_ids = all_known_levs_and_labels['known_levs'].values, all_known_levs_and_labels['known_lev_ids'].values
         if len(all_known_levs) == 1:  # If no known levels provided, just ground np.array([0.0])
-            all_known_levs = known_levs  # Use the known levels from known_levs_and_ids
+            all_known_levs = known_levs  # Use the known levels from ll_known_levels_and_labels.csv
 
     count = 0
     E_and_id_count = 0
@@ -544,6 +544,9 @@ def comp(final_known_lev_names, final_known_levs, init_known_levs, all_known_lev
             match = re.search(r'id (\d+)', final_known_lev_names[i])
             lev_id = int(match.group(1))
             comp_value = known_levs[known_lev_ids == lev_id]
+            if comp_value.size == 0:
+                print(f'Warning - level id {lev_id} not found in all_known_levels_and_labels.csv, skipping comparison of E and id for this level')
+                comp_value = np.array([np.nan])
             diff = abs(comp_value - lev)
             if diff < tol:
                 E_and_id_count += 1

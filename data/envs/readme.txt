@@ -12,7 +12,7 @@ lev_id            - integer
 E_calc            - float64 (1000 cm-1)
 J                 - float64 (currently only for printing, does nothing in RL)
 P                 - integer (currently placeholder and does nothing)
-lev_name          - str     (level label of choice, I use E_calc + leading % + leading % eigenvector)
+lev_name          - str     ('id #' + 'level label of choice, I use E_calc + leading % + leading % eigenvector' )
 
 
 ----(theo_lines.csv)----
@@ -38,8 +38,8 @@ snr               - float64 (same scale as snr_obs of line list)
 
 ---- Optional ----
 -all_known_levels.csv is a 1D array of known level energies (1000 cm-1) for evaluation with no column name
--all_known_levels_and_labels.csv is shape [N, 2] array of known level labels (lev_id) and energies (1000 cm-1) for evaluation with column names
-
+-all_known_levels_and_labels.csv is shape [N, 2] array with column names known level labels (lev_id) and energies (1000 cm-1) for evaluation
+-if using -all_known_levels_and_labels.csv, comp() of dqn_data_proc.py searches for 'id #' in lev_name
 
 ---- Notes ----
 -Single precision float is insufficient for high precision (8+ s.f.) level energies and transition wavenumbers
