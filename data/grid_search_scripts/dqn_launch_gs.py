@@ -18,7 +18,7 @@ gat_heads_list = [4]
 mlp_hidden_size_list = [32]
 adam_lr_list = [1e-3]
 tau_list = [0.001]
-steps_per_train_list = [4]
+steps_per_train_list = [16]
 
 # Iterate over all combinations
 job_id = 0
@@ -68,7 +68,7 @@ for case, batch_size, n_step, gamma, gat_n_layers, gat_hidden_size, gat_heads, m
 
     cfg = base_cfg.copy()
     if grid_searching:
-        cfg['param'].update(params)
+        cfg['params'].update(params)
 
     # Save the modified config file in the output folder
     config_path = os.path.join(full_folder_name, f'config.yaml')

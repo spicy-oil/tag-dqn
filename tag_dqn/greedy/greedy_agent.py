@@ -58,7 +58,7 @@ def two_step_greedy_term_analysis(q_net, env):
 
     print(f'Total reward: {total_reward:.4f}')
 
-def run_greedy(config_file, reward_params, output_dir='./greedy_results'):
+def run_greedy(config_file, reward_params=None, output_dir='./greedy_results'):
     '''
     Initialise the RL agent and environment
     '''

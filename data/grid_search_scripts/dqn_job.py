@@ -8,4 +8,5 @@ if __name__ == "__main__":
     parser.add_argument("--output_dir", type=str, required=True)
     args = parser.parse_args()
 
-    run_tag_dqn(args.config, args.seed, args.output_dir)
+    # None for default reward
+    run_tag_dqn(args.config, args.seed, None, args.output_dir)

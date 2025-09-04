@@ -45,7 +45,7 @@ for case, C_p, C_ps, depth, N_sim in itertools.product(
 
     cfg = base_cfg.copy()
     if grid_searching:
-        cfg['param'].update(params)
+        cfg['params'].update(params)
 
     # Save the modified config file in the output folder
     config_path = os.path.join(full_folder_name, f'config.yaml')

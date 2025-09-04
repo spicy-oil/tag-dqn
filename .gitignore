@@ -2,7 +2,7 @@ tag_dqn/__pycache__/
 tag_dqn/dqn/__pycache__/
 tag_dqn/mcts/__pycache__/
 tag_dqn/greedy/__pycache__/
-greedy_results/
 dqn_results/
+greedy_results/
 mcts_results/
 tag_dqn.egg-info/
