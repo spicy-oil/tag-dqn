@@ -10,13 +10,14 @@ The main idea is having an algorithm that learns from automatic and strictly def
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-    - [Data Files](#data-files)
-    - [Running with Configuration File and Reward Parameters](#running-with-configuration-file-and-reward-parameters)
-    - [Suggestions](#suggestions)
+  - [Data Files for State Graph](#data-files-for-state-graph)
+  - [Running with Configuration File and Reward Parameters](#running-with-configuration-file-and-reward-parameters)
+  - [Suggestions](#suggestions)
 - [Data](#data)
 - [Comments](#comments)
-    - [Reward Function](#reward-function)
-    - [Environment Parameters and Hyperparameters](#environment-parameters-and-hyperparameters)
+  - [Preprocessing](#preprocessing)
+  - [Reward Function](#reward-function)
+  - [Environment Parameters and Hyperparameters](#environment-parameters-and-hyperparameters)
 
 ---
 
@@ -25,12 +26,12 @@ The program is in Python and the required Python packages are listed in `setup.p
 
 It is possible to run TAG-DQN on a personal computer. Memory cost mainly arise from replay buffer size and NN complexity, both of which can be reduced from their final values from the paper, but with likely reduced performance unless MDP complexity is also reduced. Buffer size of 2000 was feasible with 2 GNN attention heads on a personal computer with 32 GB RAM.
 
-Hyperparameter tuning for new environments and running multiple seeds for best conclusions are preferable. These should be realised in parallel on a remote high performance computing (HPC) facility. Example scripts for the Imperial College HPC can be found under `./data/grid_search_scripts/`.
+Hyperparameter tuning for new environments and running multiple seeds for best conclusions are preferable. These should be realised in parallel on a remote high performance computing (HPC) facility. Example scripts for the Imperial College HPC can be found under `data/grid_search_scripts/`.
 
 ---
 
 ## Installation
-Ideally install Python >= 3.11.11 (developed using this version) in a separate virtual environment (e.g. conda) to avoid conflicts with packages and dependencies. Download this repository, under the directory containing `setup.py` and under the new virtual environment run `setup.py`:
+Ideally install Python >= 3.11.11 (developed using this version) in a separate virtual environment (e.g. conda) to avoid conflicts with packages and dependencies. Download this repository, under the directory containing `pyproject.toml` and under the new virtual environment run `pip install`, e.g.
 
 ```bash
 conda create -n tag-dqn python=3.11.11
@@ -38,13 +39,13 @@ conda activate tag-dqn
 pip install -e .
 ```
 
--e if let source code be editable.
+-e if want installation to point to source code, so that source code edits are realised from new package import.
 
 ---
 
 ## Usage
 
-#### Data Files
+### Data Files for State Graph
 Running TAG-DQN requires minimum 5 data files defining a term analysis state
 - `line_list.csv`
 - `known_levels.csv`
@@ -52,9 +53,9 @@ Running TAG-DQN requires minimum 5 data files defining a term analysis state
 - `theo_levels.csv`
 - `theo_lines.csv `
 
-These are listed under `./data/envs/` for each of the four case studies and explained in a `readme.txt`. 
+These are listed under `data/envs/` for each of the four case studies and explained in a `readme.txt`. 
 
-#### Running with Configuration File and Reward Parameters
+### Running with Configuration File and Reward Parameters
 An example TAG-DQN run would be
 
 ```python
@@ -62,17 +63,17 @@ import tag_dqn
 tag_dqn.run_tag_dqn('config.yaml', seed=42, reward_params='reward.pth')
 ```
 
-Each MDP environment also requires a `config.yaml` configuration file that points to the five files above and contain MDP environment parameters and model hyperparameters. It is a text file for human editing and available for each case study under `./data/envs/`.
+Each MDP environment also requires a `config.yaml` configuration file that points to the five files above and contain MDP environment parameters and model hyperparameters. It is a text file for human editing and available for each case study under `data/envs/`.
 
-The reward parameter file `reward.pth` is optional. It will be `None` if unspecified, in which case the reward parameters of the paper `./data/envs/reward.pth` will be used. The parameters must correspond to the reward model `NNReward()` of `tag_dqn/dqn/dqn_reward.py`.
+The reward parameter file `reward.pth` is optional. It will be `None` if unspecified, in which case the reward parameters of the paper `data/envs/reward.pth` will be used. The parameters must correspond to the reward model `NNReward()` of `tag_dqn/dqn/dqn_reward.py`.
 
-#### Suggestions
+### Suggestions
 More details in `examples.py` with comments.
 
 To check correct installation, running greedy search in the Nd III or Co II MDP to reproduce results numbers is desirable (takes about 5 mins):
 
 ```python
-tag_dqn.run_greedy('./data/envs/nd3/config.yaml', reward_params='./data/envs/reward.pth') 
+tag_dqn.run_greedy('data/envs/nd3/config.yaml', reward_params='data/envs/reward.pth') 
 ```
 and/or change `ep_length`, `episodes`, and `tr_start_ep` to small numbers in `config.yaml` to check if TAG-DQN runs.
 
@@ -81,23 +82,29 @@ We advise against taking TAG-DQN outputs with certainty. Firstly, some of the le
 ---
 
 ## Data
-All MDP environment data of the paper are under `./data/envs/`. For each case study, we additionally include the Cowan code parameters, if applicable. 
+All MDP environment data of the paper are under `data/envs/`. For each case study, we additionally include the Cowan code parameters, if applicable. 
 
-Final results reported for the paper are under `./data/results/final/`. Grid search results are compiled under `./data/results/grid_search/`.
+Final results reported for the paper are under `data/results/final/`. Grid search results are compiled under `data/results/grid_search/`.
 
 
 ---
 
 ## Comments
 
-#### Reward Function
-RL performance for level determination is highly dependent on the reward function, which ideally generalises to unknown levels and lines of the term analysis of interest. Reward learning in `example.py` takes about 10 minutes on a personal computer, HPC is not required.
+### Preprocessing
+The five input files are handled by `preproc()` of `tag_dqn/dqn/dqn_data_proc` to produce graph node and edge feature vectors. Changing adding/removing specific features or changing the features meaning/scales are currently not simple tasks as they are intertwined with other parts of the package.
 
-When the MDP environment and its parameters (e.g. $\delta E$, $\mathit{\Delta} E$, $\mathit{\Delta} I$) differ drastically from the four case studies (e.g. data from different spectrometers or spectral resolutions), training a new reward function instead of ours (`./data/envs/reward.pth`) is considerable. But this would need sufficient number of known levels for sufficient number of training MDP state transitions. In the paper, we trained using only Co II expert MDP state transitions, and results for Co II was the best. Training using initial MDP states of the Nd II-III case studies were not possible due to small number of known levels. Inevitably, the trained reward function was less ideal for Nd II-III as their theoretical calculations, line list, and human experts were different.
+### Reward Function
+RL performance for level determination is highly dependent on the reward function, which ideally generalises to unknown levels and lines of the term analysis of interest. Reward learning in `example.py` takes about 10 minutes on a personal computer, HPC is not required. 
 
+When the MDP environment and its parameters (e.g. $\delta E$, $\mathit{\Delta} E$, $\mathit{\Delta} I$) differ drastically from the four case studies (e.g. data from different spectrometers or spectral resolutions), training a new reward function instead of ours (`data/envs/reward.pth`) is considerable. But this would need sufficient number of known levels for sufficient number of training MDP state transitions. In the paper, we trained using only Co II expert MDP state transitions, and results for Co II was the best. Training using initial MDP states of the Nd II-III case studies were not possible due to small number of known levels. Inevitably, the trained reward function was less ideal for Nd II-III as their theoretical calculations, line list, and human experts were different.
 
-#### Environment Parameters and Hyperparameters
-Let's talk about each parameter in the `config.yaml` file (they are defined in the comments of example config file under `./data/envs/`)
+In MDP reversal for reward training, `spec_range` is ignored to include the entirety of the line list, ensuring the line list contains all known lines. In case some known lines are from completely different spectral range (not in the line list), we could remove them while ensuring known level subgraph remain connected, this might also be impossible so line list augmentation (adding simulation lines) might be an option. In some cases, we expect getting the right reward function to be the most challenging step for running TAG-DQN effectively, followed by preparing the term analysis state graph.
+
+If necessary, the reward function can be changed with relative ease in `tag_dqn/dqn/dqn_reward.py`. The NN model for $D$ is `NNReward()`, input features are created by `NN_reward_input()` using graph features.
+
+### Environment Parameters and Hyperparameters
+Let's talk about each parameter in the `config.yaml` file (they are defined in the comments of example config file under `data/envs/`)
 
 - `min_snr` limits MDP complexity by limiting the number of graph edges (theoretical transitions) based on whether we expect to observe them. Certainly, some neglected theoretical transitions are observable but not omitted from $\mathcal{A}^2$ due to uncertainties in $gA_{\text{calc}}$ and $S/N_{\text{calc}}$ estimation, while some theoretical transitions remaining on the graph are also not observable. The number is chosen to compromise between graph complexity and the inclusion rate of observable theoretical transitions.
 - `spec_range` limits MDP complexity by limiting the line list range. In determining unknown levels using groups of lines expected from a particular spectral region, this parameter makes the RL process efficient.

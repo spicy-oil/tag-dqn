@@ -1,5 +1,5 @@
 import argparse
-from tag_dqn import run_tag_mcts
+from tag_dqn import run_mcts
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -9,4 +9,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # None for default reward
-    run_tag_mcts(args.config, args.seed, None, args.output_dir)
+    run_mcts(args.config, args.seed, None, args.output_dir)

@@ -1,6 +1,7 @@
 import os
 import re
 import numpy as np
+
 from collections import defaultdict
 
 # Data storage: {(case, Cp, Cps d, N): list of (a, b, c, d, e)}
@@ -26,10 +27,10 @@ for dirpath, dirnames, filenames in os.walk(root_dir):
     N = int(match.group('N'))
     print(case, Cp, Cps, d_val, N)
 
-    for i in range(25):  # log_0.txt to log_7.txt
+    for i in range(999): 
         fname = os.path.join(dirpath, f'log_{i}.txt')
         if not os.path.isfile(fname):
-            print('no', fname)
+            #print('no', fname)
             continue
 
         with open(fname) as f:
@@ -49,7 +50,7 @@ for dirpath, dirnames, filenames in os.walk(root_dir):
 
 with open('summary.txt', 'w') as out:
     out.write('Sorted by Max T Rw\n')
-    header = f'{'Case':>8} {'Cp':>6} {'Cps':>8} {'d':>4} {'N':>5} {'Step Rw':>15} {'Step N_cor':>15} {'Max T Rw':>15} {'Max T N_corr':>15} {'Max N_cor':>10} {'Acc':>15}\n'
+    header = f"{'Case':>8} {'Cp':>6} {'Cps':>8} {'d':>4} {'N':>5} {'Step Rw':>15} {'Step N_cor':>15} {'Max T Rw':>15} {'Max T N_corr':>15} {'Max N_cor':>10} {'Acc':>15}\n"
     out.write(header)
     out.write('=' * len(header) + '\n')
 

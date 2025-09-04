@@ -20,6 +20,7 @@ for case, C_p, C_ps, depth, N_sim in itertools.product(
     
     case_list,
     C_p_list,
+    C_ps_list,
     depth_list,
     N_sim_list,
 
