@@ -25,7 +25,7 @@ params:
   gamma: 0.99             # Discount factor
   
   # NN parameters
-  gat_n_layers: 2         # Number of GAT layers
+  gat_n_layers: 2         # Number of GAT layers, 2 and 3 are essentially the same for co2 (see results)
   gat_hidden_size: 32     # GAT hidden layer size
   gat_heads: 4            # Number of attention heads
   mlp_hidden_size: 32     # MLP hidden layer size

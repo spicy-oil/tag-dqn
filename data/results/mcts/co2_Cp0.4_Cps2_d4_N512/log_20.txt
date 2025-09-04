@@ -1,0 +1,1399 @@
+0  0.000000  0.0000  0
+1  0.950325  0.9444  6
+2  1.597196  1.5936  4
+3  3.350492  3.4246  -74
+4  4.028987  4.0588  -30
+5  4.560790  4.5601  1
+6  4.950063  4.9295  21
+7  5.204698  5.1722  32
+8  9.812859  9.8667  -54
+9  10.708331  10.7209  -13
+10  11.321856  11.3140  8
+11  11.651277  11.6456  6
+12  13.260687  13.2766  -16
+13  13.404321  13.3901  14
+14  13.593288  13.5824  11
+15  17.771505  17.6780  94
+16  18.031427  17.9563  75
+17  18.338640  18.2634  75
+18  18.973728  19.1723  -199
+19  21.624526  21.5228  102
+20  22.009343  21.8820  127
+21  22.414429  22.2574  157
+22  24.074419  23.9620  112
+23  24.267380  24.2197  48
+24  24.411478  24.4197  -8
+26  24.886399  25.1874  -301
+25  25.147231  25.0823  65
+27  25.317516  25.5867  -269
+28  25.861321  26.0725  -211
+30  27.484373  27.3005  184
+32  27.585137  27.6306  -45
+33  28.111872  27.9037  208
+37  31.199412  30.9713  228
+47  84.014172  84.1271  -113
+48  84.586862  84.6989  -112
+49  85.167640  85.2732  -106
+50  85.481683  85.6184  -137
+51  85.596165  85.7010  -105
+52  85.876264  85.9817  -105
+53  86.346700  86.4826  -136
+54  86.940145  87.0794  -139
+56  90.302773  90.3842  -81
+58  90.464584  90.6718  -207
+60  90.697459  90.7968  -99
+61  90.753261  90.9392  -186
+63  90.967579  91.1687  -201
+62  90.975534  91.0828  -107
+64  91.049421  91.2224  -173
+65  91.326926  91.4378  -111
+67  91.352875  91.5317  -179
+68  91.358987  91.5556  -197
+66  91.408490  91.5099  -101
+69  91.424767  91.6368  -212
+71  91.623449  91.7412  -118
+80  92.359177  92.5127  -154
+86  92.889410  93.0708  -181
+70  91.646439  91.7112  -65
+72  91.667334  91.7740  -107
+74  91.918195  92.0591  -141
+73  91.928985  92.0291  -100
+75  91.932083  92.1660  -234
+78  91.958362  92.1904  -232
+77  92.044909  92.1770  -132
+76  92.120639  92.1751  -54
+82  92.317365  92.5606  -243
+83  92.403194  92.6109  -208
+79  92.405994  92.4632  -57
+84  92.519974  92.6373  -117
+85  92.639839  92.7727  -133
+87  93.678418  94.7055  -1027
+88  93.738784  95.3357  -1597
+91  94.368580  95.9137  -1545
+92  94.743691  96.2873  -1544
+291  45.197708  45.1254  72
+292  45.378750  45.3481  31
+293  45.972034  45.9734  -1
+294  46.320829  46.2520  69
+295  46.452697  46.4771  -24
+298  47.039103  47.0022  37
+297  47.078489  46.9586  120
+299  47.345842  47.3292  17
+300  47.537362  47.5305  7
+301  47.807492  47.8035  4
+302  47.848780  47.8649  -16
+303  47.995591  48.0243  -29
+304  48.150939  48.1660  -15
+305  48.388440  48.4203  -32
+306  48.556050  48.8014  -245
+307  49.348301  49.5208  -172
+308  49.697680  49.8863  -189
+309  50.036346  50.3001  -264
+310  50.381721  50.5698  -188
+311  50.914321  51.0306  -116
+312  51.512265  51.5478  -36
+313  52.229724  52.3141  -84
+314  52.684629  52.7985  -114
+321  62.440074  62.5461  -106
+324  63.367330  63.2992  68
+329  63.586984  63.8276  -241
+330  63.615986  63.8764  -260
+327  63.665188  63.6008  64
+342  65.408362  65.8773  -469
+345  65.657247  65.9788  -322
+325  63.510176  63.3775  133
+331  64.360055  64.1649  195
+333  64.401355  64.4842  -83
+335  65.016912  64.7919  225
+343  66.017644  65.9538  64
+316  61.240742  61.1902  51
+317  61.260317  61.2463  14
+319  61.350266  61.3603  -10
+318  61.388246  61.2716  117
+323  63.306683  63.2812  25
+322  63.344329  63.2075  137
+328  63.792713  63.7692  24
+332  63.865166  64.1869  -322
+334  64.601776  64.5455  56
+337  64.605523  65.1223  -517
+340  64.914627  65.2446  -330
+336  64.957479  65.0152  -58
+341  65.028509  65.5144  -486
+339  65.154036  65.2251  -71
+338  65.174656  65.1459  29
+344  65.511986  65.9623  -450
+346  67.209256  67.6593  -450
+347  67.524012  67.8432  -319
+348  67.824384  68.1223  -298
+349  67.939366  68.3050  -366
+352  69.059926  68.8533  207
+357  69.317067  69.3968  -80
+358  69.356238  69.4487  -92
+359  69.637019  69.6123  25
+363  70.265914  70.5854  -319
+362  70.457533  70.4130  45
+365  70.774864  70.7460  29
+367  70.857051  70.9799  -123
+372  71.846438  71.6450  201
+375  72.535108  72.5137  21
+376  72.654172  72.6193  35
+377  73.144332  73.0284  116
+380  74.522913  74.4790  44
+----
+Warning - known line from 48.3884400 to 31.1994120 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 92.0449090 to 72.5351080 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 91.4084900 to 71.8464380 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 92.4059940 to 69.0599260 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 92.3173650 to 66.0176440 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 91.4247670 to 65.0285090 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 91.9289850 to 65.4083620 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 48.1509390 to 18.0314270 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 94.7436910 to 63.6651880 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 47.8487800 to 13.5932880 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 63.5101760 to 27.4843730 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 84.5868620 to 48.5560500 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 63.8651660 to 25.8613210 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 65.0169120 to 25.3175160 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 65.6572470 to 24.8863990 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 65.0169120 to 24.0744190 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 71.8464380 to 27.5851370 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+----
+Warning - known line from 93.6784180 to 48.3884400 not found in graph, likely that its expected S/N is too low and was filtered out
+This line was not added to the graph
+Any initial graph (wn_obs - wn_ritz) > 1.2 * wn_unc?  False
+New largest trajectory reward: 0.0694
+New largest trajectory reward: 0.1654
+New largest trajectory reward: 0.1721
+New largest trajectory reward: 0.2237
+New largest trajectory reward: 0.2953
+New largest trajectory reward: 0.3460
+New largest trajectory reward: 0.3508
+New largest trajectory reward: 0.3902
+New largest trajectory reward: 0.4197
+New largest trajectory reward: 0.5436
+New largest trajectory reward: 0.6810
+|A1| = 150
+Reward: 0.3000
+Step 1 (0m) - total rewards so far: 0.3000
+New largest trajectory reward: 0.8345
+New largest trajectory reward: 0.9434
+New largest trajectory reward: 1.0311
+|A2| = 2
+Reward: -0.0046
+id 57 label 70 3d7.(4F).4d 5F  4.0 E_obs 90199.1504 cm-1
+Step 2 (0m) - total rewards so far: 0.2953
+|A1| = 149
+Reward: 0.3856
+Step 3 (0m) - total rewards so far: 0.6810
+New largest trajectory reward: 1.0771
+New largest trajectory reward: 1.2059
+New largest trajectory reward: 1.2232
+New largest trajectory reward: 1.2499
+New largest trajectory reward: 1.2515
+New largest trajectory reward: 1.2602
+New largest trajectory reward: 1.2718
+New largest trajectory reward: 1.3490
+New largest trajectory reward: 1.3584
+|A2| = 5
+Reward: -0.0000
+id 296 label 95 3d7.(4F).4p 5F*  1.0 E_obs 46786.4021 cm-1
+Step 4 (0m) - total rewards so far: 0.6810
+|A1| = 149
+Reward: 0.3362
+Step 5 (0m) - total rewards so far: 1.0172
+New largest trajectory reward: 1.4858
+New largest trajectory reward: 1.5014
+New largest trajectory reward: 1.5609
+New largest trajectory reward: 1.5762
+New largest trajectory reward: 1.5850
+New largest trajectory reward: 1.6286
+New largest trajectory reward: 1.6993
+|A2| = 4
+Reward: -0.0001
+id 35 label 63 3d7.(2P).4s 1P  1.0 E_obs 29268.7781 cm-1
+Step 6 (0m) - total rewards so far: 1.0171
+|A1| = 149
+Reward: 0.3338
+Step 7 (0m) - total rewards so far: 1.3508
+New largest trajectory reward: 1.8353
+New largest trajectory reward: 1.9145
+|A2| = 3
+Reward: -0.0064
+id 34 label 95 3d7.(2H).4s 3H  4.0 E_obs 27902.1279 cm-1
+Step 8 (0m) - total rewards so far: 1.3444
+|A1| = 148
+Reward: 0.2267
+Step 9 (0m) - total rewards so far: 1.5711
+New largest trajectory reward: 1.9491
+New largest trajectory reward: 1.9617
+New largest trajectory reward: 1.9681
+New largest trajectory reward: 2.0581
+New largest trajectory reward: 2.0826
+|A2| = 4
+Reward: -0.0072
+id 143 label 93 3d7.(2G).4d 3G  3.0 E_obs 108475.1126 cm-1
+Step 10 (0m) - total rewards so far: 1.5640
+New largest trajectory reward: 2.1027
+|A1| = 147
+Reward: 0.2159
+Step 11 (0m) - total rewards so far: 1.7799
+New largest trajectory reward: 2.1152
+New largest trajectory reward: 2.1646
+New largest trajectory reward: 2.2939
+New largest trajectory reward: 2.3027
+New largest trajectory reward: 2.3148
+New largest trajectory reward: 2.3835
+|A2| = 3
+Reward: -0.0008
+id 93 label 100 3d7.(4P).5s 5P  3.0 E_obs 99022.5205 cm-1
+Step 12 (0m) - total rewards so far: 1.7791
+|A1| = 146
+Reward: 0.2441
+Step 13 (0m) - total rewards so far: 2.0232
+New largest trajectory reward: 2.4485
+New largest trajectory reward: 2.5496
+|A2| = 6
+Reward: -0.0032
+id 134 label 35 3d7.(2G).4d 1H  5.0 E_obs 107646.4401 cm-1
+Step 14 (0m) - total rewards so far: 2.0200
+|A1| = 146
+Reward: 0.3114
+Step 15 (0m) - total rewards so far: 2.3315
+New largest trajectory reward: 2.5528
+New largest trajectory reward: 2.7188
+New largest trajectory reward: 2.8090
+New largest trajectory reward: 2.8324
+New largest trajectory reward: 2.8349
+|A2| = 2
+Reward: -0.0790
+id 378 label 74 3d7.(2H).4p 1G*  4.0 E_obs 73147.0400 cm-1
+Step 16 (0m) - total rewards so far: 2.2525
+|A1| = 148
+Reward: 0.2318
+Step 17 (0m) - total rewards so far: 2.4843
+New largest trajectory reward: 2.9494
+New largest trajectory reward: 2.9766
+New largest trajectory reward: 2.9912
+New largest trajectory reward: 3.0291
+New largest trajectory reward: 3.0303
+New largest trajectory reward: 3.0422
+|A2| = 2
+Reward: -0.0274
+id 116 label 72 3d7.(4P).4d 3F  3.0 E_obs 106316.3366 cm-1
+Step 18 (0m) - total rewards so far: 2.4569
+|A1| = 147
+Reward: 0.2220
+Step 19 (0m) - total rewards so far: 2.6788
+New largest trajectory reward: 3.0599
+New largest trajectory reward: 3.0700
+New largest trajectory reward: 3.1404
+New largest trajectory reward: 3.1413
+New largest trajectory reward: 3.1866
+New largest trajectory reward: 3.2288
+|A2| = 6
+Reward: -0.0033
+id 157 label 40 3d7.(2G).4d 1G  4.0 E_obs 109442.0494 cm-1
+Step 20 (0m) - total rewards so far: 2.6756
+|A1| = 146
+Reward: 0.2458
+Step 21 (0m) - total rewards so far: 2.9214
+New largest trajectory reward: 3.3193
+New largest trajectory reward: 3.3477
+New largest trajectory reward: 3.3560
+New largest trajectory reward: 3.3579
+New largest trajectory reward: 3.3772
+New largest trajectory reward: 3.3774
+New largest trajectory reward: 3.4368
+New largest trajectory reward: 3.4540
+New largest trajectory reward: 3.4642
+New largest trajectory reward: 3.4730
+New largest trajectory reward: 3.4992
+|A2| = 3
+Reward: -0.0004
+id 115 label 78 3d7.(4P).4d 3F  4.0 E_obs 106221.8716 cm-1
+Step 22 (0m) - total rewards so far: 2.9210
+|A1| = 145
+Reward: 0.2522
+Step 23 (0m) - total rewards so far: 3.1732
+New largest trajectory reward: 3.5177
+New largest trajectory reward: 3.5588
+New largest trajectory reward: 3.5727
+New largest trajectory reward: 3.6645
+New largest trajectory reward: 3.6679
+New largest trajectory reward: 3.7106
+New largest trajectory reward: 3.7443
+|A2| = 2
+Reward: -0.0288
+id 355 label 84 3d7.(2P).4p 1S*  0.0 E_obs 67910.9307 cm-1
+Step 24 (0m) - total rewards so far: 3.1443
+|A1| = 144
+Reward: 0.2458
+Step 25 (0m) - total rewards so far: 3.3902
+New largest trajectory reward: 3.9543
+New largest trajectory reward: 3.9648
+New largest trajectory reward: 3.9868
+New largest trajectory reward: 4.0313
+New largest trajectory reward: 4.0527
+New largest trajectory reward: 4.0616
+|A2| = 3
+Reward: -0.0344
+id 133 label 78 3d7.(2G).4d 3G  5.0 E_obs 107543.5555 cm-1
+Step 26 (0m) - total rewards so far: 3.3558
+|A1| = 144
+Reward: 0.3885
+Step 27 (0m) - total rewards so far: 3.7443
+New largest trajectory reward: 4.1310
+New largest trajectory reward: 4.1543
+New largest trajectory reward: 4.2014
+New largest trajectory reward: 4.2268
+New largest trajectory reward: 4.2320
+New largest trajectory reward: 4.2874
+|A2| = 2
+Reward: -0.0416
+id 326 label 97 3d7.(2G).4p 3H*  6.0 E_obs 63597.3903 cm-1
+Step 28 (0m) - total rewards so far: 3.7026
+|A1| = 144
+Reward: 0.2386
+Step 29 (0m) - total rewards so far: 3.9412
+New largest trajectory reward: 4.3332
+New largest trajectory reward: 4.4348
+New largest trajectory reward: 4.4530
+New largest trajectory reward: 4.4941
+|A2| = 2
+Reward: -0.0087
+id 99 label 98 3d7.(2G).5s 3G  5.0 E_obs 101233.5954 cm-1
+Step 30 (0m) - total rewards so far: 3.9325
+|A1| = 143
+Reward: 0.2229
+Step 31 (0m) - total rewards so far: 4.1554
+New largest trajectory reward: 4.4980
+New largest trajectory reward: 4.6872
+New largest trajectory reward: 4.7011
+|A2| = 6
+Reward: -0.0012
+id 158 label 39 3d7.(2G).4d 1G  4.0 E_obs 109312.0772 cm-1
+Step 32 (0m) - total rewards so far: 4.1543
+|A1| = 142
+Reward: 0.2293
+Step 33 (0m) - total rewards so far: 4.3835
+New largest trajectory reward: 4.7767
+New largest trajectory reward: 4.7915
+New largest trajectory reward: 4.8018
+New largest trajectory reward: 4.8465
+New largest trajectory reward: 4.9141
+New largest trajectory reward: 4.9398
+New largest trajectory reward: 4.9987
+|A2| = 3
+Reward: -0.0002
+id 100 label 76 3d7.(2G).5s 3G  4.0 E_obs 101451.0732 cm-1
+Step 34 (0m) - total rewards so far: 4.3833
+|A1| = 141
+Reward: 0.2173
+Step 35 (0m) - total rewards so far: 4.6006
+New largest trajectory reward: 5.0128
+New largest trajectory reward: 5.0571
+New largest trajectory reward: 5.0868
+New largest trajectory reward: 5.1088
+|A2| = 2
+Reward: -0.0019
+id 101 label 100 3d7.(2G).5s 3G  3.0 E_obs 102020.3563 cm-1
+Step 36 (0m) - total rewards so far: 4.5987
+|A1| = 140
+Reward: 0.2180
+Step 37 (0m) - total rewards so far: 4.8167
+New largest trajectory reward: 5.1547
+New largest trajectory reward: 5.3345
+New largest trajectory reward: 5.3717
+|A2| = 2
+Reward: -0.0014
+id 102 label 77 3d7.(2G).5s 1G  4.0 E_obs 102371.6038 cm-1
+Step 38 (0m) - total rewards so far: 4.8153
+|A1| = 139
+Reward: 0.2020
+Step 39 (0m) - total rewards so far: 5.0173
+New largest trajectory reward: 5.4057
+New largest trajectory reward: 5.4695
+New largest trajectory reward: 5.4718
+New largest trajectory reward: 5.4840
+New largest trajectory reward: 5.5925
+|A2| = 3
+Reward: -0.0004
+id 94 label 97 3d7.(4P).5s 5P  2.0 E_obs 99235.1555 cm-1
+Step 40 (0m) - total rewards so far: 5.0169
+|A1| = 138
+Reward: 0.2598
+Step 41 (0m) - total rewards so far: 5.2767
+New largest trajectory reward: 5.6019
+New largest trajectory reward: 5.6090
+New largest trajectory reward: 5.6429
+New largest trajectory reward: 5.6473
+New largest trajectory reward: 5.6540
+New largest trajectory reward: 5.7777
+New largest trajectory reward: 5.8034
+|A2| = 4
+Reward: -0.0035
+id 130 label 68 3d7.(2G).4d 3I  6.0 E_obs 107473.3348 cm-1
+Step 42 (0m) - total rewards so far: 5.2732
+|A1| = 137
+Reward: 0.1869
+Step 43 (0m) - total rewards so far: 5.4602
+New largest trajectory reward: 5.9660
+New largest trajectory reward: 5.9770
+New largest trajectory reward: 5.9818
+|A2| = 2
+Reward: -0.0172
+id 103 label 86 3d7.(2P).5s 3P  2.0 E_obs 104412.6196 cm-1
+Step 44 (0m) - total rewards so far: 5.4429
+|A1| = 136
+Reward: 0.1879
+Step 45 (0m) - total rewards so far: 5.6308
+New largest trajectory reward: 6.0240
+New largest trajectory reward: 6.1815
+|A2| = 4
+Reward: -0.0038
+id 131 label 31 3d7.(2D2).5s 3D  2.0 E_obs 107535.6136 cm-1
+Step 46 (0m) - total rewards so far: 5.6271
+|A1| = 135
+Reward: 0.2336
+Step 47 (0m) - total rewards so far: 5.8607
+New largest trajectory reward: 6.2156
+New largest trajectory reward: 6.2266
+New largest trajectory reward: 6.2453
+New largest trajectory reward: 6.2475
+New largest trajectory reward: 6.2513
+New largest trajectory reward: 6.3628
+New largest trajectory reward: 6.3973
+|A2| = 3
+Reward: -0.0141
+id 111 label 93 3d7.(4P).4d 5F  3.0 E_obs 105504.3743 cm-1
+Step 48 (0m) - total rewards so far: 5.8466
+|A1| = 134
+Reward: 0.1920
+Step 49 (0m) - total rewards so far: 6.0387
+New largest trajectory reward: 6.5010
+New largest trajectory reward: 6.5294
+|A2| = 4
+Reward: -0.0007
+id 176 label 34 3d7.(2P).4d 1D  2.0 E_obs 112350.4594 cm-1
+Step 50 (0m) - total rewards so far: 6.0379
+|A1| = 133
+Reward: 0.1907
+Step 51 (0m) - total rewards so far: 6.2287
+New largest trajectory reward: 6.6522
+New largest trajectory reward: 6.7277
+New largest trajectory reward: 6.7450
+|A2| = 4
+Reward: -0.0077
+id 129 label 88 3d7.(4P).4d 3D  1.0 E_obs 107713.7324 cm-1
+Step 52 (0m) - total rewards so far: 6.2210
+|A1| = 132
+Reward: 0.2063
+Step 53 (0m) - total rewards so far: 6.4272
+New largest trajectory reward: 6.7945
+New largest trajectory reward: 6.8376
+New largest trajectory reward: 6.9618
+New largest trajectory reward: 6.9786
+New largest trajectory reward: 7.0628
+New largest trajectory reward: 7.0676
+|A2| = 8
+Reward: -0.0079
+id 179 label 82 3d7.(2H).4d 1F  3.0 E_obs 112966.9775 cm-1
+Step 54 (0m) - total rewards so far: 6.4194
+|A1| = 131
+Reward: 0.1722
+Step 55 (0m) - total rewards so far: 6.5916
+New largest trajectory reward: 7.0680
+New largest trajectory reward: 7.0860
+New largest trajectory reward: 7.0875
+New largest trajectory reward: 7.1329
+New largest trajectory reward: 7.1373
+New largest trajectory reward: 7.2151
+New largest trajectory reward: 7.2348
+New largest trajectory reward: 7.2441
+|A2| = 2
+Reward: -0.0003
+id 95 label 96 3d7.(4P).5s 5P  1.0 E_obs 99552.5549 cm-1
+Step 56 (0m) - total rewards so far: 6.5912
+|A1| = 130
+Reward: 0.1904
+Step 57 (0m) - total rewards so far: 6.7816
+New largest trajectory reward: 7.2559
+New largest trajectory reward: 7.2963
+New largest trajectory reward: 7.3025
+New largest trajectory reward: 7.3110
+New largest trajectory reward: 7.3202
+New largest trajectory reward: 7.4137
+|A2| = 3
+Reward: -0.0213
+id 161 label 52 3d7.(2G).4d 3F  2.0 E_obs 109242.4486 cm-1
+Step 58 (0m) - total rewards so far: 6.7603
+|A1| = 129
+Reward: 0.3401
+Step 59 (0m) - total rewards so far: 7.1004
+New largest trajectory reward: 7.6111
+New largest trajectory reward: 7.6383
+|A2| = 2
+Reward: -0.0461
+id 374 label 93 3d7.(2H).4p 3H*  4.0 E_obs 72008.8983 cm-1
+Step 60 (0m) - total rewards so far: 7.0543
+|A1| = 130
+Reward: 0.1972
+Step 61 (0m) - total rewards so far: 7.2514
+New largest trajectory reward: 7.6491
+New largest trajectory reward: 7.6746
+New largest trajectory reward: 7.6965
+New largest trajectory reward: 7.7388
+New largest trajectory reward: 7.7838
+New largest trajectory reward: 7.8606
+|A2| = 3
+Reward: -0.0151
+id 31 label 98 3d7.(2H).4s 3H  5.0 E_obs 27468.9824 cm-1
+Step 62 (0m) - total rewards so far: 7.2363
+New largest trajectory reward: 7.8863
+|A1| = 130
+Reward: 0.3499
+Step 63 (0m) - total rewards so far: 7.5862
+New largest trajectory reward: 7.9252
+New largest trajectory reward: 7.9506
+New largest trajectory reward: 8.0691
+New largest trajectory reward: 8.0804
+New largest trajectory reward: 8.0833
+New largest trajectory reward: 8.2456
+New largest trajectory reward: 8.2756
+New largest trajectory reward: 8.2848
+|A2| = 2
+Reward: -0.0064
+id 354 label 92 3d7.(2H).4p 3G*  4.0 E_obs 68843.4196 cm-1
+Step 64 (0m) - total rewards so far: 7.5798
+|A1| = 130
+Reward: 0.3508
+Step 65 (0m) - total rewards so far: 7.9306
+New largest trajectory reward: 8.2848
+New largest trajectory reward: 8.2920
+New largest trajectory reward: 8.3822
+New largest trajectory reward: 8.3885
+New largest trajectory reward: 8.4125
+New largest trajectory reward: 8.4509
+New largest trajectory reward: 8.4718
+New largest trajectory reward: 8.4761
+New largest trajectory reward: 8.5886
+New largest trajectory reward: 8.5905
+New largest trajectory reward: 8.5927
+|A2| = 2
+Reward: -0.0052
+id 373 label 95 3d7.(2H).4p 3H*  5.0 E_obs 71702.9505 cm-1
+Step 66 (0m) - total rewards so far: 7.9254
+|A1| = 129
+Reward: 0.3311
+Step 67 (0m) - total rewards so far: 8.2565
+New largest trajectory reward: 8.7576
+New largest trajectory reward: 8.7584
+New largest trajectory reward: 8.8401
+New largest trajectory reward: 8.9169
+|A2| = 2
+Reward: -0.0254
+id 36 label 99 3d7.(2H).4s 1H  5.0 E_obs 30567.1700 cm-1
+Step 68 (0m) - total rewards so far: 8.2311
+|A1| = 131
+Reward: 0.2049
+Step 69 (0m) - total rewards so far: 8.4360
+New largest trajectory reward: 8.9316
+New largest trajectory reward: 8.9427
+New largest trajectory reward: 9.0138
+New largest trajectory reward: 9.0331
+New largest trajectory reward: 9.1100
+|A2| = 3
+Reward: -0.0022
+id 194 label 49 3d7.(2H).4d 1H  5.0 E_obs 114559.1001 cm-1
+Step 70 (0m) - total rewards so far: 8.4338
+|A1| = 130
+Reward: 0.3576
+Step 71 (0m) - total rewards so far: 8.7914
+New largest trajectory reward: 9.1708
+New largest trajectory reward: 9.3103
+New largest trajectory reward: 9.3215
+|A2| = 2
+Reward: -0.0431
+id 356 label 97 3d7.(2H).4p 3I*  5.0 E_obs 68829.3995 cm-1
+Step 72 (0m) - total rewards so far: 8.7483
+|A1| = 130
+Reward: 0.2342
+Step 73 (0m) - total rewards so far: 8.9825
+New largest trajectory reward: 9.3808
+New largest trajectory reward: 9.5691
+New largest trajectory reward: 9.6079
+New largest trajectory reward: 9.6195
+|A2| = 6
+Reward: -0.0130
+id 141 label 66 3d7.(2G).4d 3I  5.0 E_obs 108021.1921 cm-1
+Step 74 (0m) - total rewards so far: 8.9696
+|A1| = 129
+Reward: 0.1891
+Step 75 (0m) - total rewards so far: 9.1586
+New largest trajectory reward: 9.6256
+New largest trajectory reward: 9.6743
+New largest trajectory reward: 9.7028
+New largest trajectory reward: 9.7166
+New largest trajectory reward: 9.7925
+New largest trajectory reward: 9.7962
+New largest trajectory reward: 9.8078
+|A2| = 5
+Reward: -0.0011
+id 167 label 76 3d7.(2P).4d 3D  2.0 E_obs 110523.3703 cm-1
+Step 76 (0m) - total rewards so far: 9.1575
+|A1| = 128
+Reward: 0.3572
+Step 77 (0m) - total rewards so far: 9.5148
+New largest trajectory reward: 9.8527
+New largest trajectory reward: 9.9708
+New largest trajectory reward: 10.0346
+New largest trajectory reward: 10.0475
+New largest trajectory reward: 10.0499
+|A2| = 2
+Reward: -0.0687
+id 360 label 72 3d7.(2H).4p 1I*  6.0 E_obs 69617.4762 cm-1
+Step 78 (0m) - total rewards so far: 9.4460
+|A1| = 128
+Reward: 0.2036
+Step 79 (0m) - total rewards so far: 9.6496
+New largest trajectory reward: 10.0610
+New largest trajectory reward: 10.0649
+New largest trajectory reward: 10.0657
+New largest trajectory reward: 10.0678
+New largest trajectory reward: 10.0762
+New largest trajectory reward: 10.1694
+New largest trajectory reward: 10.2326
+New largest trajectory reward: 10.2349
+|A2| = 2
+Reward: -0.0185
+id 192 label 94 3d7.(2H).4d 3G  3.0 E_obs 113724.5652 cm-1
+Step 80 (0m) - total rewards so far: 9.6311
+|A1| = 127
+Reward: 0.2422
+Step 81 (0m) - total rewards so far: 9.8733
+New largest trajectory reward: 10.3073
+New largest trajectory reward: 10.3612
+New largest trajectory reward: 10.3985
+|A2| = 2
+Reward: -0.0001
+id 150 label 54 3d7.(2G).4d 1H  5.0 E_obs 108600.1623 cm-1
+Step 82 (0m) - total rewards so far: 9.8732
+|A1| = 126
+Reward: 0.2249
+Step 83 (0m) - total rewards so far: 10.0981
+New largest trajectory reward: 10.5757
+New largest trajectory reward: 10.6765
+|A2| = 7
+Reward: -0.0002
+id 137 label 85 3d7.(2G).4d 1F  3.0 E_obs 107671.8503 cm-1
+Step 84 (0m) - total rewards so far: 10.0979
+|A1| = 125
+Reward: 0.2450
+Step 85 (0m) - total rewards so far: 10.3429
+New largest trajectory reward: 10.6884
+New largest trajectory reward: 10.7981
+New largest trajectory reward: 10.8001
+New largest trajectory reward: 10.8488
+|A2| = 5
+Reward: -0.0771
+id 109 label 95 3d7.(4P).4d 5F  4.0 E_obs 105395.1115 cm-1
+Step 86 (0m) - total rewards so far: 10.2658
+|A1| = 124
+Reward: 0.2190
+Step 87 (0m) - total rewards so far: 10.4848
+New largest trajectory reward: 10.8819
+New largest trajectory reward: 10.9822
+|A2| = 2
+Reward: -0.0283
+id 199 label 87 3d7.(2H).4d 3I  5.0 E_obs 114376.7037 cm-1
+Step 88 (0m) - total rewards so far: 10.4565
+New largest trajectory reward: 10.9970
+|A1| = 123
+Reward: 0.2356
+Step 89 (0m) - total rewards so far: 10.6922
+New largest trajectory reward: 11.0214
+New largest trajectory reward: 11.0652
+New largest trajectory reward: 11.1399
+New largest trajectory reward: 11.1506
+New largest trajectory reward: 11.2117
+New largest trajectory reward: 11.2691
+New largest trajectory reward: 11.2832
+New largest trajectory reward: 11.3602
+|A2| = 6
+Reward: -0.0173
+id 147 label 91 3d7.(2G).4d 3H  4.0 E_obs 108388.8146 cm-1
+Step 90 (0m) - total rewards so far: 10.6748
+|A1| = 122
+Reward: 0.3466
+Step 91 (0m) - total rewards so far: 11.0214
+New largest trajectory reward: 11.3770
+New largest trajectory reward: 11.5740
+New largest trajectory reward: 11.5764
+|A2| = 2
+Reward: -0.0230
+id 381 label 95 3d7.(2H).4p 1H*  5.0 E_obs 74376.7875 cm-1
+Step 92 (0m) - total rewards so far: 10.9985
+|A1| = 122
+Reward: 0.2132
+Step 93 (0m) - total rewards so far: 11.2117
+New largest trajectory reward: 11.6390
+New largest trajectory reward: 11.7649
+New largest trajectory reward: 11.7823
+|A2| = 3
+Reward: -0.0073
+id 173 label 50 3d7.(2P).4d 3F  3.0 E_obs 111541.3591 cm-1
+Step 94 (0m) - total rewards so far: 11.2044
+|A1| = 121
+Reward: 0.2240
+Step 95 (0m) - total rewards so far: 11.4284
+New largest trajectory reward: 11.7839
+New largest trajectory reward: 11.9458
+New largest trajectory reward: 11.9528
+|A2| = 2
+Reward: -0.0078
+id 202 label 56 3d7.(2H).4d 3H  5.0 E_obs 113864.5862 cm-1
+Step 96 (0m) - total rewards so far: 11.4206
+|A1| = 120
+Reward: 0.2273
+Step 97 (0m) - total rewards so far: 11.6479
+New largest trajectory reward: 11.9532
+New largest trajectory reward: 11.9644
+New largest trajectory reward: 12.0432
+New largest trajectory reward: 12.0789
+New largest trajectory reward: 12.1518
+New largest trajectory reward: 12.1541
+New largest trajectory reward: 12.2140
+|A2| = 5
+Reward: -0.0060
+id 132 label 50 3d7.(4P).4d 3D  3.0 E_obs 107451.1807 cm-1
+Step 98 (0m) - total rewards so far: 11.6419
+|A1| = 119
+Reward: 0.1670
+Step 99 (0m) - total rewards so far: 11.8089
+New largest trajectory reward: 12.2484
+New largest trajectory reward: 12.2859
+New largest trajectory reward: 12.3747
+New largest trajectory reward: 12.3771
+|A2| = 2
+Reward: -0.0030
+id 165 label 72 3d7.(2P).4d 3D  1.0 E_obs 110443.2294 cm-1
+Step 100 (0m) - total rewards so far: 11.8059
+|A1| = 118
+Reward: 0.1848
+Step 101 (0m) - total rewards so far: 11.9907
+New largest trajectory reward: 12.3857
+New largest trajectory reward: 12.4246
+New largest trajectory reward: 12.4599
+New largest trajectory reward: 12.4757
+New largest trajectory reward: 12.5503
+|A2| = 5
+Reward: -0.0093
+id 190 label 49 3d7.(2D2).4d 3F  2.0 E_obs 114260.7884 cm-1
+Step 102 (0m) - total rewards so far: 11.9814
+|A1| = 117
+Reward: 0.1849
+Step 103 (0m) - total rewards so far: 12.1663
+New largest trajectory reward: 12.6187
+New largest trajectory reward: 12.6289
+New largest trajectory reward: 12.6646
+|A2| = 4
+Reward: -0.0113
+id 120 label 92 3d7.(4P).4d 5D  1.0 E_obs 106516.6366 cm-1
+Step 104 (0m) - total rewards so far: 12.1550
+|A1| = 116
+Reward: 0.2294
+Step 105 (0m) - total rewards so far: 12.3844
+New largest trajectory reward: 12.7336
+New largest trajectory reward: 12.7511
+New largest trajectory reward: 12.8967
+|A2| = 2
+Reward: -0.0199
+id 205 label 80 3d7.(2H).4d 1I  6.0 E_obs 114763.6880 cm-1
+Step 106 (0m) - total rewards so far: 12.3645
+|A1| = 115
+Reward: 0.2065
+Step 107 (0m) - total rewards so far: 12.5709
+New largest trajectory reward: 12.9301
+New largest trajectory reward: 12.9617
+New largest trajectory reward: 13.0956
+New largest trajectory reward: 13.1038
+New largest trajectory reward: 13.1427
+New largest trajectory reward: 13.1542
+|A2| = 4
+Reward: -0.0002
+id 159 label 56 3d7.(2G).4d 3F  3.0 E_obs 108830.0585 cm-1
+Step 108 (0m) - total rewards so far: 12.5707
+|A1| = 114
+Reward: 0.2033
+Step 109 (0m) - total rewards so far: 12.7740
+New largest trajectory reward: 13.1727
+New largest trajectory reward: 13.2653
+New largest trajectory reward: 13.3166
+|A2| = 3
+Reward: -0.0408
+id 203 label 59 3d7.(2D2).4d 3G  3.0 E_obs 114926.9834 cm-1
+Step 110 (0m) - total rewards so far: 12.7332
+|A1| = 113
+Reward: 0.2030
+Step 111 (0m) - total rewards so far: 12.9362
+New largest trajectory reward: 13.3355
+New largest trajectory reward: 13.4136
+New largest trajectory reward: 13.4472
+|A2| = 6
+Reward: -0.0275
+id 182 label 30 3d7.(2D2).4d 3D  3.0 E_obs 113355.6245 cm-1
+Step 112 (0m) - total rewards so far: 12.9087
+|A1| = 112
+Reward: 0.1795
+Step 113 (0m) - total rewards so far: 13.0882
+New largest trajectory reward: 13.5383
+New largest trajectory reward: 13.5759
+New largest trajectory reward: 13.5801
+New largest trajectory reward: 13.5892
+New largest trajectory reward: 13.6474
+New largest trajectory reward: 13.6689
+|A2| = 3
+Reward: -0.0003
+id 96 label 98 3d7.(4P).5s 3P  2.0 E_obs 100331.3806 cm-1
+Step 114 (0m) - total rewards so far: 13.0878
+|A1| = 111
+Reward: 0.1932
+Step 115 (0m) - total rewards so far: 13.2811
+New largest trajectory reward: 13.7242
+New largest trajectory reward: 13.7477
+New largest trajectory reward: 13.7763
+|A2| = 2
+Reward: -0.0228
+id 172 label 64 3d7.(2P).4d 3F  2.0 E_obs 111493.6315 cm-1
+Step 116 (0m) - total rewards so far: 13.2583
+|A1| = 110
+Reward: 0.2283
+Step 117 (0m) - total rewards so far: 13.4866
+New largest trajectory reward: 13.8791
+New largest trajectory reward: 13.9014
+New largest trajectory reward: 13.9518
+|A2| = 3
+Reward: -0.0724
+id 142 label 45 3d7.(2H).5s 1H  5.0 E_obs 108217.1189 cm-1
+Step 118 (0m) - total rewards so far: 13.4141
+|A1| = 109
+Reward: 0.2298
+Step 119 (0m) - total rewards so far: 13.6439
+New largest trajectory reward: 14.0027
+New largest trajectory reward: 14.0200
+New largest trajectory reward: 14.0294
+New largest trajectory reward: 14.0537
+New largest trajectory reward: 14.1472
+|A2| = 5
+Reward: -0.0081
+id 121 label 68 3d7.(4P).4d 5D  3.0 E_obs 106586.2374 cm-1
+Step 120 (0m) - total rewards so far: 13.6358
+|A1| = 108
+Reward: 0.2362
+Step 121 (0m) - total rewards so far: 13.8720
+New largest trajectory reward: 14.1871
+New largest trajectory reward: 14.2043
+New largest trajectory reward: 14.3760
+|A2| = 4
+Reward: -0.0604
+id 139 label 75 3d7.(2G).4d 3G  4.0 E_obs 107790.2242 cm-1
+Step 122 (0m) - total rewards so far: 13.8117
+|A1| = 107
+Reward: 0.1896
+Step 123 (0m) - total rewards so far: 14.0013
+New largest trajectory reward: 14.4113
+New largest trajectory reward: 14.4455
+New largest trajectory reward: 14.5366
+|A2| = 4
+Reward: -0.0332
+id 175 label 59 3d7.(2P).4d 3P  2.0 E_obs 111332.4692 cm-1
+Step 124 (0m) - total rewards so far: 13.9681
+|A1| = 106
+Reward: 0.1540
+Step 125 (0m) - total rewards so far: 14.1221
+|A2| = 3
+Reward: -0.0120
+id 97 label 94 3d7.(4P).5s 3P  1.0 E_obs 100596.3785 cm-1
+Step 126 (0m) - total rewards so far: 14.1101
+|A1| = 105
+Reward: 0.2028
+Step 127 (0m) - total rewards so far: 14.3129
+|A2| = 6
+Reward: -0.0636
+id 127 label 49 3d7.(4P).4d 3D  2.0 E_obs 106914.9813 cm-1
+Step 128 (0m) - total rewards so far: 14.2493
+1000 unique A2s and 36324 A2 computations were saved
+Final state:
+0.0000 cm-1 from initial state at 0.0000 cm-1 (98 3d8 3F  4.0)
+950.3250 cm-1 from initial state at 950.3250 cm-1 (98 3d8 3F  3.0)
+1597.1960 cm-1 from initial state at 1597.1960 cm-1 (98 3d8 3F  2.0)
+3350.4920 cm-1 from initial state at 3350.4920 cm-1 (100 3d7.(4F).4s 5F  5.0)
+4028.9870 cm-1 from initial state at 4028.9870 cm-1 (100 3d7.(4F).4s 5F  4.0)
+4560.7900 cm-1 from initial state at 4560.7900 cm-1 (100 3d7.(4F).4s 5F  3.0)
+4950.0630 cm-1 from initial state at 4950.0630 cm-1 (100 3d7.(4F).4s 5F  2.0)
+5204.6980 cm-1 from initial state at 5204.6980 cm-1 (100 3d7.(4F).4s 5F  1.0)
+9812.8590 cm-1 from initial state at 9812.8590 cm-1 (99 3d7.(4F).4s 3F  4.0)
+10708.3310 cm-1 from initial state at 10708.3310 cm-1 (100 3d7.(4F).4s 3F  3.0)
+11321.8560 cm-1 from initial state at 11321.8560 cm-1 (98 3d7.(4F).4s 3F  2.0)
+11651.2770 cm-1 from initial state at 11651.2770 cm-1 (75 3d8 1D  2.0)
+13260.6870 cm-1 from initial state at 13260.6870 cm-1 (75 3d8 3P  2.0)
+13404.3210 cm-1 from initial state at 13404.3210 cm-1 (96 3d8 3P  1.0)
+13593.2880 cm-1 from initial state at 13593.2880 cm-1 (96 3d8 3P  0.0)
+17771.5050 cm-1 from initial state at 17771.5050 cm-1 (100 3d7.(4P).4s 5P  3.0)
+18031.4270 cm-1 from initial state at 18031.4270 cm-1 (98 3d7.(4P).4s 5P  2.0)
+18338.6400 cm-1 from initial state at 18338.6400 cm-1 (99 3d7.(4P).4s 5P  1.0)
+18973.7280 cm-1 from initial state at 18973.7280 cm-1 (96 3d8 1G  4.0)
+21624.5260 cm-1 from initial state at 21624.5260 cm-1 (99 3d7.(2G).4s 3G  5.0)
+22009.3430 cm-1 from initial state at 22009.3430 cm-1 (97 3d7.(2G).4s 3G  4.0)
+22414.4290 cm-1 from initial state at 22414.4290 cm-1 (100 3d7.(2G).4s 3G  3.0)
+24074.4190 cm-1 from initial state at 24074.4190 cm-1 (92 3d7.(4P).4s 3P  2.0)
+24267.3800 cm-1 from initial state at 24267.3800 cm-1 (88 3d7.(4P).4s 3P  1.0)
+24411.4780 cm-1 from initial state at 24411.4780 cm-1 (82 3d7.(4P).4s 3P  0.0)
+25147.2310 cm-1 from initial state at 25147.2310 cm-1 (93 3d7.(2G).4s 1G  4.0)
+24886.3990 cm-1 from initial state at 24886.3990 cm-1 (82 3d7.(2P).4s 3P  2.0)
+25317.5160 cm-1 from initial state at 25317.5160 cm-1 (83 3d7.(2P).4s 3P  1.0)
+25861.3210 cm-1 from initial state at 25861.3210 cm-1 (81 3d7.(2P).4s 3P  0.0)
+27484.3730 cm-1 from initial state at 27484.3730 cm-1 (78 3d7.(2D2).4s 3D  3.0)
+27468.9944 cm-1 agree with human 27468.9860 cm-1 !!! (98 3d7.(2H).4s 3H  5.0)
+27585.1370 cm-1 from initial state at 27585.1370 cm-1 (47 3d7.(2D2).4s 3D  1.0)
+28111.8720 cm-1 from initial state at 28111.8720 cm-1 (72 3d7.(2D2).4s 3D  2.0)
+27902.1374 cm-1 agree with human 27902.1590 cm-1 !!! (95 3d7.(2H).4s 3H  4.0)
+29268.7771 cm-1 agree with human 29268.7750 cm-1 !!! (63 3d7.(2P).4s 1P  1.0)
+30567.1652 cm-1 agree with human 30567.1710 cm-1 !!! (99 3d7.(2H).4s 1H  5.0)
+31199.4120 cm-1 from initial state at 31199.4120 cm-1 (76 3d7.(2D2).4s 1D  2.0)
+84014.1720 cm-1 from initial state at 84014.1720 cm-1 (100 3d7.(4F).5s 5F  5.0)
+84586.8620 cm-1 from initial state at 84586.8620 cm-1 (87 3d7.(4F).5s 5F  4.0)
+85167.6400 cm-1 from initial state at 85167.6400 cm-1 (94 3d7.(4F).5s 5F  3.0)
+85481.6830 cm-1 from initial state at 85481.6830 cm-1 (87 3d7.(4F).5s 3F  4.0)
+85596.1650 cm-1 from initial state at 85596.1650 cm-1 (98 3d7.(4F).5s 5F  2.0)
+85876.2640 cm-1 from initial state at 85876.2640 cm-1 (100 3d7.(4F).5s 5F  1.0)
+86346.7000 cm-1 from initial state at 86346.7000 cm-1 (94 3d7.(4F).5s 3F  3.0)
+86940.1450 cm-1 from initial state at 86940.1450 cm-1 (97 3d7.(4F).5s 3F  2.0)
+90302.7730 cm-1 from initial state at 90302.7730 cm-1 (92 3d7.(4F).4d 5G  6.0)
+90199.1504 cm-1 agree with human 90199.1570 cm-1 !!! (70 3d7.(4F).4d 5F  4.0)
+90464.5840 cm-1 from initial state at 90464.5840 cm-1 (35 3d7.(4F).4d 5P  3.0)
+90697.4590 cm-1 from initial state at 90697.4590 cm-1 (46 3d7.(4F).4d 5G  5.0)
+90753.2610 cm-1 from initial state at 90753.2610 cm-1 (50 3d7.(4F).4d 5P  3.0)
+90975.5340 cm-1 from initial state at 90975.5340 cm-1 (54 3d7.(4F).4d 5H  6.0)
+90967.5790 cm-1 from initial state at 90967.5790 cm-1 (66 3d7.(4F).4d 5F  2.0)
+91049.4210 cm-1 from initial state at 91049.4210 cm-1 (49 3d7.(4F).4d 5G  4.0)
+91326.9260 cm-1 from initial state at 91326.9260 cm-1 (56 3d7.(4F).4d 3G  5.0)
+91408.4900 cm-1 from initial state at 91408.4900 cm-1 (66 3d7.(4F).4d 3D  3.0)
+91352.8750 cm-1 from initial state at 91352.8750 cm-1 (46 3d7.(4F).4d 5D  4.0)
+91358.9870 cm-1 from initial state at 91358.9870 cm-1 (88 3d7.(4F).4d 5F  1.0)
+91424.7670 cm-1 from initial state at 91424.7670 cm-1 (66 3d7.(4F).4d 5P  2.0)
+91646.4390 cm-1 from initial state at 91646.4390 cm-1 (74 3d7.(4F).4d 5H  5.0)
+91623.4490 cm-1 from initial state at 91623.4490 cm-1 (58 3d7.(4F).4d 3H  6.0)
+91667.3340 cm-1 from initial state at 91667.3340 cm-1 (56 3d7.(4F).4d 5G  3.0)
+91928.9850 cm-1 from initial state at 91928.9850 cm-1 (73 3d7.(4F).4d 5G  2.0)
+91918.1950 cm-1 from initial state at 91918.1950 cm-1 (62 3d7.(4F).4d 3G  4.0)
+91932.0830 cm-1 from initial state at 91932.0830 cm-1 (58 3d7.(4F).4d 5P  1.0)
+92120.6390 cm-1 from initial state at 92120.6390 cm-1 (81 3d7.(4F).4d 5H  4.0)
+92044.9090 cm-1 from initial state at 92044.9090 cm-1 (63 3d7.(4F).4d 3D  2.0)
+91958.3620 cm-1 from initial state at 91958.3620 cm-1 (65 3d7.(4F).4d 5D  3.0)
+92405.9940 cm-1 from initial state at 92405.9940 cm-1 (78 3d7.(4F).4d 5H  3.0)
+92359.1770 cm-1 from initial state at 92359.1770 cm-1 (78 3d7.(4F).4d 3H  5.0)
+92317.3650 cm-1 from initial state at 92317.3650 cm-1 (64 3d7.(4F).4d 5D  2.0)
+92403.1940 cm-1 from initial state at 92403.1940 cm-1 (39 3d7.(4F).4d 3D  1.0)
+92519.9740 cm-1 from initial state at 92519.9740 cm-1 (83 3d7.(4F).4d 3G  3.0)
+92639.8390 cm-1 from initial state at 92639.8390 cm-1 (56 3d7.(4F).4d 3D  1.0)
+92889.4100 cm-1 from initial state at 92889.4100 cm-1 (89 3d7.(4F).4d 3H  4.0)
+93678.4180 cm-1 from initial state at 93678.4180 cm-1 (89 3d7.(4F).4d 3P  2.0)
+93738.7840 cm-1 from initial state at 93738.7840 cm-1 (89 3d7.(4F).4d 3F  4.0)
+94368.5800 cm-1 from initial state at 94368.5800 cm-1 (88 3d7.(4F).4d 3F  3.0)
+94743.6910 cm-1 from initial state at 94743.6910 cm-1 (89 3d7.(4F).4d 3F  2.0)
+99022.5205 cm-1 agree with human 99022.5210 cm-1 !!! (100 3d7.(4P).5s 5P  3.0)
+99235.1555 cm-1 agree with human 99235.1540 cm-1 !!! (97 3d7.(4P).5s 5P  2.0)
+99552.5549 cm-1 agree with human 99552.5530 cm-1 !!! (96 3d7.(4P).5s 5P  1.0)
+100331.3806 cm-1 agree with human 100331.3840 cm-1 !!! (98 3d7.(4P).5s 3P  2.0)
+100596.3785 cm-1 agree with human 100596.3790 cm-1 !!! (94 3d7.(4P).5s 3P  1.0)
+101233.5956 cm-1 agree with human 101233.5980 cm-1 !!! (98 3d7.(2G).5s 3G  5.0)
+101451.0732 cm-1 agree with human 101451.0670 cm-1 !!! (76 3d7.(2G).5s 3G  4.0)
+102020.3563 cm-1 agree with human 102020.3570 cm-1 !!! (100 3d7.(2G).5s 3G  3.0)
+102371.6038 cm-1 agree with human 102371.6030 cm-1 !!! (77 3d7.(2G).5s 1G  4.0)
+104412.6196 cm-1 agree with human 104412.6240 cm-1 !!! (86 3d7.(2P).5s 3P  2.0)
+105395.1115 cm-1 agree with human 105395.1110 cm-1 !!! (95 3d7.(4P).4d 5F  4.0)
+105504.3743 cm-1 agree with human 105504.3730 cm-1 !!! (93 3d7.(4P).4d 5F  3.0)
+106221.8716 cm-1 agree with human 106221.8710 cm-1 !!! (78 3d7.(4P).4d 3F  4.0)
+106316.3366 cm-1 agree with human 106316.3370 cm-1 !!! (72 3d7.(4P).4d 3F  3.0)
+106516.6366 cm-1 agree with human 106516.6340 cm-1 !!! (92 3d7.(4P).4d 5D  1.0)
+106586.2374 cm-1 agree with human 106586.2260 cm-1 !!! (68 3d7.(4P).4d 5D  3.0)
+106914.9813 cm-1 agree with human 106914.9810 cm-1 !!! (49 3d7.(4P).4d 3D  2.0)
+107713.7324 cm-1 agree with human 107713.7310 cm-1 !!! (88 3d7.(4P).4d 3D  1.0)
+107473.3348 cm-1 agree with human 107473.3340 cm-1 !!! (68 3d7.(2G).4d 3I  6.0)
+107535.6136 cm-1 agree with human 107535.6050 cm-1 !!! (31 3d7.(2D2).5s 3D  2.0)
+107451.1807 cm-1 agree with human 107451.1800 cm-1 !!! (50 3d7.(4P).4d 3D  3.0)
+107543.5558 cm-1 agree with human 107543.5570 cm-1 !!! (78 3d7.(2G).4d 3G  5.0)
+107646.4399 cm-1 agree with human 107646.4430 cm-1 !!! (35 3d7.(2G).4d 1H  5.0)
+107671.8503 cm-1 agree with human 107671.8490 cm-1 !!! (85 3d7.(2G).4d 1F  3.0)
+107790.2242 cm-1 agree with human 107790.2140 cm-1 !!! (75 3d7.(2G).4d 3G  4.0)
+108021.1864 cm-1 agree with human 108021.1930 cm-1 !!! (66 3d7.(2G).4d 3I  5.0)
+108217.1189 cm-1 agree with human 108217.1190 cm-1 !!! (45 3d7.(2H).5s 1H  5.0)
+108475.1126 cm-1 agree with human 108475.1130 cm-1 !!! (93 3d7.(2G).4d 3G  3.0)
+108388.8146 cm-1 agree with human 108388.8150 cm-1 !!! (91 3d7.(2G).4d 3H  4.0)
+108600.1623 cm-1 agree with human 108600.1660 cm-1 !!! (54 3d7.(2G).4d 1H  5.0)
+109442.0494 cm-1 agree with human 109442.0650 cm-1 !!! (40 3d7.(2G).4d 1G  4.0)
+109312.0772 cm-1 agree with human 109312.0760 cm-1 !!! (39 3d7.(2G).4d 1G  4.0)
+108830.0585 cm-1 agree with human 108830.0590 cm-1 !!! (56 3d7.(2G).4d 3F  3.0)
+109242.4486 cm-1 agree with human 109242.4430 cm-1 !!! (52 3d7.(2G).4d 3F  2.0)
+110443.2294 cm-1 agree with human 110443.2290 cm-1 !!! (72 3d7.(2P).4d 3D  1.0)
+110523.3703 cm-1 agree with human 110523.3680 cm-1 !!! (76 3d7.(2P).4d 3D  2.0)
+111493.6315 cm-1 agree with human 111493.6310 cm-1 !!! (64 3d7.(2P).4d 3F  2.0)
+111541.3591 cm-1 agree with human 111541.3570 cm-1 !!! (50 3d7.(2P).4d 3F  3.0)
+111332.4692 cm-1 agree with human 111332.4660 cm-1 !!! (59 3d7.(2P).4d 3P  2.0)
+112350.4594 cm-1 agree with human 112350.4610 cm-1 !!! (34 3d7.(2P).4d 1D  2.0)
+112966.9741 cm-1 agree with human 112966.9740 cm-1 !!! (82 3d7.(2H).4d 1F  3.0)
+113355.6245 cm-1 agree with human 113355.6250 cm-1 !!! (30 3d7.(2D2).4d 3D  3.0)
+114260.7884 cm-1 agree with human 114260.7870 cm-1 !!! (49 3d7.(2D2).4d 3F  2.0)
+113724.5629 cm-1 agree with human 113724.5640 cm-1 !!! (94 3d7.(2H).4d 3G  3.0)
+114559.1020 cm-1 agree with human 114559.1000 cm-1 !!! (49 3d7.(2H).4d 1H  5.0)
+114376.7040 cm-1 agree with human 114376.7140 cm-1 !!! (87 3d7.(2H).4d 3I  5.0)
+113864.5860 cm-1 agree with human 113864.5840 cm-1 !!! (56 3d7.(2H).4d 3H  5.0)
+114926.9834 cm-1 agree with human 114926.9710 cm-1 !!! (59 3d7.(2D2).4d 3G  3.0)
+114763.6880 cm-1 agree with human 114763.6870 cm-1 !!! (80 3d7.(2H).4d 1I  6.0)
+45197.7080 cm-1 from initial state at 45197.7080 cm-1 (96 3d7.(4F).4p 5F*  5.0)
+45378.7500 cm-1 from initial state at 45378.7500 cm-1 (58 3d7.(4F).4p 5F*  4.0)
+45972.0340 cm-1 from initial state at 45972.0340 cm-1 (74 3d7.(4F).4p 5F*  3.0)
+46320.8290 cm-1 from initial state at 46320.8290 cm-1 (57 3d7.(4F).4p 5D*  4.0)
+46452.6970 cm-1 from initial state at 46452.6970 cm-1 (86 3d7.(4F).4p 5F*  2.0)
+46786.4021 cm-1 agree with human 46786.4060 cm-1 !!! (95 3d7.(4F).4p 5F*  1.0)
+47078.4890 cm-1 from initial state at 47078.4890 cm-1 (100 3d7.(4F).4p 5G*  6.0)
+47039.1030 cm-1 from initial state at 47039.1030 cm-1 (72 3d7.(4F).4p 5D*  3.0)
+47345.8420 cm-1 from initial state at 47345.8420 cm-1 (83 3d7.(4F).4p 5G*  5.0)
+47537.3620 cm-1 from initial state at 47537.3620 cm-1 (83 3d7.(4F).4p 5D*  2.0)
+47807.4920 cm-1 from initial state at 47807.4920 cm-1 (88 3d7.(4F).4p 5G*  4.0)
+47848.7800 cm-1 from initial state at 47848.7800 cm-1 (90 3d7.(4F).4p 5D*  1.0)
+47995.5910 cm-1 from initial state at 47995.5910 cm-1 (94 3d7.(4F).4p 5D*  0.0)
+48150.9390 cm-1 from initial state at 48150.9390 cm-1 (93 3d7.(4F).4p 5G*  3.0)
+48388.4400 cm-1 from initial state at 48388.4400 cm-1 (97 3d7.(4F).4p 5G*  2.0)
+48556.0500 cm-1 from initial state at 48556.0500 cm-1 (85 3d7.(4F).4p 3G*  5.0)
+49348.3010 cm-1 from initial state at 49348.3010 cm-1 (63 3d7.(4F).4p 3F*  4.0)
+49697.6800 cm-1 from initial state at 49697.6800 cm-1 (60 3d7.(4F).4p 3G*  4.0)
+50036.3460 cm-1 from initial state at 50036.3460 cm-1 (53 3d7.(4F).4p 3F*  3.0)
+50381.7210 cm-1 from initial state at 50381.7210 cm-1 (56 3d7.(4F).4p 3G*  3.0)
+50914.3210 cm-1 from initial state at 50914.3210 cm-1 (92 3d7.(4F).4p 3F*  2.0)
+51512.2650 cm-1 from initial state at 51512.2650 cm-1 (89 3d7.(4F).4p 3D*  3.0)
+52229.7240 cm-1 from initial state at 52229.7240 cm-1 (93 3d7.(4F).4p 3D*  2.0)
+52684.6290 cm-1 from initial state at 52684.6290 cm-1 (95 3d7.(4F).4p 3D*  1.0)
+61240.7420 cm-1 from initial state at 61240.7420 cm-1 (89 3d7.(4P).4p 5D*  3.0)
+61260.3170 cm-1 from initial state at 61260.3170 cm-1 (88 3d7.(4P).4p 5D*  2.0)
+61388.2460 cm-1 from initial state at 61388.2460 cm-1 (95 3d7.(4P).4p 5D*  4.0)
+61350.2660 cm-1 from initial state at 61350.2660 cm-1 (87 3d7.(4P).4p 5D*  1.0)
+62440.0740 cm-1 from initial state at 62440.0740 cm-1 (52 3d7.(4P).4p 3S*  1.0)
+63344.3290 cm-1 from initial state at 63344.3290 cm-1 (94 3d7.(4P).4p 5P*  3.0)
+63306.6830 cm-1 from initial state at 63306.6830 cm-1 (74 3d7.(2G).4p 3H*  5.0)
+63367.3300 cm-1 from initial state at 63367.3300 cm-1 (90 3d7.(4P).4p 5P*  2.0)
+63510.1760 cm-1 from initial state at 63510.1760 cm-1 (74 3d7.(2G).4p 3F*  4.0)
+63597.3923 cm-1 agree with human 63597.3920 cm-1 !!! (97 3d7.(2G).4p 3H*  6.0)
+63665.1880 cm-1 from initial state at 63665.1880 cm-1 (68 3d7.(4P).4p 5P*  1.0)
+63792.7130 cm-1 from initial state at 63792.7130 cm-1 (87 3d7.(2G).4p 3H*  4.0)
+63586.9840 cm-1 from initial state at 63586.9840 cm-1 (89 3d7.(4P).4p 3D*  3.0)
+63615.9860 cm-1 from initial state at 63615.9860 cm-1 (76 3d7.(4P).4p 3D*  2.0)
+64360.0550 cm-1 from initial state at 64360.0550 cm-1 (86 3d7.(2G).4p 3F*  3.0)
+63865.1660 cm-1 from initial state at 63865.1660 cm-1 (82 3d7.(4P).4p 3D*  1.0)
+64401.3550 cm-1 from initial state at 64401.3550 cm-1 (47 3d7.(2G).4p 1G*  4.0)
+64601.7760 cm-1 from initial state at 64601.7760 cm-1 (83 3d7.(2G).4p 3G*  5.0)
+65016.9120 cm-1 from initial state at 65016.9120 cm-1 (95 3d7.(2G).4p 3F*  2.0)
+64957.4790 cm-1 from initial state at 64957.4790 cm-1 (70 3d7.(2G).4p 1H*  5.0)
+64605.5230 cm-1 from initial state at 64605.5230 cm-1 (56 3d7.(2P).4p 3P*  0.0)
+65174.6560 cm-1 from initial state at 65174.6560 cm-1 (90 3d7.(2G).4p 3G*  3.0)
+65154.0360 cm-1 from initial state at 65154.0360 cm-1 (61 3d7.(2G).4p 3G*  4.0)
+64914.6270 cm-1 from initial state at 64914.6270 cm-1 (54 3d7.(4P).4p 3P*  2.0)
+65028.5090 cm-1 from initial state at 65028.5090 cm-1 (65 3d7.(2P).4p 3P*  1.0)
+65408.3620 cm-1 from initial state at 65408.3620 cm-1 (38 3d7.(2P).4p 3P*  2.0)
+66017.6440 cm-1 from initial state at 66017.6440 cm-1 (76 3d7.(2G).4p 1F*  3.0)
+65511.9860 cm-1 from initial state at 65511.9860 cm-1 (67 3d7.(4P).4p 3P*  0.0)
+65657.2470 cm-1 from initial state at 65657.2470 cm-1 (89 3d7.(4P).4p 3P*  1.0)
+67209.2560 cm-1 from initial state at 67209.2560 cm-1 (39 3d7.(2P).4p 1D*  2.0)
+67524.0120 cm-1 from initial state at 67524.0120 cm-1 (82 3d7.(2P).4p 3D*  3.0)
+67824.3840 cm-1 from initial state at 67824.3840 cm-1 (61 3d7.(2P).4p 3D*  1.0)
+67939.3660 cm-1 from initial state at 67939.3660 cm-1 (53 3d7.(2P).4p 3D*  2.0)
+69059.9260 cm-1 from initial state at 69059.9260 cm-1 (68 3d7.(2D2).4p 3D*  3.0)
+68843.4283 cm-1 agree with human 68843.4230 cm-1 !!! (92 3d7.(2H).4p 3G*  4.0)
+67910.9308 cm-1 agree with human 67910.9280 cm-1 !!! (84 3d7.(2P).4p 1S*  0.0)
+68829.4180 cm-1 agree with human 68829.4460 cm-1 !!! (97 3d7.(2H).4p 3I*  5.0)
+69317.0670 cm-1 from initial state at 69317.0670 cm-1 (31 3d7.(2D2).4p 3D*  1.0)
+69356.2380 cm-1 from initial state at 69356.2380 cm-1 (88 3d7.(2H).4p 3G*  3.0)
+69637.0190 cm-1 from initial state at 69637.0190 cm-1 (52 3d7.(2D2).4p 3D*  2.0)
+69617.4792 cm-1 agree with human 69617.4900 cm-1 !!! (72 3d7.(2H).4p 1I*  6.0)
+70457.5330 cm-1 from initial state at 70457.5330 cm-1 (59 3d7.(2D2).4p 3F*  3.0)
+70265.9140 cm-1 from initial state at 70265.9140 cm-1 (71 3d7.(2P).4p 3S*  1.0)
+70774.8640 cm-1 from initial state at 70774.8640 cm-1 (62 3d7.(2D2).4p 3F*  2.0)
+70857.0510 cm-1 from initial state at 70857.0510 cm-1 (45 3d7.(2P).4p 1P*  1.0)
+71846.4380 cm-1 from initial state at 71846.4380 cm-1 (54 3d7.(2D2).4p 3P*  2.0)
+71702.9586 cm-1 agree with human 71702.9550 cm-1 !!! (95 3d7.(2H).4p 3H*  5.0)
+72008.9028 cm-1 agree with human 72008.9070 cm-1 !!! (93 3d7.(2H).4p 3H*  4.0)
+72535.1080 cm-1 from initial state at 72535.1080 cm-1 (57 3d7.(2D2).4p 1F*  3.0)
+72654.1720 cm-1 not found by humans... (45 3d7.(2D2).4p 1D*  2.0)
+73144.3320 cm-1 from initial state at 73144.3320 cm-1 (53 3d7.(2D2).4p 3P*  1.0)
+73147.0358 cm-1 agree with human 73147.0360 cm-1 !!! (74 3d7.(2H).4p 1G*  4.0)
+74522.9130 cm-1 from initial state at 74522.9130 cm-1 (71 3d7.(2D2).4p 1P*  1.0)
+74376.7882 cm-1 agree with human 74376.7870 cm-1 !!! (95 3d7.(2H).4p 1H*  5.0)
+63 out of 64 levels agree in terms of E
+63 correct levs out of 64
+Largest reward trajectory final state:
+0.0000 cm-1 from initial state at 0.0000 cm-1 (98 3d8 3F  4.0)
+950.3250 cm-1 from initial state at 950.3250 cm-1 (98 3d8 3F  3.0)
+1597.1960 cm-1 from initial state at 1597.1960 cm-1 (98 3d8 3F  2.0)
+3350.4920 cm-1 from initial state at 3350.4920 cm-1 (100 3d7.(4F).4s 5F  5.0)
+4028.9870 cm-1 from initial state at 4028.9870 cm-1 (100 3d7.(4F).4s 5F  4.0)
+4560.7900 cm-1 from initial state at 4560.7900 cm-1 (100 3d7.(4F).4s 5F  3.0)
+4950.0630 cm-1 from initial state at 4950.0630 cm-1 (100 3d7.(4F).4s 5F  2.0)
+5204.6980 cm-1 from initial state at 5204.6980 cm-1 (100 3d7.(4F).4s 5F  1.0)
+9812.8590 cm-1 from initial state at 9812.8590 cm-1 (99 3d7.(4F).4s 3F  4.0)
+10708.3310 cm-1 from initial state at 10708.3310 cm-1 (100 3d7.(4F).4s 3F  3.0)
+11321.8560 cm-1 from initial state at 11321.8560 cm-1 (98 3d7.(4F).4s 3F  2.0)
+11651.2770 cm-1 from initial state at 11651.2770 cm-1 (75 3d8 1D  2.0)
+13260.6870 cm-1 from initial state at 13260.6870 cm-1 (75 3d8 3P  2.0)
+13404.3210 cm-1 from initial state at 13404.3210 cm-1 (96 3d8 3P  1.0)
+13593.2880 cm-1 from initial state at 13593.2880 cm-1 (96 3d8 3P  0.0)
+17771.5050 cm-1 from initial state at 17771.5050 cm-1 (100 3d7.(4P).4s 5P  3.0)
+18031.4270 cm-1 from initial state at 18031.4270 cm-1 (98 3d7.(4P).4s 5P  2.0)
+18338.6400 cm-1 from initial state at 18338.6400 cm-1 (99 3d7.(4P).4s 5P  1.0)
+18973.7280 cm-1 from initial state at 18973.7280 cm-1 (96 3d8 1G  4.0)
+21624.5260 cm-1 from initial state at 21624.5260 cm-1 (99 3d7.(2G).4s 3G  5.0)
+22009.3430 cm-1 from initial state at 22009.3430 cm-1 (97 3d7.(2G).4s 3G  4.0)
+22414.4290 cm-1 from initial state at 22414.4290 cm-1 (100 3d7.(2G).4s 3G  3.0)
+24074.4190 cm-1 from initial state at 24074.4190 cm-1 (92 3d7.(4P).4s 3P  2.0)
+24267.3800 cm-1 from initial state at 24267.3800 cm-1 (88 3d7.(4P).4s 3P  1.0)
+24411.4780 cm-1 from initial state at 24411.4780 cm-1 (82 3d7.(4P).4s 3P  0.0)
+25147.2310 cm-1 from initial state at 25147.2310 cm-1 (93 3d7.(2G).4s 1G  4.0)
+24886.3990 cm-1 from initial state at 24886.3990 cm-1 (82 3d7.(2P).4s 3P  2.0)
+25317.5160 cm-1 from initial state at 25317.5160 cm-1 (83 3d7.(2P).4s 3P  1.0)
+25861.3210 cm-1 from initial state at 25861.3210 cm-1 (81 3d7.(2P).4s 3P  0.0)
+27484.3730 cm-1 from initial state at 27484.3730 cm-1 (78 3d7.(2D2).4s 3D  3.0)
+27468.9944 cm-1 agree with human 27468.9860 cm-1 !!! (98 3d7.(2H).4s 3H  5.0)
+27585.1370 cm-1 from initial state at 27585.1370 cm-1 (47 3d7.(2D2).4s 3D  1.0)
+28111.8720 cm-1 from initial state at 28111.8720 cm-1 (72 3d7.(2D2).4s 3D  2.0)
+27902.1374 cm-1 agree with human 27902.1590 cm-1 !!! (95 3d7.(2H).4s 3H  4.0)
+29268.7771 cm-1 agree with human 29268.7750 cm-1 !!! (63 3d7.(2P).4s 1P  1.0)
+30567.1652 cm-1 agree with human 30567.1710 cm-1 !!! (99 3d7.(2H).4s 1H  5.0)
+31199.4120 cm-1 from initial state at 31199.4120 cm-1 (76 3d7.(2D2).4s 1D  2.0)
+84014.1720 cm-1 from initial state at 84014.1720 cm-1 (100 3d7.(4F).5s 5F  5.0)
+84586.8620 cm-1 from initial state at 84586.8620 cm-1 (87 3d7.(4F).5s 5F  4.0)
+85167.6400 cm-1 from initial state at 85167.6400 cm-1 (94 3d7.(4F).5s 5F  3.0)
+85481.6830 cm-1 from initial state at 85481.6830 cm-1 (87 3d7.(4F).5s 3F  4.0)
+85596.1650 cm-1 from initial state at 85596.1650 cm-1 (98 3d7.(4F).5s 5F  2.0)
+85876.2640 cm-1 from initial state at 85876.2640 cm-1 (100 3d7.(4F).5s 5F  1.0)
+86346.7000 cm-1 from initial state at 86346.7000 cm-1 (94 3d7.(4F).5s 3F  3.0)
+86940.1450 cm-1 from initial state at 86940.1450 cm-1 (97 3d7.(4F).5s 3F  2.0)
+90302.7730 cm-1 from initial state at 90302.7730 cm-1 (92 3d7.(4F).4d 5G  6.0)
+90199.1504 cm-1 agree with human 90199.1570 cm-1 !!! (70 3d7.(4F).4d 5F  4.0)
+90464.5840 cm-1 from initial state at 90464.5840 cm-1 (35 3d7.(4F).4d 5P  3.0)
+90697.4590 cm-1 from initial state at 90697.4590 cm-1 (46 3d7.(4F).4d 5G  5.0)
+90753.2610 cm-1 from initial state at 90753.2610 cm-1 (50 3d7.(4F).4d 5P  3.0)
+90975.5340 cm-1 from initial state at 90975.5340 cm-1 (54 3d7.(4F).4d 5H  6.0)
+90967.5790 cm-1 from initial state at 90967.5790 cm-1 (66 3d7.(4F).4d 5F  2.0)
+91049.4210 cm-1 from initial state at 91049.4210 cm-1 (49 3d7.(4F).4d 5G  4.0)
+91326.9260 cm-1 from initial state at 91326.9260 cm-1 (56 3d7.(4F).4d 3G  5.0)
+91408.4900 cm-1 from initial state at 91408.4900 cm-1 (66 3d7.(4F).4d 3D  3.0)
+91352.8750 cm-1 from initial state at 91352.8750 cm-1 (46 3d7.(4F).4d 5D  4.0)
+91358.9870 cm-1 from initial state at 91358.9870 cm-1 (88 3d7.(4F).4d 5F  1.0)
+91424.7670 cm-1 from initial state at 91424.7670 cm-1 (66 3d7.(4F).4d 5P  2.0)
+91646.4390 cm-1 from initial state at 91646.4390 cm-1 (74 3d7.(4F).4d 5H  5.0)
+91623.4490 cm-1 from initial state at 91623.4490 cm-1 (58 3d7.(4F).4d 3H  6.0)
+91667.3340 cm-1 from initial state at 91667.3340 cm-1 (56 3d7.(4F).4d 5G  3.0)
+91928.9850 cm-1 from initial state at 91928.9850 cm-1 (73 3d7.(4F).4d 5G  2.0)
+91918.1950 cm-1 from initial state at 91918.1950 cm-1 (62 3d7.(4F).4d 3G  4.0)
+91932.0830 cm-1 from initial state at 91932.0830 cm-1 (58 3d7.(4F).4d 5P  1.0)
+92120.6390 cm-1 from initial state at 92120.6390 cm-1 (81 3d7.(4F).4d 5H  4.0)
+92044.9090 cm-1 from initial state at 92044.9090 cm-1 (63 3d7.(4F).4d 3D  2.0)
+91958.3620 cm-1 from initial state at 91958.3620 cm-1 (65 3d7.(4F).4d 5D  3.0)
+92405.9940 cm-1 from initial state at 92405.9940 cm-1 (78 3d7.(4F).4d 5H  3.0)
+92359.1770 cm-1 from initial state at 92359.1770 cm-1 (78 3d7.(4F).4d 3H  5.0)
+92317.3650 cm-1 from initial state at 92317.3650 cm-1 (64 3d7.(4F).4d 5D  2.0)
+92403.1940 cm-1 from initial state at 92403.1940 cm-1 (39 3d7.(4F).4d 3D  1.0)
+92519.9740 cm-1 from initial state at 92519.9740 cm-1 (83 3d7.(4F).4d 3G  3.0)
+92639.8390 cm-1 from initial state at 92639.8390 cm-1 (56 3d7.(4F).4d 3D  1.0)
+92889.4100 cm-1 from initial state at 92889.4100 cm-1 (89 3d7.(4F).4d 3H  4.0)
+93678.4180 cm-1 from initial state at 93678.4180 cm-1 (89 3d7.(4F).4d 3P  2.0)
+93738.7840 cm-1 from initial state at 93738.7840 cm-1 (89 3d7.(4F).4d 3F  4.0)
+94368.5800 cm-1 from initial state at 94368.5800 cm-1 (88 3d7.(4F).4d 3F  3.0)
+94743.6910 cm-1 from initial state at 94743.6910 cm-1 (89 3d7.(4F).4d 3F  2.0)
+99022.5205 cm-1 agree with human 99022.5210 cm-1 !!! (100 3d7.(4P).5s 5P  3.0)
+99235.1555 cm-1 agree with human 99235.1540 cm-1 !!! (97 3d7.(4P).5s 5P  2.0)
+99552.5549 cm-1 agree with human 99552.5530 cm-1 !!! (96 3d7.(4P).5s 5P  1.0)
+100331.3806 cm-1 agree with human 100331.3840 cm-1 !!! (98 3d7.(4P).5s 3P  2.0)
+101233.5956 cm-1 agree with human 101233.5980 cm-1 !!! (98 3d7.(2G).5s 3G  5.0)
+101451.0732 cm-1 agree with human 101451.0670 cm-1 !!! (76 3d7.(2G).5s 3G  4.0)
+102020.3563 cm-1 agree with human 102020.3570 cm-1 !!! (100 3d7.(2G).5s 3G  3.0)
+102371.6038 cm-1 agree with human 102371.6030 cm-1 !!! (77 3d7.(2G).5s 1G  4.0)
+104412.6196 cm-1 agree with human 104412.6240 cm-1 !!! (86 3d7.(2P).5s 3P  2.0)
+105395.1115 cm-1 agree with human 105395.1110 cm-1 !!! (95 3d7.(4P).4d 5F  4.0)
+105504.3743 cm-1 agree with human 105504.3730 cm-1 !!! (93 3d7.(4P).4d 5F  3.0)
+106221.8716 cm-1 agree with human 106221.8710 cm-1 !!! (78 3d7.(4P).4d 3F  4.0)
+106316.3366 cm-1 agree with human 106316.3370 cm-1 !!! (72 3d7.(4P).4d 3F  3.0)
+106516.6366 cm-1 agree with human 106516.6340 cm-1 !!! (92 3d7.(4P).4d 5D  1.0)
+106586.2374 cm-1 agree with human 106586.2260 cm-1 !!! (68 3d7.(4P).4d 5D  3.0)
+106647.1835 cm-1 agree with human 106647.1790 cm-1 !!! (61 3d7.(4P).4d 5D  2.0)
+107713.7324 cm-1 agree with human 107713.7310 cm-1 !!! (88 3d7.(4P).4d 3D  1.0)
+107473.3348 cm-1 agree with human 107473.3340 cm-1 !!! (68 3d7.(2G).4d 3I  6.0)
+107535.6136 cm-1 agree with human 107535.6050 cm-1 !!! (31 3d7.(2D2).5s 3D  2.0)
+107451.1807 cm-1 agree with human 107451.1800 cm-1 !!! (50 3d7.(4P).4d 3D  3.0)
+107543.5558 cm-1 agree with human 107543.5570 cm-1 !!! (78 3d7.(2G).4d 3G  5.0)
+107646.4399 cm-1 agree with human 107646.4430 cm-1 !!! (35 3d7.(2G).4d 1H  5.0)
+107671.8503 cm-1 agree with human 107671.8490 cm-1 !!! (85 3d7.(2G).4d 1F  3.0)
+107790.2242 cm-1 agree with human 107790.2140 cm-1 !!! (75 3d7.(2G).4d 3G  4.0)
+108021.1864 cm-1 agree with human 108021.1930 cm-1 !!! (66 3d7.(2G).4d 3I  5.0)
+108217.1189 cm-1 agree with human 108217.1190 cm-1 !!! (45 3d7.(2H).5s 1H  5.0)
+108475.1126 cm-1 agree with human 108475.1130 cm-1 !!! (93 3d7.(2G).4d 3G  3.0)
+108388.8146 cm-1 agree with human 108388.8150 cm-1 !!! (91 3d7.(2G).4d 3H  4.0)
+108600.1623 cm-1 agree with human 108600.1660 cm-1 !!! (54 3d7.(2G).4d 1H  5.0)
+109442.0494 cm-1 agree with human 109442.0650 cm-1 !!! (40 3d7.(2G).4d 1G  4.0)
+109312.0772 cm-1 agree with human 109312.0760 cm-1 !!! (39 3d7.(2G).4d 1G  4.0)
+108830.0585 cm-1 agree with human 108830.0590 cm-1 !!! (56 3d7.(2G).4d 3F  3.0)
+109242.4486 cm-1 agree with human 109242.4430 cm-1 !!! (52 3d7.(2G).4d 3F  2.0)
+110443.2294 cm-1 agree with human 110443.2290 cm-1 !!! (72 3d7.(2P).4d 3D  1.0)
+110523.3703 cm-1 agree with human 110523.3680 cm-1 !!! (76 3d7.(2P).4d 3D  2.0)
+111493.6315 cm-1 agree with human 111493.6310 cm-1 !!! (64 3d7.(2P).4d 3F  2.0)
+111541.3591 cm-1 agree with human 111541.3570 cm-1 !!! (50 3d7.(2P).4d 3F  3.0)
+111332.4692 cm-1 agree with human 111332.4660 cm-1 !!! (59 3d7.(2P).4d 3P  2.0)
+112350.4594 cm-1 agree with human 112350.4610 cm-1 !!! (34 3d7.(2P).4d 1D  2.0)
+112966.9741 cm-1 agree with human 112966.9740 cm-1 !!! (82 3d7.(2H).4d 1F  3.0)
+113355.6245 cm-1 agree with human 113355.6250 cm-1 !!! (30 3d7.(2D2).4d 3D  3.0)
+114260.7884 cm-1 agree with human 114260.7870 cm-1 !!! (49 3d7.(2D2).4d 3F  2.0)
+113724.5629 cm-1 agree with human 113724.5640 cm-1 !!! (94 3d7.(2H).4d 3G  3.0)
+114559.1020 cm-1 agree with human 114559.1000 cm-1 !!! (49 3d7.(2H).4d 1H  5.0)
+114376.7040 cm-1 agree with human 114376.7140 cm-1 !!! (87 3d7.(2H).4d 3I  5.0)
+113864.5860 cm-1 agree with human 113864.5840 cm-1 !!! (56 3d7.(2H).4d 3H  5.0)
+114926.9834 cm-1 agree with human 114926.9710 cm-1 !!! (59 3d7.(2D2).4d 3G  3.0)
+114763.6880 cm-1 agree with human 114763.6870 cm-1 !!! (80 3d7.(2H).4d 1I  6.0)
+45197.7080 cm-1 from initial state at 45197.7080 cm-1 (96 3d7.(4F).4p 5F*  5.0)
+45378.7500 cm-1 from initial state at 45378.7500 cm-1 (58 3d7.(4F).4p 5F*  4.0)
+45972.0340 cm-1 from initial state at 45972.0340 cm-1 (74 3d7.(4F).4p 5F*  3.0)
+46320.8290 cm-1 from initial state at 46320.8290 cm-1 (57 3d7.(4F).4p 5D*  4.0)
+46452.6970 cm-1 from initial state at 46452.6970 cm-1 (86 3d7.(4F).4p 5F*  2.0)
+46786.4021 cm-1 agree with human 46786.4060 cm-1 !!! (95 3d7.(4F).4p 5F*  1.0)
+47078.4890 cm-1 from initial state at 47078.4890 cm-1 (100 3d7.(4F).4p 5G*  6.0)
+47039.1030 cm-1 from initial state at 47039.1030 cm-1 (72 3d7.(4F).4p 5D*  3.0)
+47345.8420 cm-1 from initial state at 47345.8420 cm-1 (83 3d7.(4F).4p 5G*  5.0)
+47537.3620 cm-1 from initial state at 47537.3620 cm-1 (83 3d7.(4F).4p 5D*  2.0)
+47807.4920 cm-1 from initial state at 47807.4920 cm-1 (88 3d7.(4F).4p 5G*  4.0)
+47848.7800 cm-1 from initial state at 47848.7800 cm-1 (90 3d7.(4F).4p 5D*  1.0)
+47995.5910 cm-1 from initial state at 47995.5910 cm-1 (94 3d7.(4F).4p 5D*  0.0)
+48150.9390 cm-1 from initial state at 48150.9390 cm-1 (93 3d7.(4F).4p 5G*  3.0)
+48388.4400 cm-1 from initial state at 48388.4400 cm-1 (97 3d7.(4F).4p 5G*  2.0)
+48556.0500 cm-1 from initial state at 48556.0500 cm-1 (85 3d7.(4F).4p 3G*  5.0)
+49348.3010 cm-1 from initial state at 49348.3010 cm-1 (63 3d7.(4F).4p 3F*  4.0)
+49697.6800 cm-1 from initial state at 49697.6800 cm-1 (60 3d7.(4F).4p 3G*  4.0)
+50036.3460 cm-1 from initial state at 50036.3460 cm-1 (53 3d7.(4F).4p 3F*  3.0)
+50381.7210 cm-1 from initial state at 50381.7210 cm-1 (56 3d7.(4F).4p 3G*  3.0)
+50914.3210 cm-1 from initial state at 50914.3210 cm-1 (92 3d7.(4F).4p 3F*  2.0)
+51512.2650 cm-1 from initial state at 51512.2650 cm-1 (89 3d7.(4F).4p 3D*  3.0)
+52229.7240 cm-1 from initial state at 52229.7240 cm-1 (93 3d7.(4F).4p 3D*  2.0)
+52684.6290 cm-1 from initial state at 52684.6290 cm-1 (95 3d7.(4F).4p 3D*  1.0)
+61240.7420 cm-1 from initial state at 61240.7420 cm-1 (89 3d7.(4P).4p 5D*  3.0)
+61260.3170 cm-1 from initial state at 61260.3170 cm-1 (88 3d7.(4P).4p 5D*  2.0)
+61388.2460 cm-1 from initial state at 61388.2460 cm-1 (95 3d7.(4P).4p 5D*  4.0)
+61350.2660 cm-1 from initial state at 61350.2660 cm-1 (87 3d7.(4P).4p 5D*  1.0)
+62440.0740 cm-1 from initial state at 62440.0740 cm-1 (52 3d7.(4P).4p 3S*  1.0)
+63344.3290 cm-1 from initial state at 63344.3290 cm-1 (94 3d7.(4P).4p 5P*  3.0)
+63306.6830 cm-1 from initial state at 63306.6830 cm-1 (74 3d7.(2G).4p 3H*  5.0)
+63367.3300 cm-1 from initial state at 63367.3300 cm-1 (90 3d7.(4P).4p 5P*  2.0)
+63510.1760 cm-1 from initial state at 63510.1760 cm-1 (74 3d7.(2G).4p 3F*  4.0)
+63597.3923 cm-1 agree with human 63597.3920 cm-1 !!! (97 3d7.(2G).4p 3H*  6.0)
+63665.1880 cm-1 from initial state at 63665.1880 cm-1 (68 3d7.(4P).4p 5P*  1.0)
+63792.7130 cm-1 from initial state at 63792.7130 cm-1 (87 3d7.(2G).4p 3H*  4.0)
+63586.9840 cm-1 from initial state at 63586.9840 cm-1 (89 3d7.(4P).4p 3D*  3.0)
+63615.9860 cm-1 from initial state at 63615.9860 cm-1 (76 3d7.(4P).4p 3D*  2.0)
+64360.0550 cm-1 from initial state at 64360.0550 cm-1 (86 3d7.(2G).4p 3F*  3.0)
+63865.1660 cm-1 from initial state at 63865.1660 cm-1 (82 3d7.(4P).4p 3D*  1.0)
+64401.3550 cm-1 from initial state at 64401.3550 cm-1 (47 3d7.(2G).4p 1G*  4.0)
+64601.7760 cm-1 from initial state at 64601.7760 cm-1 (83 3d7.(2G).4p 3G*  5.0)
+65016.9120 cm-1 from initial state at 65016.9120 cm-1 (95 3d7.(2G).4p 3F*  2.0)
+64957.4790 cm-1 from initial state at 64957.4790 cm-1 (70 3d7.(2G).4p 1H*  5.0)
+64605.5230 cm-1 from initial state at 64605.5230 cm-1 (56 3d7.(2P).4p 3P*  0.0)
+65174.6560 cm-1 from initial state at 65174.6560 cm-1 (90 3d7.(2G).4p 3G*  3.0)
+65154.0360 cm-1 from initial state at 65154.0360 cm-1 (61 3d7.(2G).4p 3G*  4.0)
+64914.6270 cm-1 from initial state at 64914.6270 cm-1 (54 3d7.(4P).4p 3P*  2.0)
+65028.5090 cm-1 from initial state at 65028.5090 cm-1 (65 3d7.(2P).4p 3P*  1.0)
+65408.3620 cm-1 from initial state at 65408.3620 cm-1 (38 3d7.(2P).4p 3P*  2.0)
+66017.6440 cm-1 from initial state at 66017.6440 cm-1 (76 3d7.(2G).4p 1F*  3.0)
+65511.9860 cm-1 from initial state at 65511.9860 cm-1 (67 3d7.(4P).4p 3P*  0.0)
+65657.2470 cm-1 from initial state at 65657.2470 cm-1 (89 3d7.(4P).4p 3P*  1.0)
+67209.2560 cm-1 from initial state at 67209.2560 cm-1 (39 3d7.(2P).4p 1D*  2.0)
+67524.0120 cm-1 from initial state at 67524.0120 cm-1 (82 3d7.(2P).4p 3D*  3.0)
+67824.3840 cm-1 from initial state at 67824.3840 cm-1 (61 3d7.(2P).4p 3D*  1.0)
+67939.3660 cm-1 from initial state at 67939.3660 cm-1 (53 3d7.(2P).4p 3D*  2.0)
+69059.9260 cm-1 from initial state at 69059.9260 cm-1 (68 3d7.(2D2).4p 3D*  3.0)
+68843.4283 cm-1 agree with human 68843.4230 cm-1 !!! (92 3d7.(2H).4p 3G*  4.0)
+67910.9308 cm-1 agree with human 67910.9280 cm-1 !!! (84 3d7.(2P).4p 1S*  0.0)
+68829.4180 cm-1 agree with human 68829.4460 cm-1 !!! (97 3d7.(2H).4p 3I*  5.0)
+69317.0670 cm-1 from initial state at 69317.0670 cm-1 (31 3d7.(2D2).4p 3D*  1.0)
+69356.2380 cm-1 from initial state at 69356.2380 cm-1 (88 3d7.(2H).4p 3G*  3.0)
+69637.0190 cm-1 from initial state at 69637.0190 cm-1 (52 3d7.(2D2).4p 3D*  2.0)
+69617.4792 cm-1 agree with human 69617.4900 cm-1 !!! (72 3d7.(2H).4p 1I*  6.0)
+70457.5330 cm-1 from initial state at 70457.5330 cm-1 (59 3d7.(2D2).4p 3F*  3.0)
+70265.9140 cm-1 from initial state at 70265.9140 cm-1 (71 3d7.(2P).4p 3S*  1.0)
+70774.8640 cm-1 from initial state at 70774.8640 cm-1 (62 3d7.(2D2).4p 3F*  2.0)
+70857.0510 cm-1 from initial state at 70857.0510 cm-1 (45 3d7.(2P).4p 1P*  1.0)
+71846.4380 cm-1 from initial state at 71846.4380 cm-1 (54 3d7.(2D2).4p 3P*  2.0)
+71702.9586 cm-1 agree with human 71702.9550 cm-1 !!! (95 3d7.(2H).4p 3H*  5.0)
+72008.9028 cm-1 agree with human 72008.9070 cm-1 !!! (93 3d7.(2H).4p 3H*  4.0)
+72535.1080 cm-1 from initial state at 72535.1080 cm-1 (57 3d7.(2D2).4p 1F*  3.0)
+72654.1720 cm-1 not found by humans... (45 3d7.(2D2).4p 1D*  2.0)
+73144.3320 cm-1 from initial state at 73144.3320 cm-1 (53 3d7.(2D2).4p 3P*  1.0)
+73147.0358 cm-1 agree with human 73147.0360 cm-1 !!! (74 3d7.(2H).4p 1G*  4.0)
+74522.9130 cm-1 from initial state at 74522.9130 cm-1 (71 3d7.(2D2).4p 1P*  1.0)
+74376.7882 cm-1 agree with human 74376.7870 cm-1 !!! (95 3d7.(2H).4p 1H*  5.0)
+62 out of 63 levels agree in terms of E
+62 correct levs out of 63
+Things I need:
+Total stepping reward 14.2493, 63 correct levs out of 64
+Max trajectory reward 14.5366, 62 correct levs out of 63
+	Command being timed: "python -u mcts.py"
+	User time (seconds): 2532.56
+	System time (seconds): 23.21
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 43:04.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 45902184
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 19794828
+	Voluntary context switches: 66387
+	Involuntary context switches: 1860
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 368
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,504 @@
+Any initial graph (wn_obs - wn_ritz) > 1.2 * wn_unc?  False
+New largest trajectory reward: 0.0000
+New largest trajectory reward: 0.2763
+New largest trajectory reward: 0.2836
+New largest trajectory reward: 0.4674
+New largest trajectory reward: 0.8066
+New largest trajectory reward: 0.8116
+New largest trajectory reward: 0.8207
+New largest trajectory reward: 0.8279
+|A1| = 55
+Reward: 0.4384
+Step 1 (1m) - total rewards so far: 0.4384
+New largest trajectory reward: 0.9992
+New largest trajectory reward: 1.0841
+New largest trajectory reward: 1.1660
+New largest trajectory reward: 1.1837
+New largest trajectory reward: 1.2420
+New largest trajectory reward: 1.2638
+|A2| = 5
+Reward: -0.0153
+id 210 label id 210 E_c 21452.71 4f(4)5I1.6p_4I 9/2 E_obs 23409.5042 cm-1
+Step 2 (1m) - total rewards so far: 0.4231
+|A1| = 55
+Reward: 0.4193
+Step 3 (0m) - total rewards so far: 0.8424
+New largest trajectory reward: 1.4801
+New largest trajectory reward: 1.5573
+New largest trajectory reward: 1.5713
+New largest trajectory reward: 1.5820
+New largest trajectory reward: 1.6363
+New largest trajectory reward: 1.6525
+|A2| = 5
+Reward: -0.0241
+id 247 label id 247 E_c 22888.52 4f(4)5I1.6p_6I 13/2 E_obs 22578.1451 cm-1
+Step 4 (1m) - total rewards so far: 0.8183
+|A1| = 56
+Reward: 0.4273
+Step 5 (0m) - total rewards so far: 1.2457
+New largest trajectory reward: 1.7807
+New largest trajectory reward: 1.8148
+New largest trajectory reward: 1.8318
+New largest trajectory reward: 1.8693
+New largest trajectory reward: 1.9095
+New largest trajectory reward: 1.9407
+New largest trajectory reward: 2.0031
+New largest trajectory reward: 2.0172
+New largest trajectory reward: 2.0228
+|A2| = 6
+Reward: -0.0291
+id 222 label id 222 E_c 22026.08 4f(4)5I1.6p_6I 11/2 E_obs 23159.9488 cm-1
+Step 6 (1m) - total rewards so far: 1.2166
+|A1| = 57
+Reward: 0.4359
+Step 7 (1m) - total rewards so far: 1.6525
+New largest trajectory reward: 2.0351
+New largest trajectory reward: 2.1164
+New largest trajectory reward: 2.1739
+New largest trajectory reward: 2.2313
+New largest trajectory reward: 2.3584
+New largest trajectory reward: 2.3693
+New largest trajectory reward: 2.3848
+New largest trajectory reward: 2.3921
+|A2| = 10
+Reward: -0.0494
+id 301 label id 301 E_c 24865.14 4f(4)5I1.6p_6H 15/2 E_obs 25120.3157 cm-1
+Step 8 (1m) - total rewards so far: 1.6032
+|A1| = 58
+Reward: 0.4141
+Step 9 (1m) - total rewards so far: 2.0172
+New largest trajectory reward: 2.6229
+New largest trajectory reward: 2.6369
+New largest trajectory reward: 2.6527
+New largest trajectory reward: 2.7561
+|A2| = 10
+Reward: -0.0447
+id 282 label id 282 E_c 24171.3 4f(4)5I1.6p_6I 15/2 E_obs 25353.6095 cm-1
+Step 10 (1m) - total rewards so far: 1.9725
+|A1| = 57
+Reward: 0.4124
+Step 11 (0m) - total rewards so far: 2.3848
+New largest trajectory reward: 2.8075
+New largest trajectory reward: 2.9744
+New largest trajectory reward: 3.0612
+New largest trajectory reward: 3.0924
+New largest trajectory reward: 3.0950
+|A2| = 4
+Reward: -0.0743
+id 5 label id 5 E_c 3120.96 4f(4)5I1.6s_4I 11/2 E_obs 4933.0968 cm-1
+Step 12 (0m) - total rewards so far: 2.3106
+|A1| = 60
+Reward: 0.3716
+Step 13 (0m) - total rewards so far: 2.6822
+New largest trajectory reward: 3.1848
+New largest trajectory reward: 3.2635
+New largest trajectory reward: 3.3322
+New largest trajectory reward: 3.3426
+New largest trajectory reward: 3.3712
+New largest trajectory reward: 3.3825
+New largest trajectory reward: 3.4156
+New largest trajectory reward: 3.4181
+|A2| = 3
+Reward: -0.0069
+id 13 label id 13 E_c 5965.42 4f(4)5I1.5d_6L 15/2 E_obs 7950.0532 cm-1
+Step 14 (1m) - total rewards so far: 2.6753
+|A1| = 59
+Reward: 0.4171
+Step 15 (1m) - total rewards so far: 3.0924
+New largest trajectory reward: 3.4413
+New largest trajectory reward: 3.5154
+New largest trajectory reward: 3.5523
+New largest trajectory reward: 3.6247
+New largest trajectory reward: 3.6354
+New largest trajectory reward: 3.6498
+|A2| = 6
+Reward: -0.0964
+id 281 label id 281 E_c 24150.78 4f(4)5I1.6p_4H 9/2 E_obs 25531.4627 cm-1
+Step 16 (1m) - total rewards so far: 2.9960
+|A1| = 60
+Reward: 0.3743
+Step 17 (0m) - total rewards so far: 3.3702
+New largest trajectory reward: 3.7433
+New largest trajectory reward: 3.8330
+New largest trajectory reward: 3.8451
+New largest trajectory reward: 3.9218
+|A2| = 6
+Reward: -0.1832
+id 12 label id 12 E_c 5940.53 4f(4)5I1.6s_4I 15/2 E_obs 7745.0141 cm-1
+Step 18 (1m) - total rewards so far: 3.1870
+|A1| = 63
+Reward: 0.3182
+Step 19 (1m) - total rewards so far: 3.5052
+New largest trajectory reward: 4.1805
+New largest trajectory reward: 4.1929
+New largest trajectory reward: 4.2267
+|A2| = 9
+Reward: -0.0031
+id 16 label id 16 E_c 6881.31 4f(4)5I1.5d_6K 11/2 E_obs 6931.7831 cm-1
+Step 20 (1m) - total rewards so far: 3.5021
+|A1| = 63
+Reward: 0.3961
+Step 21 (0m) - total rewards so far: 3.8982
+New largest trajectory reward: 4.2713
+New largest trajectory reward: 4.3207
+New largest trajectory reward: 4.3385
+New largest trajectory reward: 4.3829
+New largest trajectory reward: 4.4874
+New largest trajectory reward: 4.4945
+New largest trajectory reward: 4.5024
+|A2| = 2
+Reward: -0.1158
+id 371 label id 371 E_c 27145.7 4f(4)5I1.6p_4I 15/2 E_obs 27445.8369 cm-1
+Step 22 (1m) - total rewards so far: 3.7824
+|A1| = 62
+Reward: 0.3170
+Step 23 (1m) - total rewards so far: 4.0994
+New largest trajectory reward: 4.5410
+New largest trajectory reward: 4.5910
+New largest trajectory reward: 4.6529
+New largest trajectory reward: 4.6564
+New largest trajectory reward: 4.7986
+New largest trajectory reward: 4.8157
+New largest trajectory reward: 4.8483
+New largest trajectory reward: 4.8634
+|A2| = 13
+Reward: -0.0107
+id 28 label id 28 E_c 9888.2 4f(4)5I1.5d_6K 17/2 E_obs 8210.3994 cm-1
+Step 24 (1m) - total rewards so far: 4.0887
+|A1| = 62
+Reward: 0.3992
+Step 25 (0m) - total rewards so far: 4.4879
+New largest trajectory reward: 4.8852
+New largest trajectory reward: 4.9669
+New largest trajectory reward: 5.0893
+New largest trajectory reward: 5.1146
+New largest trajectory reward: 5.1297
+New largest trajectory reward: 5.1638
+|A2| = 6
+Reward: -0.0521
+id 375 label id 375 E_c 27211.69 4f(4)5I1.6p_4H 13/2 E_obs 27089.7692 cm-1
+Step 26 (1m) - total rewards so far: 4.4358
+|A1| = 62
+Reward: 0.3627
+Step 27 (1m) - total rewards so far: 4.7986
+New largest trajectory reward: 5.2257
+New largest trajectory reward: 5.4359
+|A2| = 17
+Reward: -0.0843
+id 10 label id 10 E_c 4941.03 4f(4)5I1.5d_6L 13/2 E_obs 3373.6602 cm-1
+Step 28 (2m) - total rewards so far: 4.7143
+|A1| = 64
+Reward: 0.3123
+Step 29 (1m) - total rewards so far: 5.0266
+New largest trajectory reward: 5.4974
+New largest trajectory reward: 5.5927
+New largest trajectory reward: 5.6163
+New largest trajectory reward: 5.6548
+New largest trajectory reward: 5.6771
+New largest trajectory reward: 5.7602
+|A2| = 9
+Reward: -0.0104
+id 18 label id 18 E_c 7802.57 4f(4)5I1.5d_6K 13/2 E_obs 6139.5809 cm-1
+Step 30 (1m) - total rewards so far: 5.0163
+|A1| = 66
+Reward: 0.3379
+Step 31 (2m) - total rewards so far: 5.3542
+New largest trajectory reward: 5.7858
+New largest trajectory reward: 5.8613
+New largest trajectory reward: 5.8963
+New largest trajectory reward: 5.9076
+New largest trajectory reward: 5.9570
+|A2| = 25
+Reward: -0.0686
+id 316 label id 316 E_c 25386.31 4f(4)5I1.6p_4K 15/2 E_obs 25313.1748 cm-1
+Step 32 (2m) - total rewards so far: 5.2855
+|A1| = 66
+Reward: 0.3191
+Step 33 (0m) - total rewards so far: 5.6047
+New largest trajectory reward: 5.9765
+New largest trajectory reward: 6.0726
+New largest trajectory reward: 6.1316
+New largest trajectory reward: 6.1342
+|A2| = 10
+Reward: -0.0779
+id 14 label id 14 E_c 6065.11 4f(4)5I1.5d_6K 9/2 E_obs 5303.1786 cm-1
+Step 34 (1m) - total rewards so far: 5.5268
+|A1| = 67
+Reward: 0.4125
+Step 35 (0m) - total rewards so far: 5.9393
+New largest trajectory reward: 6.1471
+New largest trajectory reward: 6.1897
+New largest trajectory reward: 6.2633
+New largest trajectory reward: 6.2683
+New largest trajectory reward: 6.3428
+New largest trajectory reward: 6.3599
+|A2| = 2
+Reward: -0.2352
+id 363 label id 363 E_c 26959.95 4f(4)5I1.6p_4K 17/2 E_obs 27100.2366 cm-1
+Step 36 (1m) - total rewards so far: 5.7040
+|A1| = 68
+Reward: 0.2466
+Step 37 (0m) - total rewards so far: 5.9506
+New largest trajectory reward: 6.3831
+New largest trajectory reward: 6.3927
+New largest trajectory reward: 6.3987
+New largest trajectory reward: 6.4769
+New largest trajectory reward: 6.6276
+|A2| = 7
+Reward: -0.0209
+id 650 label id 650 E_c 34811.59 4f(3)4G1.5d_5I.6s_6I 9/2 E_obs 32626.3338 cm-1
+Step 38 (2m) - total rewards so far: 5.9297
+|A1| = 71
+Reward: 0.2858
+Step 39 (1m) - total rewards so far: 6.2156
+New largest trajectory reward: 6.6444
+New largest trajectory reward: 6.6489
+New largest trajectory reward: 6.6831
+New largest trajectory reward: 6.7430
+|A2| = 25
+Reward: -0.0182
+id 385 label id 385 E_c 27636.15 4f(3)4F1.5d_5H.6s_6H 7/2 E_obs 29272.2377 cm-1
+Step 40 (2m) - total rewards so far: 6.1974
+|A1| = 71
+Reward: 0.2620
+Step 41 (1m) - total rewards so far: 6.4594
+New largest trajectory reward: 6.7953
+New largest trajectory reward: 6.8382
+New largest trajectory reward: 6.8513
+New largest trajectory reward: 6.8981
+New largest trajectory reward: 6.9414
+New largest trajectory reward: 6.9869
+|A2| = 15
+Reward: -0.0646
+id 148 label id 148 E_c 18579.43 4f(3)4I1.5d_5I.6s_6I 15/2 E_obs 20280.1781 cm-1
+Step 42 (2m) - total rewards so far: 6.3948
+|A1| = 70
+Reward: 0.2120
+Step 43 (1m) - total rewards so far: 6.6068
+New largest trajectory reward: 7.1724
+|A2| = 9
+Reward: -0.0501
+id 47 label id 47 E_c 11905.97 4f(4)5I1.5d_6I 15/2 E_obs 10613.8673 cm-1
+Step 44 (1m) - total rewards so far: 6.5567
+|A1| = 70
+Reward: 0.1617
+Step 45 (1m) - total rewards so far: 6.7185
+|A2| = 10
+Reward: -0.0853
+id 67 label id 67 E_c 13404.06 4f(4)5I1.5d_6G 13/2 E_obs 11195.9802 cm-1
+Step 46 (2m) - total rewards so far: 6.6332
+|A1| = 69
+Reward: 0.1733
+Step 47 (1m) - total rewards so far: 6.8065
+New largest trajectory reward: 7.1804
+New largest trajectory reward: 7.1831
+New largest trajectory reward: 7.2094
+New largest trajectory reward: 7.2247
+New largest trajectory reward: 7.2404
+|A2| = 7
+Reward: -0.0537
+id 37 label id 37 E_c 10917.88 4f(4)5I1.5d_6I 13/2 E_obs 9322.7718 cm-1
+Step 48 (1m) - total rewards so far: 6.7529
+|A1| = 68
+Reward: 0.1228
+Step 49 (1m) - total rewards so far: 6.8756
+New largest trajectory reward: 7.2431
+New largest trajectory reward: 7.2643
+New largest trajectory reward: 7.2872
+New largest trajectory reward: 7.2878
+New largest trajectory reward: 7.4114
+New largest trajectory reward: 7.4551
+|A2| = 3
+Reward: -0.0628
+id 81 label id 81 E_c 14663.31 4f(4)5I1.5d_4L 17/2 E_obs 11729.8297 cm-1
+Step 50 (1m) - total rewards so far: 6.8129
+|A1| = 68
+Reward: 0.2110
+Step 51 (1m) - total rewards so far: 7.0239
+New largest trajectory reward: 7.5015
+|A2| = 31
+Reward: -0.0285
+id 651 label id 651 E_c 34862.92 4f(3)4G1.5d(2)3F2_6K 15/2 E_obs 34221.8857 cm-1
+Step 52 (2m) - total rewards so far: 6.9954
+|A1| = 67
+Reward: 0.3239
+Step 53 (1m) - total rewards so far: 7.3194
+New largest trajectory reward: 7.5844
+New largest trajectory reward: 7.6028
+New largest trajectory reward: 7.6360
+New largest trajectory reward: 7.6465
+New largest trajectory reward: 7.7147
+New largest trajectory reward: 7.8288
+New largest trajectory reward: 7.8509
+New largest trajectory reward: 7.8588
+New largest trajectory reward: 7.8615
+|A2| = 20
+Reward: -0.0946
+id 22 label id 22 E_c 8808.79 4f(4)5I1.5d_6K 15/2 E_obs 7601.7333 cm-1
+Step 54 (2m) - total rewards so far: 7.2247
+|A1| = 67
+Reward: 0.2581
+Step 55 (1m) - total rewards so far: 7.4829
+New largest trajectory reward: 7.8954
+New largest trajectory reward: 7.8984
+New largest trajectory reward: 7.9164
+New largest trajectory reward: 8.0302
+New largest trajectory reward: 8.0739
+|A2| = 18
+Reward: -0.0453
+id 151 label id 151 E_c 18796.01 4f(3)4I1.5d_5I.6s_4I 9/2 E_obs 18817.6908 cm-1
+Step 56 (2m) - total rewards so far: 7.4375
+|A1| = 67
+Reward: 0.1710
+Step 57 (1m) - total rewards so far: 7.6085
+New largest trajectory reward: 8.1814
+New largest trajectory reward: 8.1841
+|A2| = 29
+Reward: -0.0280
+id 518 label id 518 E_c 31723.51 4f(3)2H2.5d_3H.6s_4H 11/2 E_obs 35273.2317 cm-1
+Step 58 (2m) - total rewards so far: 7.5806
+|A1| = 66
+Reward: 0.2517
+Step 59 (1m) - total rewards so far: 7.8323
+New largest trajectory reward: 8.2149
+New largest trajectory reward: 8.2454
+New largest trajectory reward: 8.2767
+New largest trajectory reward: 8.2795
+|A2| = 10
+Reward: -0.0784
+id 359 label id 359 E_c 26829.29 4f(3)4F1.5d(2)3F2_6I 13/2 E_obs 27305.0160 cm-1
+Step 60 (2m) - total rewards so far: 7.7539
+|A1| = 65
+Reward: 0.1641
+Step 61 (2m) - total rewards so far: 7.9180
+|A2| = 27
+Reward: -0.0668
+id 160 label id 160 E_c 19337.69 4f(3)4I1.5d_5K.6s_4K 17/2 E_obs 22556.5695 cm-1
+Step 62 (1m) - total rewards so far: 7.8511
+|A1| = 64
+Reward: 0.1934
+Step 63 (0m) - total rewards so far: 8.0446
+|A2| = 32
+Reward: -0.1716
+id 550 label id 550 E_c 32422.05 4f(3)4I1.5d_5K.6p_6L 11/2 E_obs 38063.9291 cm-1
+Step 64 (0m) - total rewards so far: 7.8730
+1000 unique A2s and 14489 A2 computations were saved
+Final state:
+0.0000 cm-1 from initial state at 0.0000 cm-1 (id 0 E_c 0.0 4f(4)5I1.6s_6I 7/2)
+513.3306 cm-1 from initial state at 513.3300 cm-1 (id 1 E_c 547.86 4f(4)5I1.6s_6I 9/2)
+1470.1019 cm-1 from initial state at 1470.1050 cm-1 (id 2 E_c 1404.36 4f(4)5I1.6s_6I 11/2)
+1650.2040 cm-1 from initial state at 1650.2050 cm-1 (id 3 E_c 1789.52 4f(4)5I1.6s_4I 9/2)
+2585.4570 cm-1 from initial state at 2585.4600 cm-1 (id 4 E_c 2425.58 4f(4)5I1.6s_6I 13/2)
+4933.0936 cm-1 not found by humans... (id 5 E_c 3120.96 4f(4)5I1.6s_4I 11/2)
+3801.9248 cm-1 from initial state at 3801.9250 cm-1 (id 6 E_c 3564.21 4f(4)5I1.6s_6I 15/2)
+5085.6201 cm-1 from initial state at 5085.6350 cm-1 (id 9 E_c 4789.43 4f(4)5I1.6s_6I 17/2)
+3373.6591 cm-1 not found by humans... (id 10 E_c 4941.03 4f(4)5I1.5d_6L 13/2)
+7745.0163 cm-1 not found by humans... (id 12 E_c 5940.53 4f(4)5I1.6s_4I 15/2)
+7950.0523 cm-1 agree with human 7950.0700 cm-1 !!! (id 13 E_c 5965.42 4f(4)5I1.5d_6L 15/2)
+5303.1792 cm-1 not found by humans... (id 14 E_c 6065.11 4f(4)5I1.5d_6K 9/2)
+6931.7808 cm-1 agree with human 6931.8000 cm-1 !!! (id 16 E_c 6881.31 4f(4)5I1.5d_6K 11/2)
+6139.5845 cm-1 not found by humans... (id 18 E_c 7802.57 4f(4)5I1.5d_6K 13/2)
+7601.7519 cm-1 not found by humans... (id 22 E_c 8808.79 4f(4)5I1.5d_6K 15/2)
+8210.4031 cm-1 not found by humans... (id 28 E_c 9888.2 4f(4)5I1.5d_6K 17/2)
+9322.7723 cm-1 not found by humans... (id 37 E_c 10917.88 4f(4)5I1.5d_6I 13/2)
+10613.8691 cm-1 not found by humans... (id 47 E_c 11905.97 4f(4)5I1.5d_6I 15/2)
+11195.9818 cm-1 not found by humans... (id 67 E_c 13404.06 4f(4)5I1.5d_6G 13/2)
+11729.8252 cm-1 not found by humans... (id 81 E_c 14663.31 4f(4)5I1.5d_4L 17/2)
+20280.1797 cm-1 not found by humans... (id 148 E_c 18579.43 4f(3)4I1.5d_5I.6s_6I 15/2)
+18817.6908 cm-1 not found by humans... (id 151 E_c 18796.01 4f(3)4I1.5d_5I.6s_4I 9/2)
+22556.5694 cm-1 not found by humans... (id 160 E_c 19337.69 4f(3)4I1.5d_5K.6s_4K 17/2)
+23409.5027 cm-1 agree with human 23409.5200 cm-1 !!! (id 210 E_c 21452.71 4f(4)5I1.6p_4I 9/2)
+23159.9479 cm-1 agree with human 23159.9650 cm-1 !!! (id 222 E_c 22026.08 4f(4)5I1.6p_6I 11/2)
+22578.1444 cm-1 agree with human 22578.1600 cm-1 !!! (id 247 E_c 22888.52 4f(4)5I1.6p_6I 13/2)
+23229.9659 cm-1 from initial state at 23229.9800 cm-1 (id 273 E_c 23695.16 4f(4)5I1.6p_6K 9/2)
+25531.4613 cm-1 not found by humans... (id 281 E_c 24150.78 4f(4)5I1.6p_4H 9/2)
+25353.6056 cm-1 agree with human 25353.6300 cm-1 !!! (id 282 E_c 24171.3 4f(4)5I1.6p_6I 15/2)
+24445.3685 cm-1 from initial state at 24445.3850 cm-1 (id 299 E_c 24812.56 4f(4)5I1.6p_6K 11/2)
+25120.3085 cm-1 agree with human 25120.3350 cm-1 !!! (id 301 E_c 24865.14 4f(4)5I1.6p_6H 15/2)
+25313.1740 cm-1 not found by humans... (id 316 E_c 25386.31 4f(4)5I1.6p_4K 15/2)
+25524.4568 cm-1 from initial state at 25524.4800 cm-1 (id 325 E_c 25636.71 4f(4)5I1.6p_6K 13/2)
+27305.0159 cm-1 not found by humans... (id 359 E_c 26829.29 4f(3)4F1.5d(2)3F2_6I 13/2)
+27100.2375 cm-1 not found by humans... (id 363 E_c 26959.95 4f(4)5I1.6p_4K 17/2)
+26912.7390 cm-1 from initial state at 26912.7650 cm-1 (id 364 E_c 26969.89 4f(4)5I1.6p_6K 15/2)
+27445.8366 cm-1 agree with human 27445.8550 cm-1 !!! (id 371 E_c 27145.7 4f(4)5I1.6p_4I 15/2)
+27089.7714 cm-1 not found by humans... (id 375 E_c 27211.69 4f(4)5I1.6p_4H 13/2)
+29272.2377 cm-1 not found by humans... (id 385 E_c 27636.15 4f(3)4F1.5d_5H.6s_6H 7/2)
+28418.9400 cm-1 from initial state at 28418.9750 cm-1 (id 414 E_c 28465.64 4f(4)5I1.6p_6K 17/2)
+35273.2323 cm-1 not found by humans... (id 518 E_c 31723.51 4f(3)2H2.5d_3H.6s_4H 11/2)
+38063.9291 cm-1 not found by humans... (id 550 E_c 32422.05 4f(3)4I1.5d_5K.6p_6L 11/2)
+32626.3329 cm-1 not found by humans... (id 650 E_c 34811.59 4f(3)4G1.5d_5I.6s_6I 9/2)
+34221.9012 cm-1 not found by humans... (id 651 E_c 34862.92 4f(3)4G1.5d(2)3F2_6K 15/2)
+8 out of 32 levels agree in terms of E
+8 correct levs out of 32
+Largest reward trajectory final state:
+0.0000 cm-1 from initial state at 0.0000 cm-1 (id 0 E_c 0.0 4f(4)5I1.6s_6I 7/2)
+513.3306 cm-1 from initial state at 513.3300 cm-1 (id 1 E_c 547.86 4f(4)5I1.6s_6I 9/2)
+1470.1018 cm-1 from initial state at 1470.1050 cm-1 (id 2 E_c 1404.36 4f(4)5I1.6s_6I 11/2)
+1650.2040 cm-1 from initial state at 1650.2050 cm-1 (id 3 E_c 1789.52 4f(4)5I1.6s_4I 9/2)
+2585.4571 cm-1 from initial state at 2585.4600 cm-1 (id 4 E_c 2425.58 4f(4)5I1.6s_6I 13/2)
+4933.0937 cm-1 not found by humans... (id 5 E_c 3120.96 4f(4)5I1.6s_4I 11/2)
+3801.9249 cm-1 from initial state at 3801.9250 cm-1 (id 6 E_c 3564.21 4f(4)5I1.6s_6I 15/2)
+5085.6202 cm-1 from initial state at 5085.6350 cm-1 (id 9 E_c 4789.43 4f(4)5I1.6s_6I 17/2)
+3373.6592 cm-1 not found by humans... (id 10 E_c 4941.03 4f(4)5I1.5d_6L 13/2)
+7745.0163 cm-1 not found by humans... (id 12 E_c 5940.53 4f(4)5I1.6s_4I 15/2)
+7950.0523 cm-1 agree with human 7950.0700 cm-1 !!! (id 13 E_c 5965.42 4f(4)5I1.5d_6L 15/2)
+5303.1791 cm-1 not found by humans... (id 14 E_c 6065.11 4f(4)5I1.5d_6K 9/2)
+6931.7808 cm-1 agree with human 6931.8000 cm-1 !!! (id 16 E_c 6881.31 4f(4)5I1.5d_6K 11/2)
+6139.5845 cm-1 not found by humans... (id 18 E_c 7802.57 4f(4)5I1.5d_6K 13/2)
+7601.7520 cm-1 not found by humans... (id 22 E_c 8808.79 4f(4)5I1.5d_6K 15/2)
+8210.4031 cm-1 not found by humans... (id 28 E_c 9888.2 4f(4)5I1.5d_6K 17/2)
+9322.7724 cm-1 not found by humans... (id 37 E_c 10917.88 4f(4)5I1.5d_6I 13/2)
+10613.8692 cm-1 not found by humans... (id 47 E_c 11905.97 4f(4)5I1.5d_6I 15/2)
+11195.9818 cm-1 not found by humans... (id 67 E_c 13404.06 4f(4)5I1.5d_6G 13/2)
+11729.8252 cm-1 not found by humans... (id 81 E_c 14663.31 4f(4)5I1.5d_4L 17/2)
+20280.1798 cm-1 not found by humans... (id 148 E_c 18579.43 4f(3)4I1.5d_5I.6s_6I 15/2)
+18817.6908 cm-1 not found by humans... (id 151 E_c 18796.01 4f(3)4I1.5d_5I.6s_4I 9/2)
+22945.4368 cm-1 not found by humans... (id 181 E_c 20207.76 4f(3)4I1.5d_3I.6s_4I 15/2)
+23409.5026 cm-1 agree with human 23409.5200 cm-1 !!! (id 210 E_c 21452.71 4f(4)5I1.6p_4I 9/2)
+23159.9481 cm-1 agree with human 23159.9650 cm-1 !!! (id 222 E_c 22026.08 4f(4)5I1.6p_6I 11/2)
+22578.1444 cm-1 agree with human 22578.1600 cm-1 !!! (id 247 E_c 22888.52 4f(4)5I1.6p_6I 13/2)
+23229.9659 cm-1 from initial state at 23229.9800 cm-1 (id 273 E_c 23695.16 4f(4)5I1.6p_6K 9/2)
+25531.4614 cm-1 not found by humans... (id 281 E_c 24150.78 4f(4)5I1.6p_4H 9/2)
+25353.6057 cm-1 agree with human 25353.6300 cm-1 !!! (id 282 E_c 24171.3 4f(4)5I1.6p_6I 15/2)
+24445.3685 cm-1 from initial state at 24445.3850 cm-1 (id 299 E_c 24812.56 4f(4)5I1.6p_6K 11/2)
+25120.3086 cm-1 agree with human 25120.3350 cm-1 !!! (id 301 E_c 24865.14 4f(4)5I1.6p_6H 15/2)
+25313.1741 cm-1 not found by humans... (id 316 E_c 25386.31 4f(4)5I1.6p_4K 15/2)
+25524.4568 cm-1 from initial state at 25524.4800 cm-1 (id 325 E_c 25636.71 4f(4)5I1.6p_6K 13/2)
+27305.0160 cm-1 not found by humans... (id 359 E_c 26829.29 4f(3)4F1.5d(2)3F2_6I 13/2)
+27100.2376 cm-1 not found by humans... (id 363 E_c 26959.95 4f(4)5I1.6p_4K 17/2)
+26912.7390 cm-1 from initial state at 26912.7650 cm-1 (id 364 E_c 26969.89 4f(4)5I1.6p_6K 15/2)
+27445.8367 cm-1 agree with human 27445.8550 cm-1 !!! (id 371 E_c 27145.7 4f(4)5I1.6p_4I 15/2)
+27089.7713 cm-1 not found by humans... (id 375 E_c 27211.69 4f(4)5I1.6p_4H 13/2)
+29272.2377 cm-1 not found by humans... (id 385 E_c 27636.15 4f(3)4F1.5d_5H.6s_6H 7/2)
+28418.9400 cm-1 from initial state at 28418.9750 cm-1 (id 414 E_c 28465.64 4f(4)5I1.6p_6K 17/2)
+35273.2323 cm-1 not found by humans... (id 518 E_c 31723.51 4f(3)2H2.5d_3H.6s_4H 11/2)
+32626.3329 cm-1 not found by humans... (id 650 E_c 34811.59 4f(3)4G1.5d_5I.6s_6I 9/2)
+34221.9012 cm-1 not found by humans... (id 651 E_c 34862.92 4f(3)4G1.5d(2)3F2_6K 15/2)
+8 out of 31 levels agree in terms of E
+8 correct levs out of 31
+Things I need:
+Total stepping reward 7.8730, 8 correct levs out of 32
+Max trajectory reward 8.2795, 8 correct levs out of 31
+	Command being timed: "python -u mcts.py"
+	User time (seconds): 3649.10
+	System time (seconds): 10.59
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:02:07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5170780
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 5926161
+	Voluntary context switches: 90748
+	Involuntary context switches: 1714
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 368
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

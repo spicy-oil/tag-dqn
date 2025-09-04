@@ -545,7 +545,7 @@ def comp(final_known_lev_names, final_known_levs, init_known_levs, all_known_lev
             lev_id = int(match.group(1))
             comp_value = known_levs[known_lev_ids == lev_id]
             if comp_value.size == 0:
-                print(f'Warning - level id {lev_id} not found in all_known_levels_and_labels.csv, skipping comparison of E and id for this level')
+                #print(f'Level id {lev_id} not found in all_known_levels_and_labels.csv, skipping comparison of E and id for this level')
                 comp_value = np.array([np.nan])
             diff = abs(comp_value - lev)
             if diff < tol:

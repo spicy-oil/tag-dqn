@@ -1,0 +1,65 @@
+Parameters:
+case: nd3
+episodes: 512
+buffer_capacity: 10000
+batch_size: 16
+per_alpha: 0.0
+per_beta: 0.7
+n_step: 2
+gamma: 0.99
+gat_n_layers: 3
+gat_hidden_size: 32
+gat_heads: 4
+mlp_hidden_size: 32
+sigma_0: 0.5
+min_epsilon: 0.1
+adam_lr: 0.001
+tau: 0.001
+apr: 0.0
+patience: 1000000.0
+steps_per_train: 4
+duel: True
+double: True
+noisy: True
+
+Summary of all trials recorded by .csv files in this directory
+
+
+    R_lt  R_f  N_fc  N_f  R_l  N_fc_l  N_f_l  N_fc_ls  N_f_ls seed
+7.290328 7.04    36   63 7.21      37     63       37      63   19
+7.578376 7.25    40   64 7.11      42     62       44      64   15
+7.247687 6.84    35   60 7.06      39     63       40      64    4
+7.399787 6.11    34   50 6.89      36     61       37      64   11
+7.117571 6.93    41   60 6.82      39     61       42      63    2
+7.065661 6.87    37   64 6.75      32     63       35      62   14
+7.100759 6.76    36   64 6.78      34     62       37      64   23
+7.277723 7.09    34   63 6.81      33     55       34      64    3
+7.203500 6.90    36   57 6.71      37     60       39      62    6
+7.287906 6.93    41   59 6.66      37     61       40      63    5
+7.125365 6.57    34   60 6.88      35     63       36      64   24
+7.164557 7.06    37   62 7.05      35     63       37      62   10
+7.296663 7.19    37   64 7.08      35     62       37      63   12
+6.909319 6.84    36   61 6.25      33     59       36      63   17
+7.092365 6.51    33   59 6.94      33     62       37      62    7
+7.198267 6.91    37   61 6.97      35     62       36      63   21
+7.012964 6.73    34   61 6.80      35     63       35      63   18
+7.068575 6.91    34   62 6.67      31     59       35      62   22
+7.462104 6.79    35   63 7.54      40     63       41      63    1
+7.247660 6.41    33   58 6.41      33     58       40      61   13
+7.259669 6.53    31   60 7.17      33     61       33      61    0
+7.167645 6.67    33   62 6.61      34     62       34      64    9
+7.153357 6.84    32   62 7.11      36     63       37      64    8
+7.094390 7.21    36   64 6.78      35     60       37      62   20
+
+Largest ep reward during training
+7.20 +- 0.29
+Ep reward from deployment of the final agent
+6.83 +- 0.54
+Fraction of N lev match with human 
+35.50 +- 5.18
+Ep reward from deployment of the agent that achieved largest ep reward during training
+6.88 +- 0.55
+N lev match with human 
+35.38 +- 5.33
+N lev match with human for the final state with the largest ep reward during training
+37.33 +- 5.39

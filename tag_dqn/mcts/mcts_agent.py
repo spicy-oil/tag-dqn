@@ -1,4 +1,9 @@
-# FIND OUT WHY RESULTS GO BEYOND EPISODE LENGTH????
+'''
+Implementation re-purposed from 
+V.-A. Darvariu, S. Hailes, and M. Musolesi. Tree search in DAG space with model-based reinforcement
+learning for causal discovery. Proc. of the Royal Society A: Mathematical, Physical and Engineering Sci-
+ences, 481(2312):20240450, 2025.
+'''
 
 import numpy as np
 import torch

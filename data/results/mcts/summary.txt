@@ -1,0 +1,17 @@
+Cp is the UCT exploration parameter
+Cps is the initial Cp value, but does not affect our implementation of MCTS because we use the rolling average returns instead
+d is rollout depth
+N is the number of simulation trajectories before a step is taken in the MDP
+Step Rw is the rewared obtained by stepping till the end of the episode
+Step N_cor is N_c of above
+Max T Rw is the max reward obtained in a simulation trajectory (this can happen with less than d steps remaining in the episode)
+Max T N_corr is N_c of above
+Max N_corr is max of above
+
+Sorted by Max T Rw
+    Case     Cp      Cps    d     N         Step Rw      Step N_cor        Max T Rw    Max T N_corr  Max N_cor             Acc
+===============================================================================================================================
+   nd2_k  0.400    2.000    4   512    53.34 ± 2.17     184.7 ± 9.4    53.67 ± 2.13     184.7 ± 9.4        191     0.77 ± 0.02
+     co2  0.400    2.000    4   512    14.92 ± 0.70      61.8 ± 2.1    15.15 ± 0.65      61.0 ± 1.8         63     0.97 ± 0.03
+     nd3  0.400    2.000    4   512     8.46 ± 0.12      36.9 ± 3.7     8.63 ± 0.12      36.7 ± 3.8         40     0.58 ± 0.06
+   nd2_u  0.400    2.000    4   512     8.36 ± 0.86       9.2 ± 5.5     8.73 ± 0.87       9.2 ± 5.5         16     0.30 ± 0.18

@@ -1,0 +1,52 @@
+Parameters:
+case: nd3
+episodes: 512
+buffer_capacity: 10000
+batch_size: 16
+per_alpha: 0.0
+per_beta: 0.7
+n_step: 2
+gamma: 0.99
+gat_n_layers: 3
+gat_hidden_size: 32
+gat_heads: 4
+mlp_hidden_size: 32
+sigma_0: 0.5
+min_epsilon: 0.1
+adam_lr: 0.001
+tau: 0.001
+apr: 0.0
+
+Summary of all trials recorded by .csv files in this directory
+
+
+    R_lt  R_f  N_fc  N_f  R_l  N_fc_l  N_f_l  N_fc_ls  N_f_ls seed
+7.229515 7.19    34   62 7.18      35     63       36      63   15
+6.938251 6.55    33   61 6.56      30     63       32      64    4
+7.300538 7.38    41   64 7.07      38     62       39      63   11
+6.998453 6.37    31   59 6.64      34     60       37      62    2
+7.277431 7.27    37   62 7.27      37     62       37      62   14
+7.552321 7.12    36   63 7.42      37     64       38      64    3
+7.253480 6.62    35   62 7.00      36     62       39      62    6
+7.284018 6.84    38   56 7.01      38     61       39      63    5
+6.992064 6.94    33   63 6.89      34     63       34      63   10
+7.375406 6.88    36   63 7.25      37     63       38      63   12
+7.245301 7.36    39   64 7.14      34     63       39      64    7
+7.012528 6.86    33   62 6.86      33     62       33      61    1
+7.319890 6.99    37   64 7.25      40     63       39      63   13
+7.032393 6.85    31   62 6.83      32     62       35      63    0
+7.420094 6.86    32   63 6.71      34     62       37      64    9
+7.023637 6.59    32   61 6.80      34     62       33      63    8
+
+Largest ep reward during training
+7.20 +- 0.36
+Ep reward from deployment of the final agent
+6.92 +- 0.59
+Fraction of N lev match with human 
+34.88 +- 5.97
+Ep reward from deployment of the agent that achieved largest ep reward during training
+6.99 +- 0.50
+N lev match with human 
+35.19 +- 5.12
+N lev match with human for the final state with the largest ep reward during training
+36.56 +- 4.90

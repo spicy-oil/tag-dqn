@@ -21,7 +21,7 @@ params:
   int_tol: 1.0            # Delta_I, Intensity unc. (order of magnitude)
   A2_max: 32              # Max size of A2 space
   float_levs: True        # Whether initial state known levels are floating in LOPT 
-  ep_length: 32          # Number of steps in an episode H
+  ep_length: 512          # Number of steps in an episode H
   gamma: 0.99             # Discount factor
   
   # NN parameters
@@ -31,9 +31,9 @@ params:
   mlp_hidden_size: 32     # MLP hidden layer size
   
   # DQN learning parameters
-  episodes: 2           # Number of training episodes
+  episodes: 512           # Number of training episodes
   buffer_capacity: 10000  # Replay buffer size
-  tr_start_ep: 1          # Episode to start training
+  tr_start_ep: 8          # Episode to start training
   batch_size: 16          # Replay batch sample size
   adam_lr: 0.001          # Adam learning rate
   min_epsilon: 0.1        # Final epsilon for epsilon-greedy
@@ -53,4 +53,4 @@ params:
   # MCTS parameters
   C_p: 0.4                # UCT exploration constant
   depth: 4                # MCTS depth
-  N_sim: 32               # Number of MCTS simulations per step in env
+  N_sim: 512              # Number of MCTS simulations per step in env

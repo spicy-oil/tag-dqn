@@ -31,9 +31,10 @@ Hyperparameter tuning for new environments and running multiple seeds for best c
 ---
 
 ## Installation
-Ideally install Python >= 3.11.11 (developed using this version) in a separate virtual environment (e.g. conda) to avoid conflicts with packages and dependencies. Download this repository, under the directory containing `pyproject.toml` and under the new virtual environment run `pip install`, e.g.
+Ideally install Python >= 3.11.11 (developed using this version) in a separate virtual environment (e.g. conda) to avoid conflicts with packages and dependencies. Download this repository, under the directory containing `pyproject.toml` and under the new virtual environment run `pip install`. For example:
 
 ```bash
+git clone https://github.com/spicy-oil/tag-dqn.git
 conda create -n tag-dqn python=3.11.11
 conda activate tag-dqn
 pip install -e .
@@ -115,7 +116,7 @@ Let's talk about each parameter in the `config.yaml` file (they are defined in t
 - `float_levs` is a flag which, when false, limits MDP complexity by fixing initial MDP state known level energies in all level energy optimisations (this happens once every two steps in the environment). For the Nd II case studies, only 12 levels are known in the MDP initial state, so there was no reason to fix levels. It is likely best to fix levels as the initial MDP state level energies are likely validated by humans.
 - `ep_length` is $H$ of the paper and limits MDP complexity by limiting the maximum number of level determinations in an episode. Increasing this is at the cost of computation time and does not necessarily give more correctly determined level energies, especially if atomic structure calculations require improvements. 
 - `gamma` is the MDP discount factor. We did some tuning on this and found 0.9 and 1.0 to be slightly worse than the most common value 0.99 (which we use).
-- `gat_n_layers` is the number of layers in the GNN. It offered diminishing returns in performance after 2 or 3 given our hyperparameter search ranges, while increasing computation time and memory cost significantly.
+- `gat_n_layers` is the number of layers in the GNN. It offered diminishing returns in performance after 2 or 3 given our hyperparameter search ranges, while increasing computation time and memory cost significantly. For Co II there was no difference between 2 and 3 but 3 required more than 24 hours (next HPC job size so queues took very long).
 - `gat_hidden_size` is sensitive until up to a certain value (complex enough, ~32), but increasing it does cost more resources.
 - `gat_heads` greatly affects GNN complexity and resource cost, it offered diminishing returns for us past 4 given our hyperparameter search ranges.
 - `mlp_hidden_size` is sensitive until up to a certain value (complex enough, ~32), then slowly decreases RL performance as it is increased. The latter likely comes from exploration by noisy-nets.

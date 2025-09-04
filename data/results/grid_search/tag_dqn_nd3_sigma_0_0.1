@@ -1,0 +1,43 @@
+Parameters:
+case: nd3
+episodes: 512
+buffer_capacity: 10000
+batch_size: 16
+per_alpha: 0.0
+per_beta: 0.4
+n_step: 2
+gamma: 0.99
+gat_n_layers: 2
+gat_hidden_size: 32
+gat_heads: 4
+mlp_hidden_size: 256
+sigma_0: 0.1
+min_epsilon: 0.1
+adam_lr: 0.001
+tau: 0.001
+apr: 0.0
+
+Summary of all trials recorded by .csv files in this directory
+
+
+    R_lt  R_f  N_fc  N_f  R_l  N_fc_l  N_f_l  N_fc_ls  N_f_ls seed
+6.883742 6.84    34   61 6.44      30     57       33      61    4
+6.435368 6.17    29   62 6.09      27     62       31      62    2
+6.908515 6.80    38   62 6.24      29     58       38      63    3
+7.051255 6.58    35   58 6.58      35     58       41      61    1
+6.986034 6.55    36   59 6.43      37     61       37      61    0
+
+Largest ep reward during training
+6.85 +- 0.49
+Ep reward from deployment of the final agent
+6.59 +- 0.53
+Fraction of N lev match with human
+34.40 +- 6.72
+Ep reward from deployment of the agent that achieved largest ep reward during training
+6.36 +- 0.38
+N lev match with human
+31.60 +- 8.44
+N lev match with human for the final state with the largest ep reward during training
+36.00 +- 8.00
+
+-> a bit worse than sigma_0 = 0.5
