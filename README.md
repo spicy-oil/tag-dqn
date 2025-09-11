@@ -78,7 +78,7 @@ tag_dqn.run_greedy('data/envs/nd3/config.yaml', reward_params='data/envs/reward.
 ```
 and/or change `ep_length`, `episodes`, and `tr_start_ep` to small numbers in `config.yaml` to check if TAG-DQN runs.
 
-We advise against taking TAG-DQN outputs with certainty. Firstly, some of the levels determined will be wrong. But more importantly, validation by spectrum inspections and semi-empirical caluclation improvements should be vital procedures in acceptable term analysis (these are neither part of the MDP nor RL). 
+We advise against assuming TAG-DQN outputs being correct. Firstly, some of the levels determined will be wrong. But more importantly, validation by spectrum inspections and semi-empirical caluclation improvements should be vital procedures in acceptable term analysis (these are neither part of the MDP nor RL). 
 
 ---
 
@@ -107,7 +107,7 @@ If necessary, the reward function can be changed with relative ease in `tag_dqn/
 ### Environment Parameters and Hyperparameters
 Let's talk about each parameter in the `config.yaml` file (they are defined in the comments of example config file under `data/envs/`)
 
-- `min_snr` limits MDP complexity by limiting the number of graph edges (theoretical transitions) based on whether we expect to observe them. Certainly, some neglected theoretical transitions are observable but not omitted from $\mathcal{A}^2$ due to uncertainties in $gA_{\text{calc}}$ and $S/N_{\text{calc}}$ estimation, while some theoretical transitions remaining on the graph are also not observable. The number is chosen to compromise between graph complexity and the inclusion rate of observable theoretical transitions.
+- `min_snr` limits MDP complexity by limiting the number of graph edges (theoretical transitions) based on whether we expect to observe them. Certainly, some neglected theoretical transitions are observable but omitted from $\mathcal{A}^2$ by this threshold due to uncertainties in $gA_{\text{calc}}$ and $S/N_{\text{calc}}$ estimation, while some theoretical transitions remaining on the graph are also not observable. The number is chosen to compromise between graph complexity and the inclusion rate of observable theoretical transitions.
 - `spec_range` limits MDP complexity by limiting the line list range. In determining unknown levels using groups of lines expected from a particular spectral region, this parameter makes the RL process efficient.
 - `wn_range` is $\mathit{\Delta} E$ of the paper, it limits MDP complexity by setting a candidate line wavenumber search range in $\mathcal{A}^2$. Setting this requires domain knowledge, where for typical ab initio calculations this is around 10% of level energies and for semi-empirical calculations this can be less than 1% (e.g. if searching for levels in a known config with calculations parameterised for that config).
 - `tol` is $\delta E$ of the paper, it limits MDP complexity by setting a maximum tolerance for repeating candidate level energies $E_{\text{obs}}$. Setting this requires domain knowledge, where it is around 0.05 cm-1 for Fourier transform (FT) spectroscopy in the visible and UV, but could be smaller for IR FT spectra and larger for grating spectra.
