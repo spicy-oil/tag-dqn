@@ -60,16 +60,16 @@ def two_step_greedy_term_analysis(q_net, env):
 
     print(f'Total reward: {total_reward:.4f}')
 
-def run_greedy(config_file, reward_params=None, output_dir='./greedy_results'):
+def run_greedy(config_file, reward_params=None, output_dir='greedy_results'):
     '''
     Initialise the RL agent and environment
     '''
+    # Create results directory at where run is called if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+    
     with open(output_dir+'/log.txt', 'w') as f:
         tee = dqn_data_proc.Tee(os.sys.stdout, f)
         with redirect_stdout(tee):  
-            # Create results directory at where run is called if it doesn't exist
-            os.makedirs(output_dir, exist_ok=True)
-
 
             # Initialise data ----------------------------------------------------------------------------------
             # All 1D numpy arrays, wn and E in units of 1000 cm-1
@@ -148,5 +148,10 @@ def run_greedy(config_file, reward_params=None, output_dir='./greedy_results'):
             lev_names, levs = env._get_known_levs()
             dqn_data_proc.comp(lev_names, levs, known_lev_values, 
                                       all_known_levs, all_known_levels_and_labels, True)
+            
+            # # Get classified line list pd dataframe, check for dodgy levels and add rejected level indices to prune list
+            # result_graph = env.state['graph']
+            # classified_linelist = dqn_data_proc.get_pd_table(result_graph, env.E_scale, env.lev_name, env.J, known_only=True) 
+            # classified_linelist.to_csv(output_dir+'/classified_linelist.csv', index=False)
 
     

@@ -14,15 +14,15 @@ from ..dqn import dqn_env
 from ..dqn import dqn_data_proc
 from contextlib import redirect_stdout
 
-def run_mcts(config_file, seed, reward_params=None, output_dir='./mcts_results'):
+def run_mcts(config_file, seed, reward_params=None, output_dir='mcts_results'):
     '''
     Initialise the RL agent, env, and trainer, then train and evaluate
     '''
+    # Create results directory at where run is called if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
     with open(output_dir+'/log_'+str(seed)+'.txt', 'w') as f:
         tee = dqn_data_proc.Tee(os.sys.stdout, f)
         with redirect_stdout(tee): 
-            # Create results directory at where run is called if it doesn't exist
-            os.makedirs(output_dir, exist_ok=True)
 
             seed = seed
 
@@ -116,5 +116,10 @@ def run_mcts(config_file, seed, reward_params=None, output_dir='./mcts_results')
                 tmp = f' and {N_correct_id_ls} correct IDs'
             print(f'Total stepping reward {mag.total_stepped_rewards:.4f}, {N_correct} correct levs out of {N_found}')
             print(f'Max trajectory reward {mag.largest_traj_R:.4f}, {N_correct_ls} correct levs out of {N_found_ls}' + tmp)
+
+            # # Get classified line list pd dataframe, check for dodgy levels and add rejected level indices to prune list
+            # result_graph = env.state['graph']
+            # classified_linelist = dqn_data_proc.get_pd_table(result_graph, env.E_scale, env.lev_name, env.J, known_only=True) 
+            # classified_linelist.to_csv(output_dir+'/cll_'+ str(seed) +'.csv', index=False)
 
 

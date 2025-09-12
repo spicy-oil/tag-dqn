@@ -19,7 +19,7 @@ import yaml
 import numpy as np
 import pandas as pd
 
-def run_tag_dqn(config_file, seed, reward_params=None, output_dir='./dqn_results'):
+def run_tag_dqn(config_file, seed, reward_params=None, output_dir='dqn_results'):
     '''
     Initialise the RL agent, env, and trainer, then train and evaluate
     '''

@@ -53,394 +53,394 @@ This line was not added to the graph
 Warning - known line from 93.6784180 to 48.3884400 not found in graph, likely that its expected S/N is too low and was filtered out
 This line was not added to the graph
 Any initial graph (wn_obs - wn_ritz) > 1.2 * wn_unc?  False
-Graph data shapes: Data(x=[871, 6], edge_index=[2, 3954], edge_attr=[3954, 11])
+Graph data shapes: Data(x=[871, 6], edge_index=[2, 3944], edge_attr=[3944, 11])
 Line list shape: torch.Size([3536, 4])
 Running greedy term analysis...
 Step 1/128
-|A1| = 144
-Reward: 0.3856
+|A1| = 143
+Reward: 0.3855
 Step 2/128
 |A2| = 5
 Reward: -0.0000
 Step 3/128
-|A1| = 144
+|A1| = 143
 Reward: 0.3586
 Step 4/128
 |A2| = 3
-Reward: -0.0243
+Reward: -0.0244
 Step 5/128
-|A1| = 143
-Reward: 0.3501
+|A1| = 142
+Reward: 0.3494
 Step 6/128
 |A2| = 1
-Reward: -0.3501
+Reward: -0.3494
 Step 7/128
-|A1| = 142
-Reward: 0.3362
+|A1| = 141
+Reward: 0.3356
 Step 8/128
 |A2| = 4
 Reward: -0.0001
 Step 9/128
-|A1| = 141
-Reward: 0.3338
+|A1| = 140
+Reward: 0.3330
 Step 10/128
 |A2| = 3
-Reward: -0.0065
+Reward: -0.0064
 Step 11/128
-|A1| = 140
+|A1| = 139
 Reward: 0.3549
 Step 12/128
 |A2| = 1
 Reward: -0.3549
 Step 13/128
-|A1| = 139
-Reward: 0.3399
+|A1| = 138
+Reward: 0.3393
 Step 14/128
 |A2| = 1
-Reward: -0.3399
+Reward: -0.3393
 Step 15/128
-|A1| = 138
-Reward: 0.3113
+|A1| = 137
+Reward: 0.3112
 Step 16/128
 |A2| = 1
-Reward: -0.3113
+Reward: -0.3112
 Step 17/128
-|A1| = 137
-Reward: 0.3113
+|A1| = 136
+Reward: 0.3105
 Step 18/128
 |A2| = 1
-Reward: -0.3113
+Reward: -0.3105
 Step 19/128
-|A1| = 136
-Reward: 0.3000
+|A1| = 135
+Reward: 0.2992
 Step 20/128
 |A2| = 2
 Reward: -0.0046
 Step 21/128
-|A1| = 135
-Reward: 0.2841
+|A1| = 134
+Reward: 0.2834
 Step 22/128
 |A2| = 2
-Reward: -0.1768
+Reward: -0.1763
 Step 23/128
-|A1| = 134
+|A1| = 133
 Reward: 0.2642
 Step 24/128
 |A2| = 5
 Reward: -0.1352
 Step 25/128
-|A1| = 133
+|A1| = 132
 Reward: 0.3574
 Step 26/128
 |A2| = 7
 Reward: -0.1471
 Step 27/128
-|A1| = 135
-Reward: 0.3884
+|A1| = 134
+Reward: 0.3874
 Step 28/128
 |A2| = 2
-Reward: -0.2133
+Reward: -0.2128
 Step 29/128
-|A1| = 136
-Reward: 0.3568
+|A1| = 135
+Reward: 0.3561
 Step 30/128
 |A2| = 1
-Reward: -0.3568
+Reward: -0.3561
 Step 31/128
-|A1| = 135
-Reward: 0.2620
+|A1| = 134
+Reward: 0.2618
 Step 32/128
 |A2| = 1
-Reward: -0.2620
+Reward: -0.2618
 Step 33/128
-|A1| = 134
-Reward: 0.2598
+|A1| = 133
+Reward: 0.2591
 Step 34/128
 |A2| = 3
 Reward: -0.0172
 Step 35/128
-|A1| = 133
-Reward: 0.2567
+|A1| = 132
+Reward: 0.2556
 Step 36/128
 |A2| = 4
-Reward: -0.1207
+Reward: -0.1202
 Step 37/128
-|A1| = 132
-Reward: 0.2526
-Step 38/128
-|A2| = 13
-Reward: -0.0263
-Step 39/128
 |A1| = 131
-Reward: 0.2522
-Step 40/128
+Reward: 0.2513
+Step 38/128
 |A2| = 2
-Reward: -0.0289
-Step 41/128
+Reward: -0.0288
+Step 39/128
 |A1| = 130
-Reward: 0.2510
-Step 42/128
-|A2| = 3
-Reward: -0.0352
-Step 43/128
+Reward: 0.2511
+Step 40/128
+|A2| = 13
+Reward: -0.0262
+Step 41/128
 |A1| = 129
-Reward: 0.2488
-Step 44/128
+Reward: 0.2504
+Step 42/128
 |A2| = 1
-Reward: -0.2488
-Step 45/128
+Reward: -0.2504
+Step 43/128
 |A1| = 128
-Reward: 0.2463
+Reward: 0.2500
+Step 44/128
+|A2| = 3
+Reward: -0.0350
+Step 45/128
+|A1| = 127
+Reward: 0.2455
 Step 46/128
 |A2| = 3
 Reward: -0.0004
 Step 47/128
-|A1| = 127
-Reward: 0.2450
+|A1| = 126
+Reward: 0.2436
 Step 48/128
 |A2| = 13
-Reward: -0.0734
+Reward: -0.0731
 Step 49/128
-|A1| = 126
-Reward: 0.2441
+|A1| = 125
+Reward: 0.2429
 Step 50/128
 |A2| = 5
 Reward: -0.0032
 Step 51/128
-|A1| = 125
-Reward: 0.2428
+|A1| = 124
+Reward: 0.2417
 Step 52/128
 |A2| = 1
-Reward: -0.2428
+Reward: -0.2417
 Step 53/128
-|A1| = 124
-Reward: 0.2406
+|A1| = 123
+Reward: 0.2392
 Step 54/128
 |A2| = 8
-Reward: -0.0520
+Reward: -0.0517
 Step 55/128
-|A1| = 123
-Reward: 0.2395
+|A1| = 122
+Reward: 0.2385
 Step 56/128
 |A2| = 1
-Reward: -0.2395
+Reward: -0.2385
 Step 57/128
-|A1| = 122
-Reward: 0.2386
+|A1| = 121
+Reward: 0.2383
 Step 58/128
 |A2| = 2
-Reward: -0.0541
+Reward: -0.0540
 Step 59/128
-|A1| = 121
-Reward: 0.2379
+|A1| = 120
+Reward: 0.2371
 Step 60/128
 |A2| = 12
-Reward: -0.0766
+Reward: -0.0764
 Step 61/128
-|A1| = 120
-Reward: 0.2367
+|A1| = 119
+Reward: 0.2359
 Step 62/128
 |A2| = 1
-Reward: -0.2367
+Reward: -0.2359
 Step 63/128
-|A1| = 119
-Reward: 0.2356
+|A1| = 118
+Reward: 0.2343
 Step 64/128
 |A2| = 8
-Reward: -0.0108
+Reward: -0.0107
 Step 65/128
-|A1| = 118
-Reward: 0.2346
-Step 66/128
-|A2| = 10
-Reward: -0.0565
-Step 67/128
 |A1| = 117
 Reward: 0.2336
+Step 66/128
+|A2| = 10
+Reward: -0.0562
+Step 67/128
+|A1| = 116
+Reward: 0.2331
 Step 68/128
+|A2| = 1
+Reward: -0.2331
+Step 69/128
+|A1| = 115
+Reward: 0.2326
+Step 70/128
 |A2| = 3
 Reward: -0.0136
-Step 69/128
-|A1| = 116
-Reward: 0.2334
-Step 70/128
-|A2| = 1
-Reward: -0.2334
 Step 71/128
-|A1| = 115
-Reward: 0.2327
+|A1| = 114
+Reward: 0.2311
 Step 72/128
 |A2| = 5
-Reward: -0.0346
+Reward: -0.0344
 Step 73/128
-|A1| = 114
-Reward: 0.2318
+|A1| = 113
+Reward: 0.2309
 Step 74/128
 |A2| = 2
-Reward: -0.0275
+Reward: -0.0274
 Step 75/128
-|A1| = 113
-Reward: 0.2308
+|A1| = 112
+Reward: 0.2297
 Step 76/128
 |A2| = 5
-Reward: -0.0283
+Reward: -0.0282
 Step 77/128
-|A1| = 112
-Reward: 0.2298
-Step 78/128
-|A2| = 6
-Reward: -0.0068
-Step 79/128
 |A1| = 111
-Reward: 0.2293
-Step 80/128
+Reward: 0.2296
+Step 78/128
 |A2| = 3
 Reward: -0.0002
-Step 81/128
+Step 79/128
 |A1| = 110
-Reward: 0.2273
+Reward: 0.2290
+Step 80/128
+|A2| = 6
+Reward: -0.0069
+Step 81/128
+|A1| = 109
+Reward: 0.2266
 Step 82/128
 |A2| = 4
 Reward: -0.0065
 Step 83/128
-|A1| = 109
-Reward: 0.2269
-Step 84/128
-|A2| = 28
-Reward: -0.1029
-Step 85/128
 |A1| = 108
-Reward: 0.2267
-Step 86/128
-|A2| = 2
-Reward: -0.1245
-Step 87/128
-|A1| = 107
-Reward: 0.2264
-Step 88/128
+Reward: 0.2261
+Step 84/128
 |A2| = 4
 Reward: -0.0008
-Step 89/128
+Step 85/128
+|A1| = 107
+Reward: 0.2258
+Step 86/128
+|A2| = 28
+Reward: -0.1022
+Step 87/128
 |A1| = 106
-Reward: 0.2249
+Reward: 0.2255
+Step 88/128
+|A2| = 2
+Reward: -0.1234
+Step 89/128
+|A1| = 105
+Reward: 0.2241
 Step 90/128
 |A2| = 4
 Reward: -0.0012
 Step 91/128
-|A1| = 105
-Reward: 0.2249
+|A1| = 104
+Reward: 0.2238
 Step 92/128
 |A2| = 6
 Reward: -0.0002
 Step 93/128
-|A1| = 104
-Reward: 0.2235
+|A1| = 103
+Reward: 0.2227
 Step 94/128
 |A2| = 4
-Reward: -0.0037
+Reward: -0.0036
 Step 95/128
-|A1| = 103
-Reward: 0.2183
-Step 96/128
-|A2| = 3
-Reward: -0.0677
-Step 97/128
 |A1| = 102
-Reward: 0.2180
-Step 98/128
-|A2| = 2
-Reward: -0.1492
-Step 99/128
-|A1| = 101
-Reward: 0.2180
-Step 100/128
+Reward: 0.2184
+Step 96/128
 |A2| = 2
 Reward: -0.0013
-Step 101/128
+Step 97/128
+|A1| = 101
+Reward: 0.2178
+Step 98/128
+|A2| = 2
+Reward: -0.1491
+Step 99/128
 |A1| = 100
-Reward: 0.2173
-Step 102/128
+Reward: 0.2177
+Step 100/128
 |A2| = 2
 Reward: -0.0017
-Step 103/128
+Step 101/128
 |A1| = 99
-Reward: 0.2165
+Reward: 0.2173
+Step 102/128
+|A2| = 3
+Reward: -0.0681
+Step 103/128
+|A1| = 98
+Reward: 0.2156
 Step 104/128
 |A2| = 19
 Reward: -0.0003
 Step 105/128
-|A1| = 98
-Reward: 0.2150
+|A1| = 97
+Reward: 0.2141
 Step 106/128
 |A2| = 9
-Reward: -0.0437
+Reward: -0.0435
 Step 107/128
-|A1| = 97
-Reward: 0.2136
+|A1| = 96
+Reward: 0.2125
 Step 108/128
 |A2| = 1
-Reward: -0.2136
+Reward: -0.2125
 Step 109/128
-|A1| = 96
-Reward: 0.2128
-Step 110/128
-|A2| = 13
-Reward: -0.0740
-Step 111/128
 |A1| = 95
-Reward: 0.2118
-Step 112/128
-|A2| = 2
-Reward: -0.0415
-Step 113/128
-|A1| = 94
-Reward: 0.2118
-Step 114/128
+Reward: 0.2121
+Step 110/128
 |A2| = 1
-Reward: -0.2118
-Step 115/128
+Reward: -0.2121
+Step 111/128
+|A1| = 94
+Reward: 0.2121
+Step 112/128
+|A2| = 13
+Reward: -0.0735
+Step 113/128
 |A1| = 93
-Reward: 0.2106
+Reward: 0.2108
+Step 114/128
+|A2| = 2
+Reward: -0.0413
+Step 115/128
+|A1| = 92
+Reward: 0.2102
 Step 116/128
 |A2| = 3
 Reward: -0.0005
 Step 117/128
-|A1| = 92
-Reward: 0.2101
+|A1| = 91
+Reward: 0.2092
 Step 118/128
+|A2| = 18
+Reward: -0.0224
+Step 119/128
+|A1| = 90
+Reward: 0.2090
+Step 120/128
 |A2| = 11
 Reward: -0.0001
-Step 119/128
-|A1| = 91
-Reward: 0.2101
-Step 120/128
-|A2| = 18
-Reward: -0.0226
 Step 121/128
-|A1| = 90
-Reward: 0.2098
-Step 122/128
-|A2| = 7
-Reward: -0.0223
-Step 123/128
 |A1| = 89
-Reward: 0.2068
+Reward: 0.2090
+Step 122/128
+|A2| = 52
+Reward: -0.0222
+Step 123/128
+|A1| = 88
+Reward: 0.2058
 Step 124/128
 |A2| = 2
-Reward: -0.1240
+Reward: -0.1236
 Step 125/128
-|A1| = 88
-Reward: 0.2040
-Step 126/128
-|A2| = 5
-Reward: -0.0422
-Step 127/128
 |A1| = 87
-Reward: 0.2033
+Reward: 0.2024
+Step 126/128
+|A2| = 3
+Reward: -0.0419
+Step 127/128
+|A1| = 86
+Reward: 0.2023
 Step 128/128
-|A2| = 4
-Reward: -0.0409
-Total reward: 10.1080
+|A2| = 1
+Reward: -0.2023
+Total reward: 9.9144
 0.0000 cm-1 from initial state at 0.0000 cm-1 (98 3d8 3F  4.0)
 950.3250 cm-1 from initial state at 950.3250 cm-1 (98 3d8 3F  3.0)
 1597.1960 cm-1 from initial state at 1597.1960 cm-1 (98 3d8 3F  2.0)
@@ -556,7 +556,6 @@ Total reward: 10.1080
 110884.4968 cm-1 agree with human 110884.4910 cm-1 !!! (48 3d7.(2P).4d 1F  3.0)
 111541.3591 cm-1 agree with human 111541.3570 cm-1 !!! (50 3d7.(2P).4d 3F  3.0)
 115205.8753 cm-1 not found by humans... (34 3d7.(2D2).4d 3G  4.0)
-114926.9834 cm-1 agree with human 114926.9710 cm-1 !!! (59 3d7.(2D2).4d 3G  3.0)
 114974.2919 cm-1 agree with human 114974.3120 cm-1 !!! (35 3d7.(2D2).4d 1G  4.0)
 45197.7080 cm-1 from initial state at 45197.7080 cm-1 (96 3d7.(4F).4p 5F*  5.0)
 45378.7500 cm-1 from initial state at 45378.7500 cm-1 (58 3d7.(4F).4p 5F*  4.0)
@@ -632,4 +631,4 @@ Total reward: 10.1080
 72654.1720 cm-1 not found by humans... (45 3d7.(2D2).4p 1D*  2.0)
 73144.3320 cm-1 from initial state at 73144.3320 cm-1 (53 3d7.(2D2).4p 3P*  1.0)
 74522.9130 cm-1 from initial state at 74522.9130 cm-1 (71 3d7.(2D2).4p 1P*  1.0)
-42 out of 50 new known levels agree in terms of E
+41 out of 49 new known levels agree in terms of E

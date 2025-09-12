@@ -44,5 +44,6 @@ snr               - float64 (same scale as snr_obs of line list)
 ---- Notes ----
 -Single precision float is insufficient for high precision (8+ s.f.) level energies and transition wavenumbers
 -The integers of (L1, L2, known_lev_indices, upper_lev_id, lower_lev_id) are all from lev_id
--lev_id must start from 0 (ground) and end at max(lev_id) with size (number of levels) max(lev_id) + 1
--env_config.yaml file contains directories to above files and parameters (i.e. Table 1 and 3 of the paper)
+-lev_id must start from 0 (ground) and end at max(lev_id) with size max(lev_id) + 1 (number of levels), i.e. no gaps in integer id up to number of levels - 1
+-The line list must contain the known lines, this is because they are removed from the line list in dqn_data_proc.preproc() in RL or kept for reward learning
+-env_config.yaml file contains directories to above files and MDP + model parameters (i.e. Table 1 and 3 of the paper)

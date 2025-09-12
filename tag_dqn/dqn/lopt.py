@@ -28,7 +28,7 @@ def lopt(wn_obs, wn_obs_unc, N_lev, edges,
 
         # Ground term fixed
         fixed_lev_indices = np.array([0, 1, 2, 3, 4]),
-        fixed_lev_values = np.array([0.0, 1137.7937, 2387.5440, 3714.5476, 5093.2573]) * 1e-3 / E_scale  # makesure on same scale!
+        fixed_lev_values = np.array([0.0, 1137.7937, 2387.5440, 3714.5476, 5093.2573])  # makesure on same scale!
     '''
     # Get free lev indices
     all_indices = np.arange(N_lev)
@@ -75,6 +75,7 @@ def lopt(wn_obs, wn_obs_unc, N_lev, edges,
         E_free_scaled, *_ = np.linalg.lstsq(A_weighted, rhs_weighted / scale, rcond=None)
     except np.linalg.LinAlgError:
         print('lstsq failed to converge in LOPT, treating this A2 as invalid')
+        # I never got this error
         return None, None, None
     E_free = E_free_scaled * scale
 

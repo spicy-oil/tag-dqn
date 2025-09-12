@@ -1,6 +1,6 @@
 <!-- omit in toc -->
 # TAG-DQN
-The Term Analysis with Graph Deep Q-Network (TAG-DQN) package contains all code and data associated with the paper 'Atomic Fine Structure Determination with Graph Reinforcement Learning'. The package contains the Markov decision process (MDP) environment for a term analysis integrated with a graph deep Q-network for reinforcement learning (RL).
+The Term Analysis with Graph Deep Q-Network (TAG-DQN) package contains all code and data associated with the paper 'Accelerating Atomic Fine Structure Determination with Graph Reinforcement Learning'. The package contains the Markov decision process (MDP) environment for a term analysis integrated with a graph deep Q-network (DQN) for reinforcement learning (RL).
 
 The main idea is having an algorithm that learns from automatic and strictly defined (programmed) term analysis procedures, where tens of thousands of attempts to determine unknown levels are learned (e.g. which level, in what order, and which energy + lines) using reward signals (i.e. human guidance). 
 
@@ -24,7 +24,7 @@ The main idea is having an algorithm that learns from automatic and strictly def
 ## Requirements
 The program is in Python and the required Python packages are listed in `setup.py`, the neural network (NN) implementations do not use GPU.
 
-It is possible to run TAG-DQN on a personal computer. Memory cost mainly arise from replay buffer size and NN complexity, both of which can be reduced from their final values from the paper, but with likely reduced performance unless MDP complexity is also reduced. Buffer size of 2000 was feasible with 2 GNN attention heads on a personal computer with 32 GB RAM.
+It is possible to run TAG-DQN on a personal computer. Memory cost mainly arise from replay buffer size and NN complexity, both of which can be reduced from their final values from the paper, but with likely reduced performance unless MDP complexity is also reduced (e.g. shorter episode horizon). Buffer size of 2000 was feasible with 2 GNN attention heads on a personal computer with 32 GB RAM.
 
 Hyperparameter tuning for new environments and running multiple seeds for best conclusions are preferable. These should be realised in parallel on a remote high performance computing (HPC) facility. Example scripts for the Imperial College HPC can be found under `data/grid_search_scripts/`.
 
@@ -34,7 +34,7 @@ Hyperparameter tuning for new environments and running multiple seeds for best c
 Ideally install Python >= 3.11.11 (developed using this version) in a separate virtual environment (e.g. conda) to avoid conflicts with packages and dependencies. Download this repository, under the directory containing `pyproject.toml` and under the new virtual environment run `pip install`. For example:
 
 ```bash
-git clone https://github.com/spicy-oil/tag-dqn.git
+git clone https://github.com/spicy-oil/tag-dqn.git  # placehoder as it's not public yet
 conda create -n tag-dqn python=3.11.11
 conda activate tag-dqn
 pip install -e .
@@ -66,7 +66,7 @@ tag_dqn.run_tag_dqn('config.yaml', seed=42, reward_params='reward.pth')
 
 Each MDP environment also requires a `config.yaml` configuration file that points to the five files above and contain MDP environment parameters and model hyperparameters. It is a text file for human editing and available for each case study under `data/envs/`.
 
-The reward parameter file `reward.pth` is optional. It will be `None` if unspecified, in which case the reward parameters of the paper `data/envs/reward.pth` will be used. The parameters must correspond to the reward model `NNReward()` of `tag_dqn/dqn/dqn_reward.py`.
+The reward parameter file `reward.pth` is optional. It will be `None` if unspecified, in which case the reward parameters of the paper `tag_dqn/pkg_data/reward.pth` (also under `data/envs/`) will be used. The parameters must correspond to the reward model `NNReward()` of `tag_dqn/dqn/dqn_reward.py`.
 
 ### Suggestions
 More details in `examples.py` with comments.
@@ -78,12 +78,12 @@ tag_dqn.run_greedy('data/envs/nd3/config.yaml', reward_params='data/envs/reward.
 ```
 and/or change `ep_length`, `episodes`, and `tr_start_ep` to small numbers in `config.yaml` to check if TAG-DQN runs.
 
-We advise against assuming TAG-DQN outputs being correct. Firstly, some of the levels determined will be wrong. But more importantly, validation by spectrum inspections and semi-empirical caluclation improvements should be vital procedures in acceptable term analysis (these are neither part of the MDP nor RL). 
+Do not assume TAG-DQN outputs being correct. Firstly, some of the levels determined will be wrong. But more importantly, validation by spectrum inspections and semi-empirical caluclation improvements should be vital procedures in acceptable term analysis (these are neither part of the MDP nor RL). 
 
 ---
 
 ## Data
-All MDP environment data of the paper are under `data/envs/`. For each case study, we additionally include the Cowan code parameters, if applicable. 
+All MDP environment data of the paper are under `data/envs/`. 
 
 Final results reported for the paper are under `data/results/final/`. Grid search results are compiled under `data/results/grid_search/`.
 
@@ -100,7 +100,7 @@ RL performance for level determination is highly dependent on the reward functio
 
 When the MDP environment and its parameters (e.g. $\delta E$, $\mathit{\Delta} E$, $\mathit{\Delta} I$) differ drastically from the four case studies (e.g. data from different spectrometers or spectral resolutions), training a new reward function instead of ours (`data/envs/reward.pth`) is considerable. But this would need sufficient number of known levels for sufficient number of training MDP state transitions. In the paper, we trained using only Co II expert MDP state transitions, and results for Co II was the best. Training using initial MDP states of the Nd II-III case studies were not possible due to small number of known levels. Inevitably, the trained reward function was less ideal for Nd II-III as their theoretical calculations, line list, and human experts were different.
 
-In MDP reversal for reward training, `spec_range` is ignored to include the entirety of the line list, ensuring the line list contains all known lines. In case some known lines are from completely different spectral range (not in the line list), we could remove them while ensuring known level subgraph remain connected, this might also be impossible so line list augmentation (adding simulation lines) might be an option. In some cases, we expect getting the right reward function to be the most challenging step for running TAG-DQN effectively, followed by preparing the term analysis state graph.
+In MDP reversal for reward training, `spec_range` is ignored to include the entirety of the line list, ensuring the line list contains all known lines (and their ambiguous matches). In case some known lines are from completely different spectral range (not in the line list), we could remove them while ensuring known level subgraph remain connected, this might also be impossible so line list augmentation (adding simulation lines) might be an option. In some cases, we expect getting the right reward function to be the most challenging step for running TAG-DQN effectively, followed by preparing the term analysis state graph.
 
 If necessary, the reward function can be changed with relative ease in `tag_dqn/dqn/dqn_reward.py`. The NN model for $D$ is `NNReward()`, input features are created by `NN_reward_input()` using graph features.
 

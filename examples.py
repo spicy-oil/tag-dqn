@@ -25,13 +25,13 @@ tag_dqn.eval_rw(reward_fn, nd3_demos)  # This prints results
 
 # If saving:
 # torch.save(reward_fn.state_dict(), 'reward.pth')
-# Then move to installation_dir/tag_dqn/dqn and it will be loaded in dqn_env.py
+# Then move to installation_dir/tag_dqn/pkg_data and it will be loaded in dqn_env.py or specify location in the functions below
 #%% Reinforcement Learning -----------------------------------------------------------------------
 
-# reward_params can be None, which uses the reward function trained above, same as config_dir+'reward.pth'
-# Last optional argument could be output directory, otherwise default ./
-tag_dqn.run_greedy(config_dir+'nd2_k/config.yaml', reward_params=config_dir+'reward.pth') 
-tag_dqn.run_mcts(config_dir+'nd2_k/config.yaml', seed=42, reward_params=config_dir+'reward.pth')
-tag_dqn.run_tag_dqn(config_dir+'nd2_k/config.yaml', seed=42, reward_params=config_dir+'reward.pth')
+# kwarg reward_params can be None (default if unspecified), which uses the reward function trained above, same as config_dir+'reward.pth'
+# kwarg output_dir is optional, otherwise default ./
+tag_dqn.run_greedy(config_dir+'co2/config.yaml') 
+tag_dqn.run_mcts(config_dir+'co2/config.yaml', seed=42)
+tag_dqn.run_tag_dqn(config_dir+'co2/config.yaml', seed=42)
 
 # Grid search and multi-seed run examples in data/grid_search_scripts

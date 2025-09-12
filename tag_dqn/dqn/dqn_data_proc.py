@@ -258,12 +258,6 @@ def preproc(wn_obs, wn_obs_unc, I_obs, snr_obs,  # Line list (all 1D np arrays)
                                                 fixed_lev_indices, fixed_lev_values / E_scale, test=True) # d_wn is obs-ritz
     print('Any initial graph (wn_obs - wn_ritz) > 1.2 * wn_unc? ', (1.2 * wn_obs_unc < d_wn).any())  # Hopefully false because if optimisation is off at the start none of this would work
 
-    # if case == 'nd2':
-    #     # Replace E_obs with E from the above optimisation
-    #     opt_known_lev_values = torch.tensor(E * 1e-3 / E_scale, dtype=torch.float64)  # kK / E_scale
-    #     init_graph.x[known_level_indices, 1] = opt_known_lev_values  # Update the initial graph with the optimised known level values
-    #     fixed_lev_values = opt_known_lev_values.numpy() * E_scale  # Update the fixed level values to the optimised ones
-
     return init_graph, init_linelist, E_scale
 
 #%%
