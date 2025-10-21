@@ -176,7 +176,9 @@ def run_tag_dqn(config_file, seed, reward_params=None, output_dir='dqn_results')
 
             # Eval ------------------------------------------------------------------------------------------
 
-            #print(f'{len(env.A2_cache)} unique A2s and {env.A2_cache_saves} A2 computations were saved')
+            # print(f'{len(env.A2_cache)} unique A2s and {env.A2_cache_saves} A2 computations were saved')
+            
+            # This saves various training curves and analysis plots, as well as classified linelists and new known level/line csvs 
             trainer.plot_training(seed, output_dir=output_dir)
 
             vars = trainer.term_analysis_check(prnt=True)

@@ -67,6 +67,16 @@ def line_den_from_graph(rho):
     rho = rho
     return rho
 
+def I_to_graph(I):
+    '''I from relative intensity to graph units'''
+    I = np.log10(I) / 5 
+    return I
+
+def I_from_graph(I):
+    '''I from graph units to relative intensity'''
+    I = 10 ** (I * 5)
+    return I
+
 def preproc(wn_obs, wn_obs_unc, I_obs, snr_obs,  # Line list (all 1D np arrays)
             wn_calc, gA_calc, upper_lev_id, lower_lev_id,  # Transition probabilities (all 1D np arrays)
             lev_id, E_calc, J, P, # Energy levels (all 1D np arrays)
@@ -156,13 +166,13 @@ def preproc(wn_obs, wn_obs_unc, I_obs, snr_obs,  # Line list (all 1D np arrays)
         plt.show()
 
     # Log10 the intensities, snrs, and gA_calc ------------------------------
-    I_obs = np.log10(I_obs) / 5
-    snr_obs = np.log10(snr_obs) / 5
-    I_calc = np.log10(I_calc) / 5
-    snr_calc = np.log10(snr_calc) / 5
+    I_obs = I_to_graph(I_obs)
+    snr_obs = I_to_graph(snr_obs)
+    I_calc = I_to_graph(I_calc)
+    snr_calc = I_to_graph(snr_calc) 
     gA_calc = np.log10(gA_calc) / 10
-    known_lines_I_obs = np.log10(known_lines.I_obs.values) / 5
-    known_snr_obs = np.log10(known_lines.snr.values) / 5
+    known_lines_I_obs = I_to_graph(known_lines.I_obs.values)
+    known_snr_obs = I_to_graph(known_lines.snr.values)
 
     # Get expected line density for calculated lines ------------------------
     line_den = [] # N lines per 1 kK
@@ -228,7 +238,7 @@ def preproc(wn_obs, wn_obs_unc, I_obs, snr_obs,  # Line list (all 1D np arrays)
     # # One hot encoding for even and odd levels
     # even = P == 0
     # odd = P == 1
-    # [E_calc, E_obs, J, even, odd, known, unknown, selected, unselected]
+    # [E_calc, E_obs, known, unknown, selected, unselected]
     x = torch.tensor(np.array([E_calc, np.zeros_like(E_calc), x_known, x_unknown, x_sel, x_unsel]).T, dtype=torch.float64)
 
     # Generate graph and line list instances -------------------------
@@ -274,7 +284,7 @@ def assign_knowns(graph, E_scale,
     edge_index = graph.edge_index
 
     # Let known levels be known
-    # [E_calc, E_obs, J, even, odd, known, unknown, selected, unselected]
+    # [E_calc, E_obs, known, unknown, selected, unselected]
     for j, i in enumerate(known_lev_indices):
         x[i][[1, 2, 3]] = torch.tensor([known_lev_values[j] / E_scale, 1, 0], dtype=torch.float64)
         
@@ -618,6 +628,74 @@ def env_input(env_config, float_levs=False):
             known_lev_indices, known_lev_values, known_lines,
             fixed_lev_indices, fixed_lev_values,
             min_snr, spec_range, wn_range, tol, int_tol, A2_max, ep_length)
+
+def graph_to_known_csv(graph, E_scale, output_dir='./', out_suffix=''):
+    '''
+    Get known levels and lines from graph and output to csv files that can be used as input
+    '''
+    # [E_calc, E_obs, known, unknown, selected, unselected]
+    known_lev_indices = torch.where(graph.x[:, 2] > 0)[0]
+    known_lev_values = graph.x[known_lev_indices, 1] * E_scale
+    known_lev_indices = known_lev_indices.numpy()
+    known_lev_values = known_lev_values.numpy()
+    df = pd.DataFrame()
+    df['known_lev_indices'] = known_lev_indices
+    df['known_lev_values'] = known_lev_values
+    df.to_csv(output_dir+'known_levels_out'+out_suffix+'.csv', index=False)
+    
+    # [wn_calc, wn_obs, wn_obs_unc, intensity_calc, intensity_obs, gA_calc, snr_calc, snr_obs, line_den, known, unknown] 
+    known_lin_indices = torch.where(graph.edge_attr[:, -1] == 0)[0]
+    N = known_lin_indices.shape[0] // 2  # because undirected edges
+    known_lin_indices = known_lin_indices[:N]
+    L1 = graph.edge_index[1][known_lin_indices]
+    L2 = graph.edge_index[0][known_lin_indices]
+    wn = graph.edge_attr[known_lin_indices, 1] * E_scale
+    wn_unc = wn_unc_from_graph(graph.edge_attr[known_lin_indices, 2])
+    I_obs = I_from_graph(graph.edge_attr[known_lin_indices, 4])
+    snr = I_from_graph(graph.edge_attr[known_lin_indices, 7])
+    df = pd.DataFrame()
+    df['L1'] = L1.numpy()
+    df['L2'] = L2.numpy()
+    df['wn_obs'] = wn.numpy()
+    df['wn_obs_unc'] = wn_unc.numpy()
+    df['I_obs'] = I_obs.numpy()
+    df['snr'] = snr.numpy().astype(int)
+    df.to_csv(output_dir+'known_lines_out'+out_suffix+'.csv', index=False)
+
+def prune(known_lev_csv, known_lines_csv, prune_list=[], out_suffix=''):
+    '''
+    prune_list: list of level indices to remove from known levels and their associated lines
+    '''
+    known_levels = pd.read_csv(known_lev_csv)
+    known_lines = pd.read_csv(known_lines_csv)
+
+    for pid in prune_list:
+        # Remove from known levels
+        mask = known_levels['known_lev_indices'] != pid
+        known_levels = known_levels[mask]
+
+        # Remove associated lines from known lines
+        mask = (known_lines['L1'] != pid) & (known_lines['L2'] != pid)
+        known_lines = known_lines[mask]
+
+    known_levels.to_csv('known_levels_pruned'+out_suffix+'.csv', index=False)
+    known_lines.to_csv('known_lines_pruned'+out_suffix+'.csv', index=False)
+
+def relabel(known_levels_csv, known_lines_csv, label_from=[], label_to=[], out_suffix=''):
+    '''
+    label_from: list of level indices to be swap from
+    label_to: list of corresponding level indices to swap into
+    '''
+    known_levels = pd.read_csv(known_levels_csv)
+    known_lines = pd.read_csv(known_lines_csv)
+
+    mapping = {i: j for i, j in zip(label_from, label_to)}
+    known_levels['known_lev_indices'] = known_levels['known_lev_indices'].replace(mapping)
+    known_lines['L1'] = known_lines['L1'].replace(mapping)
+    known_lines['L2'] = known_lines['L2'].replace(mapping)
+
+    known_levels.to_csv('known_levels_relab'+out_suffix+'.csv', index=False)
+    known_lines.to_csv('known_lines_relab'+out_suffix+'.csv', index=False)
 
 class Tee:
     def __init__(self, *files):

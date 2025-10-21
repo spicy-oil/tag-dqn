@@ -8,7 +8,7 @@ import time as time
 import matplotlib.pyplot as plt
 from copy import deepcopy
 from .dqn_subnets import NoisyLinear
-from .dqn_data_proc import comp, get_pd_table
+from .dqn_data_proc import comp, get_pd_table, graph_to_known_csv
 
 class Trainer():
     def __init__(self, q_net, q_net_t, q_net_largest, env, replay_buffer, optimizer, z, 
@@ -343,9 +343,11 @@ class Trainer():
         result_graph = env.state['graph'] # or
         #result_graph =  trainer.largest_total_episode_reward_final_state['graph']
 
-        # # Get classified line list pd dataframe, check for dodgy levels and add rejected level indices to prune list
+        # # Get classified line list pd dataframe, human check for dodgy levels and rejected level indices can be used in prune/swap list
         classified_linelist = get_pd_table(result_graph, env.E_scale, env.lev_name, env.J, known_only=True) 
         classified_linelist.to_csv(output_dir+'/classified_linelist/cll_'+str(seed)+'.csv', index=False)
+
+        graph_to_known_csv(result_graph, env.E_scale, output_dir=output_dir+'/classified_linelist/', output_suffix='_'+str(seed))
 
     def _q_net_step(self, q_net, q_net_t, replay_buffer, optimizer, batch_size, noisy, beta):
         '''
