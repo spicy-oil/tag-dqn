@@ -6,3 +6,5 @@ dqn_results/
 greedy_results/
 mcts_results/
 tag_dqn.egg-info/
+build
+*.egg-info
