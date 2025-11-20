@@ -347,7 +347,7 @@ class Trainer():
         classified_linelist = get_pd_table(result_graph, env.E_scale, env.lev_name, env.J, known_only=True) 
         classified_linelist.to_csv(output_dir+'/classified_linelist/cll_'+str(seed)+'.csv', index=False)
 
-        graph_to_known_csv(result_graph, env.E_scale, output_dir=output_dir+'/classified_linelist/', output_suffix='_'+str(seed))
+        graph_to_known_csv(result_graph, env.E_scale, output_dir=output_dir+'/classified_linelist/', out_suffix='_'+str(seed))
 
     def _q_net_step(self, q_net, q_net_t, replay_buffer, optimizer, batch_size, noisy, beta):
         '''
