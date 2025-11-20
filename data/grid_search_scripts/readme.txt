@@ -3,6 +3,7 @@ Example scripts we use for grid search and multi-seed runs on the Imperial Colle
 To access conda on IC HPC run
 
 module load miniforge/3
+miniforge-setup (if first time)
 eval "$(~/miniforge3/bin/conda shell.bash hook)"
 
 then use conda commands as usual
