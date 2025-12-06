@@ -34,7 +34,7 @@ Hyperparameter tuning for new environments and running multiple seeds for best c
 Ideally install Python >= 3.11.11 in a separate virtual environment (e.g. conda) to avoid conflicts with packages and dependencies, the dependent Python packages and their versions can be found in `pyproject.toml`. For conda users, download this repository, under the directory containing `pyproject.toml` and under the new virtual environment run `pip install`. For example:
 
 ```bash
-git clone https://github.com/spicy-oil/tag-dqn.git  # placehoder as it's not public yet
+git clone https://github.com/spicy-oil/tag-dqn.git  # place holder as it's not public yet
 conda create -n tag-dqn python=3.11.11
 conda activate tag-dqn
 pip install -e .
@@ -77,7 +77,7 @@ tag_dqn.run_greedy('data/envs/nd3/config.yaml', reward_params='data/envs/reward.
 ```
 and/or change `ep_length`, `episodes`, and `tr_start_ep` to small numbers in `config.yaml` to check if TAG-DQN runs.
 
-Do not assume TAG-DQN outputs being correct. Firstly, some of the levels determined will be wrong. But more importantly, validation by spectrum inspections and semi-empirical caluclation improvements should be vital procedures in acceptable term analysis (these are neither part of the MDP nor RL). 
+Do not assume TAG-DQN outputs being correct. Firstly, some of the levels determined will be wrong. But more importantly, validation by spectrum inspections and semi-empirical calculation improvements should be vital procedures in acceptable term analysis (these are neither part of the MDP nor RL). 
 
 ---
 
@@ -119,7 +119,7 @@ Let's talk about each parameter in the `config.yaml` file (they are defined in t
 - `gat_hidden_size` is sensitive until up to a certain value (complex enough, ~32), but increasing it does cost more resources.
 - `gat_heads` greatly affects GNN complexity and resource cost, it offered diminishing returns for us past 4 given our hyperparameter search ranges.
 - `mlp_hidden_size` is sensitive until up to a certain value (complex enough, ~32), then slowly decreases RL performance as it is increased. The latter likely comes from exploration by noisy-nets.
-- `episodes` sets the total number of steps in the enivronment for training, it can be as long as resources allow, but we recommend keeping track of reward alignment with the number of correct level energies, as the latter can plateau or decrease after training for many episodes, depending on the MDP, especially the reward function.
+- `episodes` sets the total number of steps in the environment for training, it can be as long as resources allow, but we recommend keeping track of reward alignment with the number of correct level energies, as the latter can plateau or decrease after training for many episodes, depending on the MDP, especially the reward function.
 - `buffer_capacity` is one of the main memory cost, ideally it should cover the number of steps required for convergence. We chose 10000 because it allows us the smallest HPC job specification (128 GB) for feasible queue times.
 - `tr_start_ep` is the number of episodes to randomly step in the MDP environment to partially fill the buffer so that RL training could begin on random MDP transitions. The standard practice is to fill about 10%. We did not find sensitivities to this parameter.
 - `batch_size` directly affects computation time as the loss from each batch is looped over (due to varying action space sizes). We tried up to 32, it was better than 16 but took twice as long per episode, if we half the number of episodes for training, then 32 is about as good as 16 without halving the number of episodes.

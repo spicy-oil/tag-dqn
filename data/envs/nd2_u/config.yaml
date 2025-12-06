@@ -7,7 +7,7 @@ theo_lines: ./data/envs/nd2_u/theo_lines.csv
 known_levels: ./data/envs/nd2_u/known_levels.csv
 known_lines: ./data/envs/nd2_u/known_lines.csv
 
-# Optinal files
+# Optional files
 all_known_levels: ./data/envs/nd2_u/all_known_levels.csv  # null if finding unknown levels
 all_known_levels_and_labels: null  # e.g. ./data/envs/nd2_k/all_known_levels_and_labels.csv, null if finding unknown levels
 
