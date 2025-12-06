@@ -1,7 +1,7 @@
 # Directories relative to running directory
 
 # Required files
-line_list: ./data/envs/nd3/line_list.csv
+line_list: ./data/envs/nd3/line_list_new.csv
 theo_levels: ./data/envs/nd3/theo_levels.csv
 theo_lines: ./data/envs/nd3/theo_lines.csv
 known_levels: ./data/envs/nd3/known_levels.csv
