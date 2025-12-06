@@ -31,7 +31,7 @@ Hyperparameter tuning for new environments and running multiple seeds for best c
 ---
 
 ## Installation
-Ideally install Python >= 3.11.11 (developed using this version) in a separate virtual environment (e.g. conda) to avoid conflicts with packages and dependencies. Download this repository, under the directory containing `pyproject.toml` and under the new virtual environment run `pip install`. For example:
+Ideally install Python >= 3.11.11 in a separate virtual environment (e.g. conda) to avoid conflicts with packages and dependencies, the dependent Python packages and their versions can be found in `pyproject.toml`. For conda users, download this repository, under the directory containing `pyproject.toml` and under the new virtual environment run `pip install`. For example:
 
 ```bash
 git clone https://github.com/spicy-oil/tag-dqn.git  # placehoder as it's not public yet
@@ -39,7 +39,6 @@ conda create -n tag-dqn python=3.11.11
 conda activate tag-dqn
 pip install -e .
 ```
-
 -e if want installation to point to source code, so that source code edits are realised from new package import.
 
 ---
