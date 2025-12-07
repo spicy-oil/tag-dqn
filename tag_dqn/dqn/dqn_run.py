@@ -44,32 +44,18 @@ def run_tag_dqn(config_file, seed, reward_params=None, output_dir='dqn_results')
         config = yaml.safe_load(f)
     params = config['params']
 
-    (
-    wn_obs, wn_obs_unc, I_obs, snr_obs,  # Line list
-    wn_calc, gA_calc, upper_lev_id,  lower_lev_id, lev_id, E_calc, J, P, lev_name,  # Calcs
-    known_lev_indices, known_lev_values, known_lines,  # Term analysis state
-    fixed_lev_indices, fixed_lev_values,  # Usually known_lev_indices, known_lev_values from the above line
-    min_snr, spec_range, wn_range, tol, int_tol, A2_max, ep_length  # Env parameters
-    ) = dqn_data_proc.env_input(config_file, float_levs=params['float_levs'])
+    preproc_in = dqn_data_proc.get_preproc_input(config_file, float_levs=params['float_levs'])
 
     with open(output_dir+'/log_'+str(seed)+'.txt', 'w') as f:
         tee = dqn_data_proc.Tee(os.sys.stdout, f)
         with redirect_stdout(tee): 
 
             # Get graph and linelist
-            init_graph, linelist, E_scale = dqn_data_proc.preproc(
-                        wn_obs, wn_obs_unc, I_obs, snr_obs,  # Line list
-                        wn_calc, gA_calc, upper_lev_id, lower_lev_id,  # Transition probabilities
-                        lev_id, E_calc, J, P,  # Energy levels
-                        known_lev_indices, known_lev_values, known_lines,  # Known levels and lines
-                        fixed_lev_indices, fixed_lev_values,  # Fixed levels
-                        min_snr, spec_range,  # Filter parameters
-                        wn_range,  # Search range is used to calculate line densities
-                        plot=False)  # kwarg
+            init_graph, linelist, E_scale = dqn_data_proc.preproc(preproc_in, plot=False)  # kwarg
             print('Graph data shapes:', init_graph)
             print('Line list shape:', linelist.shape)
 
-            diff_scale = wn_range / E_scale  # Scale for the difference between observed and calculated energies
+            diff_scale = params['wn_range'] / E_scale  # Scale for the difference between observed and calculated energies
 
             # Set rollout parameters ---------------------------------------------------------------------------
             episodes = params['episodes']  # total number of episodes
@@ -100,7 +86,7 @@ def run_tag_dqn(config_file, seed, reward_params=None, output_dir='dqn_results')
             if dist:
                 # Geometric series sum for gamma^2 (because expected reward at every other step)
                 max_reward_per_step = 3  # max reward (no more than 10^5 total SNR of lines found for the level)
-                ub = int(np.ceil(max_reward_per_step * (1 - (gamma ** 2) ** (ep_length / 2)) / (1 - gamma ** 2)))
+                ub = int(np.ceil(max_reward_per_step * (1 - (gamma ** 2) ** (params['ep_length'] / 2)) / (1 - gamma ** 2)))
                 lb = 0
                 z = torch.linspace(lb, ub, 51) # atoms axis
             else:
@@ -134,9 +120,9 @@ def run_tag_dqn(config_file, seed, reward_params=None, output_dir='dqn_results')
             # Initialise environment ---------------------------------------------------------------------------
             epsilon_start = 1  # Exploration rate
             data = (init_graph, linelist, E_scale)
-            env = dqn_env.Env(data, lev_name, J, fixed_lev_indices, fixed_lev_values, 
-                            ep_length, epsilon_start, z, wn_range, tol, int_tol, 
-                            A2_max = A2_max,
+            env = dqn_env.Env(data, preproc_in.lev_name, preproc_in.J, preproc_in.fixed_lev_indices, preproc_in.fixed_lev_values, 
+                            params['ep_length'], epsilon_start, z, params['wn_range'], params['tol'], params['int_tol'], 
+                            A2_max = params['A2_max'],
                             reward_params=reward_params, NN_ham=False)
 
             # Initialise optimizer ----------------------------------------------------------------------------
@@ -150,10 +136,10 @@ def run_tag_dqn(config_file, seed, reward_params=None, output_dir='dqn_results')
             steps_per_train = params['steps_per_train']  # number of steps to take before training the Q network
 
             n_grad = np.log(0.01) / np.log(1-tau)
-            n_grad_per_ep = ep_length / steps_per_train
+            n_grad_per_ep = params['ep_length'] / steps_per_train
             n_ep = n_grad / n_grad_per_ep
-            print(f'Total steps (gradient descents): {int(episodes * ep_length)} ({int(episodes * ep_length / steps_per_train)})')
-            print(f'Episodes (steps) capacity of the replay buffer: ~{int(buffer_capacity / ep_length)} ({buffer_capacity})')
+            print(f'Total steps (gradient descents): {int(episodes * params["ep_length"])} ({int(episodes * params["ep_length"] / steps_per_train)})')
+            print(f'Episodes (steps) capacity of the replay buffer: ~{int(buffer_capacity / params["ep_length"])} ({buffer_capacity})')
             print(f'Episodes (steps) to reach 0.01 of the target network: ~{int(n_ep)} ({int(n_grad * steps_per_train)})')
 
             # Load all known levels for evaluation, if applicable
@@ -169,7 +155,7 @@ def run_tag_dqn(config_file, seed, reward_params=None, output_dir='dqn_results')
 
             trainer = dqn_trainer.Trainer(q_net, q_net_t, q_net_largest, env, replay_buffer, optimizer, z, 
                                         batch_size, steps_per_train, tau, double, noisy, min_epsilon, 
-                                        patience, known_lev_values, all_known_levs, all_known_levels_and_labels)
+                                        patience, preproc_in.known_lev_values, all_known_levs, all_known_levels_and_labels)
 
             #Train ------------------------------------------------------------------------------------------
             trainer.train_q_net(episodes, tr_start_ep=params['tr_start_ep'])

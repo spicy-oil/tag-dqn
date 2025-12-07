@@ -222,12 +222,11 @@ def LEVHAM(graph, linelist, E_scale, lev_selection, linelist_mapping,
                         ) # ensure independent copy
         linelist_clone = linelist.clone() # ensure deep independent copy
         # Apply changes this candidate would have on graph and linelist
-        new_graph, wn_obs_indices, edge_indices = lopt.change_state(new_graph, linelist_clone,
+        new_graph, wn_obs_indices, edge_indices = lopt.change_state(new_graph, linelist_clone, lev,
                                         lev_selection, cindices, cwn, cwn_unc, cIobs, cIcalc, csnr_obs)
         # Check if this candidate passes LOPT
-        new_graph = lopt.assess_cand(new_graph, E_scale, 
-                                     fixed_lev_indices, fixed_lev_values, threshold=1.2)
-        
+        # new_graph = lopt.assess_cand(new_graph, E_scale, fixed_lev_indices, fixed_lev_values, threshold=1.2)
+
         # Add candidate for DQN only if LOPT is good
         if new_graph is not None:
             if learning:

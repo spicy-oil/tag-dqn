@@ -99,7 +99,7 @@ def lopt(wn_obs, wn_obs_unc, N_lev, edges,
 
 # %% For agent and enviroment
 
-def change_state(new_graph, linelist, level_to_find, clev_indices, cwns, cwn_uncs, cIobss, cIcalcs, csnr_obs):
+def change_state(new_graph, linelist, E_from_clevs, level_to_find, clev_indices, cwns, cwn_uncs, cIobss, cIcalcs, csnr_obs):
     '''
     Change graph and line list states using a LEVHAM candidate
         level_to_find - dim1 size1 tensor
@@ -107,13 +107,19 @@ def change_state(new_graph, linelist, level_to_find, clev_indices, cwns, cwn_unc
     '''
     level_to_find = level_to_find[0] # make a torch long (integer)
 
+    E_tentative = torch.mean(E_from_clevs)
     # let level_to_find be now known and unselected on the new graph
     # [E_calc, E_obs, J, even, odd, known, unknown, selected, unselected]
-    new_graph.x[level_to_find, 2:6] = torch.tensor([1., 0., 0., 1.], dtype=torch.float64)
+    node_feats = dqn_data_proc.FeatureIndexer.node_feature_indices(['E_obs', 'known', 'unknown', 'selected', 'unselected'])
+    new_graph.x[level_to_find, torch.tensor(node_feats)] = torch.tensor([E_tentative, 1., 0., 0., 1.], dtype=torch.float64)
+    # new_graph.x[level_to_find, torch.tensor([1,2,3,4,5])] = torch.tensor([E_tentative, 1., 0., 0., 1.], dtype=torch.float64)
 
     # Graph edge adjustments------------------------------------------------------------
     wn_obs_indices = torch.empty(0, dtype=torch.long)
     edge_indices = torch.empty(0, dtype=torch.long)
+    edge_feats_names = ['wn_obs', 'wn_obs_unc', 'I_calc', 'I_obs', 'snr_obs', 'known', 'unknown']
+    edge_feats = dqn_data_proc.FeatureIndexer.edge_feature_indices(edge_feats_names)
+    #edge_feats = [1, 2, 3, 4, 7, 9, 10]
     for i, clev in enumerate(clev_indices):
         wn_obs = cwns[i]
         wn_unc = cwn_uncs[i]
@@ -125,7 +131,7 @@ def change_state(new_graph, linelist, level_to_find, clev_indices, cwns, cwn_unc
         # Alter new_graph edges using classified lines [wn, wn_unc, Icalc, Iobs, snr_obs, known, unknown], others stay the same
         edge_attr_change = torch.tensor([wn_obs, wn_unc, I_calc, I_obs, snr_obs, 1, 0], dtype=torch.float64)
         edge_idx = torch.where((new_graph.edge_index[0] == level_to_find) & (new_graph.edge_index[1] == clev))[0][0]
-        new_graph.edge_attr[edge_idx][[1, 2, 3, 4, 7, 9, 10]] = edge_attr_change
+        new_graph.edge_attr[edge_idx][edge_feats] = edge_attr_change
         # Undirected graph so alter also the other direction
         shift = new_graph.edge_attr.size(0) // 2
         if edge_idx < shift:
@@ -133,7 +139,7 @@ def change_state(new_graph, linelist, level_to_find, clev_indices, cwns, cwn_unc
         else:
             undir_edge_idx = edge_idx - shift
         #undir_edge_idx = torch.where((new_graph.edge_index[0] == clev) & (new_graph.edge_index[1] == level_to_find))[0][0]
-        new_graph.edge_attr[undir_edge_idx][[1, 2, 3, 4, 7, 9, 10]] = edge_attr_change
+        new_graph.edge_attr[undir_edge_idx][edge_feats] = edge_attr_change
         edge_indices = torch.cat([edge_indices, edge_idx.unsqueeze(0)], dim=0)  # emission edge index
 
 

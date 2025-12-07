@@ -12,6 +12,7 @@ from cachetools import LRUCache
 from .dqn_data_proc import fit_pop
 from .dqn_reward import NN_reward_input, NNReward
 from . import levham
+from . import lopt
 #%%
 class Env():
     def __init__(self, data, lev_name, J, fixed_lev_indices, fixed_lev_values, 
@@ -182,6 +183,9 @@ class Env():
 
             # Update graph
             cand_graph = cand_graphs[action_index]
+            # Optimise
+            cand_graph = lopt.assess_cand(cand_graph, self.E_scale, self.fixed_lev_indices, self.fixed_lev_values, threshold=1.2)
+
             self.graph = Data(x=cand_graph.x.clone(), 
                         edge_index=cand_graph.edge_index.clone(), 
                         edge_attr=cand_graph.edge_attr.clone()

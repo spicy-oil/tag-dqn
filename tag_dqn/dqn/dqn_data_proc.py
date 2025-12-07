@@ -5,6 +5,7 @@ Utility functions for DQN data processing
 
 import pandas as pd
 import numpy as np
+import numpy.typing as npt
 import torch
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
@@ -12,9 +13,318 @@ import re
 
 import yaml
 
+from dataclasses import dataclass
+from typing import List
 from torch_geometric.data import Data
 from scipy.interpolate import interp1d
 from .lopt import lopt_known_subgraph
+
+class FeatureIndexer:
+    '''Feature mapping to graph feature tensors'''
+    node_feature_names = ['E_calc', 'E_obs', 'known', 'unknown', 'selected', 'unselected']
+    node_feature_map = {name: i for i, name in enumerate(node_feature_names)}
+
+    edge_feature_names = ['wn_calc', 'wn_obs', 'wn_obs_unc', 'I_calc', 'I_obs', 
+                                'gA_calc', 'snr_calc', 'snr_obs', 'line_den', 'known', 'unknown'] 
+    edge_feature_map = {name: i for i, name in enumerate(edge_feature_names)}
+    
+    @classmethod
+    def node_feature_indices(cls, selected_features):
+        return [cls.node_feature_map[f] for f in selected_features]
+    
+    @classmethod
+    def edge_feature_indices(cls, selected_features):
+        return [cls.edge_feature_map[f] for f in selected_features]
+    
+@dataclass
+class PreprocInput:
+    # Line list
+    wn_obs:            npt.NDArray[np.float64]
+    wn_obs_unc:        npt.NDArray[np.float64]
+    I_obs:             npt.NDArray[np.float64]
+    snr_obs:           npt.NDArray[np.float64]
+
+    # Theoretical lines
+    wn_calc:           npt.NDArray[np.float64]
+    gA_calc:           npt.NDArray[np.float64]
+    upper_lev_id:      npt.NDArray[np.int64]
+    lower_lev_id:      npt.NDArray[np.int64]
+
+    # Theoretical levels
+    lev_id:            npt.NDArray[np.int64]
+    E_calc:            npt.NDArray[np.float64]
+    J:                 npt.NDArray[np.int64]  # not used as graph feature
+    P:                 npt.NDArray[np.int64]  # not used as graph feature
+    lev_name:          npt.NDArray[np.object_]
+
+    # Known levels
+    known_lev_indices: npt.NDArray[np.int64]
+    known_lev_values:  npt.NDArray[np.float64]
+    known_lines:       npt.NDArray[np.float64]
+    fixed_lev_indices: npt.NDArray[np.int64]
+    fixed_lev_values:  npt.NDArray[np.float64]
+
+    # Environment parameters
+    min_snr:           float
+    spec_range:        List[[float, float]]
+    wn_range:          float  # Delta_E
+    tol:               float  # delta_E
+    int_tol:           float
+    A2_max:            int
+    ep_length:         int
+
+def get_preproc_input(env_config, float_levs=False):
+    '''
+    Get environment input data from config file, parts also used when setting up MDP
+    float_levs - if True, only ground level will be fixed at 0 cm-1 for all level optimisations.
+    '''
+    with open(env_config, 'r') as f:
+        config = yaml.safe_load(f)
+
+    # Get DataFrames
+    line_list = pd.read_csv(config['line_list'])
+    theo_levels = pd.read_csv(config['theo_levels'])
+    theo_lines = pd.read_csv(config['theo_lines'])
+    known_levels = pd.read_csv(config['known_levels'])
+    known_lines = pd.read_csv(config['known_lines'])
+
+    # Convert to numpy arrays
+    # Line list
+    wn_obs, wn_obs_unc, I_obs, snr_obs = (line_list['wn_obs'].values, line_list['wn_obs_unc'].values, 
+                                                      line_list['I_obs'].values, line_list['snr_obs'].values)
+    # Theoretical levels
+    lev_id, E_calc, J, P, lev_name = (theo_levels['lev_id'].values, theo_levels['E_calc'].values, 
+                                                     theo_levels['J'].values, theo_levels['P'].values, theo_levels['lev_name'].values)
+    # Theoretical lines
+    wn_calc, gA_calc, upper_lev_id, lower_lev_id = (theo_lines['wn_calc'].values, theo_lines['gA_calc'].values, 
+                                                                theo_lines['upper_lev_id'].values, theo_lines['lower_lev_id'].values)
+    # Known levels
+    known_lev_indices, known_lev_values = known_levels['known_lev_indices'].values, known_levels['known_lev_values'].values
+    
+    # Fix known levels
+    if float_levs:
+        fixed_lev_indices = np.array([0])
+        fixed_lev_values = np.array([0.0])
+    else:
+        fixed_lev_indices = known_lev_indices
+        fixed_lev_values = known_lev_values
+
+    # Get environment parameters
+    env_params = config['params']
+
+    min_snr = env_params['min_snr']
+    spec_range = env_params['spec_range']
+    wn_range = env_params['wn_range']
+    tol = env_params['tol']
+    int_tol = env_params['int_tol']
+    A2_max = env_params['A2_max']
+    ep_length = env_params['ep_length']
+
+    return PreprocInput(
+            wn_obs, wn_obs_unc, I_obs, snr_obs,  # Line list
+            wn_calc, gA_calc, upper_lev_id,  lower_lev_id, lev_id, E_calc, J, P, lev_name,  # Calcs
+            known_lev_indices, known_lev_values, known_lines,  # Term analysis state
+            fixed_lev_indices, fixed_lev_values,  # Usually known_lev_indices, known_lev_values from the above line
+            min_snr, spec_range, wn_range, tol, int_tol, A2_max, ep_length  # Env parameters
+            )
+
+def preproc(preproc_in : PreprocInput, plot=False):
+    '''
+    Require wn and E units in kK (1000 cm-1)
+    all IDs start from 0 and have no gaps
+    I_obs as relative photon flux, same scale as known_lines.I_obs
+    min_snr is used to remove all predicted lines below the min expected snr
+    spec_range is used to remove all predicted lines outside the range from the graph
+    '''
+    # Get I_calc and snr_calc with Boltzman and snr_obs / I_obs ratio
+    I_calc, snr_calc = preproc_snr_I_calc(preproc_in, plot=plot)
+
+    # Filter predicted lines
+    observable_idx = preproc_filter_edges(preproc_in, snr_calc, plot=plot)
+
+    # Log10 the intensities, snrs, and gA_calc
+    I_obs = I_to_graph(preproc_in.I_obs)
+    snr_obs = I_to_graph(preproc_in.snr_obs)
+    I_calc = I_to_graph(I_calc)
+    snr_calc = np.clip(snr_calc, 1, None)  # minimum expected snr of 1 when min_snr < 1, because log values close to zero are big
+    snr_calc = I_to_graph(snr_calc) 
+    gA_calc = I_to_graph(preproc_in.gA_calc) / 2
+    known_lines_I_obs = I_to_graph(preproc_in.known_lines.I_obs.values)
+    known_snr_obs = I_to_graph(preproc_in.known_lines.snr.values)
+
+    # Get line density for calculated lines 
+    line_den = preproc_line_den(preproc_in, snr_calc)
+
+    # Line list columns to torch tensors
+    in_wn_range = (preproc_in.wn_obs > preproc_in.spec_range[0]) & (preproc_in.wn_obs < preproc_in.spec_range[1])
+    wn_obs = torch.tensor(preproc_in.wn_obs[in_wn_range], dtype=torch.float64)
+    wn_obs_unc = torch.tensor(preproc_in.wn_obs_unc[in_wn_range], dtype=torch.float64)
+    I_obs = torch.tensor(I_obs[in_wn_range], dtype=torch.float64)
+    snr_obs = torch.tensor(snr_obs[in_wn_range], dtype=torch.float64)
+
+    # Scale wn & E
+    E_scale = np.float64(preproc_in.E_calc.max())
+    wn_calc = preproc_in.wn_calc / E_scale
+    wn_obs = wn_obs / E_scale
+    wn_obs_unc = wn_unc_to_graph(wn_obs_unc)
+    E_calc = preproc_in.E_calc / E_scale
+
+    # Construct graph edges
+    # [source_nodes, target_nodes]
+    edge_index = torch.tensor(np.array([preproc_in.upper_lev_id, preproc_in.lower_lev_id]), dtype=torch.long)
+    edge_index_undirected = torch.cat([edge_index, edge_index.flip(0)], dim=1) #  For message passing both ways (not just from upper levels to lower levels)
+
+    # [wn_calc, wn_obs, wn_obs_unc, intensity_calc, intensity_obs, gA_calc, snr_calc, snr_obs, line_den, known, unknown] 
+    edge_attr_emission = torch.tensor(np.array([wn_calc, np.zeros_like(wn_calc), np.zeros_like(wn_calc), 
+                                                I_calc, np.zeros_like(wn_calc), gA_calc,
+                                                snr_calc, np.zeros_like(wn_calc), line_den,
+                                                np.zeros_like(wn_calc), np.ones_like(wn_calc)]), 
+                                                dtype=torch.float64).T
+    
+    edge_attr_absorption = torch.tensor(np.array([wn_calc, np.zeros_like(wn_calc), np.zeros_like(wn_calc),
+                                                  I_calc, np.zeros_like(wn_calc), gA_calc,
+                                                  snr_calc, np.zeros_like(wn_calc), line_den,
+                                                  np.zeros_like(wn_calc), np.ones_like(wn_calc)]), 
+                                                  dtype=torch.float64).T
+    # Undirected for message passing both ways
+    edge_attr_undirected = torch.cat([edge_attr_emission, edge_attr_absorption], dim=0)
+
+    # Init graph and line list
+    init_graph = Data(x=preproc_nodes(E_calc), edge_index=edge_index_undirected, edge_attr=edge_attr_undirected)
+    init_linelist = torch.tensor(np.array([wn_obs, wn_obs_unc, I_obs, snr_obs]).T, dtype=torch.float64)
+
+    # Remove known lines from init_linelist
+    if remove_known_lines:
+        for w in preproc_in.known_lines.wn.values:
+            idx = torch.abs(init_linelist[:, 0] * E_scale - w).argmin()
+            init_linelist = torch.cat((init_linelist[:idx], init_linelist[idx+1:]), 0)
+
+    # Add known and fixed levels to graph
+    init_graph, known_line_index = assign_knowns(init_graph, E_scale, 
+                                preproc_in.known_lev_indices, preproc_in.known_lev_values, 
+                                preproc_in.known_lines.L2.values, preproc_in.known_lines.L1.values, 
+                                preproc_in.known_lines.wn.values, preproc_in.known_lines.wn_unc.values, known_lines_I_obs, known_snr_obs,
+                                preproc_in.fixed_lev_indices, preproc_in.fixed_lev_values)
+    
+    # Filter unobservable predicted lines
+    observable_idx = np.concatenate((observable_idx, observable_idx)) | ((init_graph.edge_attr[:, -1]).numpy() == 0)  # keep known lines
+    init_graph.edge_attr = init_graph.edge_attr[observable_idx]
+    init_graph.edge_index = init_graph.edge_index[:, observable_idx]
+
+    # Check these values!
+    E, wn_obs_unc, d_wn, known_level_indices = lopt_known_subgraph(init_graph, E_scale, 
+                                                preproc_in.fixed_lev_indices, preproc_in.fixed_lev_values / E_scale, test=True) # d_wn is obs-ritz
+    print('Any initial graph (wn_obs - wn_ritz) > 1.2 * wn_unc? ', (1.2 * wn_obs_unc < d_wn).any())  # Hopefully false because if optimisation is off at the start none of this would work
+
+    return init_graph, init_linelist, E_scale
+
+def preproc_snr_I_calc(preproc_in : PreprocInput, plot=False):
+    # Fit snr_obs / I_obs ratio ------------------------------------------------
+    lowess = sm.nonparametric.lowess(preproc_in.snr_obs / preproc_in.I_obs, preproc_in.wn_obs, frac=.02)
+    observability = interp1d(lowess[:, 0], lowess[:, 1], kind='linear', 
+                             bounds_error=False, fill_value=(lowess[0, 1], lowess[-1, 1]))
+
+    if plot:
+        plt.figure()
+        plt.title('Relative snr_obs / I_obs ratio')
+        plt.scatter(preproc_in.wn_obs, preproc_in.snr_obs / preproc_in.I_obs)
+        plt.plot(preproc_in.wn_obs, observability(preproc_in.wn_obs), 'r')
+        plt.ylabel('snr_obs / I_obs')
+        plt.xlabel('wn (kK)')
+        plt.tight_layout()
+
+    # snr_calc and I_calc ------------------------------------------------
+    ul_idx = preproc_in.known_lines.L2.values  # integer np array of upper level indices
+    ll_idx = preproc_in.known_lines.L1.values  # integer np array of lower level indices
+    E_u = []
+    known_line_gAs = []
+    for i in range(len(ul_idx)):
+        idx = preproc_in.known_lev_indices == ul_idx[i]
+        E_u.append(preproc_in.known_lev_values[idx])
+        idx = (preproc_in.upper_lev_id == ul_idx[i]) & (preproc_in.lower_lev_id == ll_idx[i])
+        if idx.any() == False: # if observed line not in calc (maybe gA too small)
+            gA = np.array([1e5])  # /s
+        else:
+            gA = preproc_in.gA_calc[idx]
+        known_line_gAs.append(gA)
+    known_line_gAs = np.array(known_line_gAs).flatten()
+    E_u = np.array(E_u).flatten()
+    T, m, c = preproc_temp(E_u, preproc_in.known_lines, known_line_gAs)
+    if plot:
+        plt.figure()
+        plt.title(f'Boltzman plot for known lines T={T:.0f} K')
+        plt.scatter(E_u, np.log(preproc_in.known_lines.I_obs.values / known_line_gAs))
+        x = np.linspace(E_u.min(), E_u.max(), 100)
+        plt.plot(x, c + m * x, 'r')
+        plt.ylabel(r'log_e(I_obs/gA_calc)')
+        plt.xlabel('E2 (kK)')
+        plt.tight_layout()
+    I_calc = preproc_in.gA_calc * np.exp(c - (6.63e-34 * 3e8 * preproc_in.E_calc[preproc_in.upper_lev_id] * 1e5) / (1.38e-23 * T))  # photon flux
+    snr_calc = observability(preproc_in.wn_calc) * I_calc
+
+    return I_calc, snr_calc
+
+def preproc_filter_edges(preproc_in : PreprocInput, snr_calc, plot=False):
+    # Filter predicted lines ------------------------------------------------
+    observable_idx = snr_calc > preproc_in.min_snr  # Care only about predicted lines with snr_calc > min_snr 
+
+    # Remove predicted lines outside spec_range
+    in_wn_range = (preproc_in.wn_calc > preproc_in.spec_range[0]) & (preproc_in.wn_calc < preproc_in.spec_range[1])
+    observable_idx = observable_idx & in_wn_range
+    
+    if plot:
+        in_wn_obs_range = (preproc_in.wn_obs > preproc_in.spec_range[0]) & (preproc_in.wn_obs < preproc_in.spec_range[1])
+        N = len(preproc_in.wn_calc[observable_idx])
+        plt.figure()
+        plt.title(f'Expected snr for the {N} calculated lines expected to be observable (red)')
+        plt.vlines(preproc_in.wn_obs[in_wn_obs_range], 0, preproc_in.snr_obs[in_wn_obs_range], 'k', label='snr obs')
+        plt.vlines(preproc_in.wn_calc[observable_idx], 0, preproc_in.snr_calc[observable_idx], 'r', label = 'snr calc')
+        plt.legend(loc='upper right')
+        plt.ylabel('S/N')
+        plt.xlabel('wn (kK)')
+        plt.tight_layout()
+
+        plt.figure()
+        plt.title(f'Expected intensity for the {N} calculated lines expected to be observable (red)')
+        plt.vlines(preproc_in.wn_obs[in_wn_obs_range], 0, preproc_in.I_obs[in_wn_obs_range], color='k', label='I_obs')
+        plt.vlines(preproc_in.wn_calc[observable_idx], 0 , preproc_in.I_calc[observable_idx], color='r', label='I_calc')
+        plt.legend(loc='upper right')
+        plt.ylabel('Relative Intensity')
+        plt.xlabel('wn (kK)')
+        plt.tight_layout()
+        plt.show()
+    
+    return observable_idx
+
+def preproc_line_den(preproc_in : PreprocInput, snr_calc):
+    '''snr_calc is in graph units from I_to_graph(snr_calc)'''
+    # Get expected line density for calculated lines ------------------------
+    line_den = [] # N lines per 1 kK
+    for i in range(len(preproc_in.wn_calc)):
+        # Filter wn_obs within search range
+        in_wn_range = (preproc_in.wn_obs > preproc_in.wn_calc[i] - preproc_in.wn_range) & (preproc_in.wn_obs < preproc_in.wn_calc[i] + preproc_in.wn_range)
+        # Filter snr_obs within 1 mag above snr_calc
+        # Because if both ways lines near noise will have lower density vs mid-snr lines!
+        snr_calc_i = np.clip(snr_calc[i], I_to_graph(10), None)  # let snr_calc be 10 for snr_calc below 10
+        in_snr_range = (preproc_in.snr_obs > snr_calc[i]) & (preproc_in.snr_obs < snr_calc_i + I_to_graph(10)) & (preproc_in.snr_obs > snr_calc_i - I_to_graph(10)) # within +-1 order of magnitude
+        rho = len(preproc_in.wn_obs[in_wn_range & in_snr_range]) / (2 * preproc_in.wn_range) + 1  # +1 from the line itself
+        line_den.append(rho)
+    line_den = np.array(line_den)
+    line_den = line_den_to_graph(line_den)
+    return line_den
+
+def preproc_nodes(E_calc : npt.NDArray[np.float64]):
+    '''Init graph nodes based on E_calc, returns tensor for graph.x'''
+    # Construct graph nodes ------------------------------------------------
+    # One hot encoding for known and unknown levels
+    x_known = np.zeros_like(E_calc)
+    x_unknown = np.ones_like(E_calc)
+    # One hot encoding for selected and unselected levels
+    x_sel = np.zeros_like(E_calc)
+    x_unsel = np.ones_like(E_calc)
+    # [E_calc, E_obs, known, unknown, selected, unselected]
+    x = torch.tensor(np.array([E_calc, np.zeros_like(E_calc), x_known, x_unknown, x_sel, x_unsel]).T, dtype=torch.float64)
+    return x
 
 def moving_average(arr, window_size=64):
     arr = np.pad(arr, (window_size // 2, window_size // 2), mode='mean', stat_length=window_size)
@@ -33,12 +343,17 @@ def preproc_temp(E_u, known_lines, known_line_gAs):
 
 def wn_unc_to_graph(wn_unc):
     '''wn_unc from 1e3 cm-1 unit to graph & linelist units'''
+    if isinstance(wn_unc, torch.Tensor):
+        xp = torch
+    else:
+        xp = np
+        wn_unc = np.array(wn_unc)
     # FTS wn uncs
     # highest is 1 cm-1 for problem lines
     # highest non-problem lines are ~ 0.05 cm-1
     # lowest is a few 0.0001 cm-1
     wn_unc = wn_unc * 1e7  # from kK to 0.1 mK
-    wn_unc = np.log10(wn_unc)  # [0, 4]
+    wn_unc = xp.log10(wn_unc)  # [0, 4]
     # Most uncs >0.001 cm-1 (>1) and < 0.1 cm-1 (3)
     wn_unc = wn_unc / 4  # [0, 1]
     wn_unc = - wn_unc  # make negative so that higher means better
@@ -77,198 +392,6 @@ def I_from_graph(I):
     I = 10 ** (I * 5)
     return I
 
-def preproc(wn_obs, wn_obs_unc, I_obs, snr_obs,  # Line list (all 1D np arrays)
-            wn_calc, gA_calc, upper_lev_id, lower_lev_id,  # Transition probabilities (all 1D np arrays)
-            lev_id, E_calc, J, P, # Energy levels (all 1D np arrays)
-            known_lev_indices, known_lev_values, known_lines,  # Known levels and lines (1D np arrays but known_lines is pd.DataFrame)
-            fixed_lev_indices, fixed_lev_values,  # Fixed levels (1D np arrays)
-            min_snr=2, spec_range=[12, 55],  # Filter parameters
-            wn_range=0.250,  # Search range is used to calculate line densities
-            remove_known_lines=True,  # If remove known lines from line list
-            plot=False):
-    '''
-    Require wn and E units in kK (1000 cm-1)
-    all IDs start from 0 and have no gaps
-    I_obs as relative photon flux, same scale as known_lines.I_obs
-    min_snr is used to remove all predicted lines below the min expected snr
-    spec_range is used to remove all predicted lines outside the range from the graph
-    '''
-    # Fit snr_obs / I_obs ratio ------------------------------------------------
-    lowess = sm.nonparametric.lowess(snr_obs / I_obs, wn_obs, frac=.02)
-    observability = interp1d(lowess[:, 0], lowess[:, 1], kind='linear', bounds_error=False, fill_value=(lowess[0, 1], lowess[-1, 1]))
-
-    if plot:
-        plt.figure()
-        plt.title('Relative snr_obs / I_obs ratio')
-        plt.scatter(wn_obs, snr_obs / I_obs)
-        plt.plot(wn_obs, observability(wn_obs), 'r')
-        plt.ylabel('snr_obs / I_obs')
-        plt.xlabel('wn (kK)')
-        plt.tight_layout()
-
-    # Calculate expected SNR ------------------------------------------------
-    ul_idx = known_lines.L2.values  # integer np array of upper level indices
-    ll_idx = known_lines.L1.values  # integer np array of lower level indices
-    E_u = []
-    known_line_gAs = []
-    for i in range(len(ul_idx)):
-        idx = known_lev_indices == ul_idx[i]
-        E_u.append(known_lev_values[idx])
-        idx = (upper_lev_id == ul_idx[i]) & (lower_lev_id == ll_idx[i])
-        if idx.any() == False: # if observed line not in calc (maybe gA too small)
-            gA = np.array([1e5])
-        else:
-            gA = gA_calc[idx]
-        known_line_gAs.append(gA)
-    known_line_gAs = np.array(known_line_gAs).flatten()
-    E_u = np.array(E_u).flatten()
-    T, m, c = preproc_temp(E_u, known_lines, known_line_gAs)
-    if plot:
-        plt.figure()
-        plt.title(f'Boltzman plot for known lines T={T:.0f} K')
-        plt.scatter(E_u, np.log(known_lines.I_obs.values / known_line_gAs))
-        x = np.linspace(E_u.min(), E_u.max(), 100)
-        plt.plot(x, c + m * x, 'r')
-        plt.ylabel(r'log_e(I_obs/gA_calc)')
-        plt.xlabel('E2 (kK)')
-        plt.tight_layout()
-    I_calc = gA_calc * np.exp(c - (6.63e-34 * 3e8 * E_calc[upper_lev_id] * 1e5) / (1.38e-23 * T))  # photon flux
-    snr_calc = observability(wn_calc) * I_calc
-
-    # Filter predicted lines ------------------------------------------------
-    observable_idx = snr_calc > min_snr  # Remove predicted lines below expected SNR of min_snr 
-
-    # Remove predicted lines outside spec_range
-    in_wn_range = (wn_calc > spec_range[0]) & (wn_calc < spec_range[1])
-    observable_idx = observable_idx & in_wn_range
-    
-    snr_calc = np.clip(snr_calc, 1, None)  # minimum expected snr of 1 when min_snr < 1, because of logging later
-    if plot:
-        in_wn_obs_range = (wn_obs > spec_range[0]) & (wn_obs < spec_range[1])
-        N = len(wn_calc[observable_idx])
-        plt.figure()
-        plt.title(f'Expected snr for the {N} calculated lines expected to be observable (red)')
-        plt.vlines(wn_obs[in_wn_obs_range], 0, snr_obs[in_wn_obs_range], 'k', label='snr obs')
-        plt.vlines(wn_calc[observable_idx], 0, snr_calc[observable_idx], 'r', label = 'snr calc')
-        plt.legend(loc='upper right')
-        plt.ylabel('S/N')
-        plt.xlabel('wn (kK)')
-        plt.tight_layout()
-
-        plt.figure()
-        plt.title(f'Expected intensity for the {N} calculated lines expected to be observable (red)')
-        plt.vlines(wn_obs[in_wn_obs_range], 0, I_obs[in_wn_obs_range], color='k', label='I_obs')
-        plt.vlines(wn_calc[observable_idx], 0 , I_calc[observable_idx], color='r', label='I_calc')
-        plt.legend(loc='upper right')
-        plt.ylabel('Relative Intensity')
-        plt.xlabel('wn (kK)')
-        plt.tight_layout()
-        plt.show()
-
-    # Log10 the intensities, snrs, and gA_calc ------------------------------
-    I_obs = I_to_graph(I_obs)
-    snr_obs = I_to_graph(snr_obs)
-    I_calc = I_to_graph(I_calc)
-    snr_calc = I_to_graph(snr_calc) 
-    gA_calc = np.log10(gA_calc) / 10
-    known_lines_I_obs = I_to_graph(known_lines.I_obs.values)
-    known_snr_obs = I_to_graph(known_lines.snr.values)
-
-    # Get expected line density for calculated lines ------------------------
-    line_den = [] # N lines per 1 kK
-    for i in range(len(wn_calc)):
-        # Filter wn_obs within search range
-        in_wn_range = (wn_obs > wn_calc[i] - wn_range) & (wn_obs < wn_calc[i] + wn_range)
-        # Filter snr_obs within 1 mag above snr_calc
-        # Because if both ways lines near noise will have lower density vs mid-snr lines!
-        snr_calc_i = np.clip(snr_calc[i], 1 / 5, None)  # let snr_calc be 10 for snr_calc below 10
-        in_snr_range = (snr_obs > snr_calc[i]) & (snr_obs < snr_calc_i + 1 / 5) & (snr_obs > snr_calc_i - 1 / 5) # within +-1 order of magnitude
-        rho = len(wn_obs[in_wn_range & in_snr_range]) / (2 * wn_range) + 1  # +1 from the line itself
-        line_den.append(rho)
-    line_den = np.array(line_den)
-    line_den = line_den_to_graph(line_den)
-
-    # To torch tensors ------------------------------------------------------
-    in_wn_range = (wn_obs > spec_range[0]) & (wn_obs < spec_range[1])
-    wn_obs = torch.tensor(wn_obs[in_wn_range], dtype=torch.float64)
-    wn_obs_unc = torch.tensor(wn_obs_unc[in_wn_range], dtype=torch.float64)
-    I_obs = torch.tensor(I_obs[in_wn_range], dtype=torch.float64)
-    snr_obs = torch.tensor(snr_obs[in_wn_range], dtype=torch.float64)
-
-    wn_calc = torch.tensor(wn_calc, dtype=torch.float64)
-    I_calc = torch.tensor(I_calc, dtype=torch.float64)
-    gA_calc = torch.tensor(gA_calc, dtype=torch.float64)
-    snr_calc = torch.tensor(snr_calc, dtype=torch.float64)
-
-    # Scale wn & E ----------------------------------------------------------
-    E_scale = np.float64(E_calc.max())
-    wn_calc = wn_calc / E_scale
-    wn_obs = wn_obs / E_scale
-    wn_obs_unc = wn_unc_to_graph(wn_obs_unc)
-    E_calc = E_calc / E_scale
-
-    # Construct graph edges ------------------------------------------------
-    # [source_nodes, target_nodes]
-    edge_index = torch.tensor(np.array([upper_lev_id, lower_lev_id]), dtype=torch.long)
-    edge_index_undirected = torch.cat([edge_index, edge_index.flip(0)], dim=1) # For message passing both ways (not just from upper levels to lower levels)
-
-    # [wn_calc, wn_obs, wn_obs_unc, intensity_calc, intensity_obs, gA_calc, snr_calc, snr_obs, line_den, known, unknown] 
-    # One hot encoding for observed and unobserved
-    edge_attr_emission = torch.tensor(np.array([wn_calc, torch.zeros_like(wn_calc), torch.zeros_like(wn_calc), 
-                                                I_calc, torch.zeros_like(wn_calc), gA_calc,
-                                                snr_calc, torch.zeros_like(wn_calc), line_den,
-                                                torch.zeros_like(wn_calc), torch.ones_like(wn_calc)]), 
-                                                dtype=torch.float64).T
-    
-    edge_attr_absorption = torch.tensor(np.array([wn_calc, torch.zeros_like(wn_calc), torch.zeros_like(wn_calc),
-                                                  I_calc, torch.zeros_like(wn_calc), gA_calc,
-                                                  snr_calc, torch.zeros_like(wn_calc), line_den,
-                                                  torch.zeros_like(wn_calc), torch.ones_like(wn_calc)]), 
-                                                  dtype=torch.float64).T
-    # Undirected for message passing both ways
-    edge_attr_undirected = torch.cat([edge_attr_emission, edge_attr_absorption], dim=0)
-
-    # Construct graph nodes ------------------------------------------------
-    # One hot encoding for known and unknown levels
-    x_known = np.zeros_like(E_calc)
-    x_unknown = np.ones_like(E_calc)
-    # One hot encoding for selected and unselected levels
-    x_sel = np.zeros_like(E_calc)
-    x_unsel = np.ones_like(E_calc)
-    # # One hot encoding for even and odd levels
-    # even = P == 0
-    # odd = P == 1
-    # [E_calc, E_obs, known, unknown, selected, unselected]
-    x = torch.tensor(np.array([E_calc, np.zeros_like(E_calc), x_known, x_unknown, x_sel, x_unsel]).T, dtype=torch.float64)
-
-    # Generate graph and line list instances -------------------------
-    init_graph = Data(x=x, edge_index=edge_index_undirected, edge_attr=edge_attr_undirected)
-    init_linelist = torch.tensor(np.array([wn_obs, wn_obs_unc, I_obs, snr_obs]).T, dtype=torch.float64)
-
-    # Remove known lines from init_linelist
-    if remove_known_lines:
-        for w in known_lines.wn.values:
-            idx = torch.abs(init_linelist[:, 0] * E_scale - w).argmin()
-            init_linelist = torch.cat((init_linelist[:idx], init_linelist[idx+1:]), 0)
-
-    # Add known and fixed levels to graph
-    init_graph, known_line_index = assign_knowns(init_graph, E_scale, 
-                                known_lev_indices, known_lev_values, 
-                                known_lines.L2.values, known_lines.L1.values, 
-                                known_lines.wn.values, known_lines.wn_unc.values, known_lines_I_obs, known_snr_obs,
-                                fixed_lev_indices, fixed_lev_values)
-    
-    # Filter unobservable predicted lines
-    observable_idx = np.concatenate((observable_idx, observable_idx)) | ((init_graph.edge_attr[:, -1]).numpy() == 0)  # keep known lines
-    init_graph.edge_attr = init_graph.edge_attr[observable_idx]
-    init_graph.edge_index = init_graph.edge_index[:, observable_idx]
-
-    # Check these values!
-    E, wn_obs_unc, d_wn, known_level_indices = lopt_known_subgraph(init_graph, E_scale, 
-                                                fixed_lev_indices, fixed_lev_values / E_scale, test=True) # d_wn is obs-ritz
-    print('Any initial graph (wn_obs - wn_ritz) > 1.2 * wn_unc? ', (1.2 * wn_obs_unc < d_wn).any())  # Hopefully false because if optimisation is off at the start none of this would work
-
-    return init_graph, init_linelist, E_scale
 
 #%%
 def assign_knowns(graph, E_scale,
@@ -286,7 +409,7 @@ def assign_knowns(graph, E_scale,
     # Let known levels be known
     # [E_calc, E_obs, known, unknown, selected, unselected]
     for j, i in enumerate(known_lev_indices):
-        x[i][[1, 2, 3]] = torch.tensor([known_lev_values[j] / E_scale, 1, 0], dtype=torch.float64)
+        x[i][FeatureIndexer.node_feature_indices(['E_obs', 'known', 'unknown'])] = torch.tensor([known_lev_values[j] / E_scale, 1, 0], dtype=torch.float64)
         
     # Let known lines be known
     known_line_index = []  # for first half of graph.edge_attr
@@ -301,22 +424,23 @@ def assign_knowns(graph, E_scale,
             continue
         edge_idx = temp[0]
         known_line_index.append(edge_idx)
-        edge_attr[edge_idx][[1, 2, 4, 7, 9, 10]] = torch.tensor([known_wn_obs[i] / E_scale, 
-                                                            wn_unc_to_graph(known_wn_obs_unc[i]),
-                                                            known_I_obs[i],
-                                                            known_snr_obs[i],
-                                                            1, 0], dtype=torch.float64)
+        feat_idx = FeatureIndexer.edge_feature_indices(['wn_obs', 'wn_obs_unc', 'I_obs', 'snr_obs', 'known', 'unknown'])
+        edge_attr[edge_idx][feat_idx] = torch.tensor([known_wn_obs[i] / E_scale, 
+                                                        wn_unc_to_graph(known_wn_obs_unc[i]),
+                                                        known_I_obs[i],
+                                                        known_snr_obs[i],
+                                                        1, 0], dtype=torch.float64)
         # Other way because undirected
         edge_idx = torch.where((edge_index[0] == target) & (edge_index[1] == source))[0][0]
-        edge_attr[edge_idx][[1, 2, 4, 7, 9, 10]] = torch.tensor([known_wn_obs[i] / E_scale, 
-                                                            wn_unc_to_graph(known_wn_obs_unc[i]),
-                                                            known_I_obs[i], 
-                                                            known_snr_obs[i],
-                                                            1, 0], dtype=torch.float64)
+        edge_attr[edge_idx][feat_idx] = torch.tensor([known_wn_obs[i] / E_scale, 
+                                                        wn_unc_to_graph(known_wn_obs_unc[i]),
+                                                        known_I_obs[i], 
+                                                        known_snr_obs[i],
+                                                        1, 0], dtype=torch.float64)
 
     # Let fixed levels be known
     for j, i in enumerate(fixed_lev_indices):
-        x[i][[1, 2, 3]] = torch.tensor([fixed_lev_values[j] / E_scale, 1, 0], dtype=torch.float64)
+        x[i][FeatureIndexer.node_feature_indices(['E_obs', 'known', 'unknown'])] = torch.tensor([fixed_lev_values[j] / E_scale, 1, 0], dtype=torch.float64)
     
     return graph, known_line_index
 
@@ -581,53 +705,6 @@ def comp(final_known_lev_names, final_known_levs, init_known_levs, all_known_lev
     else:
         return count-init_known_count, N_found
 
-def env_input(env_config, float_levs=False):
-    '''
-    Get environment input data from config file.
-    all_float: if True, only ground level will be fixed at 0 cm-1 for all level optimisations.
-    '''
-    with open(env_config, 'r') as f:
-        config = yaml.safe_load(f)
-
-    # Get DataFrames
-    line_list = pd.read_csv(config['line_list'])
-    theo_levels = pd.read_csv(config['theo_levels'])
-    theo_lines = pd.read_csv(config['theo_lines'])
-    known_levels = pd.read_csv(config['known_levels'])
-    known_lines = pd.read_csv(config['known_lines'])
-
-    # Convert to numpy arrays
-    wn_obs, wn_obs_unc, I_obs, snr_obs = (line_list['wn_obs'].values, line_list['wn_obs_unc'].values, 
-                                          line_list['I_obs'].values, line_list['snr_obs'].values)
-    lev_id, E_calc, J, P, lev_name = (theo_levels['lev_id'].values, theo_levels['E_calc'].values, 
-                                      theo_levels['J'].values, theo_levels['P'].values, theo_levels['lev_name'].values)
-    wn_calc, gA_calc, upper_lev_id, lower_lev_id = (theo_lines['wn_calc'].values, theo_lines['gA_calc'].values, 
-                                                    theo_lines['upper_lev_id'].values, theo_lines['lower_lev_id'].values)
-    known_lev_indices, known_lev_values = known_levels['known_lev_indices'].values, known_levels['known_lev_values'].values
-    
-    # Fix known levels
-    if float_levs:
-        fixed_lev_indices = np.array([0])
-        fixed_lev_values = np.array([0.0])
-    else:
-        fixed_lev_indices = known_lev_indices
-        fixed_lev_values = known_lev_values
-
-    # Get environment parameters
-    env_params = config['params']
-    min_snr = env_params['min_snr']
-    spec_range = env_params['spec_range']
-    wn_range = env_params['wn_range']
-    tol = env_params['tol']
-    int_tol = env_params['int_tol']
-    A2_max = env_params['A2_max']
-    ep_length = env_params['ep_length']
-
-    return (wn_obs, wn_obs_unc, I_obs, snr_obs,
-            wn_calc, gA_calc, upper_lev_id,  lower_lev_id, lev_id, E_calc, J, P, lev_name,
-            known_lev_indices, known_lev_values, known_lines,
-            fixed_lev_indices, fixed_lev_values,
-            min_snr, spec_range, wn_range, tol, int_tol, A2_max, ep_length)
 
 def graph_to_known_csv(graph, E_scale, output_dir='./', out_suffix=''):
     '''

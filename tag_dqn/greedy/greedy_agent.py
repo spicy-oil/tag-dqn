@@ -77,28 +77,14 @@ def run_greedy(config_file, reward_params=None, output_dir='greedy_results'):
                 config = yaml.safe_load(f)
             params = config['params']
 
-            (
-            wn_obs, wn_obs_unc, I_obs, snr_obs,  # Line list
-            wn_calc, gA_calc, upper_lev_id,  lower_lev_id, lev_id, E_calc, J, P, lev_name,  # Calcs
-            known_lev_indices, known_lev_values, known_lines,  # Term analysis state
-            fixed_lev_indices, fixed_lev_values,  # Usually known_lev_indices, known_lev_values from the above line
-            min_snr, spec_range, wn_range, tol, int_tol, A2_max, ep_length  # Env parameters
-            ) = dqn_data_proc.env_input(config_file, float_levs=params['float_levs'])
+            preproc_in = dqn_data_proc.get_preproc_input(config_file, float_levs=params['float_levs'])
 
             # Get graph and linelist
-            init_graph, linelist, E_scale = dqn_data_proc.preproc(
-                        wn_obs, wn_obs_unc, I_obs, snr_obs,  # Line list
-                        wn_calc, gA_calc, upper_lev_id, lower_lev_id,  # Transition probabilities
-                        lev_id, E_calc, J, P,  # Energy levels
-                        known_lev_indices, known_lev_values, known_lines,  # Known levels and lines
-                        fixed_lev_indices, fixed_lev_values,  # Fixed levels
-                        min_snr, spec_range,  # Filter parameters
-                        wn_range,  # Search range is used to calculate line densities
-                        plot=False)  # kwarg
+            init_graph, linelist, E_scale = dqn_data_proc.preproc(preproc_in, plot=False)  # kwarg
             print('Graph data shapes:', init_graph)
             print('Line list shape:', linelist.shape)
 
-            diff_scale = wn_range / E_scale  # Scale for the difference between observed and calculated energies
+            diff_scale = params['wn_range'] / E_scale  # Scale for the difference between observed and calculated energies
 
             # Initialise Q networks ----------------------------------------------------------------------------
 
@@ -127,10 +113,12 @@ def run_greedy(config_file, reward_params=None, output_dir='greedy_results'):
             # Initialise environment ---------------------------------------------------------------------------
             epsilon_start = 1  # Exploration rate
             data = (init_graph, linelist, E_scale)
-            env = dqn_env.Env(data, lev_name, J, fixed_lev_indices, fixed_lev_values, 
-                            ep_length, epsilon_start, z, wn_range, tol, int_tol, 
-                            A2_max = A2_max,
-                            reward_params=reward_params, NN_ham=False)
+            env = dqn_env.Env(data, preproc_in.lev_name, preproc_in.J, 
+                              preproc_in.fixed_lev_indices, preproc_in.fixed_lev_values, 
+                              params['ep_length'], epsilon_start, z, params['wn_range'], 
+                              params['tol'], params['int_tol'], 
+                              A2_max = params['A2_max'],
+                              reward_params=reward_params, NN_ham=False)
 
             # Load all known levels for evaluation, if applicable
             if config['all_known_levels'] is not None:
@@ -146,7 +134,7 @@ def run_greedy(config_file, reward_params=None, output_dir='greedy_results'):
             print('Running greedy term analysis...')
             two_step_greedy_term_analysis(q_net, env)  # run greedy algorithm
             lev_names, levs = env._get_known_levs()
-            dqn_data_proc.comp(lev_names, levs, known_lev_values, 
+            dqn_data_proc.comp(lev_names, levs, preproc_in.known_lev_values, 
                                       all_known_levs, all_known_levels_and_labels, True)
             
             # # Get classified line list pd dataframe, check for dodgy levels and add rejected level indices to prune list
