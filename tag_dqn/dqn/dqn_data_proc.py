@@ -528,6 +528,71 @@ def get_gA(loggf, wn):
     return gA
 
 def comp(final_known_lev_names, final_known_levs, init_known_levs, all_known_levs, all_known_levs_and_labels, prnt=True):
+    
+    def flag_print(s):
+        if prnt:
+            print(s)
+        
+    tol = 5e-5
+    init_known_count = init_known_levs.size
+    final_known_count = len(final_known_levs)
+    N_found = final_known_count - init_known_count
+
+    if all_known_levs_and_labels is not None:
+        all_known_levs, known_lev_ids = all_known_levs_and_labels['known_levs'].values, all_known_levs_and_labels['known_lev_ids'].values
+
+    N_c = 0
+
+    # Count levels agreeing with known energies
+    for i, lev in enumerate(final_known_levs):
+        diff = abs(lev - all_known_levs)
+
+        init_diff = abs(lev - init_known_levs)
+        # if likely from initial state
+        if init_diff[init_diff.argmin()] < tol:  
+            # then print the new and init known value
+            initial_val = init_known_levs[init_diff.argmin()]
+            flag_print(f'{lev*1e3:.4f} cm-1 from initial state at {initial_val*1e3:.4f} cm-1 ({final_known_lev_names[i]})')
+        elif diff[diff.argmin()] < tol:
+            flag_print(f'{lev*1e3:.4f} cm-1 agree with human {all_known_levs[diff.argmin()]*1e3:.4f} cm-1 !!! ({final_known_lev_names[i]})' )
+            N_c += 1
+        else:
+            flag_print(f'{lev*1e3:.4f} cm-1 not found by humans... ({final_known_lev_names[i]})')
+
+    # Count levels agreeing with known energy and label
+    if all_known_levs_and_labels is not None:
+        N_c_label = 0
+        for i, lev in enumerate(final_known_levs):
+            init_diff = abs(lev - init_known_levs)
+            # if likely from initial state
+            if init_diff[init_diff.argmin()] < tol:  
+                # then skip
+                continue
+
+            diff = abs(lev - all_known_levs)
+            match = re.search(r'id (\d+)', final_known_lev_names[i])
+            lev_id = int(match.group(1))
+            comp_value = all_known_levs[known_lev_ids == lev_id]
+
+            if comp_value.size == 0:
+                #print(f'Level id {lev_id} not found in all_known_levels_and_labels.csv, skipping comparison of E and id for this level')
+                comp_value = np.array([np.nan])
+            diff = abs(comp_value - lev)
+            if diff < tol:
+                N_c_label += 1
+                flag_print(f'{lev*1e3:.4f} cm-1 agree with human {comp_value[0]*1e3:.4f} cm-1 and human label !!! ({final_known_lev_names[i]})' )
+
+    flag_print(f'{N_c} out of {N_found} new known levels agree in terms of E')
+
+    if all_known_levs_and_labels is not None:
+        flag_print(f'{N_c_label} out of {N_found} new known levels agree in terms of E AND label')
+        return N_c, N_found, N_c_label
+    else:
+        return N_c, N_found
+
+        
+
+def comp_old(final_known_lev_names, final_known_levs, init_known_levs, all_known_levs, all_known_levs_and_labels, prnt=True):
     tol = 5e-5  # cm-1 ~LEVHAM TOL
     init_known_count = init_known_levs.size
     final_known_count = len(final_known_levs)
